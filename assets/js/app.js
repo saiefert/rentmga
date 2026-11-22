@@ -101,6 +101,7 @@
     external: `<svg viewBox="0 0 20 20" fill="none"><path d="M11 4h5v5M16 4l-7 7M8.5 5.5H5.5a1.5 1.5 0 0 0-1.5 1.5v7.5A1.5 1.5 0 0 0 5.5 16H13a1.5 1.5 0 0 0 1.5-1.5v-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
     school: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L12 5l9.5 4.5L12 14 2.5 9.5z"/><path d="M6.5 11.5v4.5c0 1.4 2.5 2.8 5.5 2.8s5.5-1.4 5.5-2.8v-4.5"/><path d="M20.5 10.5v5"/></svg>`,
     briefcase: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M8.5 7V5.5A1.5 1.5 0 0 1 10 4h4a1.5 1.5 0 0 1 1.5 1.5V7"/><path d="M3 12.5h18"/></svg>`,
+    sofa: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V8.5A2.5 2.5 0 0 1 6.5 6h11A2.5 2.5 0 0 1 20 8.5V12"/><path d="M2.5 12h19v4.5a1.5 1.5 0 0 1-1.5 1.5h-16A1.5 1.5 0 0 1 2.5 16.5V12z"/><path d="M5 18v2M19 18v2"/></svg>`,
   };
 
   const GROKBOT_PROMPT = `Você é um buscador de casas em Maringá - PR.
@@ -132,12 +133,12 @@ Sempre que encontrar casas relevantes, retorne APENAS um JSON válido seguindo e
       "terreno_m2": 300,
       "aceita_pets": true,
       "quintal": true,
-      "mobiliada": false,
+      "moveis": true,
       "destaque": false,
       "descricao": "Resumo objetivo do imóvel.",
       "nota_grokbot": "Por que esta casa vale a pena e pontos de atenção.",
       "tags": ["Quintal gramado", "Rua arborizada"],
-      "fotos": [],
+      "fotos": ["https://url-direta-da-foto-1.jpg", "https://url-direta-da-foto-2.jpg"],
       "link": "https://url-do-anuncio",
       "portal": "Nome do portal",
       "encontrado_em": "2026-11-22"
@@ -147,6 +148,8 @@ Sempre que encontrar casas relevantes, retorne APENAS um JSON válido seguindo e
 
 Regras:
 - "finalidade": "aluguel" ou "compra".
+- "moveis": true se tiver móveis (mobiliado/semimobiliado), false se não tiver.
+- "fotos": extraia as URLs reais (https://...) das imagens do anúncio (até 6-8 fotos); o site faz fallback automático se algum link falhar.
 - "preco", "condominio", "iptu", "area_m2", "terreno_m2": números sem "R$".
 - Mantenha o mesmo "id" para a mesma casa entre atualizações (preserva favoritos e anotações).
 - Se não tiver "lat" e "lng" exatas, preencha "bairro" corretamente (ex: "Zona 02", "Zona 07", "Eurogarden") que o site posiciona no mapa automaticamente.
@@ -189,6 +192,7 @@ Regras:
       finalidade: "todas",
       minQuartos: 0,
       sort: "score",
+      moveis: false,
       pets: false,
       quintal: false,
       favoritas: false,
@@ -692,6 +696,16 @@ Regras:
           : "aluguel";
       const coords = resolveHouseCoords(raw, i);
       const id = String(raw.id || `casa-${i + 1}-${hashString(raw.titulo || String(i))}`);
+      const rawFotos = Array.isArray(raw.fotos)
+        ? raw.fotos
+        : typeof raw.foto === "string"
+        ? [raw.foto]
+        : typeof raw.imagem === "string"
+        ? [raw.imagem]
+        : [];
+      const fotosClean = [...new Set(rawFotos.filter((u) => typeof u === "string" && /^https?:\/\//i.test(u.trim())).map((u) => u.trim()))];
+      const hasMoveis = raw.moveis !== undefined ? Boolean(raw.moveis) : Boolean(raw.mobiliada);
+
       const house = {
         id,
         titulo: String(raw.titulo || `Casa em ${raw.bairro || "Maringá"}`),
@@ -713,12 +727,13 @@ Regras:
         terreno_m2: parseNumber(raw.terreno_m2),
         aceita_pets: raw.aceita_pets !== false,
         quintal: Boolean(raw.quintal),
-        mobiliada: Boolean(raw.mobiliada),
+        moveis: hasMoveis,
+        mobiliada: hasMoveis,
         destaque: Boolean(raw.destaque),
         descricao: String(raw.descricao || ""),
         nota_grokbot: String(raw.nota_grokbot || ""),
         tags: Array.isArray(raw.tags) ? raw.tags.map(String) : [],
-        fotos: Array.isArray(raw.fotos) ? raw.fotos.filter((u) => typeof u === "string" && u.trim()) : [],
+        fotos: fotosClean,
         link: typeof raw.link === "string" ? raw.link.trim() : "",
         portal: String(raw.portal || feed.fonte || ""),
         encontrado_em: String(raw.encontrado_em || feed.atualizado_em || ""),
@@ -1275,6 +1290,7 @@ Regras:
     let n = 0;
     if (f.finalidade !== "todas") n++;
     if (f.minQuartos > 0) n++;
+    if (f.moveis) n++;
     if (f.pets) n++;
     if (f.quintal) n++;
     if (f.favoritas) n++;
@@ -1327,6 +1343,7 @@ Regras:
     let list = state.houses.filter((h) => {
       if (f.finalidade !== "todas" && h.finalidade !== f.finalidade) return false;
       if (f.minQuartos > 0 && h.quartos < f.minQuartos) return false;
+      if (f.moveis && !h.moveis) return false;
       if (f.pets && !h.aceita_pets) return false;
       if (f.quintal && !h.quintal) return false;
       if (f.favoritas && !state.prefs.favorites[h.id]) return false;
@@ -1338,7 +1355,7 @@ Regras:
 
       if (q) {
         const hay = normalizeText(
-          `${h.titulo} ${h.bairro} ${h.endereco} ${h.tipo} ${h.descricao} ${h.nota_grokbot} ${h.tags.join(" ")}`
+          `${h.titulo} ${h.bairro} ${h.endereco} ${h.tipo} ${h.descricao} ${h.nota_grokbot} ${h.tags.join(" ")} ${h.moveis ? "moveis mobiliado mobiliada" : ""}`
         );
         if (!hay.includes(q)) return false;
       }
@@ -1346,6 +1363,10 @@ Regras:
     });
 
     list.sort((a, b) => {
+      if (f.sort === "moveis") {
+        if (a.moveis !== b.moveis) return a.moveis ? -1 : 1;
+        return b.overallScore - a.overallScore;
+      }
       if (f.sort === "rotina") return a.routineCombinedDist - b.routineCombinedDist;
       if (f.sort === "escola") return a.schoolDist - b.schoolDist;
       if (f.sort === "trabalho") return a.workDist - b.workDist;
@@ -1353,7 +1374,12 @@ Regras:
       if (f.sort === "preco_desc") return (b.preco || 0) - (a.preco || 0);
       if (f.sort === "area_desc") return (b.area_m2 || 0) - (a.area_m2 || 0);
       if (f.sort === "recente") return String(b.encontrado_em).localeCompare(String(a.encontrado_em));
-      return b.overallScore + (b.destaque ? 4 : 0) - (a.overallScore + (a.destaque ? 4 : 0));
+      return (
+        b.overallScore +
+        (b.moveis ? 12 : 0) +
+        (b.destaque ? 4 : 0) -
+        (a.overallScore + (a.moveis ? 12 : 0) + (a.destaque ? 4 : 0))
+      );
     });
 
     state.filteredHouses = list;
@@ -1403,7 +1429,7 @@ Regras:
     el.listingsContainer.querySelectorAll(".house-card").forEach((card) => {
       const id = card.dataset.houseId;
       card.addEventListener("click", (e) => {
-        if (e.target.closest("[data-card-action]")) return;
+        if (e.target.closest("[data-card-action]") || e.target.closest(".card-go-btn")) return;
         openHouseDetails(id, { fly: true });
       });
       card.addEventListener("mouseenter", () => setHoveredHouse(id));
@@ -1423,7 +1449,14 @@ Regras:
     el.listingsContainer.querySelectorAll("img[data-fallback-house]").forEach((img) => {
       img.addEventListener("error", () => {
         const house = state.houses.find((h) => h.id === img.dataset.fallbackHouse);
-        if (house) img.outerHTML = buildHouseIllustration(house);
+        if (!house) return;
+        const nextIdx = (Number(img.dataset.photoIdx) || 0) + 1;
+        if (nextIdx < house.fotos.length) {
+          img.dataset.photoIdx = String(nextIdx);
+          img.src = house.fotos[nextIdx];
+        } else {
+          img.outerHTML = buildHouseIllustration(house);
+        }
       });
     });
   }
@@ -1436,7 +1469,7 @@ Regras:
     const statusObj = STATUS_OPTIONS.find((s) => s.id === statusId && s.id);
 
     const mediaHtml = house.fotos.length
-      ? `<img src="${escapeHtml(house.fotos[0])}" alt="${escapeHtml(house.titulo)}" loading="lazy" data-fallback-house="${escapeHtml(house.id)}">`
+      ? `<img src="${escapeHtml(house.fotos[0])}" alt="${escapeHtml(house.titulo)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-photo-idx="0" data-fallback-house="${escapeHtml(house.id)}">`
       : buildHouseIllustration(house);
 
     const highlightCats = ["pet", "ciclovia", "academia", "parque"]
@@ -1485,6 +1518,7 @@ Regras:
           ${mediaHtml}
           <div class="house-card__badges">
             <span class="pill-badge pill-badge--${house.finalidade}">${house.finalidade === "compra" ? "Compra" : "Aluguel"}</span>
+            ${house.moveis ? '<span class="pill-badge pill-badge--moveis">Com móveis</span>' : ""}
             ${house.destaque ? '<span class="pill-badge pill-badge--destaque">Destaque</span>' : ""}
             ${statusObj ? `<span class="pill-badge pill-badge--status">${escapeHtml(statusObj.label)}</span>` : ""}
           </div>
@@ -1514,6 +1548,14 @@ Regras:
           ${commuteStrip ? `<div class="house-card__commute">${commuteStrip}</div>` : ""}
           ${nearbyPills ? `<div class="house-card__nearby">${nearbyPills}</div>` : ""}
           ${house.nota_grokbot ? `<p class="house-card__bot">${escapeHtml(house.nota_grokbot)}</p>` : ""}
+          ${
+            house.link
+              ? `<div class="house-card__footer-cta">
+                  <span class="card-details-hint">Ver detalhes e entorno</span>
+                  <a class="card-go-btn" href="${escapeHtml(house.link)}" target="_blank" rel="noopener noreferrer">Ir para o imóvel ${UI_ICONS.external}</a>
+                </div>`
+              : ""
+          }
         </div>
       </article>
     `;
@@ -1532,7 +1574,7 @@ Regras:
       .map((h) => {
         const isSelected = h.id === state.selectedHouseId;
         const thumbHtml = h.fotos.length
-          ? `<img src="${escapeHtml(h.fotos[0])}" alt="${escapeHtml(h.titulo)}" loading="lazy" data-fallback-compact="${escapeHtml(h.id)}">`
+          ? `<img src="${escapeHtml(h.fotos[0])}" alt="${escapeHtml(h.titulo)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-photo-idx="0" data-fallback-compact="${escapeHtml(h.id)}">`
           : buildHouseIllustration(h, true);
 
         const nearTop = ["pet", "ciclovia", "academia"]
@@ -1562,10 +1604,11 @@ Regras:
           .join("");
 
         return `
-          <button type="button" class="peek-card ${isSelected ? "is-selected" : ""}" data-peek-id="${escapeHtml(h.id)}">
+          <div class="peek-card ${isSelected ? "is-selected" : ""}" data-peek-id="${escapeHtml(h.id)}" role="button" tabindex="0">
             <div class="peek-card__thumb">
               ${thumbHtml}
               <span class="peek-card__tag ${h.finalidade === "compra" ? "peek-card__tag--compra" : ""}">${h.finalidade === "compra" ? "Compra" : "Aluguel"}</span>
+              ${h.moveis ? '<span class="peek-moveis-badge">Móveis</span>' : ""}
             </div>
             <div class="peek-card__info">
               <div class="peek-card__top">
@@ -1575,23 +1618,44 @@ Regras:
               <p class="peek-card__title">${escapeHtml(h.titulo)}</p>
               <p class="peek-card__sub">${escapeHtml(h.bairro)}${h.quartos ? ` · ${h.quartos} qtos` : ""}${h.area_m2 ? ` · ${h.area_m2}m²` : ""}</p>
               ${commuteMini ? `<div class="peek-card__commute">${commuteMini}</div>` : ""}
-              <div class="peek-card__near">${nearTop}</div>
+              <div class="peek-card__foot">
+                <div class="peek-card__near">${nearTop}</div>
+                ${
+                  h.link
+                    ? `<a class="peek-go-link" href="${escapeHtml(h.link)}" target="_blank" rel="noopener noreferrer" aria-label="Ir para o imóvel">Ir ${UI_ICONS.external}</a>`
+                    : ""
+                }
+              </div>
             </div>
-          </button>
+          </div>
         `;
       })
       .join("");
 
     el.mapCarousel.querySelectorAll(".peek-card").forEach((card) => {
-      card.addEventListener("click", () => {
+      card.addEventListener("click", (e) => {
+        if (e.target.closest(".peek-go-link")) return;
         openHouseDetails(card.dataset.peekId, { fly: true });
+      });
+      card.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          openHouseDetails(card.dataset.peekId, { fly: true });
+        }
       });
     });
 
     el.mapCarousel.querySelectorAll("img[data-fallback-compact]").forEach((img) => {
       img.addEventListener("error", () => {
         const house = state.houses.find((h) => h.id === img.dataset.fallbackCompact);
-        if (house) img.outerHTML = buildHouseIllustration(house, true);
+        if (!house) return;
+        const nextIdx = (Number(img.dataset.photoIdx) || 0) + 1;
+        if (nextIdx < house.fotos.length) {
+          img.dataset.photoIdx = String(nextIdx);
+          img.src = house.fotos[nextIdx];
+        } else {
+          img.outerHTML = buildHouseIllustration(house, true);
+        }
       });
     });
   }
@@ -1716,13 +1780,15 @@ Regras:
     el.drawerCompareBtn.classList.toggle("is-compare-active", isCmp);
 
     const hasPhotos = house.fotos.length > 0;
-    const photoUrl = hasPhotos ? house.fotos[state.activePhotoIndex % house.fotos.length] : null;
+    const currentPhotoIdx = hasPhotos ? ((state.activePhotoIndex % house.fotos.length) + house.fotos.length) % house.fotos.length : 0;
+    const photoUrl = hasPhotos ? house.fotos[currentPhotoIdx] : null;
     const heroHtml = photoUrl
       ? `
-        <img src="${escapeHtml(photoUrl)}" alt="${escapeHtml(house.titulo)}" id="drawerHeroImg">
+        <img src="${escapeHtml(photoUrl)}" alt="${escapeHtml(house.titulo)}" id="drawerHeroImg" decoding="async" referrerpolicy="no-referrer" data-photo-idx="${currentPhotoIdx}">
         ${
           house.fotos.length > 1
-            ? `<div class="detail-hero__nav">
+            ? `<span class="detail-hero__counter">${currentPhotoIdx + 1} / ${house.fotos.length}</span>
+              <div class="detail-hero__nav">
                 <button type="button" id="prevPhotoBtn" aria-label="Foto anterior">‹</button>
                 <button type="button" id="nextPhotoBtn" aria-label="Próxima foto">›</button>
               </div>`
@@ -1739,9 +1805,9 @@ Regras:
     }
 
     const featureTags = [
+      house.moveis ? { text: "Com móveis", accent: true } : { text: "Sem móveis", accent: false },
       house.aceita_pets ? { text: "Aceita pets", accent: true } : null,
       house.quintal ? { text: "Com quintal", accent: true } : null,
-      house.mobiliada ? { text: "Mobiliada", accent: false } : null,
       house.terreno_m2 ? { text: `Terreno ${house.terreno_m2} m²`, accent: false } : null,
       ...house.tags.map((t) => ({ text: t, accent: false })),
     ].filter(Boolean);
@@ -1841,6 +1907,7 @@ Regras:
         <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;flex-wrap:wrap">
           <span class="pill-badge pill-badge--${house.finalidade}">${house.finalidade === "compra" ? "Compra" : "Aluguel"}</span>
           <span class="pill-badge">${escapeHtml(house.tipo)}</span>
+          ${house.moveis ? '<span class="pill-badge pill-badge--moveis">Com móveis</span>' : ""}
           ${house.portal ? `<span class="pill-badge">${escapeHtml(house.portal)}</span>` : ""}
           ${house.approxCoords ? `<span class="pill-badge">Posição aprox. pelo bairro</span>` : ""}
         </div>
@@ -1852,6 +1919,14 @@ Regras:
 
         <h2 class="detail-title">${escapeHtml(house.titulo)}</h2>
         <p class="detail-address">${escapeHtml(house.bairro)}${house.endereco ? ` · ${escapeHtml(house.endereco)}` : ""} · Maringá, PR</p>
+
+        ${
+          house.link
+            ? `<div class="detail-top-cta">
+                <a class="btn-primary" href="${escapeHtml(house.link)}" target="_blank" rel="noopener noreferrer">Ir para o imóvel ${UI_ICONS.external}</a>
+              </div>`
+            : ""
+        }
 
         <div class="detail-specs-grid">
           <div class="spec-box"><strong>${house.quartos || "—"}</strong><span>Quartos${house.suites ? ` (${house.suites}s)` : ""}</span></div>
@@ -1925,7 +2000,7 @@ Regras:
         <div class="detail-cta-row">
           ${
             house.link
-              ? `<a class="btn-primary" href="${escapeHtml(house.link)}" target="_blank" rel="noopener noreferrer">Abrir anúncio original ${UI_ICONS.external}</a>`
+              ? `<a class="btn-primary" href="${escapeHtml(house.link)}" target="_blank" rel="noopener noreferrer">Ir para o imóvel ${UI_ICONS.external}</a>`
               : ""
           }
           <a class="btn-outline" href="${mapsUrl}" target="_blank" rel="noopener noreferrer">Google Maps</a>
@@ -1936,8 +2011,17 @@ Regras:
 
     const heroImg = document.getElementById("drawerHeroImg");
     if (heroImg) {
+      let failedTries = 0;
       heroImg.addEventListener("error", () => {
-        heroImg.outerHTML = buildHouseIllustration(house);
+        failedTries++;
+        if (failedTries < house.fotos.length) {
+          state.activePhotoIndex = (state.activePhotoIndex + 1) % house.fotos.length;
+          heroImg.src = house.fotos[state.activePhotoIndex];
+          const counter = el.drawerBody.querySelector(".detail-hero__counter");
+          if (counter) counter.textContent = `${state.activePhotoIndex + 1} / ${house.fotos.length}`;
+        } else {
+          heroImg.outerHTML = buildHouseIllustration(house);
+        }
       });
     }
     const prevBtn = document.getElementById("prevPhotoBtn");
@@ -1951,6 +2035,22 @@ Regras:
         state.activePhotoIndex = (state.activePhotoIndex + 1) % house.fotos.length;
         renderDetailDrawer(house);
       });
+
+      // Touch swipe left/right on real photo gallery
+      const heroBox = el.drawerBody.querySelector(".detail-hero");
+      if (heroBox) {
+        let startX = 0;
+        heroBox.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; }, { passive: true });
+        heroBox.addEventListener("touchend", (e) => {
+          const dx = e.changedTouches[0].clientX - startX;
+          if (Math.abs(dx) > 40) {
+            state.activePhotoIndex = dx < 0
+              ? (state.activePhotoIndex + 1) % house.fotos.length
+              : (state.activePhotoIndex - 1 + house.fotos.length) % house.fotos.length;
+            renderDetailDrawer(house);
+          }
+        }, { passive: true });
+      }
     }
 
     // Wire routine anchor cards (Escola & Trabalho)
@@ -2163,6 +2263,7 @@ Regras:
               <div class="compare-row"><span>Bairro</span><strong>${escapeHtml(h.bairro)}</strong></div>
               <div class="compare-row"><span>Área útil</span><strong>${h.area_m2 ? `${h.area_m2} m²` : "—"}</strong></div>
               <div class="compare-row"><span>Quartos / Vagas</span><strong>${h.quartos || "—"} qtos · ${h.vagas || "—"} vagas</strong></div>
+              <div class="compare-row"><span>Móveis</span><strong>${h.moveis ? "Com móveis" : "Sem móveis"}</strong></div>
               <div class="compare-row"><span>Pets / Quintal</span><strong>${h.aceita_pets ? "Sim" : "Não"} · ${h.quintal ? "Quintal" : "—"}</strong></div>
               <div class="compare-row"><span>Nota entorno</span><strong>${h.overallScore}/100</strong></div>
               <div class="compare-row"><span>Escola</span><strong>${formatDistance(h.schoolDist)} (${driveMinutes(h.schoolDist)} min)</strong></div>
@@ -2302,6 +2403,7 @@ Regras:
       finalidade: "todas",
       minQuartos: 0,
       sort: "score",
+      moveis: false,
       pets: false,
       quintal: false,
       favoritas: false,

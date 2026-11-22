@@ -83,7 +83,16 @@
           "terreno_m2": { "type": "number", "minimum": 0 },
           "aceita_pets": { "type": "boolean", "default": true },
           "quintal": { "type": "boolean", "default": false },
-          "mobiliada": { "type": "boolean", "default": false },
+          "moveis": {
+            "type": "boolean",
+            "default": false,
+            "description": "Indica se o imóvel possui móveis (true = com móveis / mobiliado, false = sem móveis)."
+          },
+          "mobiliada": {
+            "type": "boolean",
+            "default": false,
+            "description": "Alias opcional de moveis (mantido por compatibilidade)."
+          },
           "destaque": { "type": "boolean", "default": false },
           "descricao": {
             "type": "string",

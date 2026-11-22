@@ -47,7 +47,12 @@
     "jardim universitario": { "lat": -23.4035, "lng": -51.9445 },
     "parque das grevileas": { "lat": -23.4335, "lng": -51.9585 },
     "jardim liberdade": { "lat": -23.3985, "lng": -51.9065 },
-    "conjunto borba gato": { "lat": -23.4465, "lng": -51.9510 }
+    "conjunto borba gato": { "lat": -23.4465, "lng": -51.9510 },
+    "vila bosque": { "lat": -23.4380, "lng": -51.9270 },
+    "vila cleopatra": { "lat": -23.4384, "lng": -51.9403 },
+    "vila santo antonio": { "lat": -23.4080, "lng": -51.9285 },
+    "vila marumby": { "lat": -23.4452, "lng": -51.9279 },
+    "jardim universo": { "lat": -23.4565, "lng": -51.9445 }
   },
   "ciclovias": [
     {

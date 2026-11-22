@@ -817,6 +817,85 @@ body[data-tab="salvas"] .saved-head { display: flex; }
 .pill-badge--compra { color: #1d4ed8; }
 .pill-badge--status { background: #17211d; color: #fff; }
 .pill-badge--destaque { background: var(--terra); color: #fff; }
+.pill-badge--moveis { background: #fef3c7; color: #92400e; border: 1px solid rgba(217, 119, 6, 0.25); }
+
+.house-card__footer-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 8px;
+  margin-top: 2px;
+  border-top: 1px solid var(--border);
+}
+.card-go-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border-radius: var(--radius-pill);
+  background: var(--green);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.14s, transform 0.1s;
+}
+.card-go-btn:hover { background: var(--green-hover); }
+.card-go-btn:active { transform: scale(0.96); }
+.card-go-btn svg { width: 14px; height: 14px; }
+.card-details-hint {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-subtle);
+}
+
+.detail-top-cta {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0 14px;
+}
+.detail-top-cta .btn-primary {
+  flex: 1;
+  min-height: 44px;
+  font-size: 14px;
+}
+.detail-top-cta .btn-primary svg { width: 16px; height: 16px; }
+
+.peek-card__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin-top: 3px;
+}
+.peek-go-link {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  background: var(--green);
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.peek-go-link svg { width: 11px; height: 11px; }
+.peek-moveis-badge {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  padding: 2px 6px;
+  border-radius: var(--radius-pill);
+  font-size: 9.5px;
+  font-weight: 700;
+  background: #fef3c7;
+  color: #92400e;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
 
 .house-card__top-actions {
   position: absolute;
@@ -1219,11 +1298,25 @@ body[data-tab="salvas"] .saved-head { display: flex; }
 
 .detail-hero {
   position: relative;
-  height: 210px;
+  height: 224px;
   background: var(--surface-soft);
   overflow: hidden;
+  touch-action: pan-y;
 }
 .detail-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.detail-hero__counter {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 3px 9px;
+  border-radius: var(--radius-pill);
+  background: rgba(23, 33, 29, 0.72);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  backdrop-filter: blur(6px);
+}
 .detail-hero__nav {
   position: absolute;
   bottom: 10px;

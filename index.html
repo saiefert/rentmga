@@ -95,6 +95,7 @@
 
           <select id="sortFilter" class="select-pill" aria-label="Ordenar por">
             <option value="score">Melhor entorno</option>
+            <option value="moveis">Com móveis primeiro</option>
             <option value="rotina">Perto Escola + Trabalho</option>
             <option value="escola">Mais perto da Escola</option>
             <option value="trabalho">Mais perto do Trabalho</option>
@@ -106,6 +107,9 @@
         </div>
 
         <div class="filters__chips" role="group" aria-label="Filtros de destaque">
+          <button type="button" class="chip" data-toggle="moveis">
+            <span class="chip__ico" data-ico="sofa"></span>Com móveis
+          </button>
           <button type="button" class="chip" data-toggle="pets">
             <span class="chip__ico" data-ico="pet"></span>Aceita pets
           </button>
@@ -329,6 +333,9 @@
         <div class="filter-group">
           <label class="filter-group__label">Características da casa</label>
           <div class="choice-wrap">
+            <button type="button" class="chip chip--lg" data-toggle="moveis">
+              <span class="chip__ico" data-ico="sofa"></span>Com móveis
+            </button>
             <button type="button" class="chip chip--lg" data-toggle="pets">
               <span class="chip__ico" data-ico="pet"></span>Aceita pets
             </button>
@@ -356,6 +363,7 @@
           <label class="filter-group__label" for="sheetSortSelect">Ordenar por</label>
           <select id="sheetSortSelect" class="select-full">
             <option value="score">Melhor nota de entorno</option>
+            <option value="moveis">Com móveis primeiro</option>
             <option value="rotina">Mais perto da Escola + Trabalho</option>
             <option value="escola">Mais perto da Escola</option>
             <option value="trabalho">Mais perto do Trabalho</option>
