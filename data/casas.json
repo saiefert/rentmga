@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-22T15:51:10-03:00",
+  "atualizado_em": "2026-11-22T16:26:24-03:00",
   "fonte": "Grokbot",
   "cidade": "Maringá - PR",
   "observacao": "Varredura Zona 8 + Av. Brasil/Cerro Azul em Maringá-PR: no mínimo 2 quartos e 2 banheiros (suíte conta como banheiro; lavabo não). Teto do site: aluguel + condomínio até R$ 2.350 (IPTU à parte). Teto do e-mail para Dionizia permanece R$ 2.200. Excluídos: Cidade Alta, Conjunto Requião e Jardim Alvorada. Imóveis entre R$ 2.200 e R$ 2.350 entram só no site, com a etiqueta “Acima de R$ 2.200”.",
@@ -59,7 +59,16 @@
       "tags": [
         "Elevador"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/3420000924/locacao/apartamento-em-maringa-pr/zona-03",
       "portal": "Sub100 (Shimizu Imóveis)",
       "encontrado_em": "2026-11-19",
@@ -92,7 +101,16 @@
       "descricao": "Rua São Pedro, 2079, 2º andar. 61 m², 1 suíte. 61 m², 1 suíte. Condomínio aprox. R$ 558 a R$ 568 + despesas variáveis. Isento de IPTU. Tel. (44) 3112-1569.",
       "nota_grokbot": "Imobiliária: Silvio Iwata. Sem elevador (NÃO (anúncio diz sem elevador, sem portaria)). ~1,0 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 1.658.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008360/3620008360a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008360/3620008360b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008360/3620008360c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008360/3620008360d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008360/3620008360e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008360/3620008360f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008360/3620008360g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008360/3620008360h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/3620008360/locacao/apartamento-em-maringa-pr/zona-07",
       "portal": "Sub100 (Silvio Iwata)",
       "encontrado_em": "2026-11-19",
@@ -123,11 +141,20 @@
       "area_m2": 55,
       "destaque": false,
       "descricao": "Rua Mem de Sá, 1869. 55 m², 1 suíte. 55 m², 1 suíte, portaria, salão de festas, academia. Aluguel vale para pagamento pontual; seguro incêndio obrigatório. Tel. (44) 3025-5755.",
-      "nota_grokbot": "Imobiliária: Galanti Imóveis. Elevador: sim (2 elevadores). ~800 m da ciclovia da Av. Cerro Azul (linha reta, aproximado). Total aluguel + condomínio: R$ 1.750.",
+      "nota_grokbot": "Imobiliária: Galanti Imóveis. Elevador: sim (2 elevadores). ~800 m da ciclovia da Av. Cerro Azul (linha reta, aproximado). Total aluguel + condomínio: R$ 1.750. A descrição cita geladeira na cozinha, mas não diz que o imóvel é mobiliado.",
       "tags": [
         "Elevador"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/571/57120000435/57120000435a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/571/57120000435/57120000435b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/571/57120000435/57120000435c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/571/57120000435/57120000435d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/571/57120000435/57120000435e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/571/57120000435/57120000435f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/571/57120000435/57120000435g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/571/57120000435/57120000435h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/57120000435/locacao/apartamento-em-maringa-pr/vila-bosque",
       "portal": "Sub100 (Galanti Imóveis)",
       "encontrado_em": "2026-11-19",
@@ -160,7 +187,16 @@
       "descricao": "Av. Dr. Mário Clapier Urbinati, 332, ap 403. 72 m², 1 suíte. 72 m², 1 suíte com banheira. Tel. (44) 3225-5858.",
       "nota_grokbot": "Imobiliária: Lélo Imóveis. Elevador não informado. ~2,2 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 1.710.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/2020007694/locacao/apartamento-em-maringa-pr/zona-07",
       "portal": "Sub100 (Lélo Imóveis)",
       "encontrado_em": "2026-11-19",
@@ -191,13 +227,24 @@
       "area_m2": 82,
       "destaque": false,
       "descricao": "Rua Prof. Carlos Weiss, 50, 2º andar, ap 12. 82 m². 82 m², mobiliado. No limite de R$ 2.000, fora IPTU (R$ 110). Aluguel só vale se pago até dia 10 (depois R$ 1.860). ATENÇÃO: a descrição cita banheiro social + lavabo; confirmar se há 2 banheiros completos. Tel. (44) 3354-6097.",
-      "nota_grokbot": "Imobiliária: FG4 Imóveis. Elevador não informado. ~1,4 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.000. A confirmar: se o 2º banheiro não é só lavabo.",
-      "tags": [],
-      "fotos": [],
+      "nota_grokbot": "Imobiliária: FG4 Imóveis. Elevador não informado. ~1,4 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.000. Mobiliado, segundo o anúncio. A confirmar: se o 2º banheiro não é só lavabo.",
+      "tags": [
+        "Mobiliado"
+      ],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/591/59120000265/59120000265a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/591/59120000265/59120000265b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/591/59120000265/59120000265c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/591/59120000265/59120000265d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/591/59120000265/59120000265e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/591/59120000265/59120000265f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/591/59120000265/59120000265g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/591/59120000265/59120000265h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/59120000265/locacao/apartamento-em-maringa-pr/zona-07",
       "portal": "Sub100 (FG4 Imóveis)",
       "encontrado_em": "2026-11-19",
-      "mobiliada": true,
+      "moveis": true,
       "lat": -23.4083033,
       "lng": -51.9405233,
       "proximidades": [
@@ -227,7 +274,16 @@
       "descricao": "Rua Rui Barbosa, 1039 (fundos). 40 m². 40 m² construídos, 2 vagas descobertas, acesso pela garagem da casa da frente. Banheiros: 1 social + 1 de serviço (confirmar). Tel. (44) 3293-0481.",
       "nota_grokbot": "Imobiliária: Shimizu Imóveis. Elevador não informado. ~630 m da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 1.000. A confirmar: se a casa é térrea.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002338/3420002338a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002338/3420002338b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002338/3420002338c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002338/3420002338d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002338/3420002338e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002338/3420002338f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002338/3420002338g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002338/3420002338h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/3420002338/locacao/casa-em-maringa-pr/zona-07",
       "portal": "Sub100 (Shimizu Imóveis)",
       "encontrado_em": "2026-11-19",
@@ -259,7 +315,16 @@
       "descricao": "Rua Shalon, 112. 3 quartos, 2 banheiros, churrasqueira, 5 vagas descobertas, amplo quintal. IPTU não informado; \"valores já contemplam bonificações, válidos só para pagamento pontual\". Atualizado 11/11/2026.",
       "nota_grokbot": "Imobiliária: Sândalo Imóveis. Elevador não informado. ~690 m da ciclovia da Av. Cerro Azul (linha reta, aproximado). Total aluguel + condomínio: R$ 1.700. A confirmar: se a casa é térrea, IPTU.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-1.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-2.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-4.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-5.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-6.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-7.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-8.jpg"
+      ],
       "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-vila-cleopatra-134m2-RS1700/id-32680545/",
       "portal": "Chaves na Mão (Sândalo Imóveis, ref. 01170.002)",
       "encontrado_em": "2026-11-19",
@@ -289,11 +354,21 @@
       "banheiros": 2,
       "destaque": false,
       "descricao": "Av. Brasil, 3006, ap 01. 2º banheiro é de serviço (1 social + 1 de serviço). IPTU R$ 232 à parte (com IPTU ≈ R$ 2.132). Dentro da regra aluguel+cond ≤ R$ 2.000.",
-      "nota_grokbot": "Imobiliária: Shimizu Imóveis. Sem elevador (NÃO). Perto da ciclovia da Av. Brasil (~30 m, linha reta). Total aluguel + condomínio: R$ 1.900.",
+      "nota_grokbot": "Imobiliária: Shimizu Imóveis. Sem elevador (NÃO). Perto da ciclovia da Av. Brasil (~30 m, linha reta). Total aluguel + condomínio: R$ 1.900. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado).",
       "tags": [
-        "Perto da ciclovia"
+        "Perto da ciclovia",
+        "Móveis planejados"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002302/3420002302a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002302/3420002302b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002302/3420002302c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002302/3420002302d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002302/3420002302e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002302/3420002302f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002302/3420002302g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002302/3420002302h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/3420002302/locacao/apartamento-em-maringa-pr/zona-03",
       "portal": "Sub100 (Shimizu Imóveis; achado do navegador pelo agente principal)",
       "encontrado_em": "2026-11-19",
@@ -326,7 +401,16 @@
       "tags": [
         "Perto da ciclovia"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/39984618/pr-maringa-avenida-brasil-apartamento-para-alugar-3-quartos-6ac639f4-1.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/39984618/pr-maringa-avenida-brasil-apartamento-para-alugar-3-quartos-6ac639f4-2.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/39984618/pr-maringa-avenida-brasil-apartamento-para-alugar-3-quartos-6ac639f4-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/39984618/pr-maringa-avenida-brasil-apartamento-para-alugar-3-quartos-6ac639f4-4.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/39984618/pr-maringa-avenida-brasil-apartamento-para-alugar-3-quartos-6ac639f4-5.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/39984618/pr-maringa-avenida-brasil-apartamento-para-alugar-3-quartos-6ac639f4-6.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/39984618/pr-maringa-avenida-brasil-apartamento-para-alugar-3-quartos-6ac639f4-7.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/39984618/pr-maringa-avenida-brasil-apartamento-para-alugar-3-quartos-6ac639f4-8.jpg"
+      ],
       "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-3-quartos-pr-maringa-zona-01-100m2-RS1500/id-39984618/",
       "portal": "Chaves na Mão (Silvio Iwata, ref. 00003249; também aparece no ZAP)",
       "encontrado_em": "2026-11-19",
@@ -353,9 +437,18 @@
       "area_m2": 90,
       "destaque": false,
       "descricao": "90 m². 90 m². Título diz 3 quartos, texto diz 2 dormitórios + 2 banheiros. CONDOMÍNIO NÃO INFORMADO. Distância é só da Zona 07 (sem rua), baixa confiança.",
-      "nota_grokbot": "Imobiliária: Locar Fácil / Mais Fácil. Elevador não informado. ~940 m da ciclovia da Av. Brasil (linha reta, aproximado). Condomínio não informado (aluguel R$ 1.800); só serve se o condomínio for até R$ 550 para caber no teto do site. A confirmar: condomínio.",
+      "nota_grokbot": "Imobiliária: Locar Fácil / Mais Fácil. Elevador não informado. ~940 m da ciclovia da Av. Brasil (linha reta, aproximado). Condomínio não informado (aluguel R$ 1.800); só serve se o condomínio for até R$ 550 para caber no teto do site. A lista de características do anúncio marca “Cozinha mobiliada” (armários); isso não significa que o imóvel inteiro venha mobiliado. A confirmar: condomínio.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47409108/pr-maringa-zona-07-apartamento-para-alugar-3-quartos-6af381e2-4.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47409108/pr-maringa-zona-07-apartamento-para-alugar-3-quartos-6af381e2-1.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47409108/pr-maringa-zona-07-apartamento-para-alugar-3-quartos-6af381e2-2.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47409108/pr-maringa-zona-07-apartamento-para-alugar-3-quartos-6af381e2-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47409108/pr-maringa-zona-07-apartamento-para-alugar-3-quartos-6af381e2-5.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47409108/pr-maringa-zona-07-apartamento-para-alugar-3-quartos-6af381e2-6.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47409108/pr-maringa-zona-07-apartamento-para-alugar-3-quartos-6af381e2-7.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47409108/pr-maringa-zona-07-apartamento-para-alugar-3-quartos-6af381e2-8.jpg"
+      ],
       "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-3-quartos-pr-maringa-zona-07-90m2-RS1800/id-47409108/",
       "portal": "Chaves na Mão (Locar Fácil / Mais Fácil, ref. APT40)",
       "encontrado_em": "2026-11-19",
@@ -386,7 +479,16 @@
       "descricao": "Rua Américo Brasiliense, 831, sobreloja 02. 100 m², 1 suíte. 100 m². O R$ 80 é taxa de limpeza da área comum. 1 suíte + social; vaga só para moto. Última atualização do anúncio 30/03/2026 (pode estar velho). Geocodificação da rua pelo OSM pode estar imprecisa.",
       "nota_grokbot": "Imobiliária: RS Imóveis. Elevador não informado. ~570 m da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 1.880.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/503185/38782233/pr-maringa-vila-morangueira-rua-americo-brasiliense-apartamento-para-alugar-3-quartos-697362de-1.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/503185/38782233/pr-maringa-vila-morangueira-rua-americo-brasiliense-apartamento-para-alugar-3-quartos-697362de-2.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/503185/38782233/pr-maringa-vila-morangueira-rua-americo-brasiliense-apartamento-para-alugar-3-quartos-69aac263-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/503185/38782233/pr-maringa-vila-morangueira-rua-americo-brasiliense-apartamento-para-alugar-3-quartos-697362de-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/503185/38782233/pr-maringa-vila-morangueira-rua-americo-brasiliense-apartamento-para-alugar-3-quartos-69aac263-5.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/503185/38782233/pr-maringa-vila-morangueira-rua-americo-brasiliense-apartamento-para-alugar-3-quartos-69aac263-6.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/503185/38782233/pr-maringa-vila-morangueira-rua-americo-brasiliense-apartamento-para-alugar-3-quartos-69aac263-7.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/503185/38782233/pr-maringa-vila-morangueira-rua-americo-brasiliense-apartamento-para-alugar-3-quartos-69aac263-8.jpg"
+      ],
       "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-3-quartos-pr-maringa-vila-morangueira-100m2-RS1800/id-38782233/",
       "portal": "Chaves na Mão (RS Imóveis, ref. 00000598)",
       "encontrado_em": "2026-11-19",
@@ -418,7 +520,16 @@
       "descricao": "100 m². 100 m², 3 quartos, 2 banheiros, 2 vagas. Publicado em 19/11/2026. Fica longe das duas ciclovias (cerca de 2 km da Av. Brasil e mais de 4 km da Cerro Azul); baixa confiança na posição (centro do bairro).",
       "nota_grokbot": "Imobiliária: Locar Fácil / Mais Fácil. Elevador não informado. ~1,8 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 1.500. A confirmar: se a casa é térrea.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-1.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-2.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-4.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-5.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-6.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-7.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-8.jpg"
+      ],
       "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-jardim-liberdade-150m2-RS1500/id-49057699/",
       "portal": "Chaves na Mão (Locar Fácil / Mais Fácil, ref. CAS103)",
       "encontrado_em": "2026-11-19",
@@ -446,12 +557,22 @@
       "vagas": 1,
       "destaque": true,
       "descricao": "Travessa Liberdade, 175, ap 305, Zona 08 (Edifício Platinum). 1 suíte. IPTU não informado no anúncio (o Viva Real diz isento).",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Com elevador. Perto da ciclovia da Av. Brasil (~450 m, linha reta). Total aluguel + condomínio: R$ 2.180. A confirmar: IPTU.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis. Com elevador. Perto da ciclovia da Av. Brasil (~450 m, linha reta). Total aluguel + condomínio: R$ 2.180. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado). A confirmar: IPTU.",
       "tags": [
         "Elevador",
-        "Perto da ciclovia"
+        "Perto da ciclovia",
+        "Móveis planejados"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/2020007876/locacao/apartamento-em-maringa-pr/zona-08",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
@@ -486,7 +607,16 @@
         "Elevador",
         "Perto da ciclovia"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/3620008445/locacao/apartamento-em-maringa-pr/zona-03",
       "portal": "Sub100 + Chaves na Mão",
       "encontrado_em": "2026-11-21",
@@ -516,11 +646,21 @@
       "vagas": 1,
       "destaque": false,
       "descricao": "Rua Santos Dumont, 1420, ap 503, Zona 03. confirmar elevador.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Elevador não informado. Perto da ciclovia da Av. Brasil (~100 m, linha reta). Total aluguel + condomínio: R$ 2.160. A confirmar: elevador.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis. Elevador não informado. Perto da ciclovia da Av. Brasil (~100 m, linha reta). Total aluguel + condomínio: R$ 2.160. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado). A confirmar: elevador.",
       "tags": [
-        "Perto da ciclovia"
+        "Perto da ciclovia",
+        "Móveis planejados"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004830/2020004830a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004830/2020004830b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004830/2020004830c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004830/2020004830d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004830/2020004830e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004830/2020004830f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004830/2020004830g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004830/2020004830h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/2020004830/locacao/apartamento-em-maringa-pr/zona-03",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
@@ -555,7 +695,16 @@
       "tags": [
         "Perto da ciclovia"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007537/2020007537a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007537/2020007537b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007537/2020007537c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007537/2020007537d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007537/2020007537e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007537/2020007537f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007537/2020007537g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007537/2020007537h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/2020007537/locacao/apartamento-em-maringa-pr/zona-06",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
@@ -591,7 +740,16 @@
         "Elevador",
         "Perto da ciclovia"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/199931/15032069/pr-maringa-zona-03-avenida-paissandu-apartamento-para-alugar-3-quartos-6a770641-1.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/199931/15032069/pr-maringa-zona-03-avenida-paissandu-apartamento-para-alugar-3-quartos-69eb590f-2.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/199931/15032069/pr-maringa-zona-03-avenida-paissandu-apartamento-para-alugar-3-quartos-69eb590f-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/199931/15032069/pr-maringa-zona-03-avenida-paissandu-apartamento-para-alugar-3-quartos-69eb590f-4.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/199931/15032069/pr-maringa-zona-03-avenida-paissandu-apartamento-para-alugar-3-quartos-69eb590f-5.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/199931/15032069/pr-maringa-zona-03-avenida-paissandu-apartamento-para-alugar-3-quartos-69eb590f-6.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/199931/15032069/pr-maringa-zona-03-avenida-paissandu-apartamento-para-alugar-3-quartos-69eb590f-7.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/199931/15032069/pr-maringa-zona-03-avenida-paissandu-apartamento-para-alugar-3-quartos-69eb590f-8.jpg"
+      ],
       "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-3-quartos-com-garagem-pr-maringa-zona-03-RS1600/id-15032069/",
       "portal": "Chaves na Mão",
       "encontrado_em": "2026-11-21",
@@ -620,11 +778,20 @@
       "area_m2": 48,
       "destaque": false,
       "descricao": "Rua Campos Sales, 91, 3º andar, Zona 07 (Edifício Buriti). 48 m², 2 suítes. nada importante; a área aparece diferente nos dois sites (48 m² e 87 m²).",
-      "nota_grokbot": "Imobiliária: Silvio Iwata (ref. 00004523). Com elevador. ~550 m da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.060.",
+      "nota_grokbot": "Imobiliária: Silvio Iwata (ref. 00004523). Com elevador. ~550 m da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.060. A descrição cita fogão na cozinha, mas não diz que o imóvel é mobiliado.",
       "tags": [
         "Elevador"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523h.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523i.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/3620008523/locacao/duplex-em-maringa-pr/zona-07",
       "portal": "Sub100 + Chaves na Mão",
       "encontrado_em": "2026-11-21",
@@ -657,7 +824,16 @@
       "descricao": "Rua Marciano Halchuk, 356, Vila Bosque. 69 m², 1 suíte. confirmar elevador.",
       "nota_grokbot": "Imobiliária: Croti Imóveis. Elevador não informado. ~600 m da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.000. A confirmar: elevador.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/299/29920000181/29920000181a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/299/29920000181/29920000181b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/299/29920000181/29920000181c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/299/29920000181/29920000181d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/299/29920000181/29920000181e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/299/29920000181/29920000181f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/299/29920000181/29920000181g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/299/29920000181/29920000181h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/29920000181/locacao/apartamento-em-maringa-pr/vila-bosque",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
@@ -688,7 +864,16 @@
       "descricao": "Rua Américo Brasiliense, 831, Vila Morangueira. 1 suíte. é a outra sobreloja do mesmo prédio da que já está na lista (sobreloja 02); o R$ 80 é taxa de limpeza.",
       "nota_grokbot": "Imobiliária: RS Imóveis. Elevador não informado. ~600 m da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 1.880.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000579/3220000579a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000579/3220000579b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000579/3220000579c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000579/3220000579d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000579/3220000579e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000579/3220000579f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000579/3220000579g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000579/3220000579h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/3220000579/locacao/apartamento-em-maringa-pr/vila-morangueira",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
@@ -719,9 +904,20 @@
       "area_m2": 75,
       "destaque": false,
       "descricao": "Zona 07, entre a Av. Herval e a Av. São Paulo (provavelmente Rua Líbero Badaró). 75 m², 1 suíte. confirmar o endereço; condomínio aproximado, mais rateio de água e gás.",
-      "nota_grokbot": "Imobiliária: Massaru Imóveis (ref. 00001313). Sem elevador (NÃO). ~900 m da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.200.",
-      "tags": [],
-      "fotos": [],
+      "nota_grokbot": "Imobiliária: Massaru Imóveis (ref. 00001313). Sem elevador (NÃO). ~900 m da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.200. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado).",
+      "tags": [
+        "Móveis planejados"
+      ],
+      "fotos": [
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/114678/47656458/pr-maringa-zona-07-rua-libero-badaro-apartamento-para-alugar-2-quartos-6acb54a4-1.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/114678/47656458/pr-maringa-zona-07-rua-libero-badaro-apartamento-para-alugar-2-quartos-6acb54a4-2.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/114678/47656458/pr-maringa-zona-07-rua-libero-badaro-apartamento-para-alugar-2-quartos-6acb54a4-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/114678/47656458/pr-maringa-zona-07-rua-libero-badaro-apartamento-para-alugar-2-quartos-6acb54a4-4.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/114678/47656458/pr-maringa-zona-07-rua-libero-badaro-apartamento-para-alugar-2-quartos-6acb54a4-5.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/114678/47656458/pr-maringa-zona-07-rua-libero-badaro-apartamento-para-alugar-2-quartos-6acb54a4-6.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/114678/47656458/pr-maringa-zona-07-rua-libero-badaro-apartamento-para-alugar-2-quartos-6acb54a4-7.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/114678/47656458/pr-maringa-zona-07-rua-libero-badaro-apartamento-para-alugar-2-quartos-6acb54a4-8.jpg"
+      ],
       "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-maringa-zona-07-110m2-RS1700/id-47656458/",
       "portal": "Chaves na Mão",
       "encontrado_em": "2026-11-21",
@@ -750,14 +946,18 @@
       "area_m2": 67,
       "destaque": false,
       "descricao": "Rua Tietê, 438, ap 302, Zona 07. 67 m², 1 suíte. nada importante.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Com elevador. ~1,1 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.050.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis. Com elevador. ~1,1 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.050. Semimobiliado, segundo o anúncio. A descrição cita mesa na cozinha (além de armários); por isso foi marcado como semimobiliado.",
       "tags": [
-        "Elevador"
+        "Elevador",
+        "Semimobiliado"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://media.sub100.com.br/imoveis/20/2020003398/2020003398am.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/2020003398/locacao/apartamento-em-maringa-pr/zona-07",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
+      "moveis": true,
       "lat": -23.4111592,
       "lng": -51.9457419,
       "proximidades": [
@@ -785,9 +985,20 @@
       "area_m2": 84,
       "destaque": false,
       "descricao": "Rua Mandaguari, 354, Zona 07. 84 m², 1 suíte. confirmar elevador.",
-      "nota_grokbot": "Imobiliária: Portal das Locações. Elevador não informado. ~1,2 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.200. A confirmar: elevador.",
-      "tags": [],
-      "fotos": [],
+      "nota_grokbot": "Imobiliária: Portal das Locações. Elevador não informado. ~1,2 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.200. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado). A confirmar: elevador.",
+      "tags": [
+        "Móveis planejados"
+      ],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/704/70420000066/70420000066a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/704/70420000066/70420000066b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/704/70420000066/70420000066c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/704/70420000066/70420000066d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/704/70420000066/70420000066e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/704/70420000066/70420000066f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/704/70420000066/70420000066g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/704/70420000066/70420000066h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/70420000066/locacao/apartamento-em-maringa-pr/zona-07",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
@@ -819,7 +1030,16 @@
       "descricao": "Rua Marechal Cândido Rondon, 59, ap 204, Vila Santo Antônio. 1 suíte. confirmar elevador.",
       "nota_grokbot": "Imobiliária: Medeiros Imobiliária. Elevador não informado. ~1,3 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.100. A confirmar: elevador.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/981/98120000343/98120000343a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/981/98120000343/98120000343b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/981/98120000343/98120000343c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/981/98120000343/98120000343d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/981/98120000343/98120000343e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/981/98120000343/98120000343f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/981/98120000343/98120000343g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/981/98120000343/98120000343h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/98120000343/locacao/apartamento-em-maringa-pr/vila-santo-antonio",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
@@ -851,7 +1071,16 @@
       "descricao": "Av. Pedro Taques, 1612, Vila Morangueira. 120 m², 1 suíte. condomínio não informado (só cabe se for até R$ 200; sobreloja costuma não ter); vaga não informada.",
       "nota_grokbot": "Imobiliária: Bellakaza. Elevador não informado. ~1,3 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.000. A confirmar: condomínio.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/4/420001440/420001440a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/4/420001440/420001440b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/4/420001440/420001440c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/4/420001440/420001440d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/4/420001440/420001440e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/4/420001440/420001440f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/4/420001440/420001440g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/4/420001440/420001440h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/420001440/locacao/apartamento-em-maringa-pr/vila-morangueira",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
@@ -883,7 +1112,16 @@
       "descricao": "80 m². confirmar o endereço; pode ser no mesmo prédio da Rua Américo Brasiliense (mesma taxa de R$ 80).",
       "nota_grokbot": "Imobiliária: Locar Fácil / Mais Fácil (ref. APT60). Elevador não informado. ~1,0 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.080.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47995679/pr-maringa-vila-morangueira-apartamento-para-alugar-3-quartos-6af38213-1.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47995679/pr-maringa-vila-morangueira-apartamento-para-alugar-3-quartos-6af38213-2.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47995679/pr-maringa-vila-morangueira-apartamento-para-alugar-3-quartos-6af38213-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47995679/pr-maringa-vila-morangueira-apartamento-para-alugar-3-quartos-6af38213-4.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47995679/pr-maringa-vila-morangueira-apartamento-para-alugar-3-quartos-6af38213-5.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47995679/pr-maringa-vila-morangueira-apartamento-para-alugar-3-quartos-6af38213-6.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47995679/pr-maringa-vila-morangueira-apartamento-para-alugar-3-quartos-6af38213-7.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47995679/pr-maringa-vila-morangueira-apartamento-para-alugar-3-quartos-6af38213-8.jpg"
+      ],
       "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-3-quartos-com-garagem-pr-maringa-vila-morangueira-80m2-RS2000/id-47995679/",
       "portal": "Chaves na Mão",
       "encontrado_em": "2026-11-21",
@@ -916,7 +1154,16 @@
       "tags": [
         "Elevador"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007891/2020007891a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007891/2020007891b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007891/2020007891c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007891/2020007891d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007891/2020007891e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007891/2020007891f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007891/2020007891g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007891/2020007891h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/2020007891/locacao/apartamento-em-maringa-pr/vila-santo-antonio",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
@@ -951,7 +1198,16 @@
       "tags": [
         "Elevador"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/479314/47433385/pr-maringa-vila-marumby-nao-encontrado-apartamento-para-alugar-3-quartos-6ac46079-1.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/479314/47433385/pr-maringa-vila-marumby-nao-encontrado-apartamento-para-alugar-3-quartos-6ac46079-2.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/479314/47433385/pr-maringa-vila-marumby-nao-encontrado-apartamento-para-alugar-3-quartos-6ac46079-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/479314/47433385/pr-maringa-vila-marumby-nao-encontrado-apartamento-para-alugar-3-quartos-6ac46079-4.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/479314/47433385/pr-maringa-vila-marumby-nao-encontrado-apartamento-para-alugar-3-quartos-6ac46079-5.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/479314/47433385/pr-maringa-vila-marumby-nao-encontrado-apartamento-para-alugar-3-quartos-6ac46079-6.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/479314/47433385/pr-maringa-vila-marumby-nao-encontrado-apartamento-para-alugar-3-quartos-6ac46079-7.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/479314/47433385/pr-maringa-vila-marumby-nao-encontrado-apartamento-para-alugar-3-quartos-6ac46079-8.jpg"
+      ],
       "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-3-quartos-pr-maringa-vila-marumby-RS1700/id-47433385/",
       "portal": "Chaves na Mão",
       "encontrado_em": "2026-11-21",
@@ -986,7 +1242,16 @@
       "tags": [
         "Elevador"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003576/2020003576a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003576/2020003576b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003576/2020003576c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003576/2020003576d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003576/2020003576e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003576/2020003576f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003576/2020003576g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003576/2020003576h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/2020003576/locacao/apartamento-em-maringa-pr/zona-07",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
@@ -1017,7 +1282,16 @@
       "descricao": "Rua Clóvis Bevilaqua, 486, Zona 04. 110 m², 1 suíte. não diz se é térrea. IPTU de uns R$ 138 à parte.",
       "nota_grokbot": "Imobiliária: 2001. Elevador não informado. ~1,4 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.000. A confirmar: se a casa é térrea.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/30720000106/locacao/casa-em-maringa-pr/zona-04",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
@@ -1049,7 +1323,9 @@
       "descricao": "Rua Bogotá, 2264, Vila Morangueira. 1 suíte. não diz se é térrea.",
       "nota_grokbot": "Imobiliária: Daros. Elevador não informado. ~1,2 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.200. A confirmar: se a casa é térrea.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/946/94620001370/94620001370a.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/94620001370/locacao/casa-em-maringa-pr/vila-morangueira",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
@@ -1081,7 +1357,16 @@
       "descricao": "Rua Caxambu, 577, Vila Santo Antônio. 1 suíte. não diz se é térrea.",
       "nota_grokbot": "Imobiliária: RS Imóveis. Elevador não informado. ~1,8 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.200. A confirmar: se a casa é térrea.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000739/3220000739a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000739/3220000739b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000739/3220000739c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000739/3220000739d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000739/3220000739e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000739/3220000739f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000739/3220000739g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/32/3220000739/3220000739h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/3220000739/locacao/casa-em-maringa-pr/vila-santo-antonio",
       "portal": "Sub100 + Chaves na Mão",
       "encontrado_em": "2026-11-21",
@@ -1114,7 +1399,16 @@
       "descricao": "Rua Galáxia, Jardim Universo. 85 m², terreno de 150 m², 1 suíte. não diz se é térrea; fica longe das ciclovias. IPTU de R$ 126 à parte.",
       "nota_grokbot": "Imobiliária: Seb Imóveis. Elevador não informado. ~2,5 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.100. A confirmar: se a casa é térrea.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/64/6420000096/6420000096a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/64/6420000096/6420000096b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/64/6420000096/6420000096c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/64/6420000096/6420000096d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/64/6420000096/6420000096e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/64/6420000096/6420000096f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/64/6420000096/6420000096g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/64/6420000096/6420000096h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/6420000096/locacao/casa-em-maringa-pr/jardim-universo",
       "portal": "Sub100 + Chaves na Mão",
       "encontrado_em": "2026-11-21",
@@ -1148,7 +1442,16 @@
       "descricao": "Rua Pioneiro Mário Marangoni, 366-A, Jardim Universo. 99 m², 1 suíte. não diz se é térrea; o valor já tem desconto por pagar em dia; fica longe das ciclovias.",
       "nota_grokbot": "Imobiliária: Grou (ref. 354154). Elevador não informado. ~2,5 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.100. A confirmar: se a casa é térrea.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/656505/48163907/pr-maringa-jardim-universo-rua-pioneiro-mario-marangoni-casa-sobrado-para-alugar-3-quartos-6ae09af8-1.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/656505/48163907/pr-maringa-jardim-universo-rua-pioneiro-mario-marangoni-casa-sobrado-para-alugar-3-quartos-6ae09af8-2.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/656505/48163907/pr-maringa-jardim-universo-rua-pioneiro-mario-marangoni-casa-sobrado-para-alugar-3-quartos-6ae09af8-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/656505/48163907/pr-maringa-jardim-universo-rua-pioneiro-mario-marangoni-casa-sobrado-para-alugar-3-quartos-6ae09af8-4.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/656505/48163907/pr-maringa-jardim-universo-rua-pioneiro-mario-marangoni-casa-sobrado-para-alugar-3-quartos-6ae09af8-5.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/656505/48163907/pr-maringa-jardim-universo-rua-pioneiro-mario-marangoni-casa-sobrado-para-alugar-3-quartos-6ae09af8-6.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/656505/48163907/pr-maringa-jardim-universo-rua-pioneiro-mario-marangoni-casa-sobrado-para-alugar-3-quartos-6ae09af8-7.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/656505/48163907/pr-maringa-jardim-universo-rua-pioneiro-mario-marangoni-casa-sobrado-para-alugar-3-quartos-6ae09af8-8.jpg"
+      ],
       "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-jardim-universo-RS2100/id-48163907/",
       "portal": "Chaves na Mão",
       "encontrado_em": "2026-11-21",
@@ -1182,7 +1485,16 @@
       "descricao": "Rua Inhaúma, 5558, 3º andar, Zona 03 (perto do Parque do Ingá). 52 m², 1 suíte. Estava na lista Sub100 da rodada 14h (e em raw/dist_in.json), mas não entrou em estado.json nem nos descartados; reapareceu no Viva Real/ZAP (Zona 03, 52 m², R$1.700 + R$400). Atende aos critérios com o teto de R$2.200. Falta confirmar: elevador, IPTU e se continua disponível.",
       "nota_grokbot": "Imobiliária: Z3, CRECI J07269, ref. 00000519, tel/WhatsApp (44) 99859-3969. Elevador não informado. ~620 m da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.100. A confirmar: elevador, IPTU, se ainda está disponível.",
       "tags": [],
-      "fotos": [],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/952/95220000505/95220000505a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/952/95220000505/95220000505b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/952/95220000505/95220000505c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/952/95220000505/95220000505d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/952/95220000505/95220000505e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/952/95220000505/95220000505f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/952/95220000505/95220000505g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/952/95220000505/95220000505h.jpg"
+      ],
       "link": "https://sub100.com.br/imoveis/95220000505/locacao/apartamento-em-maringa-pr/zona-03",
       "portal": "Sub100 (Imobiliária Z3; também no Viva Real/ZAP)",
       "encontrado_em": "2026-11-21",
