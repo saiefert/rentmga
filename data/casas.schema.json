@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.github.io/maringa-casas/data/casas.schema.json",
+  "title": "Casas em Maringá (Grokbot Feed)",
+  "description": "Formato simples de JSON para o Grokbot atualizar as casas encontradas em Maringá-PR.",
+  "type": "object",
+  "required": ["casas"],
+  "properties": {
+    "atualizado_em": {
+      "type": "string",
+      "description": "Data/hora da última atualização (ISO 8601, ex: 2026-11-22T14:30:00-03:00)."
+    },
+    "fonte": {
+      "type": "string",
+      "description": "Nome do buscador/agente que gerou o JSON (ex: Grokbot)."
+    },
+    "cidade": {
+      "type": "string",
+      "default": "Maringá - PR"
+    },
+    "observacao": {
+      "type": "string",
+      "description": "Resumo geral opcional da rodada de busca."
+    },
+    "casas": {
+      "type": "array",
+      "description": "Lista de casas/imóveis encontrados.",
+      "items": {
+        "type": "object",
+        "required": ["titulo", "preco"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Identificador único estável (ex: casa-zona02-01). Usado para salvar favoritos e notas."
+          },
+          "titulo": {
+            "type": "string",
+            "description": "Título curto e claro do imóvel."
+          },
+          "finalidade": {
+            "type": "string",
+            "enum": ["aluguel", "compra"],
+            "default": "aluguel"
+          },
+          "tipo": {
+            "type": "string",
+            "description": "Ex: Casa, Sobrado, Casa em condomínio, Casa térrea.",
+            "default": "Casa"
+          },
+          "preco": {
+            "type": ["number", "string"],
+            "description": "Valor em reais (número, ex: 3200 ou 680000)."
+          },
+          "condominio": {
+            "type": ["number", "null"],
+            "description": "Valor mensal do condomínio em reais (opcional)."
+          },
+          "iptu": {
+            "type": ["number", "null"],
+            "description": "Valor mensal estimado do IPTU em reais (opcional)."
+          },
+          "bairro": {
+            "type": "string",
+            "description": "Bairro/Zona em Maringá (ex: Zona 02, Zona 07, Eurogarden, Jardim Alvorada)."
+          },
+          "endereco": {
+            "type": "string",
+            "description": "Rua/avenida aproximada (opcional)."
+          },
+          "lat": {
+            "type": "number",
+            "description": "Latitude decimal em Maringá (ex: -23.4312). Se omitida, o site posiciona automaticamente pelo bairro."
+          },
+          "lng": {
+            "type": "number",
+            "description": "Longitude decimal em Maringá (ex: -51.9318). Se omitida, o site posiciona automaticamente pelo bairro."
+          },
+          "quartos": { "type": "integer", "minimum": 0 },
+          "suites": { "type": "integer", "minimum": 0 },
+          "banheiros": { "type": "integer", "minimum": 0 },
+          "vagas": { "type": "integer", "minimum": 0 },
+          "area_m2": { "type": "number", "minimum": 0 },
+          "terreno_m2": { "type": "number", "minimum": 0 },
+          "aceita_pets": { "type": "boolean", "default": true },
+          "quintal": { "type": "boolean", "default": false },
+          "mobiliada": { "type": "boolean", "default": false },
+          "destaque": { "type": "boolean", "default": false },
+          "descricao": {
+            "type": "string",
+            "description": "Descrição resumida da casa."
+          },
+          "nota_grokbot": {
+            "type": "string",
+            "description": "Por que o Grokbot recomendou esta casa (pontos fortes/atenção)."
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Etiquetas curtas (ex: Quintal gramado, Rua arborizada, Energia solar)."
+          },
+          "fotos": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Lista de URLs de fotos (opcional; o site mostra uma ilustração limpa se vazio)."
+          },
+          "link": {
+            "type": "string",
+            "description": "URL do anúncio original."
+          },
+          "portal": {
+            "type": "string",
+            "description": "Origem do anúncio (ex: OLX, VivaReal, ZAP, Imobiliária local)."
+          },
+          "encontrado_em": {
+            "type": "string",
+            "description": "Data em que foi encontrado (YYYY-MM-DD)."
+          },
+          "proximidades": {
+            "type": "array",
+            "description": "Opcional: pontos extras descobertos pelo Grokbot perto desta casa (além do mapa automático de Maringá).",
+            "items": {
+              "type": "object",
+              "required": ["nome", "categoria"],
+              "properties": {
+                "nome": { "type": "string" },
+                "categoria": {
+                  "type": "string",
+                  "enum": ["pet", "ciclovia", "academia", "parque", "mercado", "cafe", "saude", "educacao"]
+                },
+                "distancia_m": { "type": "number" },
+                "lat": { "type": "number" },
+                "lng": { "type": "number" },
+                "detalhe": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "pontos_extras": {
+      "type": "array",
+      "description": "Opcional: pontos de interesse globais adicionais para exibir no mapa de Maringá.",
+      "items": {
+        "type": "object",
+        "required": ["nome", "categoria", "lat", "lng"],
+        "properties": {
+          "nome": { "type": "string" },
+          "categoria": {
+            "type": "string",
+            "enum": ["pet", "ciclovia", "academia", "parque", "mercado", "cafe", "saude", "educacao"]
+          },
+          "lat": { "type": "number" },
+          "lng": { "type": "number" },
+          "detalhe": { "type": "string" }
+        }
+      }
+    }
+  }
+}

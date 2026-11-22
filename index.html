@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Maringá Casas — Mapa &amp; Entorno</title>
+  <meta name="description" content="App web mobile-first para encontrar casas em Maringá-PR com mapa interativo de áreas para pets, ciclovias, academias, parques e serviços próximos.">
+  <meta name="theme-color" content="#1b5e43">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Maringá Casas">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-tab="mapa">
+
+  <!-- ============ APP HEADER (Desktop bar / Mobile floating search header) ============ -->
+  <header class="app-header" id="appHeader">
+    <a class="brand" href="./" aria-label="Maringá Casas — Início">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="9" fill="currentColor"/>
+          <path d="M8 15.8L16 9L24 15.8" stroke="#f7f6f2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10.5 14.5V23C10.5 23.6 10.9 24 11.5 24H20.5C21.1 24 21.5 23.6 21.5 23V14.5" stroke="#f7f6f2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 24V18.8C16 18.8 16.2 15.8 19.3 15.8C19.3 18.6 17.5 19.6 16 19.6" fill="#86efac" stroke="#86efac" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand__text">
+        <strong>Maringá Casas</strong>
+        <small>Cidade Canção · Mapa &amp; Entorno</small>
+      </span>
+    </a>
+
+    <div class="search-pill-row">
+      <label class="searchbox" aria-label="Buscar bairro, rua ou característica">
+        <svg class="ico searchbox__ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.9"/>
+          <path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+        </svg>
+        <input id="searchInput" type="search" placeholder="Bairro, rua, quintal, Zona 02…" autocomplete="off" enterkeyhint="search">
+        <button id="clearSearchBtn" class="searchbox__clear" type="button" hidden aria-label="Limpar busca">×</button>
+      </label>
+
+      <button id="openFiltersBtn" class="filter-fab" type="button" aria-label="Abrir filtros">
+        <svg class="ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M3 5.5h14M5.5 10h9M8 14.5h4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+        </svg>
+        <span class="filter-fab__badge" id="filterCountBadge" hidden>0</span>
+      </button>
+    </div>
+
+    <div class="header-desktop-actions">
+      <span id="feedStatus" class="feed-pill" title="Última atualização do arquivo data/casas.json">
+        <span class="feed-pill__dot"></span>
+        <span id="feedStatusText">Carregando…</span>
+      </span>
+
+      <button id="compareOpenBtn" class="btn-ghost" type="button" hidden>
+        <svg class="ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <rect x="2.5" y="4" width="6" height="12" rx="1.5" stroke="currentColor" stroke-width="1.7"/>
+          <rect x="11.5" y="4" width="6" height="12" rx="1.5" stroke="currentColor" stroke-width="1.7"/>
+        </svg>
+        <span>Comparar (<b id="compareCount">0</b>)</span>
+      </button>
+
+      <button id="jsonModalBtn" class="btn-outline" type="button" title="Integrar, testar ou baixar o JSON do Grokbot">
+        <svg class="ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M7 5L3 10L7 15M13 5L17 10L13 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>JSON Grokbot</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MAIN WORKSPACE ============ -->
+  <main class="workspace" id="workspace">
+
+    <!-- PANEL: LIST & SAVED (Full screen on mobile Lista/Salvas tabs; Left sidebar on desktop) -->
+    <aside class="sidebar" id="sidebar" aria-label="Lista de casas">
+
+      <!-- Compact inline filter bar (shown on Lista tab & desktop) -->
+      <section class="filters" id="inlineFilters" aria-label="Filtros rápidos">
+        <div class="filters__row">
+          <div class="segmented" role="group" aria-label="Finalidade">
+            <button type="button" class="segmented__btn is-active" data-finalidade="todas">Todas</button>
+            <button type="button" class="segmented__btn" data-finalidade="aluguel">Aluguel</button>
+            <button type="button" class="segmented__btn" data-finalidade="compra">Compra</button>
+          </div>
+
+          <select id="sortFilter" class="select-pill" aria-label="Ordenar por">
+            <option value="score">Melhor entorno</option>
+            <option value="rotina">Perto Escola + Trabalho</option>
+            <option value="escola">Mais perto da Escola</option>
+            <option value="trabalho">Mais perto do Trabalho</option>
+            <option value="preco_asc">Menor preço</option>
+            <option value="preco_desc">Maior preço</option>
+            <option value="area_desc">Maior área</option>
+            <option value="recente">Mais recentes</option>
+          </select>
+        </div>
+
+        <div class="filters__chips" role="group" aria-label="Filtros de destaque">
+          <button type="button" class="chip" data-toggle="pets">
+            <span class="chip__ico" data-ico="pet"></span>Aceita pets
+          </button>
+          <button type="button" class="chip" data-toggle="quintal">
+            <span class="chip__ico" data-ico="parque"></span>Quintal
+          </button>
+          <button type="button" class="chip" data-near="pet">Perto área pet</button>
+          <button type="button" class="chip" data-near="ciclovia">Perto ciclovia</button>
+          <button type="button" class="chip" data-near="academia">Perto academia</button>
+          <button type="button" class="chip chip--desktop-only" data-toggle="favoritas">
+            <span class="chip__ico" data-ico="heart"></span>Favoritas
+          </button>
+        </div>
+
+        <div class="filters__meta">
+          <span id="resultsCount">Carregando casas…</span>
+          <button id="resetFiltersBtn" type="button" class="link-btn" hidden>Limpar filtros</button>
+        </div>
+
+        <div id="previewBanner" class="preview-banner" hidden>
+          <span>Prévia JSON local (Grokbot)</span>
+          <button id="exitPreviewBtn" type="button">Voltar ao publicado</button>
+        </div>
+      </section>
+
+      <!-- Saved Tab Header (mobile Salvas tab) -->
+      <section class="saved-head" id="savedHead" aria-label="Minhas casas salvas">
+        <div class="saved-head__top">
+          <div>
+            <h2>Minhas casas</h2>
+            <p id="savedSubtitle">Favoritas, visitas e anotações</p>
+          </div>
+          <button id="mobileCompareBtn" class="btn-primary btn-sm" type="button" hidden>
+            Comparar (<span id="mobileCompareCount">0</span>)
+          </button>
+        </div>
+        <div class="saved-pills" role="tablist">
+          <button type="button" class="saved-pill is-active" data-saved-filter="all">Todas salvas</button>
+          <button type="button" class="saved-pill" data-saved-filter="fav">Favoritas</button>
+          <button type="button" class="saved-pill" data-saved-filter="visitar">Quero visitar</button>
+          <button type="button" class="saved-pill" data-saved-filter="visitada">Visitadas</button>
+        </div>
+      </section>
+
+      <!-- Listings Feed -->
+      <div class="listings" id="listingsContainer" role="list"></div>
+
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState" hidden>
+        <div class="empty-state__art" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none">
+            <circle cx="32" cy="32" r="28" fill="#eaf3ee"/>
+            <path d="M19 32L32 21L45 32" stroke="#1b5e43" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M23 30V43H41V30" stroke="#1b5e43" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="32" cy="36" r="2.2" fill="#d46a34"/>
+          </svg>
+        </div>
+        <h3 id="emptyTitle">Nenhuma casa com esses filtros</h3>
+        <p id="emptyDesc">Tente remover um filtro de proximidade ou ampliar a busca em Maringá.</p>
+        <button id="emptyResetBtn" type="button" class="btn-primary">Mostrar todas as casas</button>
+      </div>
+    </aside>
+
+    <!-- MAP STAGE (Full-bleed primary view on mobile Mapa tab; Right pane on desktop) -->
+    <section class="map-stage" id="mapStage" aria-label="Mapa interativo de Maringá">
+      <div id="map" class="map-canvas"></div>
+
+      <!-- Horizontal scrollable POI Category Icons Bar -->
+      <div class="map-dock" role="toolbar" aria-label="O que mostrar no mapa">
+        <div class="map-dock__cats" id="poiCategoryBar"></div>
+      </div>
+
+      <!-- Right-side compact app-style FABs on mobile (Radius / Basemap / Fit) -->
+      <div class="map-fabs">
+        <button type="button" class="map-fab" id="cycleRadiusBtn" title="Alterar raio de proximidade" aria-label="Alterar raio de proximidade">
+          <span class="map-fab__val" id="cycleRadiusLabel">1km</span>
+          <small>Raio</small>
+        </button>
+        <button type="button" class="map-fab" id="cycleBasemapBtn" title="Alternar estilo do mapa (Clean, Ruas, Satélite)" aria-label="Estilo do mapa">
+          <svg class="ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M10 3L2.5 7L10 11L17.5 7L10 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M2.5 10.5L10 14.5L17.5 10.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.5 14L10 18L17.5 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.65"/>
+          </svg>
+          <small id="cycleBasemapLabel">Clean</small>
+        </button>
+        <button type="button" class="map-fab" id="fitBoundsMobileBtn" title="Ver todas as casas" aria-label="Enquadrar casas">
+          <svg class="ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4 8V4H8M12 4H16V8M16 12V16H12M8 16H4V12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <small>Todas</small>
+        </button>
+      </div>
+
+      <!-- Desktop bottom-left controls bar -->
+      <div class="map-controls-bar">
+        <div class="map-pill-group" role="group" aria-label="Raio de proximidade">
+          <span class="map-pill-group__label">Raio</span>
+          <button type="button" class="map-pill" data-radius="500">500m</button>
+          <button type="button" class="map-pill is-active" data-radius="1000">1 km</button>
+          <button type="button" class="map-pill" data-radius="1500">1,5 km</button>
+        </div>
+
+        <div class="map-pill-group" role="group" aria-label="Estilo do mapa">
+          <button type="button" class="map-pill is-active" data-basemap="clean">Clean</button>
+          <button type="button" class="map-pill" data-basemap="streets">Ruas</button>
+          <button type="button" class="map-pill" data-basemap="satellite">Satélite</button>
+        </div>
+
+        <button type="button" class="map-fit-btn" id="fitBoundsBtn" title="Enquadrar todas as casas">
+          <svg class="ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4 8V4H8M12 4H16V8M16 12V16H12M8 16H4V12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Ver todas</span>
+        </button>
+      </div>
+
+      <!-- Mobile Swipeable House Carousel floating over bottom of map -->
+      <div class="map-carousel-wrap" id="mapCarouselWrap">
+        <div class="map-carousel" id="mapCarousel" aria-label="Casas no mapa"></div>
+      </div>
+
+      <div class="map-hint" id="mapHint">
+        Toque em uma casa para ver o raio de caminhada e o entorno
+      </div>
+    </section>
+
+    <!-- DETAIL SHEET (Bottom sheet on mobile / Slide-over drawer over sidebar on desktop) -->
+    <div class="sheet-backdrop" id="drawerBackdrop" hidden></div>
+    <section class="drawer" id="detailDrawer" aria-hidden="true" aria-label="Detalhes da casa">
+      <div class="drawer__grab" id="drawerGrab" aria-hidden="true"><span></span></div>
+      <div class="drawer__head">
+        <button type="button" class="btn-back" id="closeDrawerBtn">
+          <svg class="ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M12.5 5L7.5 10L12.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span id="drawerBackLabel">Voltar</span>
+        </button>
+        <div class="drawer__head-actions">
+          <button type="button" class="btn-ghost btn-sm drawer-map-peek" id="drawerPeekMapBtn">
+            Ver no mapa
+          </button>
+          <button type="button" class="icon-btn" id="drawerCompareBtn" title="Comparar casa" aria-label="Comparar">
+            <svg class="ico" viewBox="0 0 20 20" fill="none"><rect x="2.5" y="4" width="6" height="12" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="11.5" y="4" width="6" height="12" rx="1.5" stroke="currentColor" stroke-width="1.7"/></svg>
+          </button>
+          <button type="button" class="icon-btn" id="drawerFavBtn" title="Favoritar casa" aria-label="Favoritar">
+            <svg class="ico" viewBox="0 0 20 20" fill="none"><path d="M10 16.5C10 16.5 3.5 12.2 3.5 7.4C3.5 5.2 5.2 3.5 7.3 3.5C8.6 3.5 9.6 4.2 10 5.1C10.4 4.2 11.4 3.5 12.7 3.5C14.8 3.5 16.5 5.2 16.5 7.4C16.5 12.2 10 16.5 10 16.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="drawer__body" id="drawerBody"></div>
+    </section>
+  </main>
+
+  <!-- ============ MOBILE NATIVE-STYLE BOTTOM TAB BAR ============ -->
+  <nav class="bottom-nav" aria-label="Navegação principal">
+    <button type="button" class="bottom-nav__btn is-active" data-nav-tab="mapa">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M3.5 6.5L9 4L15 6.5L20.5 4V17.5L15 20L9 17.5L3.5 20V6.5Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+        <path d="M9 4V17.5M15 6.5V20" stroke="currentColor" stroke-width="1.7"/>
+      </svg>
+      <span>Mapa</span>
+    </button>
+
+    <button type="button" class="bottom-nav__btn" data-nav-tab="lista">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="4" y="5" width="16" height="5" rx="2" stroke="currentColor" stroke-width="1.9"/>
+        <rect x="4" y="14" width="16" height="5" rx="2" stroke="currentColor" stroke-width="1.9"/>
+      </svg>
+      <span>Lista</span>
+      <span class="bottom-nav__pill" id="navListCount">0</span>
+    </button>
+
+    <button type="button" class="bottom-nav__btn" data-nav-tab="salvas">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 19.5C12 19.5 4.5 14.5 4.5 8.8C4.5 6.2 6.5 4.2 9 4.2C10.5 4.2 11.5 5 12 6C12.5 5 13.5 4.2 15 4.2C17.5 4.2 19.5 6.2 19.5 8.8C19.5 14.5 12 19.5 12 19.5Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+      </svg>
+      <span>Salvas</span>
+      <span class="bottom-nav__dot" id="navSavedDot" hidden></span>
+    </button>
+
+    <button type="button" class="bottom-nav__btn" id="navJsonBtn">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M8.5 7L4 12L8.5 17M15.5 7L20 12L15.5 17" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Grokbot</span>
+    </button>
+  </nav>
+
+  <!-- ============ FILTERS BOTTOM SHEET (Mobile & Quick All-Filters) ============ -->
+  <div class="modal-backdrop modal-backdrop--sheet" id="filtersModal" hidden role="dialog" aria-modal="true" aria-labelledby="filtersModalTitle">
+    <div class="modal modal--sheet">
+      <div class="drawer__grab" aria-hidden="true"><span></span></div>
+      <div class="modal__head">
+        <div>
+          <h2 id="filtersModalTitle">Filtros de busca</h2>
+          <p class="modal__sub">Refine as casas encontradas em Maringá</p>
+        </div>
+        <button type="button" class="icon-btn" data-close-modal="filtersModal" aria-label="Fechar">×</button>
+      </div>
+      <div class="modal__body filter-sheet-body">
+        <div class="filter-group">
+          <label class="filter-group__label">Finalidade</label>
+          <div class="segmented segmented--full" role="group">
+            <button type="button" class="segmented__btn is-active" data-finalidade="todas">Todas</button>
+            <button type="button" class="segmented__btn" data-finalidade="aluguel">Aluguel</button>
+            <button type="button" class="segmented__btn" data-finalidade="compra">Compra</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-group__label">Mínimo de quartos</label>
+          <div class="choice-row" role="group">
+            <button type="button" class="choice-pill is-active" data-quartos="0">Qualquer</button>
+            <button type="button" class="choice-pill" data-quartos="2">2+</button>
+            <button type="button" class="choice-pill" data-quartos="3">3+</button>
+            <button type="button" class="choice-pill" data-quartos="4">4+</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-group__label">Características da casa</label>
+          <div class="choice-wrap">
+            <button type="button" class="chip chip--lg" data-toggle="pets">
+              <span class="chip__ico" data-ico="pet"></span>Aceita pets
+            </button>
+            <button type="button" class="chip chip--lg" data-toggle="quintal">
+              <span class="chip__ico" data-ico="parque"></span>Com quintal
+            </button>
+            <button type="button" class="chip chip--lg" data-toggle="favoritas">
+              <span class="chip__ico" data-ico="heart"></span>Só favoritas
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-group__label">Perto de (dentro do raio atual)</label>
+          <div class="choice-wrap">
+            <button type="button" class="chip chip--lg" data-near="pet">Área para pets</button>
+            <button type="button" class="chip chip--lg" data-near="ciclovia">Ciclovia</button>
+            <button type="button" class="chip chip--lg" data-near="academia">Academia</button>
+            <button type="button" class="chip chip--lg" data-near="parque">Parque / Bosque</button>
+            <button type="button" class="chip chip--lg" data-near="mercado">Mercado</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-group__label" for="sheetSortSelect">Ordenar por</label>
+          <select id="sheetSortSelect" class="select-full">
+            <option value="score">Melhor nota de entorno</option>
+            <option value="rotina">Mais perto da Escola + Trabalho</option>
+            <option value="escola">Mais perto da Escola</option>
+            <option value="trabalho">Mais perto do Trabalho</option>
+            <option value="preco_asc">Menor preço</option>
+            <option value="preco_desc">Maior preço</option>
+            <option value="area_desc">Maior área (m²)</option>
+            <option value="recente">Encontradas recentemente</option>
+          </select>
+        </div>
+      </div>
+      <div class="sheet-footer">
+        <button type="button" class="btn-ghost" id="sheetClearFiltersBtn">Limpar tudo</button>
+        <button type="button" class="btn-primary sheet-footer__apply" id="sheetApplyFiltersBtn">Ver casas</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ COMPARE MODAL ============ -->
+  <div class="modal-backdrop modal-backdrop--sheet" id="compareModal" hidden role="dialog" aria-modal="true" aria-labelledby="compareModalTitle">
+    <div class="modal modal--wide modal--sheet">
+      <div class="drawer__grab" aria-hidden="true"><span></span></div>
+      <div class="modal__head">
+        <div>
+          <h2 id="compareModalTitle">Comparar casas</h2>
+          <p class="modal__sub">Valores, espaço e distâncias lado a lado</p>
+        </div>
+        <button type="button" class="icon-btn" data-close-modal="compareModal" aria-label="Fechar">×</button>
+      </div>
+      <div class="modal__body" id="compareBody"></div>
+    </div>
+  </div>
+
+  <!-- ============ GROKBOT JSON MODAL ============ -->
+  <div class="modal-backdrop modal-backdrop--sheet" id="jsonModal" hidden role="dialog" aria-modal="true" aria-labelledby="jsonModalTitle">
+    <div class="modal modal--wide modal--sheet">
+      <div class="drawer__grab" aria-hidden="true"><span></span></div>
+      <div class="modal__head">
+        <div>
+          <h2 id="jsonModalTitle">Grokbot · <code>data/casas.json</code></h2>
+          <p class="modal__sub">Cole o JSON do Grokbot para testar na hora, baixe o arquivo ou copie o prompt pronto.</p>
+        </div>
+        <button type="button" class="icon-btn" data-close-modal="jsonModal" aria-label="Fechar">×</button>
+      </div>
+
+      <div class="modal__tabs" role="tablist">
+        <button type="button" class="tab-btn is-active" data-tab="paste" role="tab" aria-selected="true">Colar JSON</button>
+        <button type="button" class="tab-btn" data-tab="current" role="tab" aria-selected="false">JSON Atual</button>
+        <button type="button" class="tab-btn" data-tab="prompt" role="tab" aria-selected="false">Prompt Grokbot</button>
+      </div>
+
+      <div class="modal__body">
+        <div class="tab-panel is-active" data-panel="paste">
+          <p class="help-text">Cole abaixo o JSON gerado pelo Grokbot para visualizar imediatamente no mapa ou baixar pronto para <code>data/casas.json</code> no GitHub.</p>
+          <textarea id="jsonInput" class="code-editor" spellcheck="false" rows="11" placeholder='{ "atualizado_em": "2026-11-22", "fonte": "Grokbot", "casas": [ ... ] }'></textarea>
+          <div id="jsonError" class="form-error" hidden></div>
+          <div class="modal__footer-actions">
+            <button type="button" id="applyJsonBtn" class="btn-primary">Visualizar no mapa</button>
+            <button type="button" id="downloadJsonBtn" class="btn-outline">Baixar casas.json</button>
+            <button type="button" id="loadSampleIntoEditorBtn" class="btn-ghost">Carregar atual</button>
+            <button type="button" id="resetJsonBtn" class="btn-ghost" hidden>Voltar ao publicado</button>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="current">
+          <div class="code-toolbar">
+            <span>Feed ativo (<code>data/casas.json</code>)</span>
+            <button type="button" id="copyCurrentJsonBtn" class="btn-outline btn-sm">Copiar</button>
+          </div>
+          <pre id="currentJsonView" class="code-view"></pre>
+        </div>
+
+        <div class="tab-panel" data-panel="prompt">
+          <div class="code-toolbar">
+            <span>Instruções prontas para o Grokbot</span>
+            <button type="button" id="copyPromptBtn" class="btn-primary btn-sm">Copiar prompt</button>
+          </div>
+          <pre id="grokbotPromptView" class="code-view"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

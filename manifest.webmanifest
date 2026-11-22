@@ -1,0 +1,18 @@
+{
+  "name": "Maringá Casas — Mapa & Entorno",
+  "short_name": "Maringá Casas",
+  "description": "Encontre casas em Maringá-PR vendo áreas para pets, ciclovias, academias e parques próximos.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f6f2",
+  "theme_color": "#1b5e43",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

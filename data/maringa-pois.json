@@ -1,0 +1,489 @@
+{
+  "cidade": "Maringá - PR",
+  "centro": { "lat": -23.4252, "lng": -51.9336 },
+  "rotina": [
+    {
+      "id": "rotina-escola",
+      "nome": "Escola",
+      "subtitulo": "Av. 19 de Dezembro, 8 — Zona 04",
+      "endereco": "Av. 19 de Dezembro, 8 — Zona 04, Maringá - PR",
+      "tipo": "escola",
+      "cor": "#be185d",
+      "lat": -23.4229,
+      "lng": -51.9531,
+      "detalhe": "Ponto de referência: Escola (Zona 04, próximo à Praça 7 de Setembro)."
+    },
+    {
+      "id": "rotina-trabalho",
+      "nome": "Trabalho",
+      "subtitulo": "Rua Ver. Basílio Sautchuk, 388 — Zona 01",
+      "endereco": "Rua Ver. Basílio Sautchuk, 388 — Zona 01, Maringá - PR",
+      "tipo": "trabalho",
+      "cor": "#0369a1",
+      "lat": -23.4234,
+      "lng": -51.9416,
+      "detalhe": "Ponto de referência: Trabalho (Zona 01, Centro de Maringá)."
+    }
+  ],
+  "bairros": {
+    "zona 01": { "lat": -23.4209, "lng": -51.9331 },
+    "centro": { "lat": -23.4209, "lng": -51.9331 },
+    "novo centro": { "lat": -23.4215, "lng": -51.9333 },
+    "zona 02": { "lat": -23.4322, "lng": -51.9315 },
+    "zona 03": { "lat": -23.4198, "lng": -51.9195 },
+    "vila operaria": { "lat": -23.4198, "lng": -51.9195 },
+    "zona 04": { "lat": -23.4288, "lng": -51.9478 },
+    "zona 05": { "lat": -23.4352, "lng": -51.9535 },
+    "maringa velho": { "lat": -23.4352, "lng": -51.9535 },
+    "zona 06": { "lat": -23.4388, "lng": -51.9422 },
+    "zona 07": { "lat": -23.4105, "lng": -51.9378 },
+    "zona 08": { "lat": -23.4425, "lng": -51.9145 },
+    "eurogarden": { "lat": -23.4394, "lng": -51.9082 },
+    "jardim alvorada": { "lat": -23.3935, "lng": -51.9465 },
+    "jardim aclimacao": { "lat": -23.4485, "lng": -51.9285 },
+    "jardim novo horizonte": { "lat": -23.4395, "lng": -51.9325 },
+    "jardim paris": { "lat": -23.3875, "lng": -51.9230 },
+    "vila morangueira": { "lat": -23.4015, "lng": -51.9180 },
+    "jardim universitario": { "lat": -23.4035, "lng": -51.9445 },
+    "parque das grevileas": { "lat": -23.4335, "lng": -51.9585 },
+    "jardim liberdade": { "lat": -23.3985, "lng": -51.9065 },
+    "conjunto borba gato": { "lat": -23.4465, "lng": -51.9510 }
+  },
+  "ciclovias": [
+    {
+      "id": "ciclo-inga",
+      "nome": "Ciclovia Entorno Parque do Ingá",
+      "extensao_km": 3.2,
+      "detalhe": "Circuito arborizado super plano ao redor do Parque do Ingá (Av. São Paulo e Av. Laguna).",
+      "coords": [
+        [-23.4221, -51.9355],
+        [-23.4220, -51.9284],
+        [-23.4293, -51.9277],
+        [-23.4301, -51.9351],
+        [-23.4221, -51.9355]
+      ]
+    },
+    {
+      "id": "ciclo-gastao",
+      "nome": "Ciclovia Av. Gastão Vidigal / Eurogarden",
+      "extensao_km": 4.1,
+      "detalhe": "Canteiro central sombreado ligando a região do Bosque II ao Eurogarden e Zona 08.",
+      "coords": [
+        [-23.4272, -51.9204],
+        [-23.4332, -51.9158],
+        [-23.4396, -51.9102],
+        [-23.4472, -51.9042]
+      ]
+    },
+    {
+      "id": "ciclo-parana",
+      "nome": "Ciclovia Av. Paraná / Vila Olímpica / UEM",
+      "extensao_km": 3.5,
+      "detalhe": "Eixo norte-sul conectando Catedral, Centro, Vila Olímpica e UEM (Zona 07).",
+      "coords": [
+        [-23.4264, -51.9382],
+        [-23.4202, -51.9382],
+        [-23.4136, -51.9383],
+        [-23.4046, -51.9385]
+      ]
+    },
+    {
+      "id": "ciclo-brasil",
+      "nome": "Ciclovia Av. Brasil (Eixo Leste–Oeste)",
+      "extensao_km": 5.4,
+      "detalhe": "Principal eixo cicloviário leste–oeste cruzando Zona 05, Zona 04, Centro e Zona 03.",
+      "coords": [
+        [-23.4256, -51.9585],
+        [-23.4229, -51.9478],
+        [-23.4209, -51.9370],
+        [-23.4196, -51.9260],
+        [-23.4184, -51.9135]
+      ]
+    },
+    {
+      "id": "ciclo-mandacaru",
+      "nome": "Ciclovia Av. Mandacaru",
+      "extensao_km": 3.8,
+      "detalhe": "Ligação rápida da Zona 07 ao Jardim Alvorada e região norte.",
+      "coords": [
+        [-23.4165, -51.9455],
+        [-23.4060, -51.9472],
+        [-23.3945, -51.9492]
+      ]
+    },
+    {
+      "id": "ciclo-cerro-azul",
+      "nome": "Ciclovia Av. Cerro Azul / Parque do Japão",
+      "extensao_km": 3.4,
+      "detalhe": "Trajeto arborizado da Catedral até o Parque do Japão e Jardim Aclimação.",
+      "coords": [
+        [-23.4298, -51.9368],
+        [-23.4408, -51.9405],
+        [-23.4552, -51.9454]
+      ]
+    },
+    {
+      "id": "ciclo-bosque2",
+      "nome": "Ciclovia Av. Humaitá / Bosque II",
+      "extensao_km": 2.1,
+      "detalhe": "Corredor tranquilo conectando Zona 02 ao Parque dos Pioneiros (Bosque II).",
+      "coords": [
+        [-23.4288, -51.9312],
+        [-23.4316, -51.9235],
+        [-23.4332, -51.9162]
+      ]
+    }
+  ],
+  "pois": [
+    {
+      "id": "pet-eurogarden",
+      "nome": "Pet Park Eurogarden",
+      "categoria": "pet",
+      "lat": -23.4388,
+      "lng": -51.9089,
+      "detalhe": "Espaço pet amplo, gramado cercado, bebedouros e áreas sombreadas."
+    },
+    {
+      "id": "pet-praca-catedral",
+      "nome": "Gramado & Passeio Pet — Praça da Catedral",
+      "categoria": "pet",
+      "lat": -23.4267,
+      "lng": -51.9371,
+      "detalhe": "Ponto clássico de passeio com cães no fim da tarde, espelhos d'água e sombra."
+    },
+    {
+      "id": "pet-bosque2",
+      "nome": "Pista Pet-Friendly — Entorno Bosque II",
+      "categoria": "pet",
+      "lat": -23.4302,
+      "lng": -51.9205,
+      "detalhe": "Calçadão largo e arborizado ao redor do Bosque II, muito frequentado por tutores."
+    },
+    {
+      "id": "pet-praca-todos-santos",
+      "nome": "Parcão Praça Todos os Santos (Zona 02)",
+      "categoria": "pet",
+      "lat": -23.4343,
+      "lng": -51.9301,
+      "detalhe": "Praça tranquila de bairro com gramado cercado e bancos à sombra para passear com pets."
+    },
+    {
+      "id": "pet-praca-emiliano",
+      "nome": "Espaço Pet — Praça Emiliano Perneta (Zona 04)",
+      "categoria": "pet",
+      "lat": -23.4283,
+      "lng": -51.9462,
+      "detalhe": "Praça arborizada na Zona 04 com bastante movimento de moradores com cachorros."
+    },
+    {
+      "id": "pet-vila-olimpica",
+      "nome": "Área Pet & Caminhada — Vila Olímpica (Zona 07)",
+      "categoria": "pet",
+      "lat": -23.4135,
+      "lng": -51.9375,
+      "detalhe": "Calçadão plano e iluminado ótimo para passeios matinais e noturnos com pets."
+    },
+    {
+      "id": "pet-grevileas",
+      "nome": "Entorno Pet — Bosque das Grevíleas (Zona 05)",
+      "categoria": "pet",
+      "lat": -23.4326,
+      "lng": -51.9558,
+      "detalhe": "Trilha externa arborizada, fresca e silenciosa para caminhar com pets."
+    },
+    {
+      "id": "pet-nyffeler",
+      "nome": "Área Verde Pet — Parque Alfredo Nyffeler",
+      "categoria": "pet",
+      "lat": -23.4048,
+      "lng": -51.9195,
+      "detalhe": "Gramados extensos na Vila Morangueira, ideal para caminhadas com cães."
+    },
+    {
+      "id": "pet-alvorada",
+      "nome": "Praça Pet — Av. Pedro Taques (Jd. Alvorada)",
+      "categoria": "pet",
+      "lat": -23.3948,
+      "lng": -51.9445,
+      "detalhe": "Praça de convivência com área gramada e comércio pet ao redor."
+    },
+
+    {
+      "id": "parque-inga",
+      "nome": "Parque do Ingá",
+      "categoria": "parque",
+      "lat": -23.4257,
+      "lng": -51.9317,
+      "detalhe": "Cartão-postal de Maringá: 47 hectares de mata nativa, lago e pista de corrida de 3,2 km."
+    },
+    {
+      "id": "parque-bosque2",
+      "nome": "Bosque II (Parque dos Pioneiros)",
+      "categoria": "parque",
+      "lat": -23.4316,
+      "lng": -51.9189,
+      "detalhe": "Reserva florestal urbana com pista de caminhada sombreada e clima sempre fresco."
+    },
+    {
+      "id": "parque-japao",
+      "nome": "Parque do Japão",
+      "categoria": "parque",
+      "lat": -23.4573,
+      "lng": -51.9462,
+      "detalhe": "Jardim imperial japonês, lago de carpas, casa de chá e pista de caminhada."
+    },
+    {
+      "id": "parque-nyffeler",
+      "nome": "Parque Alfredo Werner Nyffeler",
+      "categoria": "parque",
+      "lat": -23.4046,
+      "lng": -51.9182,
+      "detalhe": "Conhecido como Buracão: lago, mirante, parquinho e pista de caminhada."
+    },
+    {
+      "id": "parque-grevileas",
+      "nome": "Bosque das Grevíleas",
+      "categoria": "parque",
+      "lat": -23.4332,
+      "lng": -51.9572,
+      "detalhe": "Área verde preservada na Zona 05 com pista de cooper e academia ao ar livre."
+    },
+    {
+      "id": "parque-eurogarden",
+      "nome": "Jardins do Eurogarden",
+      "categoria": "parque",
+      "lat": -23.4398,
+      "lng": -51.9078,
+      "detalhe": "Bairro-jardim planejado com lagos, flores, ciclovias e espaços de convivência."
+    },
+    {
+      "id": "parque-horto",
+      "nome": "Praça dos Sertões / Zona 02",
+      "categoria": "parque",
+      "lat": -23.4368,
+      "lng": -51.9348,
+      "detalhe": "Praça residencial charmosa e bem cuidada com pista e bancos."
+    },
+
+    {
+      "id": "acad-smart-novo-centro",
+      "nome": "Smart Fit — Novo Centro",
+      "categoria": "academia",
+      "lat": -23.4210,
+      "lng": -51.9345,
+      "detalhe": "Academia ampla com musculação, cardio e aulas coletivas."
+    },
+    {
+      "id": "acad-bluefit-zona02",
+      "nome": "Bluefit — Av. Tiradentes / Zona 02",
+      "categoria": "academia",
+      "lat": -23.4295,
+      "lng": -51.9350,
+      "detalhe": "Academia 24h com musculação, funcional e estacionamento."
+    },
+    {
+      "id": "acad-zona07",
+      "nome": "Academia Fit UEM — Zona 07",
+      "categoria": "academia",
+      "lat": -23.4092,
+      "lng": -51.9372,
+      "detalhe": "Estrutura completa próxima à Av. Colombo e UEM."
+    },
+    {
+      "id": "acad-zona03",
+      "nome": "Skyfit — Av. Brasil / Zona 03",
+      "categoria": "academia",
+      "lat": -23.4192,
+      "lng": -51.9218,
+      "detalhe": "Musculação moderna e aulas de spinning na Vila Operária."
+    },
+    {
+      "id": "acad-zona04",
+      "nome": "Academia Atlética — Zona 04",
+      "categoria": "academia",
+      "lat": -23.4298,
+      "lng": -51.9488,
+      "detalhe": "Musculação, pilates e natação aquecida."
+    },
+    {
+      "id": "acad-eurogarden",
+      "nome": "Studio Wellness Eurogarden",
+      "categoria": "academia",
+      "lat": -23.4408,
+      "lng": -51.9112,
+      "detalhe": "Treinamento funcional, pilates e corrida indoor."
+    },
+    {
+      "id": "acad-alvorada",
+      "nome": "Smart Fit — Av. Pedro Taques (Jd. Alvorada)",
+      "categoria": "academia",
+      "lat": -23.3955,
+      "lng": -51.9462,
+      "detalhe": "Unidade completa na região norte com amplo estacionamento."
+    },
+    {
+      "id": "acad-zona05",
+      "nome": "Academia Maringá Velho — Zona 05",
+      "categoria": "academia",
+      "lat": -23.4342,
+      "lng": -51.9515,
+      "detalhe": "Musculação e pilates de bairro com ambiente acolhedor."
+    },
+    {
+      "id": "acad-aclimacao",
+      "nome": "Cross & Fitness — Av. Cerro Azul",
+      "categoria": "academia",
+      "lat": -23.4452,
+      "lng": -51.9345,
+      "detalhe": "Box de cross training e musculação próximo ao Jd. Aclimação."
+    },
+
+    {
+      "id": "merc-angeloni",
+      "nome": "Supermercado Angeloni",
+      "categoria": "mercado",
+      "lat": -23.4216,
+      "lng": -51.9288,
+      "detalhe": "Supermercado completo com padaria artesanal, adega e hortifrúti."
+    },
+    {
+      "id": "merc-muffato-zona07",
+      "nome": "Super Muffato — Av. Colombo (Zona 07)",
+      "categoria": "mercado",
+      "lat": -23.4075,
+      "lng": -51.9335,
+      "detalhe": "Hipermercado amplo com galeria de serviços e farmácia."
+    },
+    {
+      "id": "merc-cidade-cancao-z02",
+      "nome": "Cidade Canção — Zona 02 / Zona 06",
+      "categoria": "mercado",
+      "lat": -23.4356,
+      "lng": -51.9362,
+      "detalhe": "Supermercado tradicional de Maringá, prático para compras do dia a dia."
+    },
+    {
+      "id": "merc-condor-z04",
+      "nome": "Condor Super Center — Zona 04",
+      "categoria": "mercado",
+      "lat": -23.4258,
+      "lng": -51.9498,
+      "detalhe": "Hipermercado completo com estacionamento coberto."
+    },
+    {
+      "id": "merc-muffato-gourmet",
+      "nome": "Muffato Gourmet — Av. Gastão Vidigal",
+      "categoria": "mercado",
+      "lat": -23.4362,
+      "lng": -51.9148,
+      "detalhe": "Empório e mercado gourmet na rota do Eurogarden."
+    },
+    {
+      "id": "merc-alvorada",
+      "nome": "Supermercado Bom Dia — Jd. Alvorada",
+      "categoria": "mercado",
+      "lat": -23.3922,
+      "lng": -51.9482,
+      "detalhe": "Mercado completo no coração do Jardim Alvorada."
+    },
+
+    {
+      "id": "cafe-boulangerie-z02",
+      "nome": "Café & Padaria Artesanal — Zona 02",
+      "categoria": "cafe",
+      "lat": -23.4308,
+      "lng": -51.9332,
+      "detalhe": "Pães de fermentação natural, café especial e mesas na calçada pet-friendly."
+    },
+    {
+      "id": "cafe-maringa-park",
+      "nome": "Cafés & Gastronomia — Maringá Park",
+      "categoria": "cafe",
+      "lat": -23.4218,
+      "lng": -51.9331,
+      "detalhe": "Cafeterias especiais, livraria e restaurantes no Novo Centro."
+    },
+    {
+      "id": "cafe-zona07",
+      "nome": "Coffee House — Zona 07",
+      "categoria": "cafe",
+      "lat": -23.4122,
+      "lng": -51.9395,
+      "detalhe": "Café especial com espaço para trabalhar e deck externo."
+    },
+    {
+      "id": "cafe-eurogarden",
+      "nome": "Café do Jardim — Eurogarden",
+      "categoria": "cafe",
+      "lat": -23.4384,
+      "lng": -51.9068,
+      "detalhe": "Brunch e cafés especiais com vista para os jardins."
+    },
+    {
+      "id": "cafe-zona05",
+      "nome": "Padaria Praça Pio XII — Zona 05",
+      "categoria": "cafe",
+      "lat": -23.4348,
+      "lng": -51.9542,
+      "detalhe": "Padaria tradicional de bairro com café da manhã completo."
+    },
+
+    {
+      "id": "saude-hospital-parana",
+      "nome": "Hospital Paraná",
+      "categoria": "saude",
+      "lat": -23.4242,
+      "lng": -51.9422,
+      "detalhe": "Pronto atendimento 24h e hospital referência na região central."
+    },
+    {
+      "id": "saude-santa-casa",
+      "nome": "Hospital Santa Casa de Maringá",
+      "categoria": "saude",
+      "lat": -23.4328,
+      "lng": -51.9268,
+      "detalhe": "Hospital completo na Zona 02 / proximidades do Bosque II."
+    },
+    {
+      "id": "saude-clinica-vet-z02",
+      "nome": "Hospital Veterinário 24h — Zona 02",
+      "categoria": "saude",
+      "lat": -23.4335,
+      "lng": -51.9340,
+      "detalhe": "Atendimento veterinário 24h, exames e banho & tosa."
+    },
+    {
+      "id": "saude-farmacia-z07",
+      "nome": "Farmácia 24h — Av. Herval (Zona 07)",
+      "categoria": "saude",
+      "lat": -23.4148,
+      "lng": -51.9362,
+      "detalhe": "Rede de farmácias 24h com fácil acesso."
+    },
+
+    {
+      "id": "edu-uem",
+      "nome": "UEM — Universidade Estadual de Maringá",
+      "categoria": "educacao",
+      "lat": -23.4045,
+      "lng": -51.9397,
+      "detalhe": "Campus universitário arborizado com biblioteca, esportes e vida cultural."
+    },
+    {
+      "id": "edu-marista",
+      "nome": "Colégio Marista de Maringá",
+      "categoria": "educacao",
+      "lat": -23.4235,
+      "lng": -51.9365,
+      "detalhe": "Escola tradicional no centro, próximo à Catedral."
+    },
+    {
+      "id": "edu-unicesumar",
+      "nome": "UniCesumar",
+      "categoria": "educacao",
+      "lat": -23.4418,
+      "lng": -51.9182,
+      "detalhe": "Campus universitário moderno próximo à Zona 08 e Eurogarden."
+    }
+  ]
+}
