@@ -44,8 +44,13 @@
           },
           "tipo": {
             "type": "string",
-            "description": "Ex: Casa, Sobrado, Casa em condomínio, Casa térrea.",
+            "description": "Ex: Casa, Sobrado, Casa em condomínio, Casa térrea, Apartamento.",
             "default": "Casa"
+          },
+          "casa": {
+            "type": "boolean",
+            "default": true,
+            "description": "true = Casa (térrea, sobrado, condomínio), false = Apartamento (apto, sobreloja, kitnet, studio)."
           },
           "preco": {
             "type": ["number", "string"],

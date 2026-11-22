@@ -107,6 +107,12 @@
         </div>
 
         <div class="filters__chips" role="group" aria-label="Filtros de destaque">
+          <button type="button" class="chip chip--tipo" data-imovel="casa">
+            <span class="chip__ico" data-ico="house"></span>Casas
+          </button>
+          <button type="button" class="chip chip--tipo" data-imovel="apartamento">
+            <span class="chip__ico" data-ico="apartment"></span>Apartamentos
+          </button>
           <button type="button" class="chip" data-toggle="moveis">
             <span class="chip__ico" data-ico="sofa"></span>Com móveis
           </button>
@@ -232,6 +238,9 @@
         <div class="map-carousel" id="mapCarousel" aria-label="Casas no mapa"></div>
       </div>
 
+      <!-- Simulated Route Overlay Panel (Moto elétrica & Bike) -->
+      <aside class="route-sim-panel" id="routeSimPanel" hidden aria-label="Simulação de rota"></aside>
+
       <div class="map-hint" id="mapHint">
         Toque em uma casa para ver o raio de caminhada e o entorno
       </div>
@@ -317,6 +326,19 @@
             <button type="button" class="segmented__btn is-active" data-finalidade="todas">Todas</button>
             <button type="button" class="segmented__btn" data-finalidade="aluguel">Aluguel</button>
             <button type="button" class="segmented__btn" data-finalidade="compra">Compra</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-group__label">Tipo de imóvel</label>
+          <div class="segmented segmented--full" role="group" aria-label="Casa ou Apartamento">
+            <button type="button" class="segmented__btn is-active" data-imovel-seg="todos">Todos</button>
+            <button type="button" class="segmented__btn" data-imovel-seg="casa">
+              <span class="seg-ico" data-ico="house"></span>Casa
+            </button>
+            <button type="button" class="segmented__btn" data-imovel-seg="apartamento">
+              <span class="seg-ico" data-ico="apartment"></span>Apartamento
+            </button>
           </div>
         </div>
 

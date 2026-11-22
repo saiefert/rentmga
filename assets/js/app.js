@@ -102,10 +102,17 @@
     school: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L12 5l9.5 4.5L12 14 2.5 9.5z"/><path d="M6.5 11.5v4.5c0 1.4 2.5 2.8 5.5 2.8s5.5-1.4 5.5-2.8v-4.5"/><path d="M20.5 10.5v5"/></svg>`,
     briefcase: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M8.5 7V5.5A1.5 1.5 0 0 1 10 4h4a1.5 1.5 0 0 1 1.5 1.5V7"/><path d="M3 12.5h18"/></svg>`,
     sofa: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V8.5A2.5 2.5 0 0 1 6.5 6h11A2.5 2.5 0 0 1 20 8.5V12"/><path d="M2.5 12h19v4.5a1.5 1.5 0 0 1-1.5 1.5h-16A1.5 1.5 0 0 1 2.5 16.5V12z"/><path d="M5 18v2M19 18v2"/></svg>`,
+    house: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5"/><path d="M5.5 9.5V20a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V9.5"/><path d="M9.5 21v-6h5v6"/></svg>`,
+    apartment: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 7h1.5M13.5 7H15M9 11h1.5M13.5 11H15M9 15h1.5M13.5 15H15M10 21v-3h4v3"/></svg>`,
+    route: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H13a3 3 0 0 0 0-6h-2a3 3 0 0 1 0-6h4.5"/></svg>`,
+    emoto: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/><path d="M9 17.5h4.5l2.5-6h-4l-1.5 3.5H8"/><path d="M14.5 7h3l1.5 4.5"/><path d="M10.5 4.5L8.5 8h3l-1.5 3" stroke-width="1.8"/></svg>`,
+    bike: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="16.5" r="3.2"/><circle cx="18" cy="16.5" r="3.2"/><path d="M6 16.5L10.2 9h4.3l3.5 7.5M10.2 9l1.8 7.5H6M9 6.5h3M14.5 9l1.2-3H18"/></svg>`,
+    play: `<svg viewBox="0 0 20 20" fill="currentColor"><path d="M6.2 4.4a1 1 0 0 1 1.5-.86l8.6 5.6a1 1 0 0 1 0 1.72l-8.6 5.6A1 1 0 0 1 6.2 15.6V4.4z"/></svg>`,
+    stop: `<svg viewBox="0 0 20 20" fill="currentColor"><rect x="5" y="5" width="10" height="10" rx="2"/></svg>`,
   };
 
-  const GROKBOT_PROMPT = `Você é um buscador de casas em Maringá - PR.
-Sempre que encontrar casas relevantes, retorne APENAS um JSON válido seguindo exatamente o formato abaixo para atualizar o arquivo data/casas.json do site:
+  const GROKBOT_PROMPT = `Você é um buscador de casas e apartamentos em Maringá - PR.
+Sempre que encontrar imóveis relevantes, retorne APENAS um JSON válido seguindo exatamente o formato abaixo para atualizar o arquivo data/casas.json do site:
 
 {
   "atualizado_em": "2026-11-22T15:00:00-03:00",
@@ -118,6 +125,7 @@ Sempre que encontrar casas relevantes, retorne APENAS um JSON válido seguindo e
       "titulo": "Casa térrea arborizada com quintal",
       "finalidade": "aluguel",
       "tipo": "Casa térrea",
+      "casa": true,
       "preco": 3400,
       "condominio": null,
       "iptu": 160,
@@ -136,7 +144,7 @@ Sempre que encontrar casas relevantes, retorne APENAS um JSON válido seguindo e
       "moveis": true,
       "destaque": false,
       "descricao": "Resumo objetivo do imóvel.",
-      "nota_grokbot": "Por que esta casa vale a pena e pontos de atenção.",
+      "nota_grokbot": "Por que este imóvel vale a pena e pontos de atenção.",
       "tags": ["Quintal gramado", "Rua arborizada"],
       "fotos": ["https://url-direta-da-foto-1.jpg", "https://url-direta-da-foto-2.jpg"],
       "link": "https://url-do-anuncio",
@@ -148,10 +156,11 @@ Sempre que encontrar casas relevantes, retorne APENAS um JSON válido seguindo e
 
 Regras:
 - "finalidade": "aluguel" ou "compra".
+- "casa": true se for casa (térrea, sobrado, condomínio), false se for apartamento (apto, sobreloja, kitnet, studio).
 - "moveis": true se tiver móveis (mobiliado/semimobiliado), false se não tiver.
 - "fotos": extraia as URLs reais (https://...) das imagens do anúncio (até 6-8 fotos); o site faz fallback automático se algum link falhar.
 - "preco", "condominio", "iptu", "area_m2", "terreno_m2": números sem "R$".
-- Mantenha o mesmo "id" para a mesma casa entre atualizações (preserva favoritos e anotações).
+- Mantenha o mesmo "id" para o mesmo imóvel entre atualizações (preserva favoritos e anotações).
 - Se não tiver "lat" e "lng" exatas, preencha "bairro" corretamente (ex: "Zona 02", "Zona 07", "Eurogarden") que o site posiciona no mapa automaticamente.
 - As distâncias até áreas pet, ciclovias, academias, parques e mercados são calculadas automaticamente pelo site.`;
 
@@ -190,6 +199,7 @@ Regras:
     filters: {
       query: "",
       finalidade: "todas",
+      tipoImovel: "todos", // "todos" | "casa" | "apartamento"
       minQuartos: 0,
       sort: "score",
       moveis: false,
@@ -198,6 +208,8 @@ Regras:
       favoritas: false,
       near: new Set(),
     },
+    simulatedRoute: null, // { houseId, anchorId, anchorType, vehicle: "emoto"|"bike", routeData, loading, animating }
+    routeCache: new Map(),
     prefs: loadPrefs(),
   };
 
@@ -211,6 +223,10 @@ Regras:
   let houseLayer = null;
   let selectionLayer = null;
   let routeHighlightLayer = null;
+  let routeSimLayer = null;
+  let routeAnimFrame = null;
+  let routeAnimMarker = null;
+  let routeSimRequestSeq = 0;
   const houseMarkers = new Map();
   const poiMarkers = new Map();
   const anchorMarkers = new Map();
@@ -254,6 +270,7 @@ Regras:
     poiCategoryBar: document.getElementById("poiCategoryBar"),
     mapCarousel: document.getElementById("mapCarousel"),
     mapCarouselWrap: document.getElementById("mapCarouselWrap"),
+    routeSimPanel: document.getElementById("routeSimPanel"),
     cycleRadiusBtn: document.getElementById("cycleRadiusBtn"),
     cycleRadiusLabel: document.getElementById("cycleRadiusLabel"),
     cycleBasemapBtn: document.getElementById("cycleBasemapBtn"),
@@ -281,7 +298,7 @@ Regras:
   };
 
   function isDesktop() {
-    return window.innerWidth >= 960;
+    return window.innerWidth >= 820;
   }
 
   // ==================== UTILITIES ====================
@@ -382,6 +399,11 @@ Regras:
     return Math.max(1, Math.round(meters / 235));
   }
 
+  function emotoMinutes(meters) {
+    // Realistic urban electric scooter / moto elétrica pace in Maringá (~23 km/h avg incl. cycleways & lights)
+    return Math.max(1, Math.round(meters / 385));
+  }
+
   function driveMinutes(meters) {
     // Realistic urban Maringá driving pace (~26 km/h avg incl. traffic lights)
     return Math.max(2, Math.round(meters / 430));
@@ -390,6 +412,27 @@ Regras:
   function roadApproxMeters(straightMeters) {
     // Maringá's urban grid factor (~1.22x straight-line distance)
     return Math.round(straightMeters * 1.22);
+  }
+
+  function resolveIsCasa(raw) {
+    if (typeof raw.casa === "boolean") return raw.casa;
+    if (raw.casa !== undefined && raw.casa !== null) {
+      const s = normalizeText(raw.casa);
+      if (s === "false" || s === "0" || s === "nao") return false;
+      if (s === "true" || s === "1" || s === "sim") return true;
+    }
+    if (typeof raw.apartamento === "boolean") return !raw.apartamento;
+    const ref = normalizeText(`${raw.tipo || ""} ${raw.titulo || ""}`);
+    if (/\b(apartamento|apto|ap|edificio|kitnet|studio|flat|cobertura|sobreloja|duplex)\b/.test(ref)) {
+      return false;
+    }
+    return true;
+  }
+
+  function getImovelMeta(house) {
+    return house.casa
+      ? { label: "Casa", shortLabel: "Casa", icon: UI_ICONS.house, cls: "casa" }
+      : { label: "Apartamento", shortLabel: "Apto", icon: UI_ICONS.apartment, cls: "apto" };
   }
 
   function getAnchorIcon(anchor) {
@@ -473,8 +516,41 @@ Regras:
       { sky: "#edf2e7", hill: "#d1dfc4", wall: "#ffffff", roof: "#4a5d3b", accent: "#c76c3a", tree: "#3b7644" },
     ];
     const p = palettes[hashString(house.id || house.titulo) % palettes.length];
-    const isSobrado = normalizeText(house.tipo).includes("sobrado");
+    const isApartamento = house.casa === false;
+    const isSobrado = !isApartamento && normalizeText(house.tipo).includes("sobrado");
     const bairroLabel = escapeHtml(house.bairro || "Maringá - PR");
+
+    const buildingMarkup = isApartamento
+      ? `
+          <rect x="148" y="42" width="124" height="114" rx="5" fill="${p.wall}" stroke="#17211d" stroke-opacity="0.16" stroke-width="2"/>
+          <rect x="142" y="36" width="136" height="10" rx="3" fill="${p.roof}"/>
+          <rect x="164" y="56" width="22" height="16" rx="2.5" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.4"/>
+          <rect x="199" y="56" width="22" height="16" rx="2.5" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.4"/>
+          <rect x="234" y="56" width="22" height="16" rx="2.5" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.4"/>
+          <rect x="164" y="82" width="22" height="16" rx="2.5" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.4"/>
+          <rect x="199" y="82" width="22" height="16" rx="2.5" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.4"/>
+          <rect x="234" y="82" width="22" height="16" rx="2.5" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.4"/>
+          <rect x="164" y="108" width="22" height="16" rx="2.5" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.4"/>
+          <rect x="234" y="108" width="22" height="16" rx="2.5" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.4"/>
+          <rect x="197" y="120" width="26" height="36" rx="3" fill="${p.accent}"/>
+        `
+      : isSobrado
+      ? `
+          <rect x="136" y="74" width="148" height="82" rx="4" fill="${p.wall}" stroke="#17211d" stroke-opacity="0.14" stroke-width="2"/>
+          <rect x="128" y="66" width="164" height="12" rx="3" fill="${p.roof}"/>
+          <rect x="150" y="90" width="42" height="22" rx="3" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.5"/>
+          <rect x="228" y="90" width="42" height="22" rx="3" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.5"/>
+          <rect x="197" y="122" width="26" height="34" rx="3" fill="${p.accent}"/>
+          <rect x="150" y="124" width="34" height="20" rx="3" fill="${p.sky}"/>
+          <rect x="236" y="124" width="34" height="20" rx="3" fill="${p.sky}"/>
+        `
+      : `
+          <polygon points="122,102 210,56 298,102" fill="${p.roof}"/>
+          <rect x="136" y="100" width="148" height="56" rx="3" fill="${p.wall}" stroke="#17211d" stroke-opacity="0.14" stroke-width="2"/>
+          <rect x="196" y="120" width="28" height="36" rx="3" fill="${p.accent}"/>
+          <rect x="152" y="116" width="30" height="22" rx="3" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.5"/>
+          <rect x="238" y="116" width="30" height="22" rx="3" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.5"/>
+        `;
 
     return `
       <svg class="house-card__placeholder" viewBox="0 0 420 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração de ${escapeHtml(house.titulo)}">
@@ -489,25 +565,7 @@ Regras:
           <circle cx="335" cy="111" r="20" fill="${p.tree}"/>
           <circle cx="350" cy="119" r="13" fill="${p.tree}" opacity="0.8"/>
         </g>
-        ${
-          isSobrado
-            ? `
-          <rect x="136" y="74" width="148" height="82" rx="4" fill="${p.wall}" stroke="#17211d" stroke-opacity="0.14" stroke-width="2"/>
-          <rect x="128" y="66" width="164" height="12" rx="3" fill="${p.roof}"/>
-          <rect x="150" y="90" width="42" height="22" rx="3" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.5"/>
-          <rect x="228" y="90" width="42" height="22" rx="3" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.5"/>
-          <rect x="197" y="122" width="26" height="34" rx="3" fill="${p.accent}"/>
-          <rect x="150" y="124" width="34" height="20" rx="3" fill="${p.sky}"/>
-          <rect x="236" y="124" width="34" height="20" rx="3" fill="${p.sky}"/>
-        `
-            : `
-          <polygon points="122,102 210,56 298,102" fill="${p.roof}"/>
-          <rect x="136" y="100" width="148" height="56" rx="3" fill="${p.wall}" stroke="#17211d" stroke-opacity="0.14" stroke-width="2"/>
-          <rect x="196" y="120" width="28" height="36" rx="3" fill="${p.accent}"/>
-          <rect x="152" y="116" width="30" height="22" rx="3" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.5"/>
-          <rect x="238" y="116" width="30" height="22" rx="3" fill="${p.sky}" stroke="${p.roof}" stroke-width="1.5"/>
-        `
-        }
+        ${buildingMarkup}
         ${compact ? "" : `<text x="210" y="183" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="600" fill="#17211d" opacity="0.52">${bairroLabel} · Maringá</text>`}
       </svg>
     `;
@@ -646,6 +704,7 @@ Regras:
         straightMeters: straight,
         roadMeters: road,
         driveMin: driveMinutes(road),
+        emotoMin: emotoMinutes(road),
         bikeMin: bikeMinutes(road),
         walkMin: walkMinutes(road),
       };
@@ -705,12 +764,14 @@ Regras:
         : [];
       const fotosClean = [...new Set(rawFotos.filter((u) => typeof u === "string" && /^https?:\/\//i.test(u.trim())).map((u) => u.trim()))];
       const hasMoveis = raw.moveis !== undefined ? Boolean(raw.moveis) : Boolean(raw.mobiliada);
+      const isCasa = resolveIsCasa(raw);
 
       const house = {
         id,
-        titulo: String(raw.titulo || `Casa em ${raw.bairro || "Maringá"}`),
+        titulo: String(raw.titulo || `${isCasa ? "Casa" : "Apartamento"} em ${raw.bairro || "Maringá"}`),
         finalidade: finalidadeNorm,
-        tipo: String(raw.tipo || "Casa"),
+        tipo: String(raw.tipo || (isCasa ? "Casa" : "Apartamento")),
+        casa: isCasa,
         preco: parseNumber(raw.preco),
         condominio: raw.condominio != null ? parseNumber(raw.condominio) : null,
         iptu: raw.iptu != null ? parseNumber(raw.iptu) : null,
@@ -807,6 +868,7 @@ Regras:
 
     cicloviaLayer = L.layerGroup().addTo(map);
     selectionLayer = L.layerGroup().addTo(map);
+    routeSimLayer = L.layerGroup().addTo(map);
     routeHighlightLayer = L.layerGroup().addTo(map);
     poiLayer = L.layerGroup().addTo(map);
     rotinaLayer = L.layerGroup().addTo(map);
@@ -1050,9 +1112,11 @@ Regras:
     for (const house of state.filteredHouses) {
       const isSelected = house.id === state.selectedHouseId;
       const isFav = Boolean(state.prefs.favorites[house.id]);
+      const imovel = getImovelMeta(house);
       const pinClass = [
         "house-pin",
         house.finalidade === "compra" ? "house-pin--compra" : "house-pin--aluguel",
+        `house-pin--${imovel.cls}`,
         isSelected ? "is-selected" : "",
         house.id === state.hoveredHouseId ? "is-hovered" : "",
       ]
@@ -1062,8 +1126,8 @@ Regras:
       const icon = L.divIcon({
         className: "house-pin-wrap",
         html: `
-          <div class="${pinClass}" data-house-pin="${escapeHtml(house.id)}">
-            <span class="house-pin__dot"></span>
+          <div class="${pinClass}" data-house-pin="${escapeHtml(house.id)}" title="${escapeHtml(imovel.label)} · ${escapeHtml(house.titulo)}">
+            <span class="house-pin__type" aria-label="${escapeHtml(imovel.label)}">${imovel.icon}</span>
             <span>${escapeHtml(formatCompactPrice(house.preco, house.finalidade))}</span>
             ${isFav ? '<span class="house-pin__heart" aria-label="Favorita">♥</span>' : ""}
           </div>
@@ -1260,6 +1324,648 @@ Regras:
     document.querySelectorAll(".poi-pin.is-highlighted").forEach((n) => n.classList.remove("is-highlighted"));
   }
 
+  // ==================== ROUTE SIMULATION (CICLOVIAS / CALÇADAS / VIAS · MOTO ELÉTRICA & BIKE) ====================
+
+  function polylineLengthMeters(coords) {
+    let total = 0;
+    for (let i = 0; i < coords.length - 1; i++) {
+      total += haversine(coords[i][0], coords[i][1], coords[i + 1][0], coords[i + 1][1]);
+    }
+    return total;
+  }
+
+  function findClosestCicloviaHit(lat, lng) {
+    let best = null;
+    for (const ciclo of state.cityData?.ciclovias || []) {
+      const hit = closestPointOnPolyline(lat, lng, ciclo.coords);
+      if (!best || hit.distance < best.distance) {
+        best = { ...hit, ciclo };
+      }
+    }
+    return best;
+  }
+
+  function classifyRouteStep(step, coords) {
+    const mode = normalizeText(step.mode || "");
+    const name = normalizeText(step.name || "");
+
+    if (
+      mode.includes("pushing") ||
+      mode.includes("foot") ||
+      /\b(calcada|calcadao|passarela|travessia|escadaria|pedestre|passeio)\b/.test(name)
+    ) {
+      return { kind: "calcada", cicloviaName: null };
+    }
+
+    if (/\b(ciclovia|ciclofaixa|bike)\b/.test(name)) {
+      return { kind: "ciclovia", cicloviaName: step.name || "Ciclovia" };
+    }
+
+    // Check geometric overlap against Maringá's real ciclovia corridors
+    const ciclovias = state.cityData?.ciclovias || [];
+    if (ciclovias.length && coords.length >= 2) {
+      const sampleCount = Math.min(coords.length, 6);
+      let nearHits = 0;
+      const hitNames = {};
+      for (let s = 0; s < sampleCount; s++) {
+        const idx = sampleCount === 1 ? 0 : Math.round((s * (coords.length - 1)) / (sampleCount - 1));
+        const pt = coords[idx];
+        const hit = findClosestCicloviaHit(pt[0], pt[1]);
+        if (hit && hit.distance <= 55) {
+          nearHits++;
+          hitNames[hit.ciclo.nome] = (hitNames[hit.ciclo.nome] || 0) + 1;
+        }
+      }
+      if (nearHits / sampleCount >= 0.5) {
+        const topName = Object.entries(hitNames).sort((a, b) => b[1] - a[1])[0]?.[0] || "Ciclovia";
+        return { kind: "ciclovia", cicloviaName: topName };
+      }
+    }
+
+    // Unnamed short bike connectors (parks, sidewalks, plaza crossings)
+    if (!name && (step.distance || 0) > 0 && (step.distance || 0) <= 220) {
+      return { kind: "calcada", cicloviaName: null };
+    }
+
+    return { kind: "via", cicloviaName: null };
+  }
+
+  function computeSimulatedTimes(stats) {
+    const totalKm = stats.totalMeters / 1000;
+    // Moto elétrica (autopropelido urbano): até 20 km/h em ciclovia, ~27 km/h em vias urbanas, ~11 km/h em calçada/travessia
+    const emotoRaw =
+      stats.cicloviaMeters / 333 +
+      stats.viaMeters / 450 +
+      stats.calcadaMeters / 185 +
+      totalKm * 0.55;
+    // Bike (bicicleta urbana): ~17 km/h em ciclovia, ~13.5 km/h em vias urbanas, ~8.5 km/h em calçada/travessia
+    const bikeRaw =
+      stats.cicloviaMeters / 285 +
+      stats.viaMeters / 225 +
+      stats.calcadaMeters / 140 +
+      totalKm * 0.7;
+
+    return {
+      emotoMin: Math.max(2, Math.round(emotoRaw)),
+      bikeMin: Math.max(2, Math.round(bikeRaw)),
+      emotoAvgKmh: Math.max(12, Math.min(30, Math.round((totalKm / (Math.max(2, emotoRaw) / 60))))),
+      bikeAvgKmh: Math.max(9, Math.min(20, Math.round((totalKm / (Math.max(2, bikeRaw) / 60))))),
+    };
+  }
+
+  function closestVertexProjectionOnPolyline(lat, lng, coords) {
+    let bestDist = Infinity;
+    let bestSegIdx = 0;
+    let bestPt = coords[0];
+    const cosLat = Math.cos((lat * Math.PI) / 180);
+
+    for (let i = 0; i < coords.length - 1; i++) {
+      const [aLat, aLng] = coords[i];
+      const [bLat, bLng] = coords[i + 1];
+      const dx = (bLng - aLng) * cosLat;
+      const dy = bLat - aLat;
+      const lenSq = dx * dx + dy * dy;
+      let t = lenSq > 0 ? (((lng - aLng) * cosLat) * dx + (lat - aLat) * dy) / lenSq : 0;
+      t = Math.max(0, Math.min(1, t));
+      const pLat = aLat + t * (bLat - aLat);
+      const pLng = aLng + t * (bLng - aLng);
+      const dist = haversine(lat, lng, pLat, pLng);
+      if (dist < bestDist) {
+        bestDist = dist;
+        bestSegIdx = i;
+        bestPt = [pLat, pLng];
+      }
+    }
+    return { distance: bestDist, segIdx: bestSegIdx, pt: bestPt };
+  }
+
+  function slicePolylineBetween(coords, startProj, endProj) {
+    const out = [startProj.pt];
+    if (startProj.segIdx === endProj.segIdx) {
+      out.push(endProj.pt);
+      return out;
+    }
+    if (startProj.segIdx < endProj.segIdx) {
+      for (let i = startProj.segIdx + 1; i <= endProj.segIdx; i++) out.push(coords[i]);
+    } else {
+      for (let i = startProj.segIdx; i > endProj.segIdx; i--) out.push(coords[i]);
+    }
+    out.push(endProj.pt);
+    return out;
+  }
+
+  function buildManhattanConnector(a, b) {
+    const mid = [a[0], b[1]];
+    return [a, mid, b];
+  }
+
+  function buildLocalCicloviaRoute(house, anchor) {
+    const start = [house.lat, house.lng];
+    const end = [anchor.lat, anchor.lng];
+    const directGrid = buildManhattanConnector(start, end);
+    const directDist = polylineLengthMeters(directGrid);
+
+    let bestCandidate = null;
+    for (const ciclo of state.cityData?.ciclovias || []) {
+      const entry = closestVertexProjectionOnPolyline(start[0], start[1], ciclo.coords);
+      const exit = closestVertexProjectionOnPolyline(end[0], end[1], ciclo.coords);
+      const cicloPath = slicePolylineBetween(ciclo.coords, entry, exit);
+      const cicloDist = polylineLengthMeters(cicloPath);
+      if (cicloDist < 160) continue;
+
+      const accessIn = buildManhattanConnector(start, entry.pt);
+      const accessOut = buildManhattanConnector(exit.pt, end);
+      const total = polylineLengthMeters(accessIn) + cicloDist + polylineLengthMeters(accessOut);
+
+      if (total <= directDist * 1.48 && (!bestCandidate || total < bestCandidate.total)) {
+        bestCandidate = { ciclo, accessIn, cicloPath, accessOut, total, cicloDist };
+      }
+    }
+
+    const segments = [];
+    const wayNames = [];
+
+    if (bestCandidate) {
+      const inDist = polylineLengthMeters(bestCandidate.accessIn);
+      const outDist = polylineLengthMeters(bestCandidate.accessOut);
+      if (inDist > 15) {
+        segments.push({
+          kind: inDist <= 140 ? "calcada" : "via",
+          coords: bestCandidate.accessIn,
+          distance: inDist,
+        });
+      }
+      segments.push({
+        kind: "ciclovia",
+        coords: bestCandidate.cicloPath,
+        distance: bestCandidate.cicloDist,
+      });
+      wayNames.push(bestCandidate.ciclo.nome);
+      if (outDist > 15) {
+        segments.push({
+          kind: outDist <= 140 ? "calcada" : "via",
+          coords: bestCandidate.accessOut,
+          distance: outDist,
+        });
+      }
+    } else {
+      segments.push({
+        kind: directDist <= 220 ? "calcada" : "via",
+        coords: directGrid,
+        distance: directDist,
+      });
+      wayNames.push("Vias urbanas de Maringá");
+    }
+
+    const stats = { totalMeters: 0, cicloviaMeters: 0, viaMeters: 0, calcadaMeters: 0 };
+    const fullCoords = [];
+    for (const seg of segments) {
+      stats.totalMeters += seg.distance;
+      if (seg.kind === "ciclovia") stats.cicloviaMeters += seg.distance;
+      else if (seg.kind === "calcada") stats.calcadaMeters += seg.distance;
+      else stats.viaMeters += seg.distance;
+      seg.coords.forEach((pt, idx) => {
+        if (idx === 0 && fullCoords.length) return;
+        fullCoords.push(pt);
+      });
+    }
+
+    return {
+      source: "local",
+      sourceLabel: "Estimativa local (ciclovias)",
+      segments,
+      fullCoords,
+      wayNames,
+      stats,
+      times: computeSimulatedTimes(stats),
+    };
+  }
+
+  async function fetchCyclingRoute(house, anchor) {
+    const cacheKey = `${house.id}::${anchor.id}`;
+    if (state.routeCache.has(cacheKey)) return state.routeCache.get(cacheKey);
+
+    const coordsParam = `${house.lng},${house.lat};${anchor.lng},${anchor.lat}`;
+    const endpoints = [
+      {
+        url: `https://routing.openstreetmap.de/routed-bike/route/v1/cycling/${coordsParam}?overview=full&geometries=geojson&steps=true`,
+        timeout: 6500,
+        label: "Rota bike OSM",
+      },
+      {
+        url: `https://router.project-osrm.org/route/v1/bicycle/${coordsParam}?overview=full&geometries=geojson&steps=true`,
+        timeout: 5500,
+        label: "Rota OSRM",
+      },
+    ];
+
+    for (const ep of endpoints) {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), ep.timeout);
+      try {
+        const resp = await fetch(ep.url, { signal: ctrl.signal });
+        clearTimeout(timer);
+        if (!resp.ok) continue;
+        const data = await resp.json();
+        const route = data?.routes?.[0];
+        const steps = route?.legs?.[0]?.steps;
+        if (!route || !Array.isArray(steps) || !steps.length) continue;
+
+        const segments = [];
+        const fullCoords = [];
+        const wayNameSet = [];
+        const stats = { totalMeters: 0, cicloviaMeters: 0, viaMeters: 0, calcadaMeters: 0 };
+
+        for (const step of steps) {
+          const rawCoords = step.geometry?.coordinates;
+          if (!Array.isArray(rawCoords) || rawCoords.length < 2) continue;
+          const coords = rawCoords.map(([lng, lat]) => [lat, lng]);
+          const dist = Number.isFinite(step.distance) && step.distance > 0 ? step.distance : polylineLengthMeters(coords);
+          if (dist < 1) continue;
+
+          const cls = classifyRouteStep(step, coords);
+          segments.push({ kind: cls.kind, coords, distance: dist });
+
+          stats.totalMeters += dist;
+          if (cls.kind === "ciclovia") stats.cicloviaMeters += dist;
+          else if (cls.kind === "calcada") stats.calcadaMeters += dist;
+          else stats.viaMeters += dist;
+
+          const label = cls.cicloviaName || (step.name ? step.name.trim() : "");
+          if (label && !wayNameSet.includes(label) && dist >= 90) {
+            wayNameSet.push(label);
+          }
+
+          coords.forEach((pt, idx) => {
+            if (idx === 0 && fullCoords.length) return;
+            fullCoords.push(pt);
+          });
+        }
+
+        if (fullCoords.length >= 2 && stats.totalMeters > 0) {
+          const result = {
+            source: "osm",
+            sourceLabel: ep.label,
+            segments,
+            fullCoords,
+            wayNames: wayNameSet.slice(0, 5),
+            stats,
+            times: computeSimulatedTimes(stats),
+          };
+          state.routeCache.set(cacheKey, result);
+          return result;
+        }
+      } catch (_) {
+        clearTimeout(timer);
+      }
+    }
+
+    const fallback = buildLocalCicloviaRoute(house, anchor);
+    state.routeCache.set(cacheKey, fallback);
+    return fallback;
+  }
+
+  function stopRouteAnimation() {
+    if (routeAnimFrame) {
+      cancelAnimationFrame(routeAnimFrame);
+      routeAnimFrame = null;
+    }
+    if (routeAnimMarker && routeSimLayer) {
+      routeSimLayer.removeLayer(routeAnimMarker);
+      routeAnimMarker = null;
+    }
+    if (state.simulatedRoute) {
+      state.simulatedRoute.animating = false;
+    }
+  }
+
+  function startRouteAnimation() {
+    const sim = state.simulatedRoute;
+    if (!sim || !sim.routeData || !map || !routeSimLayer) return;
+    const pts = sim.routeData.fullCoords;
+    if (!pts || pts.length < 2) return;
+
+    stopRouteAnimation();
+    sim.animating = true;
+
+    const cumDist = [0];
+    for (let i = 1; i < pts.length; i++) {
+      cumDist.push(cumDist[i - 1] + haversine(pts[i - 1][0], pts[i - 1][1], pts[i][0], pts[i][1]));
+    }
+    const totalLen = cumDist[cumDist.length - 1] || 1;
+    const isEmoto = sim.vehicle === "emoto";
+    // Moto elétrica anima proporcionalmente mais rápido que bike
+    const durationMs = isEmoto ? 5200 : 8200;
+
+    const riderIcon = L.divIcon({
+      className: "route-rider-wrap",
+      html: `<div class="route-rider ${isEmoto ? "route-rider--emoto" : ""}">${isEmoto ? UI_ICONS.emoto : UI_ICONS.bike}</div>`,
+      iconSize: [0, 0],
+    });
+    routeAnimMarker = L.marker(pts[0], { icon: riderIcon, interactive: false, zIndexOffset: 900 }).addTo(routeSimLayer);
+
+    const startTime = performance.now();
+    const tick = (now) => {
+      if (!state.simulatedRoute || !state.simulatedRoute.animating || !routeAnimMarker) return;
+      const progress = Math.min(1, (now - startTime) / durationMs);
+      const targetDist = progress * totalLen;
+
+      let seg = 0;
+      while (seg < cumDist.length - 2 && cumDist[seg + 1] < targetDist) seg++;
+      const segLen = Math.max(0.001, cumDist[seg + 1] - cumDist[seg]);
+      const t = Math.max(0, Math.min(1, (targetDist - cumDist[seg]) / segLen));
+      const lat = pts[seg][0] + (pts[seg + 1][0] - pts[seg][0]) * t;
+      const lng = pts[seg][1] + (pts[seg + 1][1] - pts[seg][1]) * t;
+      routeAnimMarker.setLatLng([lat, lng]);
+
+      if (progress < 1) {
+        routeAnimFrame = requestAnimationFrame(tick);
+      } else {
+        sim.animating = false;
+        routeAnimFrame = null;
+        renderRouteSimPanel();
+      }
+    };
+    routeAnimFrame = requestAnimationFrame(tick);
+    renderRouteSimPanel();
+  }
+
+  function drawSimulatedRouteOnMap(house, anchor, routeData) {
+    if (!routeSimLayer || !map) return;
+    stopRouteAnimation();
+    routeSimLayer.clearLayers();
+
+    // Crisp outer casing so route pops on Clean, Streets & Satellite maps
+    if (routeData.fullCoords.length >= 2) {
+      L.polyline(routeData.fullCoords, {
+        color: "#ffffff",
+        weight: 9,
+        opacity: 0.92,
+        lineCap: "round",
+        lineJoin: "round",
+        interactive: false,
+      }).addTo(routeSimLayer);
+    }
+
+    const styles = {
+      ciclovia: { color: "#0d9488", weight: 5.5, opacity: 0.96, dashArray: null },
+      via: { color: "#2563eb", weight: 4.8, opacity: 0.9, dashArray: null },
+      calcada: { color: "#d97706", weight: 4.6, opacity: 0.94, dashArray: "6 7" },
+    };
+
+    for (const seg of routeData.segments) {
+      const st = styles[seg.kind] || styles.via;
+      L.polyline(seg.coords, {
+        ...st,
+        lineCap: "round",
+        lineJoin: "round",
+        interactive: false,
+      }).addTo(routeSimLayer);
+    }
+
+    // Start & end accent halos
+    L.circleMarker([house.lat, house.lng], {
+      radius: 7,
+      color: "#ffffff",
+      weight: 3,
+      fillColor: "#1b5e43",
+      fillOpacity: 1,
+      interactive: false,
+    }).addTo(routeSimLayer);
+
+    const anchorColor = anchor.cor || (anchor.tipo === "trabalho" ? "#0369a1" : "#be185d");
+    L.circleMarker([anchor.lat, anchor.lng], {
+      radius: 9,
+      color: "#ffffff",
+      weight: 3,
+      fillColor: anchorColor,
+      fillOpacity: 1,
+      interactive: false,
+    }).addTo(routeSimLayer);
+
+    const bounds = L.latLngBounds(routeData.fullCoords);
+    map.fitBounds(bounds, {
+      paddingTopLeft: [46, isDesktop() ? 86 : 130],
+      paddingBottomRight: [isDesktop() ? 390 : 46, isDesktop() ? 90 : 255],
+      maxZoom: 16,
+      animate: true,
+    });
+  }
+
+  function clearSimulatedRoute() {
+    routeSimRequestSeq++;
+    stopRouteAnimation();
+    state.simulatedRoute = null;
+    if (routeSimLayer) routeSimLayer.clearLayers();
+    document.body.classList.remove("has-route-sim");
+    if (el.routeSimPanel) {
+      el.routeSimPanel.hidden = true;
+      el.routeSimPanel.innerHTML = "";
+    }
+  }
+
+  function renderRouteSimPanel() {
+    const sim = state.simulatedRoute;
+    if (!sim || !el.routeSimPanel) return;
+
+    const house = state.houses.find((h) => h.id === sim.houseId);
+    const anchor = state.routineAnchors.find((a) => a.id === sim.anchorId);
+    if (!house || !anchor) {
+      clearSimulatedRoute();
+      return;
+    }
+
+    document.body.classList.add("has-route-sim");
+    el.routeSimPanel.hidden = false;
+
+    const hasTrabalho = state.routineAnchors.some((a) => a.tipo === "trabalho");
+    const hasEscola = state.routineAnchors.some((a) => a.tipo === "escola");
+
+    const switchHtml = `
+      <div class="route-sim__switch" role="tablist" aria-label="Destino da rota">
+        ${
+          hasTrabalho
+            ? `<button type="button" class="route-sim__tab ${sim.anchorType === "trabalho" ? "is-active" : ""}" data-sim-switch="trabalho">${UI_ICONS.briefcase} Trabalho</button>`
+            : ""
+        }
+        ${
+          hasEscola
+            ? `<button type="button" class="route-sim__tab ${sim.anchorType === "escola" ? "is-active" : ""}" data-sim-switch="escola">${UI_ICONS.school} Escola</button>`
+            : ""
+        }
+      </div>
+    `;
+
+    if (sim.loading) {
+      el.routeSimPanel.innerHTML = `
+        <div class="route-sim__head">
+          ${switchHtml}
+          <button type="button" class="route-sim__close" id="closeRouteSimBtn" aria-label="Fechar simulação">×</button>
+        </div>
+        <div class="route-sim__loading">
+          <span class="route-sim__spinner"></span>
+          <span>Calculando rota por ciclovias, calçadas e vias até ${escapeHtml(anchor.nome)}…</span>
+        </div>
+      `;
+      wireRouteSimPanelEvents();
+      return;
+    }
+
+    const rd = sim.routeData;
+    const total = Math.max(1, rd.stats.totalMeters);
+    const pctCiclo = Math.round((rd.stats.cicloviaMeters / total) * 100);
+    const pctCalcada = Math.round((rd.stats.calcadaMeters / total) * 100);
+    const pctVia = Math.max(0, 100 - pctCiclo - pctCalcada);
+    const gmapsBikeUrl = `https://www.google.com/maps/dir/?api=1&origin=${house.lat},${house.lng}&destination=${anchor.lat},${anchor.lng}&travelmode=bicycling`;
+
+    el.routeSimPanel.innerHTML = `
+      <div class="route-sim__head">
+        ${switchHtml}
+        <button type="button" class="route-sim__close" id="closeRouteSimBtn" aria-label="Fechar simulação">×</button>
+      </div>
+
+      <div class="route-sim__meta">
+        <span><strong>${escapeHtml(house.bairro)}</strong> → <strong>${escapeHtml(anchor.nome)}</strong> · ${formatDistance(rd.stats.totalMeters)}</span>
+        <span class="route-sim__source ${rd.source === "local" ? "route-sim__source--local" : ""}">${escapeHtml(rd.sourceLabel)}</span>
+      </div>
+
+      <div class="route-sim__vehicles">
+        <button type="button" class="vehicle-card ${sim.vehicle === "emoto" ? "is-active" : ""}" data-sim-vehicle="emoto">
+          <span class="vehicle-card__ico vehicle-card__ico--emoto">${UI_ICONS.emoto}</span>
+          <span class="vehicle-card__info">
+            <strong>${rd.times.emotoMin} min</strong>
+            <span>Moto elétrica</span>
+            <small>~${rd.times.emotoAvgKmh} km/h médio</small>
+          </span>
+        </button>
+
+        <button type="button" class="vehicle-card ${sim.vehicle === "bike" ? "is-active" : ""}" data-sim-vehicle="bike">
+          <span class="vehicle-card__ico vehicle-card__ico--bike">${UI_ICONS.bike}</span>
+          <span class="vehicle-card__info">
+            <strong>${rd.times.bikeMin} min</strong>
+            <span>Bike</span>
+            <small>~${rd.times.bikeAvgKmh} km/h médio</small>
+          </span>
+        </button>
+      </div>
+
+      <div class="route-sim__bar" aria-label="Composição da rota">
+        ${pctCiclo > 0 ? `<div class="route-sim__seg--ciclovia" style="width:${pctCiclo}%" title="Ciclovias: ${pctCiclo}%"></div>` : ""}
+        ${pctVia > 0 ? `<div class="route-sim__seg--via" style="width:${pctVia}%" title="Vias urbanas: ${pctVia}%"></div>` : ""}
+        ${pctCalcada > 0 ? `<div class="route-sim__seg--calcada" style="width:${pctCalcada}%" title="Calçadas / acessos: ${pctCalcada}%"></div>` : ""}
+      </div>
+
+      <div class="route-sim__legend">
+        <span class="route-sim__legend-item"><span class="route-sim__dot route-sim__dot--ciclovia"></span>Ciclovia ${formatDistance(rd.stats.cicloviaMeters)} (${pctCiclo}%)</span>
+        <span class="route-sim__legend-item"><span class="route-sim__dot route-sim__dot--via"></span>Vias ${formatDistance(rd.stats.viaMeters)} (${pctVia}%)</span>
+        ${rd.stats.calcadaMeters >= 20 ? `<span class="route-sim__legend-item"><span class="route-sim__dot route-sim__dot--calcada"></span>Calçada ${formatDistance(rd.stats.calcadaMeters)} (${pctCalcada}%)</span>` : ""}
+      </div>
+
+      ${
+        rd.wayNames.length
+          ? `<div class="route-sim__ways"><strong>Trajeto principal:</strong> ${escapeHtml(rd.wayNames.join(" → "))}</div>`
+          : ""
+      }
+
+      <div class="route-sim__foot">
+        <button type="button" class="btn-primary" id="toggleRouteAnimBtn">
+          ${sim.animating ? `${UI_ICONS.stop} Parar` : `${UI_ICONS.play} Animar ${sim.vehicle === "emoto" ? "moto elét." : "bike"}`}
+        </button>
+        <a class="btn-outline" href="${gmapsBikeUrl}" target="_blank" rel="noopener noreferrer">Maps Bike ${UI_ICONS.external}</a>
+      </div>
+    `;
+
+    wireRouteSimPanelEvents();
+  }
+
+  function wireRouteSimPanelEvents() {
+    const closeBtn = document.getElementById("closeRouteSimBtn");
+    if (closeBtn) closeBtn.addEventListener("click", clearSimulatedRoute);
+
+    el.routeSimPanel.querySelectorAll("[data-sim-switch]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (!state.simulatedRoute) return;
+        const target = btn.dataset.simSwitch;
+        if (target === state.simulatedRoute.anchorType && !state.simulatedRoute.loading) return;
+        simulateRouteForHouse(state.simulatedRoute.houseId, target, state.simulatedRoute.vehicle);
+      });
+    });
+
+    el.routeSimPanel.querySelectorAll("[data-sim-vehicle]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (!state.simulatedRoute) return;
+        state.simulatedRoute.vehicle = btn.dataset.simVehicle;
+        startRouteAnimation();
+      });
+    });
+
+    const animBtn = document.getElementById("toggleRouteAnimBtn");
+    if (animBtn) {
+      animBtn.addEventListener("click", () => {
+        if (!state.simulatedRoute) return;
+        if (state.simulatedRoute.animating) {
+          stopRouteAnimation();
+          renderRouteSimPanel();
+        } else {
+          startRouteAnimation();
+        }
+      });
+    }
+  }
+
+  async function simulateRouteForHouse(houseId, targetType = "trabalho", vehicle = "emoto") {
+    const house = state.houses.find((h) => h.id === houseId);
+    const anchor =
+      state.routineAnchors.find((a) => a.tipo === targetType) ||
+      state.routineAnchors[0];
+    if (!house || !anchor) {
+      showToast("Destino de rotina não encontrado.");
+      return;
+    }
+
+    const reqId = ++routeSimRequestSeq;
+    stopRouteAnimation();
+
+    // Ensure routine anchors & cycleways are visible on the map
+    let layersChanged = false;
+    if (!state.activeCategories.has("rotina")) {
+      state.activeCategories.add("rotina");
+      layersChanged = true;
+    }
+    if (!state.activeCategories.has("ciclovia")) {
+      state.activeCategories.add("ciclovia");
+      layersChanged = true;
+    }
+    if (layersChanged) renderPoiCategoryDock();
+
+    if (!isDesktop()) {
+      closeDrawer(false);
+      switchMobileTab("mapa");
+    }
+
+    focusHouseOnMap(house.id, { fly: false, scrollCarousel: true });
+
+    state.simulatedRoute = {
+      houseId: house.id,
+      anchorId: anchor.id,
+      anchorType: anchor.tipo,
+      vehicle,
+      routeData: null,
+      loading: true,
+      animating: false,
+    };
+    renderRouteSimPanel();
+
+    const routeData = await fetchCyclingRoute(house, anchor);
+    if (reqId !== routeSimRequestSeq || !state.simulatedRoute) return;
+
+    state.simulatedRoute.routeData = routeData;
+    state.simulatedRoute.loading = false;
+    drawSimulatedRouteOnMap(house, anchor, routeData);
+    renderRouteSimPanel();
+    startRouteAnimation();
+  }
+
   function fitMapToHouses() {
     if (!map) return;
     if (state.filteredHouses.length === 0) {
@@ -1289,6 +1995,7 @@ Regras:
     const f = state.filters;
     let n = 0;
     if (f.finalidade !== "todas") n++;
+    if (f.tipoImovel !== "todos") n++;
     if (f.minQuartos > 0) n++;
     if (f.moveis) n++;
     if (f.pets) n++;
@@ -1307,6 +2014,12 @@ Regras:
 
     document.querySelectorAll("[data-finalidade]").forEach((b) => {
       b.classList.toggle("is-active", b.dataset.finalidade === f.finalidade);
+    });
+    document.querySelectorAll("[data-imovel]").forEach((b) => {
+      b.classList.toggle("is-active", b.dataset.imovel === f.tipoImovel);
+    });
+    document.querySelectorAll("[data-imovel-seg]").forEach((b) => {
+      b.classList.toggle("is-active", b.dataset.imovelSeg === f.tipoImovel);
     });
     document.querySelectorAll("[data-quartos]").forEach((b) => {
       b.classList.toggle("is-active", Number(b.dataset.quartos) === f.minQuartos);
@@ -1342,6 +2055,8 @@ Regras:
 
     let list = state.houses.filter((h) => {
       if (f.finalidade !== "todas" && h.finalidade !== f.finalidade) return false;
+      if (f.tipoImovel === "casa" && !h.casa) return false;
+      if (f.tipoImovel === "apartamento" && h.casa) return false;
       if (f.minQuartos > 0 && h.quartos < f.minQuartos) return false;
       if (f.moveis && !h.moveis) return false;
       if (f.pets && !h.aceita_pets) return false;
@@ -1355,7 +2070,7 @@ Regras:
 
       if (q) {
         const hay = normalizeText(
-          `${h.titulo} ${h.bairro} ${h.endereco} ${h.tipo} ${h.descricao} ${h.nota_grokbot} ${h.tags.join(" ")} ${h.moveis ? "moveis mobiliado mobiliada" : ""}`
+          `${h.titulo} ${h.bairro} ${h.endereco} ${h.tipo} ${h.casa ? "casa" : "apartamento apto"} ${h.descricao} ${h.nota_grokbot} ${h.tags.join(" ")} ${h.moveis ? "moveis mobiliado mobiliada" : ""}`
         );
         if (!hay.includes(q)) return false;
       }
@@ -1429,11 +2144,24 @@ Regras:
     el.listingsContainer.querySelectorAll(".house-card").forEach((card) => {
       const id = card.dataset.houseId;
       card.addEventListener("click", (e) => {
-        if (e.target.closest("[data-card-action]") || e.target.closest(".card-go-btn")) return;
+        if (
+          e.target.closest("[data-card-action]") ||
+          e.target.closest(".card-go-btn") ||
+          e.target.closest("[data-sim-route]")
+        ) {
+          return;
+        }
         openHouseDetails(id, { fly: true });
       });
       card.addEventListener("mouseenter", () => setHoveredHouse(id));
       card.addEventListener("mouseleave", () => setHoveredHouse(null));
+    });
+
+    el.listingsContainer.querySelectorAll("[data-sim-route]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        simulateRouteForHouse(btn.dataset.houseId, btn.dataset.simRoute);
+      });
     });
 
     el.listingsContainer.querySelectorAll("[data-card-action]").forEach((btn) => {
@@ -1512,11 +2240,16 @@ Regras:
       )
       .join("");
 
+    const imovel = getImovelMeta(house);
+    const hasTrabalho = (house.commutes || []).some((c) => c.tipo === "trabalho");
+    const hasEscola = (house.commutes || []).some((c) => c.tipo === "escola");
+
     return `
       <article class="house-card ${isSelected ? "is-selected" : ""}" data-house-id="${escapeHtml(house.id)}" role="listitem">
         <div class="house-card__media">
           ${mediaHtml}
           <div class="house-card__badges">
+            <span class="pill-badge pill-badge--${imovel.cls}">${imovel.icon} ${imovel.label}</span>
             <span class="pill-badge pill-badge--${house.finalidade}">${house.finalidade === "compra" ? "Compra" : "Aluguel"}</span>
             ${house.moveis ? '<span class="pill-badge pill-badge--moveis">Com móveis</span>' : ""}
             ${house.destaque ? '<span class="pill-badge pill-badge--destaque">Destaque</span>' : ""}
@@ -1553,6 +2286,22 @@ Regras:
               ? `<div class="house-card__footer-cta">
                   <span class="card-details-hint">Ver detalhes e entorno</span>
                   <a class="card-go-btn" href="${escapeHtml(house.link)}" target="_blank" rel="noopener noreferrer">Ir para o imóvel ${UI_ICONS.external}</a>
+                </div>`
+              : ""
+          }
+          ${
+            hasTrabalho || hasEscola
+              ? `<div class="card-route-actions">
+                  ${
+                    hasTrabalho
+                      ? `<button type="button" class="card-route-btn card-route-btn--trabalho" data-sim-route="trabalho" data-house-id="${escapeHtml(house.id)}">${UI_ICONS.route} <span>Rota Trabalho</span></button>`
+                      : ""
+                  }
+                  ${
+                    hasEscola
+                      ? `<button type="button" class="card-route-btn card-route-btn--escola" data-sim-route="escola" data-house-id="${escapeHtml(house.id)}">${UI_ICONS.route} <span>Rota Escola</span></button>`
+                      : ""
+                  }
                 </div>`
               : ""
           }
@@ -1603,12 +2352,15 @@ Regras:
           )
           .join("");
 
+        const imovel = getImovelMeta(h);
+
         return `
           <div class="peek-card ${isSelected ? "is-selected" : ""}" data-peek-id="${escapeHtml(h.id)}" role="button" tabindex="0">
             <div class="peek-card__thumb">
               ${thumbHtml}
               <span class="peek-card__tag ${h.finalidade === "compra" ? "peek-card__tag--compra" : ""}">${h.finalidade === "compra" ? "Compra" : "Aluguel"}</span>
               ${h.moveis ? '<span class="peek-moveis-badge">Móveis</span>' : ""}
+              <span class="peek-type-badge peek-type-badge--${imovel.cls}" title="${imovel.label}">${imovel.icon} ${imovel.shortLabel}</span>
             </div>
             <div class="peek-card__info">
               <div class="peek-card__top">
@@ -1762,6 +2514,7 @@ Regras:
       el.mapHint.classList.remove("is-hidden");
       if (selectionLayer) selectionLayer.clearLayers();
       clearRouteHighlight();
+      clearSimulatedRoute();
       renderHouseMarkers();
       renderPoiLayers();
       document.querySelectorAll(".house-card.is-selected, .peek-card.is-selected").forEach((c) => {
@@ -1867,10 +2620,17 @@ Regras:
     const streetViewUrl = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${house.lat},${house.lng}`;
     const osmLoaded = Boolean(state.liveOsmPoisByHouse[house.id]);
 
+    const imovel = getImovelMeta(house);
+    const workCommute = (house.commutes || []).find((c) => c.tipo === "trabalho");
+    const schoolCommute = (house.commutes || []).find((c) => c.tipo === "escola");
+    const showExtraTipo =
+      house.tipo &&
+      normalizeText(house.tipo) !== normalizeText(imovel.label);
+
     const routineCardsHtml = (house.commutes || [])
       .map((c) => {
         const cor = c.cor || (c.tipo === "trabalho" ? "#0369a1" : "#be185d");
-        const dirUrl = `https://www.google.com/maps/dir/?api=1&origin=${house.lat},${house.lng}&destination=${c.lat},${c.lng}`;
+        const dirUrl = `https://www.google.com/maps/dir/?api=1&origin=${house.lat},${house.lng}&destination=${c.lat},${c.lng}&travelmode=bicycling`;
         return `
           <div class="routine-card" data-routine-id="${escapeHtml(c.id)}">
             <div class="routine-card__top">
@@ -1881,18 +2641,19 @@ Regras:
               </div>
               <div class="routine-card__dist">
                 <strong>~${formatDistance(c.roadMeters)}</strong>
-                <small>${c.driveMin} min carro</small>
+                <small>⚡ ${c.emotoMin} min · 🚲 ${c.bikeMin} min</small>
               </div>
             </div>
             <div class="routine-card__modes">
               <div class="routine-card__times">
-                <span>🚗 ${c.driveMin} min</span>
-                <span>🚲 ${c.bikeMin} min</span>
-                <span>🚶 ${c.walkMin} min</span>
+                <span title="Moto elétrica">⚡ ${c.emotoMin} min</span>
+                <span title="Bike">🚲 ${c.bikeMin} min</span>
+                <span title="Carro">🚗 ${c.driveMin} min</span>
+                <span title="A pé">🚶 ${c.walkMin} min</span>
               </div>
               <div class="routine-card__actions">
-                <button type="button" class="routine-mini-btn" data-show-anchor="${escapeHtml(c.id)}">Ver no mapa</button>
-                <a class="routine-mini-btn" href="${dirUrl}" target="_blank" rel="noopener noreferrer">Rota Maps ↗</a>
+                <button type="button" class="routine-mini-btn" data-show-anchor="${escapeHtml(c.id)}" data-sim-type="${escapeHtml(c.tipo)}">Simular rota</button>
+                <a class="routine-mini-btn" href="${dirUrl}" target="_blank" rel="noopener noreferrer">Maps ↗</a>
               </div>
             </div>
           </div>
@@ -1905,8 +2666,9 @@ Regras:
 
       <div class="detail-section">
         <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;flex-wrap:wrap">
+          <span class="pill-badge pill-badge--${imovel.cls}">${imovel.icon} ${imovel.label}</span>
           <span class="pill-badge pill-badge--${house.finalidade}">${house.finalidade === "compra" ? "Compra" : "Aluguel"}</span>
-          <span class="pill-badge">${escapeHtml(house.tipo)}</span>
+          ${showExtraTipo ? `<span class="pill-badge">${escapeHtml(house.tipo)}</span>` : ""}
           ${house.moveis ? '<span class="pill-badge pill-badge--moveis">Com móveis</span>' : ""}
           ${house.portal ? `<span class="pill-badge">${escapeHtml(house.portal)}</span>` : ""}
           ${house.approxCoords ? `<span class="pill-badge">Posição aprox. pelo bairro</span>` : ""}
@@ -1924,6 +2686,35 @@ Regras:
           house.link
             ? `<div class="detail-top-cta">
                 <a class="btn-primary" href="${escapeHtml(house.link)}" target="_blank" rel="noopener noreferrer">Ir para o imóvel ${UI_ICONS.external}</a>
+              </div>`
+            : ""
+        }
+
+        ${
+          workCommute || schoolCommute
+            ? `<div class="detail-route-cta">
+                ${
+                  workCommute
+                    ? `<button type="button" class="route-sim-btn route-sim-btn--trabalho" data-drawer-sim-route="trabalho">
+                        <span class="route-sim-btn__ico">${UI_ICONS.briefcase}</span>
+                        <span class="route-sim-btn__text">
+                          <strong>Simular rota Trabalho</strong>
+                          <small>⚡ ${workCommute.emotoMin} min · 🚲 ${workCommute.bikeMin} min</small>
+                        </span>
+                      </button>`
+                    : ""
+                }
+                ${
+                  schoolCommute
+                    ? `<button type="button" class="route-sim-btn route-sim-btn--escola" data-drawer-sim-route="escola">
+                        <span class="route-sim-btn__ico">${UI_ICONS.school}</span>
+                        <span class="route-sim-btn__text">
+                          <strong>Simular rota Escola</strong>
+                          <small>⚡ ${schoolCommute.emotoMin} min · 🚲 ${schoolCommute.bikeMin} min</small>
+                        </span>
+                      </button>`
+                    : ""
+                }
               </div>`
             : ""
         }
@@ -1998,11 +2789,6 @@ Regras:
 
       <div class="detail-section">
         <div class="detail-cta-row">
-          ${
-            house.link
-              ? `<a class="btn-primary" href="${escapeHtml(house.link)}" target="_blank" rel="noopener noreferrer">Ir para o imóvel ${UI_ICONS.external}</a>`
-              : ""
-          }
           <a class="btn-outline" href="${mapsUrl}" target="_blank" rel="noopener noreferrer">Google Maps</a>
           <a class="btn-outline" href="${streetViewUrl}" target="_blank" rel="noopener noreferrer">Street View</a>
         </div>
@@ -2053,6 +2839,19 @@ Regras:
       }
     }
 
+    // Wire top "Simular rota Trabalho / Escola" buttons right below "Ir para o imóvel"
+    el.drawerBody.querySelectorAll("[data-drawer-sim-route]").forEach((btn) => {
+      const targetType = btn.dataset.drawerSimRoute;
+      const anchor = (house.commutes || []).find((c) => c.tipo === targetType);
+      if (anchor) {
+        btn.addEventListener("mouseenter", () => highlightRouteToAnchor(house, anchor));
+        btn.addEventListener("mouseleave", () => clearRouteHighlight());
+      }
+      btn.addEventListener("click", () => {
+        simulateRouteForHouse(house.id, targetType);
+      });
+    });
+
     // Wire routine anchor cards (Escola & Trabalho)
     el.drawerBody.querySelectorAll("[data-show-anchor]").forEach((btn) => {
       const anchor = (house.commutes || []).find((c) => c.id === btn.dataset.showAnchor);
@@ -2060,28 +2859,7 @@ Regras:
       btn.addEventListener("mouseenter", () => highlightRouteToAnchor(house, anchor));
       btn.addEventListener("mouseleave", () => clearRouteHighlight());
       btn.addEventListener("click", () => {
-        if (!state.activeCategories.has("rotina")) {
-          state.activeCategories.add("rotina");
-          renderPoiCategoryDock();
-          renderPoiLayers();
-        }
-        if (!isDesktop()) {
-          closeDrawer(false);
-          switchMobileTab("mapa");
-        }
-        highlightRouteToAnchor(house, anchor);
-        const bounds = L.latLngBounds([
-          [house.lat, house.lng],
-          [anchor.lat, anchor.lng],
-        ]);
-        map.fitBounds(bounds, {
-          paddingTopLeft: [50, isDesktop() ? 80 : 140],
-          paddingBottomRight: [50, isDesktop() ? 80 : 165],
-          maxZoom: 16,
-          animate: true,
-        });
-        const entry = anchorMarkers.get(anchor.id);
-        if (entry) setTimeout(() => entry.marker.openPopup(), 450);
+        simulateRouteForHouse(house.id, anchor.tipo);
       });
     });
 
@@ -2260,14 +3038,15 @@ Regras:
               ${formatCurrency(h.preco)}${h.finalidade === "aluguel" ? "<small style='font-size:12px;font-weight:500'>/mês</small>" : ""}
             </div>
             <div class="compare-rows">
+              <div class="compare-row"><span>Tipo</span><strong>${h.casa ? "Casa" : "Apartamento"}</strong></div>
               <div class="compare-row"><span>Bairro</span><strong>${escapeHtml(h.bairro)}</strong></div>
               <div class="compare-row"><span>Área útil</span><strong>${h.area_m2 ? `${h.area_m2} m²` : "—"}</strong></div>
               <div class="compare-row"><span>Quartos / Vagas</span><strong>${h.quartos || "—"} qtos · ${h.vagas || "—"} vagas</strong></div>
               <div class="compare-row"><span>Móveis</span><strong>${h.moveis ? "Com móveis" : "Sem móveis"}</strong></div>
               <div class="compare-row"><span>Pets / Quintal</span><strong>${h.aceita_pets ? "Sim" : "Não"} · ${h.quintal ? "Quintal" : "—"}</strong></div>
               <div class="compare-row"><span>Nota entorno</span><strong>${h.overallScore}/100</strong></div>
-              <div class="compare-row"><span>Escola</span><strong>${formatDistance(h.schoolDist)} (${driveMinutes(h.schoolDist)} min)</strong></div>
-              <div class="compare-row"><span>Trabalho</span><strong>${formatDistance(h.workDist)} (${driveMinutes(h.workDist)} min)</strong></div>
+              <div class="compare-row"><span>Escola</span><strong>${formatDistance(h.schoolDist)} (⚡${emotoMinutes(h.schoolDist)}m / 🚲${bikeMinutes(h.schoolDist)}m)</strong></div>
+              <div class="compare-row"><span>Trabalho</span><strong>${formatDistance(h.workDist)} (⚡${emotoMinutes(h.workDist)}m / 🚲${bikeMinutes(h.workDist)}m)</strong></div>
               <div class="compare-row"><span>Área pet</span><strong>${formatDistance(h.nearestByCat.pet?.distance)}</strong></div>
               <div class="compare-row"><span>Ciclovia</span><strong>${formatDistance(h.nearestByCat.ciclovia?.distance)}</strong></div>
               <div class="compare-row"><span>Academia</span><strong>${formatDistance(h.nearestByCat.academia?.distance)}</strong></div>
@@ -2401,6 +3180,7 @@ Regras:
     state.filters = {
       query: "",
       finalidade: "todas",
+      tipoImovel: "todos",
       minQuartos: 0,
       sort: "score",
       moveis: false,
@@ -2465,6 +3245,21 @@ Regras:
     document.querySelectorAll("[data-finalidade]").forEach((btn) => {
       btn.addEventListener("click", () => {
         state.filters.finalidade = btn.dataset.finalidade;
+        applyFiltersAndRender(false);
+      });
+    });
+
+    // Tipo de imóvel: Casa vs Apartamento (toggle chips in inline bar & segmented in filter sheet)
+    document.querySelectorAll("[data-imovel]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const val = btn.dataset.imovel;
+        state.filters.tipoImovel = state.filters.tipoImovel === val ? "todos" : val;
+        applyFiltersAndRender(false);
+      });
+    });
+    document.querySelectorAll("[data-imovel-seg]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.filters.tipoImovel = btn.dataset.imovelSeg;
         applyFiltersAndRender(false);
       });
     });
@@ -2631,6 +3426,7 @@ Regras:
         closeModal("jsonModal");
         closeModal("compareModal");
         closeModal("filtersModal");
+        if (state.simulatedRoute) clearSimulatedRoute();
         if (state.drawerOpen) closeDrawer(isDesktop());
       }
     });
