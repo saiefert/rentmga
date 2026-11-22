@@ -1,9 +1,43 @@
 {
-  "atualizado_em": "2026-11-22T19:20:23-03:00",
+  "atualizado_em": "2026-11-22T19:43:12-03:00",
   "fonte": "Grokbot",
   "cidade": "Maringá - PR",
   "observacao": "Varredura de toda Maringá-PR, com preferência aos imóveis mais próximos da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01). No mínimo 2 quartos e 2 banheiros (suíte conta como banheiro; lavabo não). Teto do site: aluguel + condomínio até R$ 2.350 (IPTU à parte). Teto do e-mail para Dionizia permanece R$ 2.200. Excluídos apenas: Cidade Alta, Conjunto Requião e Jardim Alvorada. A lista do site é ordenada pela distância em linha reta até a ACIM. Imóveis entre R$ 2.200 e R$ 2.350 entram só no site, com a etiqueta “Acima de R$ 2.200”.",
   "casas": [
+    {
+      "id": "olx-1510139471",
+      "titulo": "Apartamento (sobreloja) no Sobreloja na Rua Vereador Basílio Sautchuk — Zona 01",
+      "finalidade": "aluguel",
+      "tipo": "Apartamento (sobreloja)",
+      "casa": false,
+      "preco": 1690,
+      "condominio": 500,
+      "iptu": null,
+      "bairro": "Zona 01",
+      "endereco": "Sobreloja na Rua Vereador Basílio Sautchuk, Zona 01 (número não informado; CEP 87013-190, o mesmo da ACIM)",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "area_m2": 78,
+      "destaque": false,
+      "descricao": "Sobreloja na Rua Vereador Basílio Sautchuk, Zona 01 (número não informado; CEP 87013-190, o mesmo da ACIM). 78 m², 1 suíte. 78 m², semi-mobiliado, sobreloja. CEP do anúncio 87013-190 é o da Rua Vereador Basílio Sautchuk (sede da ACIM); o número não veio no OLX. Era o candidato da Viva Real sem URL estável. Preço riscado de R$ 1.950 para R$ 1.690. Coordenada no trecho sul da rua (CEP 87013-260), não na porta exata.",
+      "nota_grokbot": "Imobiliária: Paiaguás Imóveis, tel. (44) 3222-7…, ref. 00000833. Elevador não informado. A 170 m da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.190. Semimobiliado, segundo o anúncio. O anúncio descreve o imóvel como semi-mobiliado.",
+      "tags": [
+        "Perto da ACIM",
+        "A 170 m da ACIM",
+        "Semimobiliado"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/56/562626568917412.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1510139471",
+      "portal": "OLX (Paiaguás Imóveis, tel. (44) 3222-7…, código 00000833; é o anúncio da Viva Real/ZAP na Rua Vereador Basílio Sautchuk que estava sem link)",
+      "encontrado_em": "2026-11-22",
+      "moveis": true,
+      "lat": -23.4237802,
+      "lng": -51.9416178
+    },
     {
       "id": "cnm-39984618",
       "titulo": "Apartamento no Edifício Wardani — Av. Brasil, 4155 — Zona 01",
@@ -126,6 +160,38 @@
       "lng": -51.94522
     },
     {
+      "id": "olx-1549130242",
+      "titulo": "Apartamento no Condomínio Edifício Residencial Porto Virmond — Rua Piratininga, 267 — Zona 01",
+      "finalidade": "aluguel",
+      "tipo": "Apartamento",
+      "casa": false,
+      "preco": 1400,
+      "condominio": 0,
+      "iptu": 257,
+      "bairro": "Zona 01",
+      "endereco": "Rua Piratininga, 267, Zona 01 (Edifício Porto Virmond)",
+      "suites": 0,
+      "banheiros": 2,
+      "vagas": 0,
+      "area_m2": 60,
+      "destaque": false,
+      "descricao": "Rua Piratininga, 267, Zona 01 (Edifício Porto Virmond). 60 m². 60 m². O anúncio no OLX informa condomínio R$ 0 (confirmado na ficha: valor total previsto R$ 1.657 = aluguel 1.400 + IPTU 257). Conferir se o condomínio é mesmo isento: o prédio (1997, 17 unidades, CP Engenharia) tem portaria 24h e dois elevadores. IPTU R$ 257 fica à parte (não entra no total). Sem vaga de garagem. O CEP do anúncio (87013-110) é da Av. Herval, rua lindeira; o endereço oficial do condomínio é Rua Piratininga, 267, CEP 87013-100. Coordenada no trecho da Rua Piratininga, Zona 01 (Nominatim não devolveu o nº 267).",
+      "nota_grokbot": "Imobiliária: Paiaguás Imóveis, tel. (44) 3222-7…, ref. 00000534. Elevador: sim (elevador social e de serviço, segundo o cadastro da Ikapuy; portaria 24h). A 680 m da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.400.",
+      "tags": [
+        "Elevador",
+        "Perto da ACIM",
+        "A 680 m da ACIM"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/51/511685576389076.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/apartamento-para-alugar-no-condominio-virmond-no-bairro-zona-01-1549130242",
+      "portal": "OLX (Paiaguás Imóveis, tel. (44) 3222-7…, código 00000534; também visto na Viva Real/ZAP como Av. Herval, 60 m², R$ 1.400 isento, IPTU 257)",
+      "encontrado_em": "2026-11-22",
+      "lat": -23.4228636,
+      "lng": -51.9347444
+    },
+    {
       "id": "cnm-32801278",
       "titulo": "Apartamento no Edifício Sunshine Residence — Rua Caramuru, 646 — Zona 06",
       "finalidade": "aluguel",
@@ -198,6 +264,42 @@
       "encontrado_em": "2026-11-22",
       "lat": -23.4190891,
       "lng": -51.9322757
+    },
+    {
+      "id": "olx-1494700116",
+      "titulo": "Apartamento no Residencial Perseverance — Rua Rui Barbosa, 1262 — Zona 07",
+      "finalidade": "aluguel",
+      "tipo": "Apartamento",
+      "casa": false,
+      "preco": 2000,
+      "condominio": 309,
+      "iptu": null,
+      "bairro": "Zona 07",
+      "endereco": "Rua Rui Barbosa, 1262, Zona 07 (Residencial Perseverance; número cruzado com o cadastro do condomínio e o CEP 87020-090 do anúncio)",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "area_m2": 59,
+      "destaque": false,
+      "descricao": "Rua Rui Barbosa, 1262, Zona 07 (Residencial Perseverance; número cruzado com o cadastro do condomínio e o CEP 87020-090 do anúncio). 59 m², 1 suíte. 59 m², apartamento novo (nunca habitado). Total R$ 2.309 (só no site). O título no OLX abrevia 'RESIDENCIAL PERSEVE'; o condomínio Residencial Perseverance fica na Rua Rui Barbosa, 1262 (CEP do anúncio 87020-090 = Rua Rui Barbosa, até 1569/1570). Coordenada no trecho da rua (Nominatim não devolveu o nº 1262).",
+      "nota_grokbot": "Imobiliária: ref. AP3482, tel. (44) 3226-4…. Elevador: sim (o anúncio cita elevador e área de lazer completa). A 1,0 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.309. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Semimobiliado, segundo o anúncio. O anúncio diz 'novo e semi-mobiliado' e 'nunca habitado'; também cita móveis planejados — conferir o que fica no imóvel.",
+      "tags": [
+        "Elevador",
+        "Perto da ACIM",
+        "A 1,0 km da ACIM",
+        "Acima de R$ 2.200",
+        "Semimobiliado"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/19/195622817218512.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1494700116",
+      "portal": "OLX (código AP3482, tel. (44) 3226-4…)",
+      "encontrado_em": "2026-11-22",
+      "moveis": true,
+      "lat": -23.4133111,
+      "lng": -51.9431493
     },
     {
       "id": "amazonas-maua1308",
@@ -302,8 +404,8 @@
       "vagas": 1,
       "area_m2": 75,
       "destaque": false,
-      "descricao": "Rua Líbero Badaró, 261, Zona 07. 75 m², 1 suíte. confirmar o endereço; condomínio aproximado, mais rateio de água e gás.",
-      "nota_grokbot": "Imobiliária: Massaru Imóveis (ref. 00001313). Sem elevador (NÃO). ~900 m da ciclovia da Av. Brasil (linha reta, aproximado). A 1,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado).",
+      "descricao": "Rua Líbero Badaró, 261, Zona 07. 75 m², 1 suíte. confirmar o endereço; condomínio aproximado, mais rateio de água e gás. Confirmado no OLX 1543298705 (Massaru, 75 m², 1700+500): o condomínio não tem elevador.",
+      "nota_grokbot": "Imobiliária: Massaru Imóveis (ref. 00001313). Sem elevador (NÃO (OLX: \"Condominio sem elevado\"; entre Av. Herval e Av. São Paulo)). ~900 m da ciclovia da Av. Brasil (linha reta, aproximado). A 1,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado).",
       "tags": [
         "A 1,3 km da ACIM",
         "Móveis planejados"
@@ -339,7 +441,7 @@
       "casa": false,
       "preco": 1600,
       "condominio": 450,
-      "iptu": null,
+      "iptu": 0,
       "bairro": "Zona 07",
       "endereco": "Rua Tietê, 438, ap 302, Zona 07",
       "quartos": 2,
@@ -348,7 +450,7 @@
       "vagas": 1,
       "area_m2": 67,
       "destaque": false,
-      "descricao": "Rua Tietê, 438, ap 302, Zona 07. 67 m², 1 suíte. nada importante.",
+      "descricao": "Rua Tietê, 438, ap 302, Zona 07. 67 m², 1 suíte. nada importante. Mesmo imóvel no OLX 1551215430 (Ed. Spring, 67 m², IPTU 0, código 02928.002); mantido o link oficial da Sub100/Lélo. Incluí a capa do OLX porque o S3 da Sub100 só deixou a miniatura.",
       "nota_grokbot": "Imobiliária: Lélo Imóveis. Com elevador. ~1,1 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.050. Semimobiliado, segundo o anúncio. A descrição cita mesa na cozinha (além de armários); por isso foi marcado como semimobiliado.",
       "tags": [
         "Elevador",
@@ -356,6 +458,7 @@
         "Semimobiliado"
       ],
       "fotos": [
+        "https://img.olx.com.br/images/45/453687580175294.jpg",
         "https://media.sub100.com.br/imoveis/20/2020003398/2020003398am.jpg"
       ],
       "link": "https://sub100.com.br/imoveis/2020003398/locacao/apartamento-em-maringa-pr/zona-07",
@@ -539,6 +642,38 @@
       ]
     },
     {
+      "id": "olx-1544923109",
+      "titulo": "Apartamento no Edifício Residencial Helena Moser — Rua Professor Guido Inácio Bersch, 309 — Zona 07",
+      "finalidade": "aluguel",
+      "tipo": "Apartamento",
+      "casa": false,
+      "preco": 1800,
+      "condominio": 440,
+      "iptu": null,
+      "bairro": "Zona 07",
+      "endereco": "Rua Professor Guido Inácio Bersch, 309, Zona 07 (Edifício Residencial Helena Moser)",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "area_m2": 48,
+      "destaque": false,
+      "descricao": "Rua Professor Guido Inácio Bersch, 309, Zona 07 (Edifício Residencial Helena Moser). 48 m², 1 suíte. 48 m². Total R$ 2.240 (só no site). Também anunciado à venda. Endereço oficial: Rua Professor Guido Inácio Bersch, 309, CEP 87020-250 (o CEP do anúncio, 87020-220, é da Rua Bragança, rua próxima). Coordenada no trecho da rua (Nominatim não devolveu o nº 309). Prédio de 2016, Jardim Universitário / Zona 07.",
+      "nota_grokbot": "Imobiliária: tel. (44) 3031-2…; nome da imobiliária não veio na ficha. Elevador não informado. A 1,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.240. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350.",
+      "tags": [
+        "A 1,5 km da ACIM",
+        "Acima de R$ 2.200"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/18/187658216144458.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/apartamento-a-locacao-no-edificio-residencial-helena-moser-proximo-a-uem-zona-07-marin-1544923109",
+      "portal": "OLX (tel. (44) 3031-2…)",
+      "encontrado_em": "2026-11-22",
+      "lat": -23.4085216,
+      "lng": -51.9415913
+    },
+    {
       "id": "sub100-3620008523",
       "titulo": "Apartamento no Edifício Buriti — Rua Campos Sales, 91 — Zona 07",
       "finalidade": "aluguel",
@@ -648,7 +783,7 @@
       "vagas": 1,
       "area_m2": 61,
       "destaque": false,
-      "descricao": "Rua São Pedro, 2079, 2º andar. 61 m², 1 suíte. 61 m², 1 suíte. Condomínio aprox. R$ 558 a R$ 568 + despesas variáveis. Isento de IPTU. Tel. (44) 3112-1569.",
+      "descricao": "Rua São Pedro, 2079, 2º andar. 61 m², 1 suíte. 61 m², 1 suíte. Condomínio aprox. R$ 558 a R$ 568 + despesas variáveis. Isento de IPTU. Tel. (44) 3112-1569. Também no OLX 1545187110 (1100+558, Spazio Mirafiori, SEM ELEVADOR e SEM PORTARIA, IPTU isento); mantido o link oficial da Sub100.",
       "nota_grokbot": "Imobiliária: Silvio Iwata. Sem elevador (NÃO (anúncio diz sem elevador, sem portaria)). ~1,0 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,8 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.658.",
       "tags": [
         "A 1,8 km da ACIM"
@@ -956,7 +1091,7 @@
       "vagas": 1,
       "area_m2": 52,
       "destaque": false,
-      "descricao": "Rua Inhaúma, 5558, 3º andar, Zona 03 (perto do Parque do Ingá). 52 m², 1 suíte. Estava na lista Sub100 da rodada 14h (e em raw/dist_in.json), mas não entrou em estado.json nem nos descartados; reapareceu no Viva Real/ZAP (Zona 03, 52 m², R$1.700 + R$400). Atende aos critérios com o teto de R$2.200. Falta confirmar: elevador, IPTU e se continua disponível.",
+      "descricao": "Rua Inhaúma, 5558, 3º andar, Zona 03 (perto do Parque do Ingá). 52 m², 1 suíte. Estava na lista Sub100 da rodada 14h (e em raw/dist_in.json), mas não entrou em estado.json nem nos descartados; reapareceu no Viva Real/ZAP (Zona 03, 52 m², R$1.700 + R$400). Atende aos critérios com o teto de R$2.200. Falta confirmar: elevador, IPTU e se continua disponível. Confirmado no OLX 1515486905 (ref. 00000519, mesma da Imobiliária Z3): 3º andar, suíte com ar, 1700+400=2100, 52 m², perto do Parque do Ingá. Mantido o link oficial da Sub100.",
       "nota_grokbot": "Imobiliária: Z3, CRECI J07269, ref. 00000519, tel/WhatsApp (44) 99859-3969. Elevador não informado. ~620 m da ciclovia da Av. Brasil (linha reta, aproximado). A 2,0 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.100. A confirmar: elevador, IPTU, se ainda está disponível.",
       "tags": [
         "A 2,0 km da ACIM"
@@ -1507,6 +1642,39 @@
       ]
     },
     {
+      "id": "olx-1547143644",
+      "titulo": "Apartamento na Rua Nardina Rodrigues Johansen, Loteamento Malbec",
+      "finalidade": "aluguel",
+      "tipo": "Apartamento",
+      "casa": false,
+      "preco": 1850,
+      "condominio": 350,
+      "iptu": null,
+      "bairro": "Loteamento Malbec",
+      "endereco": "Rua Nardina Rodrigues Johansen, Loteamento Malbec (número não informado)",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "area_m2": 50,
+      "destaque": true,
+      "descricao": "Rua Nardina Rodrigues Johansen, Loteamento Malbec (número não informado). 50 m², 1 suíte. 50 m². Locação direto com o proprietário (destaque). Suíte planejada e máquina de lavar inclusa; móveis planejados sozinhos não bastam para marcar como mobiliado. É outro imóvel da mesma rua do Spazio Merlot (cnm-38666028 e olx-1546729617), sem número no anúncio. Coordenada no trecho da Rua Nardina Rodrigues Johansen (CEP 87005-002).",
+      "nota_grokbot": "Particular: locação direto com o proprietário; Super Destaque no OLX. Elevador: sim (indicado na varredura do navegador; a ficha do OLX não repetiu o item; o condomínio tem portaria 24h e área de lazer). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200.",
+      "tags": [
+        "Particular",
+        "Elevador",
+        "A 2,6 km da ACIM"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/86/862625572700917.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/apartamento-2-quartos-2-banheiros-1547143644",
+      "portal": "OLX (particular, Super Destaque)",
+      "encontrado_em": "2026-11-22",
+      "lat": -23.4384389,
+      "lng": -51.9228342
+    },
+    {
       "id": "cnm-38666028",
       "titulo": "Apartamento no Spazio Merlot — Rua Nardina Rodrigues Johansen, 392 — Loteamento Malbec",
       "finalidade": "aluguel",
@@ -1543,6 +1711,41 @@
       "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-maringa-loteamento-malbec-68m2-RS1800/id-38666028/",
       "portal": "Chaves na Mão (SEB IMÓVEIS)",
       "encontrado_em": "2026-11-22",
+      "lat": -23.43865,
+      "lng": -51.92305
+    },
+    {
+      "id": "olx-1546729617",
+      "titulo": "Apartamento no Spazio Merlot — Rua Nardina Rodrigues Johansen, 392 — Loteamento Malbec",
+      "finalidade": "aluguel",
+      "tipo": "Apartamento",
+      "casa": false,
+      "preco": 2000,
+      "condominio": 340,
+      "iptu": 0,
+      "bairro": "Loteamento Malbec",
+      "endereco": "Rua Nardina Rodrigues Johansen, 392 (Spazio Merlot)",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 2,
+      "area_m2": 51,
+      "destaque": false,
+      "descricao": "Rua Nardina Rodrigues Johansen, 392 (Spazio Merlot). 51 m², 1 suíte. 51 m², mobiliado, 2 vagas, IPTU 0. Total R$ 2.340 (acima do teto de e-mail de R$ 2.200; entra só no site). Outra unidade do Spazio Merlot, diferente do cnm-38666028 (1800+450, 68 m², SEB, não mobiliado, 1 vaga).",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis, ref. 05618.001. Elevador: sim (torres de 11 andares do Spazio Merlot; também indicado na varredura do navegador). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.340. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Mobiliado, segundo o anúncio. Mobiliado (camas, guarda-roupa, sofá, painel de TV). IPTU R$ 0.",
+      "tags": [
+        "Elevador",
+        "A 2,6 km da ACIM",
+        "Acima de R$ 2.200",
+        "Mobiliado"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/33/332647829827799.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/apartamento-mobiliado-para-locacao-proximo-a-unicesumar-com-2-quartos-suite-e-sacada-com-1546729617",
+      "portal": "OLX (Lélo Imóveis, código 05618.001)",
+      "encontrado_em": "2026-11-22",
+      "moveis": true,
       "lat": -23.43865,
       "lng": -51.92305
     },
@@ -1645,7 +1848,7 @@
       "banheiros": 2,
       "vagas": 1,
       "destaque": true,
-      "descricao": "Travessa Liberdade, 175, ap 305, Zona 08 (Edifício Platinum). 1 suíte. IPTU não informado no anúncio (o Viva Real diz isento).",
+      "descricao": "Travessa Liberdade, 175, ap 305, Zona 08 (Edifício Platinum). 1 suíte. IPTU não informado no anúncio (o Viva Real diz isento). Também no OLX 1547283879 (mesmo preço 1900+280, Travessa Liberdade, elevador e academia); mantido o link oficial da Sub100/Lélo.",
       "nota_grokbot": "Imobiliária: Lélo Imóveis. Com elevador. Perto da ciclovia da Av. Brasil (~450 m, linha reta). A 2,9 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.180. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado). A confirmar: IPTU.",
       "tags": [
         "Elevador",
@@ -1928,6 +2131,38 @@
       "lng": -51.93698
     },
     {
+      "id": "olx-1546729014",
+      "titulo": "Casa na Rua Adão Elói Trojan, Jardim Ipanema",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 1800,
+      "condominio": 0,
+      "iptu": 0,
+      "bairro": "Jardim Ipanema",
+      "endereco": "Rua Adão Elói Trojan, Jardim Ipanema (CEP 87053-230 do anúncio; número não informado; próx. Hospital Municipal / Av. Nildo Ribeiro)",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "area_m2": 70,
+      "destaque": false,
+      "descricao": "Rua Adão Elói Trojan, Jardim Ipanema (CEP 87053-230 do anúncio; número não informado; próx. Hospital Municipal / Av. Nildo Ribeiro). 70 m², 1 suíte. Casa 70 m², suíte, cozinha planejada, quintal gramado. Valores da ficha: aluguel R$ 1.800, condomínio R$ 0, IPTU R$ 0. ATENÇÃO: o texto do anúncio também fala em 'casa residencial para venda' (possível copia-e-cola); conferir se está mesmo para locação. A etiqueta 'Mobiliado' apareceu nas características, mas a descrição só cita cozinha planejada — não marquei como mobiliado. Coordenada no trecho da Rua Adão Elói Trojan mais próximo do CEP 87053-230.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis, ref. 02262.001. Sem elevador (não se aplica). A 4,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. A confirmar: se a casa é térrea.",
+      "tags": [
+        "A 4,2 km da ACIM"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/95/955625704515029.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1546729014",
+      "portal": "OLX (Lélo Imóveis, código 02262.001)",
+      "encontrado_em": "2026-11-22",
+      "quintal": true,
+      "lat": -23.4564442,
+      "lng": -51.9246053
+    },
+    {
       "id": "cnm-21224522",
       "titulo": "Casa na Rua Das Pombas — Jardim dos Pássaros",
       "finalidade": "aluguel",
@@ -2004,13 +2239,44 @@
       "lng": -51.93196353593372
     },
     {
+      "id": "olx-1476827138",
+      "titulo": "Apartamento no Condomínio Vitória Régia — Rua Mário José de Faria Ferraz, 136 — Parque Residencial Aeroporto",
+      "finalidade": "aluguel",
+      "tipo": "Apartamento",
+      "casa": false,
+      "preco": 1400,
+      "condominio": 440,
+      "iptu": 0,
+      "bairro": "Parque Residencial Aeroporto",
+      "endereco": "Rua Mário José de Faria Ferraz, 136 (Condomínio Vitória Régia)",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "area_m2": 63,
+      "destaque": false,
+      "descricao": "Rua Mário José de Faria Ferraz, 136 (Condomínio Vitória Régia). 63 m², 1 suíte. 62,85 m² úteis, pintura nova, IPTU R$ 0. Outra unidade do mesmo condomínio do cnm-47779084 (1500+420, 72 m², Marilene) e do cnm-25736364 (apto 403, 1800+420, mobiliado, Silvio Iwata). Coordenada reutilizada do anúncio 47779084.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis, ref. 02186.001. Elevador não informado. A 4,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.840.",
+      "tags": [
+        "A 4,5 km da ACIM"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/33/338639823704548.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1476827138",
+      "portal": "OLX (Lélo Imóveis, código 02186.001, tel. 0443 225-…)",
+      "encontrado_em": "2026-11-22",
+      "lat": -23.44957,
+      "lng": -51.90829
+    },
+    {
       "id": "cnm-47779084",
       "titulo": "Apartamento no Condomínio Vitória Régia — Rua Mário José De Faria Ferraz, 136 — Parque Residencial Aeroporto",
       "finalidade": "aluguel",
       "tipo": "Apartamento",
       "casa": false,
       "preco": 1500,
-      "condominio": null,
+      "condominio": 420,
       "iptu": null,
       "bairro": "Parque Residencial Aeroporto",
       "endereco": "Rua Mário José De Faria Ferraz, 136",
@@ -2020,8 +2286,8 @@
       "vagas": 1,
       "area_m2": 72,
       "destaque": false,
-      "descricao": "Rua Mário José De Faria Ferraz, 136. 72 m², 1 suíte. 72 m². IPTU não informado. Mesmo prédio da Rua Mário José de Faria Ferraz, 136 (anúncio 25736364 indica condomínio aproximado de R$ 420; a confirmar). 2 quartos (1 suíte).",
-      "nota_grokbot": "Imobiliária: Marilene Insaurralde  Imoveis. Elevador não informado. A 4,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Condomínio não informado (aluguel R$ 1.500); só serve se o condomínio for até R$ 850 para caber no teto do site. A confirmar: IPTU.",
+      "descricao": "Rua Mário José De Faria Ferraz, 136. 72 m², 1 suíte. 72 m². IPTU não informado. 2 quartos (1 suíte). Condomínio R$ 420 confirmado no OLX 1544485021 (Marilene Insaurralde, IMÓVEL 353584); total aluguel+cond. R$ 1.920. Mantido o link oficial do CNM. Mesmo prédio do anúncio 25736364 (apto 403, 1800+420, mobiliado) e do OLX 1476827138 (1400+440, 63 m², Lélo).",
+      "nota_grokbot": "Imobiliária: Marilene Insaurralde  Imoveis. Elevador não informado. A 4,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.920. A confirmar: IPTU.",
       "tags": [
         "A 4,5 km da ACIM"
       ],
@@ -2134,7 +2400,7 @@
       "vagas": 2,
       "area_m2": 117,
       "destaque": false,
-      "descricao": "Rua Pioneiro Pergentino Prudente Francisco, 176. 117 m². 117 m². IPTU não informado. É sobrado (térrea não se aplica).",
+      "descricao": "Rua Pioneiro Pergentino Prudente Francisco, 176. 117 m². 117 m². IPTU não informado. É sobrado (térrea não se aplica). Também no OLX 1548745864 (Jardim Rebouças, 117 m², R$ 2.000, código 00004435, tel. (44) 3112-1… da Silvio Iwata); mantido o link oficial do CNM.",
       "nota_grokbot": "Imobiliária: Silvio Iwata. Elevador não informado. A 5,1 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.000. A confirmar: se a casa é térrea, IPTU.",
       "tags": [
         "A 5,1 km da ACIM"
@@ -2154,6 +2420,38 @@
       "encontrado_em": "2026-11-22",
       "lat": -23.37938,
       "lng": -51.960053
+    },
+    {
+      "id": "olx-1513083306",
+      "titulo": "Casa na Rua Pioneiro José Peralta Pardial, Parque Residencial Aeroporto",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 2100,
+      "condominio": null,
+      "iptu": null,
+      "bairro": "Parque Residencial Aeroporto",
+      "endereco": "Rua Pioneiro José Peralta Pardial, Parque Residencial Aeroporto (CEP 87055-180 do anúncio; número não informado)",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 2,
+      "area_m2": 95,
+      "destaque": false,
+      "descricao": "Rua Pioneiro José Peralta Pardial, Parque Residencial Aeroporto (CEP 87055-180 do anúncio; número não informado). 95 m², 1 suíte. Casa 95 m², suíte, cozinha planejada, área gourmet com churrasqueira, edícula, quintal frontal. Preço riscado de R$ 2.200 para R$ 2.100. Condomínio e IPTU não informados (casa). Móveis planejados na cozinha não bastam para marcar como mobiliado. Coordenada no trecho da Rua Pioneiro José Peralta Pardial que o Nominatim localiza no Parque Residencial Aeroporto III (CEP 87112-585); o anúncio informa CEP 87055-180, mesmo logradouro no Parque Residencial Aeroporto.",
+      "nota_grokbot": "Imobiliária: ref. CA3472, tel. (44) 3226-4…. Sem elevador (não se aplica). A 5,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.100. A confirmar: se a casa é térrea, IPTU.",
+      "tags": [
+        "A 5,2 km da ACIM"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/35/358689466562473.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1513083306",
+      "portal": "OLX (código CA3472, tel. (44) 3226-4…)",
+      "encontrado_em": "2026-11-22",
+      "quintal": true,
+      "lat": -23.4406522,
+      "lng": -51.8950969
     },
     {
       "id": "cnm-47551559",
@@ -2236,6 +2534,38 @@
       "lng": -51.90124
     },
     {
+      "id": "olx-1553882227",
+      "titulo": "Casa na Rua Aristóteles César Lamartine Melo, Jardim Atami",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 2250,
+      "condominio": null,
+      "iptu": null,
+      "bairro": "Jardim Atami",
+      "endereco": "Rua Aristóteles César Lamartine Melo, Jardim Atami (CEP 87062-275 do anúncio; número não informado)",
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "area_m2": 105,
+      "destaque": false,
+      "descricao": "Rua Aristóteles César Lamartine Melo, Jardim Atami (CEP 87062-275 do anúncio; número não informado). 105 m², 1 suíte. Casa 105 m², R$ 2.250 (só no site; condomínio e IPTU não informados). Conflito no anúncio: detalhes = 2 quartos; texto = 3 quartos (1 suíte). Atende o mínimo de 2q+2b de qualquer forma. Coordenada no trecho da Rua Aristóteles César Lamartine Melo (ViaCEP do CEP 87062-275).",
+      "nota_grokbot": "Imobiliária: Prado Imóveis, ref. CA0948. Sem elevador (não se aplica). A 5,4 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.250. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. A confirmar: se a casa é térrea, IPTU.",
+      "tags": [
+        "A 5,4 km da ACIM",
+        "Acima de R$ 2.200"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/93/937667461528866.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1553882227",
+      "portal": "OLX (Prado Imóveis, código CA0948, tel. (44) 3222-2…)",
+      "encontrado_em": "2026-11-22",
+      "lat": -23.4697087,
+      "lng": -51.9514821
+    },
+    {
       "id": "cnm-47897443",
       "titulo": "Casa na Rua Pioneira Rosa Esteves Gusmão, 158 — Jardim Diamante",
       "finalidade": "aluguel",
@@ -2272,6 +2602,70 @@
       "encontrado_em": "2026-11-22",
       "lat": -23.372933,
       "lng": -51.941251
+    },
+    {
+      "id": "olx-1530709299",
+      "titulo": "Casa na Rua Pioneiro José de Paula, Jardim Novo Alvorada",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 1900,
+      "condominio": 0,
+      "iptu": 0,
+      "bairro": "Jardim Novo Alvorada",
+      "endereco": "Rua Pioneiro José de Paula, Jardim Novo Alvorada (CEP 87035-500 do anúncio; número não informado)",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 3,
+      "area_m2": 109,
+      "destaque": false,
+      "descricao": "Rua Pioneiro José de Paula, Jardim Novo Alvorada (CEP 87035-500 do anúncio; número não informado). 109 m², terreno de 300 m², 1 suíte. Casa 109,48 m² em terreno de 300 m², amplo quintal, 3 vagas. Condomínio e IPTU informados como R$ 0. O bairro é Jardim Novo Alvorada (bairro oficial distinto na lista da Prefeitura de Maringá; CEP 87035-500 = Rua Pioneiro José de Paula). NÃO é o Jardim Alvorada excluído — o texto só cita proximidade da UBS Jardim Alvorada. A etiqueta 'Mobiliado' apareceu nas características, mas a descrição não lista móveis soltos — não marquei como mobiliado. Coordenada no trecho da Rua Pioneiro José de Paula.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis, ref. 06380.001. Sem elevador (não se aplica). A 5,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.900. A confirmar: se a casa é térrea.",
+      "tags": [
+        "A 5,6 km da ACIM"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/32/320616948240178.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1530709299",
+      "portal": "OLX (Lélo Imóveis, código 06380.001)",
+      "encontrado_em": "2026-11-22",
+      "terreno_m2": 300,
+      "quintal": true,
+      "lat": -23.3859777,
+      "lng": -51.9031146
+    },
+    {
+      "id": "olx-1554301245",
+      "titulo": "Casa na Rua Rio Vermelho, Jardim Campos Elísios",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 2200,
+      "condominio": 0,
+      "iptu": null,
+      "bairro": "Jardim Campos Elísios",
+      "endereco": "Rua Rio Vermelho, Jardim Campos Elísios (número não informado)",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 2,
+      "area_m2": 72,
+      "destaque": false,
+      "descricao": "Rua Rio Vermelho, Jardim Campos Elísios (número não informado). 72 m², 1 suíte. Casa 72 m², 2 dormitórios (1 suíte) + banheiro social, sala em 2 ambientes, 2 vagas. Condomínio informado como R$ 0. Super Destaque, atualizado em 18/11/2026. Coordenada no trecho da Rua Rio Vermelho (CEP 87043-410).",
+      "nota_grokbot": "Imobiliária: ref. L30074 / 30074, tel. (44) 3222-8…. Sem elevador (não se aplica). A 6,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. A confirmar: se a casa é térrea.",
+      "tags": [
+        "A 6,2 km da ACIM"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/24/248635827006154.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1554301245",
+      "portal": "OLX (código L30074, tel. (44) 3222-8…)",
+      "encontrado_em": "2026-11-22",
+      "lat": -23.4024117,
+      "lng": -51.8846832
     },
     {
       "id": "cnm-47533502",
