@@ -69,13 +69,6 @@
         </svg>
         <span>Comparar (<b id="compareCount">0</b>)</span>
       </button>
-
-      <button id="jsonModalBtn" class="btn-outline" type="button" title="Integrar, testar ou baixar o JSON do Grokbot">
-        <svg class="ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <path d="M7 5L3 10L7 15M13 5L17 10L13 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span>JSON Grokbot</span>
-      </button>
     </div>
   </header>
 
@@ -134,11 +127,6 @@
         <div class="filters__meta">
           <span id="resultsCount">Carregando casas…</span>
           <button id="resetFiltersBtn" type="button" class="link-btn" hidden>Limpar filtros</button>
-        </div>
-
-        <div id="previewBanner" class="preview-banner" hidden>
-          <span>Prévia JSON local (Grokbot)</span>
-          <button id="exitPreviewBtn" type="button">Voltar ao publicado</button>
         </div>
       </section>
 
@@ -300,13 +288,6 @@
       <span>Salvas</span>
       <span class="bottom-nav__dot" id="navSavedDot" hidden></span>
     </button>
-
-    <button type="button" class="bottom-nav__btn" id="navJsonBtn">
-      <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M8.5 7L4 12L8.5 17M15.5 7L20 12L15.5 17" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span>Grokbot</span>
-    </button>
   </nav>
 
   <!-- ============ FILTERS BOTTOM SHEET (Mobile & Quick All-Filters) ============ -->
@@ -416,56 +397,6 @@
         <button type="button" class="icon-btn" data-close-modal="compareModal" aria-label="Fechar">×</button>
       </div>
       <div class="modal__body" id="compareBody"></div>
-    </div>
-  </div>
-
-  <!-- ============ GROKBOT JSON MODAL ============ -->
-  <div class="modal-backdrop modal-backdrop--sheet" id="jsonModal" hidden role="dialog" aria-modal="true" aria-labelledby="jsonModalTitle">
-    <div class="modal modal--wide modal--sheet">
-      <div class="drawer__grab" aria-hidden="true"><span></span></div>
-      <div class="modal__head">
-        <div>
-          <h2 id="jsonModalTitle">Grokbot · <code>data/casas.json</code></h2>
-          <p class="modal__sub">Cole o JSON do Grokbot para testar na hora, baixe o arquivo ou copie o prompt pronto.</p>
-        </div>
-        <button type="button" class="icon-btn" data-close-modal="jsonModal" aria-label="Fechar">×</button>
-      </div>
-
-      <div class="modal__tabs" role="tablist">
-        <button type="button" class="tab-btn is-active" data-tab="paste" role="tab" aria-selected="true">Colar JSON</button>
-        <button type="button" class="tab-btn" data-tab="current" role="tab" aria-selected="false">JSON Atual</button>
-        <button type="button" class="tab-btn" data-tab="prompt" role="tab" aria-selected="false">Prompt Grokbot</button>
-      </div>
-
-      <div class="modal__body">
-        <div class="tab-panel is-active" data-panel="paste">
-          <p class="help-text">Cole abaixo o JSON gerado pelo Grokbot para visualizar imediatamente no mapa ou baixar pronto para <code>data/casas.json</code> no GitHub.</p>
-          <textarea id="jsonInput" class="code-editor" spellcheck="false" rows="11" placeholder='{ "atualizado_em": "2026-11-22", "fonte": "Grokbot", "casas": [ ... ] }'></textarea>
-          <div id="jsonError" class="form-error" hidden></div>
-          <div class="modal__footer-actions">
-            <button type="button" id="applyJsonBtn" class="btn-primary">Visualizar no mapa</button>
-            <button type="button" id="downloadJsonBtn" class="btn-outline">Baixar casas.json</button>
-            <button type="button" id="loadSampleIntoEditorBtn" class="btn-ghost">Carregar atual</button>
-            <button type="button" id="resetJsonBtn" class="btn-ghost" hidden>Voltar ao publicado</button>
-          </div>
-        </div>
-
-        <div class="tab-panel" data-panel="current">
-          <div class="code-toolbar">
-            <span>Feed ativo (<code>data/casas.json</code>)</span>
-            <button type="button" id="copyCurrentJsonBtn" class="btn-outline btn-sm">Copiar</button>
-          </div>
-          <pre id="currentJsonView" class="code-view"></pre>
-        </div>
-
-        <div class="tab-panel" data-panel="prompt">
-          <div class="code-toolbar">
-            <span>Instruções prontas para o Grokbot</span>
-            <button type="button" id="copyPromptBtn" class="btn-primary btn-sm">Copiar prompt</button>
-          </div>
-          <pre id="grokbotPromptView" class="code-view"></pre>
-        </div>
-      </div>
     </div>
   </div>
 

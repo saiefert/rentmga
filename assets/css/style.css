@@ -1649,7 +1649,7 @@ body[data-tab="salvas"] .saved-head { display: flex; }
   -webkit-backdrop-filter: blur(14px);
   border-top: 1px solid var(--border);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .bottom-nav__btn {
   position: relative;
