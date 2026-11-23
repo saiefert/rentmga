@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-23T00:11:46-03:00",
+  "atualizado_em": "2026-11-23T03:28:43-03:00",
   "fonte": "Grokbot",
   "cidade": "Maringá - PR",
   "observacao": "Varredura de toda Maringá-PR, com preferência aos imóveis mais próximos da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01). No mínimo 2 quartos e 2 banheiros (suíte conta como banheiro; lavabo não). Teto do site: aluguel + condomínio até R$ 2.350 (IPTU à parte). Teto do e-mail para Dionizia permanece R$ 2.200. Excluídos apenas: Cidade Alta, Conjunto Requião e Jardim Alvorada. A lista do site é ordenada pela distância em linha reta até a ACIM. Imóveis entre R$ 2.200 e R$ 2.350 entram só no site, com a etiqueta “Acima de R$ 2.200”.",
@@ -182,8 +182,8 @@
       "vagas": 1,
       "area_m2": 90,
       "destaque": false,
-      "descricao": "Zona 01, próximo ao Shopping Avenida Center e ao Parque do Ingá (número não divulgado). 90 m², 1 suíte. 90 m², 3 dormitórios (1 suíte), sala em 2 ambientes, cozinha com balcão e armários (móveis planejados na cozinha, não conta como mobiliado), 1 vaga. O anúncio situa o imóvel próximo às Lojas Americanas, Genko e Shopping Avenida Center / Parque do Ingá, mas não divulga o número da rua. Anúncio no Deztop com mais de 1 mês: confirmar se ainda está disponível.",
-      "nota_grokbot": "Imobiliária: Pedro Granado Imóveis. Elevador não informado. A 990 m da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.050. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado).",
+      "descricao": "Zona 01, próximo ao Shopping Avenida Center e ao Parque do Ingá (número não divulgado). 90 m², 1 suíte. 90 m², 3 dormitórios (1 suíte), sala em 2 ambientes, cozinha com balcão e armários, 1 vaga. O anúncio situa o imóvel próximo às Lojas Americanas, Genko e Shopping Avenida Center / Parque do Ingá, mas não divulga o número da rua. Anúncio no Deztop com mais de 1 mês: confirmar se ainda está disponível.",
+      "nota_grokbot": "Imobiliária: Pedro Granado Imóveis. Elevador não informado. A 990 m da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.050. Tem armários ou móveis planejados (conta como com móveis). Cozinha planejada com armários (balcão).",
       "tags": [
         "Perto da ACIM",
         "A 990 m da ACIM",
@@ -195,6 +195,7 @@
       "link": "https://pr.mgfimoveis.com.br/maringa-apartamento-zona-01-aluguel-pr-maringa-302374087",
       "portal": "Deztop / MGF (Pedro Granado Imóveis)",
       "encontrado_em": "2026-11-22",
+      "moveis": true,
       "lat": -23.4190891,
       "lng": -51.9322757
     },
@@ -216,13 +217,14 @@
       "area_m2": 59,
       "destaque": false,
       "descricao": "Rua Rui Barbosa, 1262, Zona 07 (Residencial Perseverance; número cruzado com o cadastro do condomínio e o CEP 87020-090 do anúncio). 59 m², 1 suíte. 59 m², apartamento novo (nunca habitado). Total R$ 2.309 (só no site). O título no OLX abrevia 'RESIDENCIAL PERSEVE'; o condomínio Residencial Perseverance fica na Rua Rui Barbosa, 1262 (CEP do anúncio 87020-090 = Rua Rui Barbosa, até 1569/1570). Coordenada no trecho da rua (Nominatim não devolveu o nº 1262).",
-      "nota_grokbot": "Imobiliária: ref. AP3482, tel. (44) 3226-4…. Elevador: sim (o anúncio cita elevador e área de lazer completa). A 1,0 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.309. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Semimobiliado, segundo o anúncio. O anúncio diz 'novo e semi-mobiliado' e 'nunca habitado'; também cita móveis planejados — conferir o que fica no imóvel.",
+      "nota_grokbot": "Imobiliária: ref. AP3482, tel. (44) 3226-4…. Elevador: sim (o anúncio cita elevador e área de lazer completa). A 1,0 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.309. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Semimobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Semi-mobiliado e nunca habitado; o anúncio também cita móveis planejados.",
       "tags": [
         "Elevador",
         "Perto da ACIM",
         "A 1,0 km da ACIM",
         "Acima de R$ 2.200",
-        "Semimobiliado"
+        "Semimobiliado",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://img.olx.com.br/images/19/195622817218512.jpg"
@@ -251,11 +253,12 @@
       "vagas": 1,
       "destaque": false,
       "descricao": "Av. Mauá, 1308, 6º andar, Zona 03 (Edifício Amazonas). 1 suíte. parece ser o mesmo apartamento anunciado por três imobiliárias; confirmar com uma delas. IPTU de uns R$ 133 à parte.",
-      "nota_grokbot": "Imobiliária: Silvio Iwata (também Marilene Insaurralde e Imobiliária Delta). Com elevador. Perto da ciclovia da Av. Brasil (~150 m, linha reta). A 1,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.150.",
+      "nota_grokbot": "Imobiliária: Silvio Iwata (também Marilene Insaurralde e Imobiliária Delta). Com elevador. Perto da ciclovia da Av. Brasil (~150 m, linha reta). A 1,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.150. Tem armários ou móveis planejados (conta como com móveis). Guarda-roupa nos quartos; armários nos banheiros e na cozinha.",
       "tags": [
         "Elevador",
         "A 1,2 km da ACIM",
-        "Perto da ciclovia"
+        "Perto da ciclovia",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445a.jpg",
@@ -270,6 +273,7 @@
       "link": "https://sub100.com.br/imoveis/3620008445/locacao/apartamento-em-maringa-pr/zona-03",
       "portal": "Sub100 + Chaves na Mão",
       "encontrado_em": "2026-11-21",
+      "moveis": true,
       "lat": -23.4199674,
       "lng": -51.9294986,
       "proximidades": [
@@ -297,11 +301,12 @@
       "area_m2": 66,
       "destaque": false,
       "descricao": "Av. Mauá, 1308, 6º andar, Zona 03 (Edifício Amazonas). 66 m². 66 m². IPTU não informado. 6º andar do Edifício Amazonas (Av. Mauá, 1308). Semimobiliado (sofá, rack, mesa e cadeiras). Elevador. O anúncio de 2 quartos no mesmo prédio indica condomínio de R$ 550 (a confirmar neste de 3 quartos).",
-      "nota_grokbot": "Imobiliária: Marilene Insaurralde  Imoveis. Com elevador. A 1,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Condomínio não informado (aluguel R$ 1.600); só serve se o condomínio for até R$ 750 para caber no teto do site. Semimobiliado, segundo o anúncio. A confirmar: IPTU.",
+      "nota_grokbot": "Imobiliária: Marilene Insaurralde  Imoveis. Com elevador. A 1,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Condomínio não informado (aluguel R$ 1.600); só serve se o condomínio for até R$ 750 para caber no teto do site. Semimobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Semimobiliado (sofá, rack, mesa e cadeiras); também tem guarda-roupa e armários na cozinha, lavanderia e banheiros. A confirmar: IPTU.",
       "tags": [
         "Elevador",
         "A 1,2 km da ACIM",
-        "Semimobiliado"
+        "Semimobiliado",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1000911/47956402/pr-maringa-zona-03-avenida-maua-apartamento-para-alugar-3-quartos-6ad8c2df-1.jpg",
@@ -338,7 +343,7 @@
       "area_m2": 75,
       "destaque": false,
       "descricao": "Rua Líbero Badaró, 261, Zona 07. 75 m², 1 suíte. confirmar o endereço; condomínio aproximado, mais rateio de água e gás. Confirmado no OLX 1543298705 (Massaru, 75 m², 1700+500): o condomínio não tem elevador.",
-      "nota_grokbot": "Imobiliária: Massaru Imóveis (ref. 00001313). Sem elevador (NÃO (OLX: \"Condominio sem elevado\"; entre Av. Herval e Av. São Paulo)). ~900 m da ciclovia da Av. Brasil (linha reta, aproximado). A 1,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado).",
+      "nota_grokbot": "Imobiliária: Massaru Imóveis (ref. 00001313). Sem elevador (NÃO (OLX: \"Condominio sem elevado\"; entre Av. Herval e Av. São Paulo)). ~900 m da ciclovia da Av. Brasil (linha reta, aproximado). A 1,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. Tem armários ou móveis planejados (conta como com móveis). Armários nos quartos e cozinha planejada (com cooktop).",
       "tags": [
         "A 1,3 km da ACIM",
         "Móveis planejados"
@@ -356,6 +361,7 @@
       "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-maringa-zona-07-110m2-RS1700/id-47656458/",
       "portal": "Chaves na Mão",
       "encontrado_em": "2026-11-21",
+      "moveis": true,
       "lat": -23.4126096,
       "lng": -51.9347696,
       "proximidades": [
@@ -384,11 +390,12 @@
       "area_m2": 67,
       "destaque": false,
       "descricao": "Rua Tietê, 438, ap 302, Zona 07. 67 m², 1 suíte. nada importante. Mesmo imóvel no OLX 1551215430 (Ed. Spring, 67 m², IPTU 0, código 02928.002); mantido o link oficial da Sub100/Lélo. Incluí a capa do OLX porque o S3 da Sub100 só deixou a miniatura.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Com elevador. ~1,1 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.050. Semimobiliado, segundo o anúncio. A descrição cita mesa na cozinha (além de armários); por isso foi marcado como semimobiliado.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis. Com elevador. ~1,1 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.050. Semimobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Semimobiliado (mesa na cozinha) e armários na cozinha.",
       "tags": [
         "Elevador",
         "A 1,3 km da ACIM",
-        "Semimobiliado"
+        "Semimobiliado",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://img.olx.com.br/images/45/453687580175294.jpg",
@@ -426,10 +433,11 @@
       "area_m2": 79,
       "destaque": false,
       "descricao": "Rua Quintino Bocaiúva, 779. 79 m², 1 suíte. 79 m². IPTU não informado. 79,40 m² de área privativa. 1 dormitório + 1 suíte, banheiro social, 1 vaga coberta. Condomínio médio R$ 400 (consultar).",
-      "nota_grokbot": "Imobiliária: Haraki Imóveis. Elevador não informado. A 1,4 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.250. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. A confirmar: IPTU.",
+      "nota_grokbot": "Imobiliária: Haraki Imóveis. Elevador não informado. A 1,4 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.250. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Tem armários ou móveis planejados (conta como com móveis). Armário na cozinha. A confirmar: IPTU.",
       "tags": [
         "A 1,4 km da ACIM",
-        "Acima de R$ 2.200"
+        "Acima de R$ 2.200",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/303537/45189981/pr-maringa-zona-07-rua-quintino-bocaiuva-apartamento-para-alugar-2-quartos-6a6b2c76-1.jpg",
@@ -444,6 +452,7 @@
       "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-maringa-zona-07-134m2-RS1850/id-45189981/",
       "portal": "Chaves na Mão (HARAKI IMÓVEIS)",
       "encontrado_em": "2026-11-22",
+      "moveis": true,
       "lat": -23.4114,
       "lng": -51.94794
     },
@@ -501,7 +510,7 @@
       "area_m2": 84,
       "destaque": false,
       "descricao": "Rua Mandaguari, 354, Zona 07. 84 m², 1 suíte. confirmar elevador.",
-      "nota_grokbot": "Imobiliária: Portal das Locações. Elevador não informado. ~1,2 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado). A confirmar: elevador.",
+      "nota_grokbot": "Imobiliária: Portal das Locações. Elevador não informado. ~1,2 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. Tem armários ou móveis planejados (conta como com móveis). Armários planejados na cozinha e armário na despensa. A confirmar: elevador.",
       "tags": [
         "A 1,5 km da ACIM",
         "Móveis planejados"
@@ -519,6 +528,7 @@
       "link": "https://sub100.com.br/imoveis/70420000066/locacao/apartamento-em-maringa-pr/zona-07",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
+      "moveis": true,
       "lat": -23.4095145,
       "lng": -51.9463481,
       "proximidades": [
@@ -852,10 +862,11 @@
       "area_m2": 145,
       "destaque": false,
       "descricao": "Rua Doutor Naby Zacarias, 262. 145 m². 145 m². IPTU não informado. É sobrado (térrea não se aplica).",
-      "nota_grokbot": "Imobiliária: Silvio Iwata. Elevador não informado. A 1,9 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.350. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. A confirmar: se a casa é térrea, IPTU.",
+      "nota_grokbot": "Imobiliária: Silvio Iwata. Elevador não informado. A 1,9 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.350. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Tem armários ou móveis planejados (conta como com móveis). Armários planejados na cozinha. A confirmar: se a casa é térrea, IPTU.",
       "tags": [
         "A 1,9 km da ACIM",
-        "Acima de R$ 2.200"
+        "Acima de R$ 2.200",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/49034178/pr-maringa-vila-progresso-rua-doutor-naby-zacarias-casa-sobrado-para-alugar-3-quartos-6afedb31-1.jpg",
@@ -870,6 +881,7 @@
       "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-vila-progresso-280m2-RS2350/id-49034178/",
       "portal": "Chaves na Mão (IMOBILIÁRIA SILVIO IWATA)",
       "encontrado_em": "2026-11-22",
+      "moveis": true,
       "lat": -23.410452,
       "lng": -51.954721
     },
@@ -981,7 +993,7 @@
       "vagas": 1,
       "destaque": false,
       "descricao": "Rua Santos Dumont, 1420, ap 503, Zona 03. confirmar elevador.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Elevador não informado. Perto da ciclovia da Av. Brasil (~100 m, linha reta). A 2,0 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.160. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado). A confirmar: elevador.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis. Elevador não informado. Perto da ciclovia da Av. Brasil (~100 m, linha reta). A 2,0 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.160. Tem armários ou móveis planejados (conta como com móveis). Armários planejados na cozinha e armários na área de serviço. A confirmar: elevador.",
       "tags": [
         "A 2,0 km da ACIM",
         "Perto da ciclovia",
@@ -1000,6 +1012,7 @@
       "link": "https://sub100.com.br/imoveis/2020004830/locacao/apartamento-em-maringa-pr/zona-03",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
+      "moveis": true,
       "lat": -23.424419,
       "lng": -51.9222922,
       "proximidades": [
@@ -1199,11 +1212,12 @@
       "area_m2": 75,
       "destaque": false,
       "descricao": "Rua Distrito Federal, 98. 75 m², 1 suíte. 75 m². Isento de IPTU. O anúncio descreve o imóvel no Jardim Novo Horizonte, ao lado da Av. Cerro Azul; o endereço cadastrado é Rua Distrito Federal, 98, Chácara Paulista. 1 suíte + 2 quartos, 2 vagas paralelas. Isento de IPTU. Elevador.",
-      "nota_grokbot": "Imobiliária: Casa Nova. Com elevador. A 2,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.280. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350.",
+      "nota_grokbot": "Imobiliária: Casa Nova. Com elevador. A 2,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.280. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Tem armários ou móveis planejados (conta como com móveis). Armário em um dos quartos e gabinete na cozinha.",
       "tags": [
         "Elevador",
         "A 2,3 km da ACIM",
-        "Acima de R$ 2.200"
+        "Acima de R$ 2.200",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/382435/48992667/pr-maringa-chacara-paulista-rua-distrito-federal-apartamento-para-alugar-3-quartos-6afd8725-1.jpg",
@@ -1218,6 +1232,7 @@
       "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-3-quartos-com-garagem-pr-maringa-chacara-paulista-128m2-RS1700/id-48992667/",
       "portal": "Chaves na Mão (IMOBILIÁRIA CASA NOVA)",
       "encontrado_em": "2026-11-22",
+      "moveis": true,
       "lat": -23.44105,
       "lng": -51.93205
     },
@@ -1459,12 +1474,13 @@
       "vagas": 1,
       "area_m2": 50,
       "destaque": true,
-      "descricao": "Rua Nardina Rodrigues Johansen, Loteamento Malbec (número não informado). 50 m², 1 suíte. 50 m². Locação direto com o proprietário (destaque). Suíte planejada e máquina de lavar inclusa; móveis planejados sozinhos não bastam para marcar como mobiliado. É outro imóvel da mesma rua do Spazio Merlot (cnm-38666028 e olx-1546729617), sem número no anúncio. Coordenada no trecho da Rua Nardina Rodrigues Johansen (CEP 87005-002).",
-      "nota_grokbot": "Particular: locação direto com o proprietário; Super Destaque no OLX. Elevador: sim (indicado na varredura do navegador; a ficha do OLX não repetiu o item; o condomínio tem portaria 24h e área de lazer). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200.",
+      "descricao": "Rua Nardina Rodrigues Johansen, Loteamento Malbec (número não informado). 50 m², 1 suíte. 50 m². Locação direto com o proprietário (destaque). Suíte planejada e máquina de lavar inclusa. É outro imóvel da mesma rua do Spazio Merlot (cnm-38666028 e olx-1546729617), sem número no anúncio. Coordenada no trecho da Rua Nardina Rodrigues Johansen (CEP 87005-002).",
+      "nota_grokbot": "Particular: locação direto com o proprietário; Super Destaque no OLX. Elevador: sim (indicado na varredura do navegador; a ficha do OLX não repetiu o item; o condomínio tem portaria 24h e área de lazer). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. Tem armários ou móveis planejados (conta como com móveis). Cozinha planejada integrada à lavanderia e suíte com móveis planejados.",
       "tags": [
         "Particular",
         "Elevador",
-        "A 2,6 km da ACIM"
+        "A 2,6 km da ACIM",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://img.olx.com.br/images/86/862625572700917.jpg"
@@ -1472,6 +1488,7 @@
       "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/apartamento-2-quartos-2-banheiros-1547143644",
       "portal": "OLX (particular, Super Destaque)",
       "encontrado_em": "2026-11-22",
+      "moveis": true,
       "lat": -23.4384389,
       "lng": -51.9228342
     },
@@ -1533,12 +1550,13 @@
       "area_m2": 51,
       "destaque": false,
       "descricao": "Rua Nardina Rodrigues Johansen, 392 (Spazio Merlot). 51 m², 1 suíte. 51 m², mobiliado, 2 vagas, IPTU 0. Total R$ 2.340 (acima do teto de e-mail de R$ 2.200; entra só no site). Outra unidade do Spazio Merlot, diferente do cnm-38666028 (1800+450, 68 m², SEB, não mobiliado, 1 vaga).",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis, ref. 05618.001. Elevador: sim (torres de 11 andares do Spazio Merlot; também indicado na varredura do navegador). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.340. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Mobiliado, segundo o anúncio. Mobiliado (camas, guarda-roupa, sofá, painel de TV). IPTU R$ 0.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis, ref. 05618.001. Elevador: sim (torres de 11 andares do Spazio Merlot; também indicado na varredura do navegador). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.340. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Mobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Mobiliado (camas, armários, sofá, painel de TV) e armários planejados na cozinha.",
       "tags": [
         "Elevador",
         "A 2,6 km da ACIM",
         "Acima de R$ 2.200",
-        "Mobiliado"
+        "Mobiliado",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://img.olx.com.br/images/33/332647829827799.jpg"
@@ -1650,7 +1668,7 @@
       "vagas": 1,
       "destaque": true,
       "descricao": "Travessa Liberdade, 175, ap 305, Zona 08 (Edifício Platinum). 1 suíte. IPTU não informado no anúncio (o Viva Real diz isento). Também no OLX 1547283879 (mesmo preço 1900+280, Travessa Liberdade, elevador e academia); mantido o link oficial da Sub100/Lélo.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Com elevador. Perto da ciclovia da Av. Brasil (~450 m, linha reta). A 2,9 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.180. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado). A confirmar: IPTU.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis. Com elevador. Perto da ciclovia da Av. Brasil (~450 m, linha reta). A 2,9 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.180. Tem armários ou móveis planejados (conta como com móveis). Armários planejados na cozinha (bancada de granito). A confirmar: IPTU.",
       "tags": [
         "Elevador",
         "A 2,9 km da ACIM",
@@ -1670,6 +1688,7 @@
       "link": "https://sub100.com.br/imoveis/2020007876/locacao/apartamento-em-maringa-pr/zona-08",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
+      "moveis": true,
       "lat": -23.4303092,
       "lng": -51.9143204,
       "proximidades": [
@@ -1743,9 +1762,10 @@
       "vagas": 2,
       "destaque": false,
       "descricao": "Rua Bogotá, 2264, Vila Morangueira. 1 suíte. não diz se é térrea.",
-      "nota_grokbot": "Imobiliária: Daros. Elevador não informado. ~1,2 km da ciclovia da Av. Brasil (linha reta, aproximado). A 3,4 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. A confirmar: se a casa é térrea.",
+      "nota_grokbot": "Imobiliária: Daros. Elevador não informado. ~1,2 km da ciclovia da Av. Brasil (linha reta, aproximado). A 3,4 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. Tem armários ou móveis planejados (conta como com móveis). Armários na cozinha. A confirmar: se a casa é térrea.",
       "tags": [
-        "A 3,4 km da ACIM"
+        "A 3,4 km da ACIM",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://s3.amazonaws.com/portal-sub100/imoveis/946/94620001370/94620001370a.jpg"
@@ -1753,6 +1773,7 @@
       "link": "https://sub100.com.br/imoveis/94620001370/locacao/casa-em-maringa-pr/vila-morangueira",
       "portal": "Sub100",
       "encontrado_em": "2026-11-21",
+      "moveis": true,
       "lat": -23.4161283,
       "lng": -51.9091986,
       "proximidades": [
@@ -1910,10 +1931,11 @@
       "vagas": 1,
       "area_m2": 70,
       "destaque": false,
-      "descricao": "Rua Adão Elói Trojan, Jardim Ipanema (CEP 87053-230 do anúncio; número não informado; próx. Hospital Municipal / Av. Nildo Ribeiro). 70 m², 1 suíte. Casa 70 m², suíte, cozinha planejada, quintal gramado. Valores da ficha: aluguel R$ 1.800, condomínio R$ 0, IPTU R$ 0. ATENÇÃO: o texto do anúncio também fala em 'casa residencial para venda' (possível copia-e-cola); conferir se está mesmo para locação. A etiqueta 'Mobiliado' apareceu nas características, mas a descrição só cita cozinha planejada — não marquei como mobiliado. Coordenada no trecho da Rua Adão Elói Trojan mais próximo do CEP 87053-230.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis, ref. 02262.001. Sem elevador (não se aplica). A 4,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. A confirmar: se a casa é térrea.",
+      "descricao": "Rua Adão Elói Trojan, Jardim Ipanema (CEP 87053-230 do anúncio; número não informado; próx. Hospital Municipal / Av. Nildo Ribeiro). 70 m², 1 suíte. Casa 70 m², suíte, cozinha planejada, quintal gramado. Valores da ficha: aluguel R$ 1.800, condomínio R$ 0, IPTU R$ 0. ATENÇÃO: o texto do anúncio também fala em 'casa residencial para venda' (possível copia-e-cola); conferir se está mesmo para locação. A etiqueta Mobiliado também aparece nas características do OLX (a descrição confirma a cozinha planejada). Coordenada no trecho da Rua Adão Elói Trojan mais próximo do CEP 87053-230.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis, ref. 02262.001. Sem elevador (não se aplica). A 4,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. Tem armários ou móveis planejados (conta como com móveis). Cozinha planejada. A confirmar: se a casa é térrea.",
       "tags": [
-        "A 4,2 km da ACIM"
+        "A 4,2 km da ACIM",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://img.olx.com.br/images/95/955625704515029.jpg"
@@ -1922,6 +1944,7 @@
       "portal": "OLX (Lélo Imóveis, código 02262.001)",
       "encontrado_em": "2026-11-22",
       "quintal": true,
+      "moveis": true,
       "lat": -23.4564442,
       "lng": -51.9246053
     },
@@ -1943,9 +1966,10 @@
       "area_m2": 100,
       "destaque": false,
       "descricao": "Rua Das Pombas,. 100 m². 100 m². IPTU R$ 50 (conferir se é mensal). O anúncio não diz se a casa é térrea.",
-      "nota_grokbot": "Imobiliária: Granado Imóveis - João Granado. Elevador não informado. A 4,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.000.",
+      "nota_grokbot": "Imobiliária: Granado Imóveis - João Granado. Elevador não informado. A 4,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.000. Tem armários ou móveis planejados (conta como com móveis). Armários na cozinha e na sala.",
       "tags": [
-        "A 4,2 km da ACIM"
+        "A 4,2 km da ACIM",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/366633/21224522/pr-maringa-jardim-dos-passaros-rua-das-pombas-casa-sobrado-para-alugar-2-quartos-6aff611c-1.jpg",
@@ -1960,6 +1984,7 @@
       "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-2-quartos-com-garagem-pr-maringa-jardim-dos-passaros-301m2-RS2000/id-21224522/",
       "portal": "Chaves na Mão (GRANADO IMÓVEIS - JOÃO GRANADO)",
       "encontrado_em": "2026-11-22",
+      "moveis": true,
       "lat": -23.4006604,
       "lng": -51.9752153
     },
@@ -2163,10 +2188,11 @@
       "vagas": 2,
       "area_m2": 95,
       "destaque": false,
-      "descricao": "Rua Pioneiro José Peralta Pardial, Parque Residencial Aeroporto (CEP 87055-180 do anúncio; número não informado). 95 m², 1 suíte. Casa 95 m², suíte, cozinha planejada, área gourmet com churrasqueira, edícula, quintal frontal. Preço riscado de R$ 2.200 para R$ 2.100. Condomínio e IPTU não informados (casa). Móveis planejados na cozinha não bastam para marcar como mobiliado. Coordenada no trecho da Rua Pioneiro José Peralta Pardial que o Nominatim localiza no Parque Residencial Aeroporto III (CEP 87112-585); o anúncio informa CEP 87055-180, mesmo logradouro no Parque Residencial Aeroporto.",
-      "nota_grokbot": "Imobiliária: ref. CA3472, tel. (44) 3226-4…. Sem elevador (não se aplica). A 5,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.100. A confirmar: se a casa é térrea, IPTU.",
+      "descricao": "Rua Pioneiro José Peralta Pardial, Parque Residencial Aeroporto (CEP 87055-180 do anúncio; número não informado). 95 m², 1 suíte. Casa 95 m², suíte, cozinha planejada, área gourmet com churrasqueira, edícula, quintal frontal. Preço riscado de R$ 2.200 para R$ 2.100. Condomínio e IPTU não informados (casa). Coordenada no trecho da Rua Pioneiro José Peralta Pardial que o Nominatim localiza no Parque Residencial Aeroporto III (CEP 87112-585); o anúncio informa CEP 87055-180, mesmo logradouro no Parque Residencial Aeroporto.",
+      "nota_grokbot": "Imobiliária: ref. CA3472, tel. (44) 3226-4…. Sem elevador (não se aplica). A 5,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.100. Tem armários ou móveis planejados (conta como com móveis). Cozinha planejada com armários. A confirmar: se a casa é térrea, IPTU.",
       "tags": [
-        "A 5,2 km da ACIM"
+        "A 5,2 km da ACIM",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://img.olx.com.br/images/35/358689466562473.jpg"
@@ -2175,6 +2201,7 @@
       "portal": "OLX (código CA3472, tel. (44) 3226-4…)",
       "encontrado_em": "2026-11-22",
       "quintal": true,
+      "moveis": true,
       "lat": -23.4406522,
       "lng": -51.8950969
     },
@@ -2196,11 +2223,12 @@
       "area_m2": 62,
       "destaque": false,
       "descricao": "Rua Mário José De Faria Ferraz, 136. 62 m². 62 m². IPTU não informado. Apartamento 403, bloco 01. Mobiliado (sofá, mesa, camas, geladeira, micro-ondas, máquina de lavar). Portaria remota.",
-      "nota_grokbot": "Imobiliária: Silvio Iwata. Elevador não informado. A 5,4 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.220. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Mobiliado, segundo o anúncio. A confirmar: IPTU.",
+      "nota_grokbot": "Imobiliária: Silvio Iwata. Elevador não informado. A 5,4 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.220. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Mobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Mobiliado (sofá, mesa, camas, geladeira, micro-ondas, máquina de lavar); também tem cozinha planejada e armários. A confirmar: IPTU.",
       "tags": [
         "A 5,4 km da ACIM",
         "Acima de R$ 2.200",
-        "Mobiliado"
+        "Mobiliado",
+        "Móveis planejados"
       ],
       "fotos": [
         "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/25736364/pr-maringa-parque-residencial-aeroporto-rua-mario-jose-de-faria-ferraz-apartamento-para-alugar-2-quartos-6abf9f0b-1.jpg",
@@ -2447,7 +2475,7 @@
       "banheiros": 2,
       "destaque": false,
       "descricao": "Av. Brasil, 3006, ap 01. 2º banheiro é de serviço (1 social + 1 de serviço). IPTU R$ 232 à parte (com IPTU ≈ R$ 2.132). Dentro da regra aluguel+cond ≤ R$ 2.000.",
-      "nota_grokbot": "Imobiliária: Shimizu Imóveis. Sem elevador (NÃO). Perto da ciclovia da Av. Brasil (~30 m, linha reta). Total aluguel + condomínio: R$ 1.900. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado).",
+      "nota_grokbot": "Imobiliária: Shimizu Imóveis. Sem elevador (NÃO). Perto da ciclovia da Av. Brasil (~30 m, linha reta). Total aluguel + condomínio: R$ 1.900. Tem armários ou móveis planejados (conta como com móveis). Armário em um dos quartos e cozinha planejada.",
       "tags": [
         "Perto da ciclovia",
         "Móveis planejados"
@@ -2465,6 +2493,7 @@
       "link": "https://sub100.com.br/imoveis/3420002302/locacao/apartamento-em-maringa-pr/zona-03",
       "portal": "Sub100 (Shimizu Imóveis; achado do navegador pelo agente principal)",
       "encontrado_em": "2026-11-19",
+      "moveis": true,
       "proximidades": [
         {
           "nome": "Ciclovia da Av. Brasil",
@@ -2490,8 +2519,10 @@
       "area_m2": 137,
       "destaque": false,
       "descricao": "137 m². 137 m². IPTU não informado. O anúncio não diz se a casa é térrea.",
-      "nota_grokbot": "Imobiliária: Locar Fácil - Maringá. Elevador não informado. Total aluguel + condomínio: R$ 2.000. A confirmar: IPTU.",
-      "tags": [],
+      "nota_grokbot": "Imobiliária: Locar Fácil - Maringá. Elevador não informado. Total aluguel + condomínio: R$ 2.000. Tem armários ou móveis planejados (conta como com móveis). Armário no banheiro social. A confirmar: IPTU.",
+      "tags": [
+        "Móveis planejados"
+      ],
       "fotos": [
         "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/48951899/pr-maringa-vila-esperanca-casa-sobrado-para-alugar-3-quartos-6afc332d-1.jpg",
         "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/48951899/pr-maringa-vila-esperanca-casa-sobrado-para-alugar-3-quartos-6afc332d-2.jpg",
@@ -2504,7 +2535,8 @@
       ],
       "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-vila-esperanca-137m2-RS2000/id-48951899/",
       "portal": "Chaves na Mão (LOCAR FÁCIL - MARINGÁ)",
-      "encontrado_em": "2026-11-22"
+      "encontrado_em": "2026-11-22",
+      "moveis": true
     },
     {
       "id": "cnm-49009107",
@@ -2523,7 +2555,7 @@
       "area_m2": 105,
       "destaque": false,
       "descricao": "105 m². 105 m². IPTU não informado. O anúncio não diz se a casa é térrea.",
-      "nota_grokbot": "Imobiliária: Casa Dom Imóveis. Elevador não informado. Total aluguel + condomínio: R$ 2.100. Tem móveis planejados ou armários (isso sozinho não significa que venha mobiliado). A confirmar: IPTU.",
+      "nota_grokbot": "Imobiliária: Casa Dom Imóveis. Elevador não informado. Total aluguel + condomínio: R$ 2.100. Tem armários ou móveis planejados (conta como com móveis). Móveis planejados na cozinha. A confirmar: IPTU.",
       "tags": [
         "Móveis planejados"
       ],
@@ -2539,7 +2571,8 @@
       ],
       "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-jardim-imperio-do-sol-20m2-RS2100/id-49009107/",
       "portal": "Chaves na Mão (CASA DOM IMÓVEIS)",
-      "encontrado_em": "2026-11-22"
+      "encontrado_em": "2026-11-22",
+      "moveis": true
     },
     {
       "id": "sub100-2020003576",
@@ -2666,8 +2699,11 @@
       "area_m2": 90,
       "destaque": false,
       "descricao": "90 m². 90 m². Título diz 3 quartos, texto diz 2 dormitórios + 2 banheiros. CONDOMÍNIO NÃO INFORMADO. Distância é só da Zona 07 (sem rua), baixa confiança.",
-      "nota_grokbot": "Imobiliária: Locar Fácil / Mais Fácil. Elevador não informado. ~940 m da ciclovia da Av. Brasil (linha reta, aproximado). Condomínio não informado (aluguel R$ 1.800); só serve se o condomínio for até R$ 550 para caber no teto do site. A lista de características do anúncio marca “Cozinha mobiliada” (armários); isso não significa que o imóvel inteiro venha mobiliado. A confirmar: condomínio.",
-      "tags": [],
+      "nota_grokbot": "Imobiliária: Locar Fácil / Mais Fácil. Elevador não informado. ~940 m da ciclovia da Av. Brasil (linha reta, aproximado). Condomínio não informado (aluguel R$ 1.800); só serve se o condomínio for até R$ 550 para caber no teto do site. Mobiliado, segundo o anúncio. Também tem armários ou móveis planejados. A ficha marca mobiliado; há armários na cozinha, nos quartos e nos banheiros. A confirmar: condomínio.",
+      "tags": [
+        "Mobiliado",
+        "Móveis planejados"
+      ],
       "fotos": [
         "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47409108/pr-maringa-zona-07-apartamento-para-alugar-3-quartos-6af381e2-4.jpg",
         "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/47409108/pr-maringa-zona-07-apartamento-para-alugar-3-quartos-6af381e2-1.jpg",
@@ -2681,6 +2717,7 @@
       "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-3-quartos-pr-maringa-zona-07-90m2-RS1800/id-47409108/",
       "portal": "Chaves na Mão (Locar Fácil / Mais Fácil, ref. APT40)",
       "encontrado_em": "2026-11-19",
+      "moveis": true,
       "proximidades": [
         {
           "nome": "Ciclovia da Av. Brasil",
