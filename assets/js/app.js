@@ -111,6 +111,7 @@
     stop: `<svg viewBox="0 0 20 20" fill="currentColor"><rect x="5" y="5" width="10" height="10" rx="2"/></svg>`,
     eye: `<svg viewBox="0 0 20 20" fill="none"><path d="M2 10c1.4-2.9 4.5-5 8-5s6.6 2.1 8 5c-1.4 2.9-4.5 5-8 5s-6.6-2.1-8-5z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="10" cy="10" r="2.3" stroke="currentColor" stroke-width="1.7"/></svg>`,
     eyeOff: `<svg viewBox="0 0 20 20" fill="none"><path d="M3 3l14 14M8.5 8.5a2.5 2.5 0 0 0 3 3M5.6 5.8C3.9 7 2.7 8.5 2 10c1.4 2.9 4.5 5 8 5 1.4 0 2.7-.3 3.9-.9M8.3 5.2c.5-.1 1.1-.2 1.7-.2 3.5 0 6.6 2.1 8 5-.5 1.1-1.3 2.1-2.2 2.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+    star: `<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8l2.45 4.97 5.48.8-3.96 3.86.94 5.46L10 14.32l-4.91 2.57.94-5.46-3.96-3.86 5.48-.8L10 1.8z"/></svg>`,
   };
 
   const GROKBOT_PROMPT = `Você é um buscador de casas e apartamentos em Maringá - PR.
@@ -144,6 +145,7 @@ Sempre que encontrar imóveis relevantes, retorne APENAS um JSON válido seguind
       "aceita_pets": true,
       "quintal": true,
       "moveis": true,
+      "nova": true,
       "destaque": false,
       "descricao": "Resumo objetivo do imóvel.",
       "nota_grokbot": "Por que este imóvel vale a pena e pontos de atenção.",
@@ -160,6 +162,7 @@ Regras:
 - "finalidade": "aluguel" ou "compra".
 - "casa": true se for casa (térrea, sobrado, condomínio), false se for apartamento (apto, sobreloja, kitnet, studio).
 - "moveis": true se tiver móveis (mobiliado/semimobiliado), false se não tiver.
+- "nova": true quando for novidade recém-adicionada na atualização (exibe estrelinha e selo Nova no mapa ao lado do valor), false para imóveis já listados anteriormente.
 - "fotos": extraia as URLs reais (https://...) das imagens do anúncio (até 6-8 fotos); o site faz fallback automático se algum link falhar.
 - "preco", "condominio", "iptu", "area_m2", "terreno_m2": números sem "R$".
 - Mantenha o mesmo "id" para o mesmo imóvel entre atualizações (preserva favoritos e anotações).
@@ -207,6 +210,7 @@ Regras:
       moveis: false,
       pets: false,
       quintal: false,
+      novas: false,
       favoritas: false,
       ocultos: false,
       near: new Set(),
@@ -319,8 +323,13 @@ Regras:
     return state.houses.filter((h) => Boolean(state.prefs.hidden[h.id])).length;
   }
 
+  function getNovaHousesCount() {
+    return state.houses.filter((h) => !state.prefs.hidden[h.id] && Boolean(h.nova)).length;
+  }
+
   function updateSavedIndicators() {
     const hiddenCount = getHiddenHousesCount();
+    const novaCount = getNovaHousesCount();
     const savedCount = state.houses.filter(
       (h) =>
         !state.prefs.hidden[h.id] &&
@@ -333,6 +342,13 @@ Regras:
     });
     document.querySelectorAll("[data-hidden-count]").forEach((span) => {
       span.textContent = String(hiddenCount);
+    });
+
+    document.querySelectorAll('[data-toggle="novas"]').forEach((btn) => {
+      btn.hidden = novaCount === 0;
+    });
+    document.querySelectorAll("[data-nova-count]").forEach((span) => {
+      span.textContent = String(novaCount);
     });
 
     if (hiddenCount === 0 && state.savedFilter === "ocultos") {
@@ -776,6 +792,7 @@ Regras:
       const fotosClean = [...new Set(rawFotos.filter((u) => typeof u === "string" && /^https?:\/\//i.test(u.trim())).map((u) => u.trim()))];
       const hasMoveis = raw.moveis !== undefined ? Boolean(raw.moveis) : Boolean(raw.mobiliada);
       const isCasa = resolveIsCasa(raw);
+      const isNova = typeof raw.nova === "boolean" ? raw.nova : normalizeText(raw.nova) === "true";
 
       const house = {
         id,
@@ -801,6 +818,7 @@ Regras:
         quintal: Boolean(raw.quintal),
         moveis: hasMoveis,
         mobiliada: hasMoveis,
+        nova: isNova,
         destaque: Boolean(raw.destaque),
         descricao: String(raw.descricao || ""),
         nota_grokbot: String(raw.nota_grokbot || ""),
@@ -1121,6 +1139,7 @@ Regras:
         "house-pin",
         house.finalidade === "compra" ? "house-pin--compra" : "house-pin--aluguel",
         `house-pin--${imovel.cls}`,
+        house.nova ? "house-pin--nova" : "",
         isHidden ? "house-pin--hidden" : "",
         isSelected ? "is-selected" : "",
         house.id === state.hoveredHouseId ? "is-hovered" : "",
@@ -1134,6 +1153,7 @@ Regras:
           <div class="${pinClass}" data-house-pin="${escapeHtml(house.id)}" title="${escapeHtml(imovel.label)} · ${escapeHtml(house.titulo)}">
             <span class="house-pin__type" aria-label="${escapeHtml(imovel.label)}">${imovel.icon}</span>
             <span>${escapeHtml(formatCompactPrice(house.preco, house.finalidade))}</span>
+            ${house.nova ? `<span class="house-pin__new" title="Novidade" aria-label="Novidade">${UI_ICONS.star}<span>Nova</span></span>` : ""}
             ${isFav ? '<span class="house-pin__heart" aria-label="Favorita">♥</span>' : ""}
           </div>
         `,
@@ -1142,7 +1162,7 @@ Regras:
 
       const marker = L.marker([house.lat, house.lng], {
         icon,
-        zIndexOffset: isSelected ? 600 : 350,
+        zIndexOffset: isSelected ? 600 : house.nova ? 450 : 350,
       }).addTo(houseLayer);
 
       marker.on("click", (e) => {
@@ -2005,6 +2025,7 @@ Regras:
     if (f.moveis) n++;
     if (f.pets) n++;
     if (f.quintal) n++;
+    if (f.novas) n++;
     if (f.favoritas) n++;
     if (f.ocultos) n++;
     n += f.near.size;
@@ -2062,8 +2083,12 @@ Regras:
     const f = state.filters;
     const q = normalizeText(f.query);
     const hiddenCount = getHiddenHousesCount();
+    const novaCount = getNovaHousesCount();
     if (hiddenCount === 0 && f.ocultos) {
       f.ocultos = false;
+    }
+    if (novaCount === 0 && f.novas) {
+      f.novas = false;
     }
 
     let list = state.houses.filter((h) => {
@@ -2080,6 +2105,7 @@ Regras:
       if (f.moveis && !h.moveis) return false;
       if (f.pets && !h.aceita_pets) return false;
       if (f.quintal && !h.quintal) return false;
+      if (f.novas && !h.nova) return false;
       if (f.favoritas && !state.prefs.favorites[h.id]) return false;
 
       for (const cat of f.near) {
@@ -2089,7 +2115,7 @@ Regras:
 
       if (q) {
         const hay = normalizeText(
-          `${h.titulo} ${h.bairro} ${h.endereco} ${h.tipo} ${h.casa ? "casa" : "apartamento apto"} ${h.descricao} ${h.nota_grokbot} ${h.tags.join(" ")} ${h.moveis ? "moveis mobiliado mobiliada" : ""}`
+          `${h.titulo} ${h.bairro} ${h.endereco} ${h.tipo} ${h.casa ? "casa" : "apartamento apto"} ${h.descricao} ${h.nota_grokbot} ${h.tags.join(" ")} ${h.moveis ? "moveis mobiliado mobiliada" : ""} ${h.nova ? "nova novidade novo" : ""}`
         );
         if (!hay.includes(q)) return false;
       }
@@ -2097,6 +2123,10 @@ Regras:
     });
 
     list.sort((a, b) => {
+      if (f.sort === "novas") {
+        if (a.nova !== b.nova) return a.nova ? -1 : 1;
+        return b.overallScore - a.overallScore;
+      }
       if (f.sort === "moveis") {
         if (a.moveis !== b.moveis) return a.moveis ? -1 : 1;
         return b.overallScore - a.overallScore;
@@ -2292,10 +2322,11 @@ Regras:
     const hasEscola = (house.commutes || []).some((c) => c.tipo === "escola");
 
     return `
-      <article class="house-card ${isSelected ? "is-selected" : ""} ${isHidden ? "house-card--hidden" : ""}" data-house-id="${escapeHtml(house.id)}" role="listitem">
+      <article class="house-card ${isSelected ? "is-selected" : ""} ${house.nova ? "house-card--nova" : ""} ${isHidden ? "house-card--hidden" : ""}" data-house-id="${escapeHtml(house.id)}" role="listitem">
         <div class="house-card__media">
           ${mediaHtml}
           <div class="house-card__badges">
+            ${house.nova ? `<span class="pill-badge pill-badge--nova">${UI_ICONS.star} Nova</span>` : ""}
             <span class="pill-badge pill-badge--${imovel.cls}">${imovel.icon} ${imovel.label}</span>
             <span class="pill-badge pill-badge--${house.finalidade}">${house.finalidade === "compra" ? "Compra" : "Aluguel"}</span>
             ${house.moveis ? '<span class="pill-badge pill-badge--moveis">Com móveis</span>' : ""}
@@ -2415,7 +2446,10 @@ Regras:
             </div>
             <div class="peek-card__info">
               <div class="peek-card__top">
-                <span class="peek-card__price">${formatCompactPrice(h.preco, h.finalidade)}${h.finalidade === "aluguel" ? "<small>/mês</small>" : ""}</span>
+                <span class="peek-card__price-wrap">
+                  <span class="peek-card__price">${formatCompactPrice(h.preco, h.finalidade)}${h.finalidade === "aluguel" ? "<small>/mês</small>" : ""}</span>
+                  ${h.nova ? `<span class="peek-nova-badge">${UI_ICONS.star} Nova</span>` : ""}
+                </span>
                 <span class="peek-card__score">${h.overallScore}</span>
               </div>
               <p class="peek-card__title">${escapeHtml(h.titulo)}</p>
@@ -2727,6 +2761,7 @@ Regras:
 
       <div class="detail-section">
         <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;flex-wrap:wrap">
+          ${house.nova ? `<span class="pill-badge pill-badge--nova">${UI_ICONS.star} Nova</span>` : ""}
           <span class="pill-badge pill-badge--${imovel.cls}">${imovel.icon} ${imovel.label}</span>
           <span class="pill-badge pill-badge--${house.finalidade}">${house.finalidade === "compra" ? "Compra" : "Aluguel"}</span>
           ${showExtraTipo ? `<span class="pill-badge">${escapeHtml(house.tipo)}</span>` : ""}
@@ -3214,6 +3249,7 @@ Regras:
       moveis: false,
       pets: false,
       quintal: false,
+      novas: false,
       favoritas: false,
       ocultos: false,
       near: new Set(),

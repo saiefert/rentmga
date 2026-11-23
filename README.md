@@ -52,6 +52,7 @@ Basta substituir o arquivo [`data/casas.json`](data/casas.json) mantendo a estru
       "area_m2": 150,
       "aceita_pets": true,
       "quintal": true,
+      "nova": true,
       "nota_grokbot": "Perto do Parque do Ingá e da ciclovia.",
       "link": "https://..."
     }
@@ -60,6 +61,7 @@ Basta substituir o arquivo [`data/casas.json`](data/casas.json) mantendo a estru
 ```
 
 - Se `lat` e `lng` não vierem no JSON, o site posiciona a casa automaticamente pelo `bairro` em Maringá.
+- A propriedade `"nova"` (`true` ou `false`) destaca imóveis recém-adicionados com estrelinha e selo **Nova** no mapa ao lado do valor, nos cards e no filtro rápido.
 - As distâncias para **áreas pet, ciclovias, academias, parques, mercados, cafés, saúde e educação** são calculadas automaticamente no navegador — o Grokbot não precisa calcular nada, mas pode enviar `proximidades` extras se quiser.
 - Você também pode passar uma URL externa via query string: `?json=https://raw.githubusercontent.com/.../casas.json`.
 - Veja [`GROKBOT.md`](GROKBOT.md) para o prompt pronto de integração.

@@ -754,6 +754,18 @@ body[data-tab="salvas"] .saved-head { display: flex; }
   border-color: #475569;
   color: #1e293b;
 }
+.chip--nova-filter {
+  border-color: rgba(217, 119, 6, 0.45);
+  background: #fffbeb;
+  color: #b45309;
+}
+.chip--nova-filter .chip__ico { color: #f59e0b; }
+.chip--nova-filter.is-active {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  border-color: #d97706;
+  color: #fff;
+}
+.chip--nova-filter.is-active .chip__ico { color: #fff; }
 .saved-pill--hidden.is-active {
   background: #334155;
   border-color: #334155;
@@ -863,6 +875,12 @@ body[data-tab="salvas"] .saved-head { display: flex; }
 .pill-badge--compra { color: #1d4ed8; }
 .pill-badge--status { background: #17211d; color: #fff; }
 .pill-badge--destaque { background: var(--terra); color: #fff; }
+.pill-badge--nova {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.32);
+}
+.pill-badge--nova svg { width: 11px; height: 11px; flex: none; }
 .pill-badge--moveis { background: #fef3c7; color: #92400e; border: 1px solid rgba(217, 119, 6, 0.25); }
 .pill-badge--casa { background: #ecfdf5; color: #065f46; border: 1px solid rgba(16, 185, 129, 0.26); }
 .pill-badge--apto { background: #eef2ff; color: #3730a3; border: 1px solid rgba(99, 102, 241, 0.26); }
@@ -1037,6 +1055,28 @@ body[data-tab="salvas"] .saved-head { display: flex; }
   text-decoration: none;
 }
 .peek-go-link svg { width: 11px; height: 11px; }
+.peek-card__price-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+}
+.peek-nova-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px 6px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #fff;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  flex: none;
+}
+.peek-nova-badge svg { width: 9px; height: 9px; flex: none; }
 .peek-moveis-badge {
   position: absolute;
   bottom: 5px;
@@ -1076,6 +1116,9 @@ body[data-tab="salvas"] .saved-head { display: flex; }
 .card-action-btn.is-hidden { color: #fff; background: #334155; }
 .card-action-btn.is-hidden:hover { color: #fff; background: #1e293b; }
 
+.house-card--nova {
+  border-color: rgba(245, 158, 11, 0.55);
+}
 .house-card--hidden {
   border-style: dashed;
   border-color: #94a3b8;
@@ -1789,6 +1832,35 @@ body[data-tab="salvas"] .saved-head { display: flex; }
 .house-pin__type svg { width: 12px; height: 12px; }
 .house-pin--apto .house-pin__type { background: #eef2ff; color: #3730a3; }
 .house-pin--compra .house-pin__type { background: #dbeafe; color: #1d4ed8; }
+.house-pin--nova {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.25), 0 5px 16px rgba(17, 30, 24, 0.24);
+}
+.house-pin--nova::after {
+  border-right-color: #f59e0b;
+  border-bottom-color: #f59e0b;
+}
+.house-pin__new {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5px;
+  padding: 2px 6px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #fff;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  flex: none;
+  box-shadow: 0 1px 4px rgba(217, 119, 6, 0.35);
+}
+.house-pin__new svg {
+  width: 9.5px;
+  height: 9.5px;
+  flex: none;
+}
 .house-pin--hidden {
   background: #f1f5f9;
   color: #475569;
@@ -1807,6 +1879,11 @@ body[data-tab="salvas"] .saved-head { display: flex; }
 .house-pin.is-selected::after { border-color: #fff; }
 .house-pin.is-selected .house-pin__dot { background: #86efac; }
 .house-pin.is-selected .house-pin__type { background: rgba(255, 255, 255, 0.22); color: #fff; }
+.house-pin.is-selected .house-pin__new {
+  background: #fbbf24;
+  color: #17211d;
+  box-shadow: none;
+}
 
 /* ============ ROUTE SIMULATION PANEL & MARKERS ============ */
 body.has-route-sim .map-carousel-wrap { display: none !important; }

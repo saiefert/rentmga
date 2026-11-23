@@ -89,6 +89,7 @@
 
           <select id="sortFilter" class="select-pill" aria-label="Ordenar por">
             <option value="score">Melhor entorno</option>
+            <option value="novas">Novidades primeiro</option>
             <option value="moveis">Com móveis primeiro</option>
             <option value="rotina">Perto Escola + Trabalho</option>
             <option value="escola">Mais perto da Escola</option>
@@ -101,6 +102,9 @@
         </div>
 
         <div class="filters__chips" role="group" aria-label="Filtros de destaque">
+          <button type="button" class="chip chip--nova-filter" data-toggle="novas" hidden>
+            <span class="chip__ico" data-ico="star"></span><span>Novas (<span data-nova-count>0</span>)</span>
+          </button>
           <button type="button" class="chip chip--tipo" data-imovel="casa">
             <span class="chip__ico" data-ico="house"></span>Casas
           </button>
@@ -344,6 +348,9 @@
         <div class="filter-group">
           <label class="filter-group__label">Características da casa</label>
           <div class="choice-wrap">
+            <button type="button" class="chip chip--lg chip--nova-filter" data-toggle="novas" hidden>
+              <span class="chip__ico" data-ico="star"></span><span>Só novas (<span data-nova-count>0</span>)</span>
+            </button>
             <button type="button" class="chip chip--lg" data-toggle="moveis">
               <span class="chip__ico" data-ico="sofa"></span>Com móveis
             </button>
@@ -377,6 +384,7 @@
           <label class="filter-group__label" for="sheetSortSelect">Ordenar por</label>
           <select id="sheetSortSelect" class="select-full">
             <option value="score">Melhor nota de entorno</option>
+            <option value="novas">Novidades primeiro</option>
             <option value="moveis">Com móveis primeiro</option>
             <option value="rotina">Mais perto da Escola + Trabalho</option>
             <option value="escola">Mais perto da Escola</option>

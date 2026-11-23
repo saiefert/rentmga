@@ -38,6 +38,7 @@ Sempre que encontrar casas relevantes, retorne APENAS um JSON válido seguindo e
       "aceita_pets": true,
       "quintal": true,
       "moveis": true,
+      "nova": true,
       "destaque": false,
       "descricao": "Resumo objetivo do imóvel.",
       "nota_grokbot": "Por que esta casa vale a pena e pontos de atenção.",
@@ -55,10 +56,11 @@ Regras:
 2. "preco", "condominio", "iptu", "area_m2", "terreno_m2" devem ser números (sem "R$").
 3. "casa" deve ser booleano (true = Casa, false = Apartamento).
 4. "moveis" deve ser booleano (true quando o imóvel tiver móveis / for mobiliado ou semimobiliado, false quando não tiver).
-5. Mantenha "id" estável para a mesma casa entre atualizações (assim o usuário não perde favoritos nem anotações).
-6. Sempre tente preencher "lat" e "lng" reais em Maringá (em torno de -23.42, -51.93). Se não tiver certeza exata, preencha "bairro" corretamente que o site posiciona automaticamente.
-7. Extraia as URLs diretas (`https://...`) das fotos reais do anúncio e coloque em `"fotos": ["https://...", "https://..."]` (até 6–8 fotos principais). O site carrega com `referrerpolicy="no-referrer"` e faz fallback automático caso algum link expire.
-8. Opcionalmente, adicione "proximidades": [{ "nome": "...", "categoria": "pet|ciclovia|academia|parque|mercado|cafe|saude|educacao", "distancia_m": 250 }] se descobrir algo especial perto da casa.
+5. "nova" deve ser booleano (true quando o imóvel for novidade recém-adicionada nesta atualização, para exibir estrelinha e selo "Nova" no mapa ao lado do valor; false para imóveis já listados anteriormente).
+6. Mantenha "id" estável para a mesma casa entre atualizações (assim o usuário não perde favoritos nem anotações).
+7. Sempre tente preencher "lat" e "lng" reais em Maringá (em torno de -23.42, -51.93). Se não tiver certeza exata, preencha "bairro" corretamente que o site posiciona automaticamente.
+8. Extraia as URLs diretas (`https://...`) das fotos reais do anúncio e coloque em `"fotos": ["https://...", "https://..."]` (até 6–8 fotos principais). O site carrega com `referrerpolicy="no-referrer"` e faz fallback automático caso algum link expire.
+9. Opcionalmente, adicione "proximidades": [{ "nome": "...", "categoria": "pet|ciclovia|academia|parque|mercado|cafe|saude|educacao", "distancia_m": 250 }] se descobrir algo especial perto da casa.
 ```
 
 ## Campos mínimos obrigatórios
