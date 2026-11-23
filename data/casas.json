@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-23T14:28:16-03:00",
+  "atualizado_em": "2026-11-23T19:17:56-03:00",
   "fonte": "Grokbot",
   "cidade": "Maringá - PR",
   "observacao": "Varredura de toda Maringá-PR, com preferência aos imóveis mais próximos da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01). No mínimo 2 quartos e 2 banheiros (suíte conta como banheiro; lavabo não). Teto do site: aluguel + condomínio até R$ 2.350 (IPTU à parte). Teto do e-mail para Dionizia permanece R$ 2.200. Excluídos apenas: Cidade Alta, Conjunto Requião e Jardim Alvorada. A lista do site é ordenada pela distância em linha reta até a ACIM. Imóveis entre R$ 2.200 e R$ 2.350 entram só no site, com a etiqueta “Acima de R$ 2.200”.",
@@ -258,54 +258,6 @@
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
           "distancia_m": 150
-        }
-      ]
-    },
-    {
-      "id": "sub100-30720000108",
-      "titulo": "Apartamento no Ed Dona Eulália — Avenida Xv de Novembro, 171 — Zona 01 Centro",
-      "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 1500,
-      "condominio": 630,
-      "iptu": 237,
-      "bairro": "Zona 01 Centro",
-      "endereco": "Avenida Xv de Novembro, 171",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 3,
-      "area_m2": 114,
-      "destaque": false,
-      "descricao": "Avenida Xv de Novembro, 171. 114 m², 1 suíte. 114,00 m² de área privativa. falta confirmar elevador. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: 2001. Elevador não informado. Perto da ciclovia da Av. Brasil (~340 m, linha reta). A 750 m da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.130. Tem armários ou móveis planejados (conta como com móveis). Armários/planejados: cozinha, quarto, suíte. A confirmar: elevador.",
-      "tags": [
-        "Perto da ACIM",
-        "A 750 m da ACIM",
-        "Perto da ciclovia",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000108/30720000108a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000108/30720000108b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000108/30720000108c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000108/30720000108d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000108/30720000108e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000108/30720000108f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000108/30720000108g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000108/30720000108h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/30720000108/locacao/apartamento-em-maringa-pr/zona-01-centro",
-      "portal": "Sub100 (Imobiliária 2001)",
-      "encontrado_em": "2026-11-23",
-      "moveis": true,
-      "lat": -23.424054,
-      "lng": -51.934305,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 340
         }
       ]
     },
@@ -1496,51 +1448,6 @@
       ]
     },
     {
-      "id": "sub100-30720000106",
-      "titulo": "Casa na Rua Clóvis Bevilaqua, 486 — Zona 04",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 2000,
-      "condominio": null,
-      "iptu": 138,
-      "bairro": "Zona 04",
-      "endereco": "Rua Clóvis Bevilaqua, 486, Zona 04",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "vagas": 1,
-      "area_m2": 110,
-      "destaque": false,
-      "descricao": "Rua Clóvis Bevilaqua, 486, Zona 04. 110 m², 1 suíte. não diz se é térrea. IPTU de uns R$ 138 à parte.",
-      "nota_grokbot": "Imobiliária: 2001. Elevador não informado. ~1,4 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,9 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.000. A confirmar: se a casa é térrea.",
-      "tags": [
-        "A 1,9 km da ACIM"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/307/30720000106/30720000106h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/30720000106/locacao/casa-em-maringa-pr/zona-04",
-      "portal": "Sub100",
-      "encontrado_em": "2026-11-21",
-      "lat": -23.4353854,
-      "lng": -51.9526691,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 1380
-        }
-      ]
-    },
-    {
       "id": "cnm-49034178",
       "titulo": "Casa na Rua Doutor Naby Zacarias, 262 — Vila Progresso",
       "finalidade": "aluguel",
@@ -2696,6 +2603,44 @@
       "encontrado_em": "2026-11-23",
       "lat": -23.407672,
       "lng": -51.962024,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 1850
+        }
+      ]
+    },
+    {
+      "id": "olx-1555337398",
+      "titulo": "Casa na Rua Duartina, Jardim Lucianópolis",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 1800,
+      "condominio": 0,
+      "iptu": 0,
+      "bairro": "Jardim Lucianópolis",
+      "endereco": "Rua Duartina, Jardim Lucianópolis (CEP 87080-440 do anúncio; número não informado; próx. Av. Mandacaru / Shopping Mandacaru Boulevard)",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 2,
+      "area_m2": 78,
+      "destaque": false,
+      "descricao": "Rua Duartina, Jardim Lucianópolis (CEP 87080-440 do anúncio; número não informado; próx. Av. Mandacaru / Shopping Mandacaru Boulevard). 78 m², 1 suíte. Casa 78 m², 2 quartos (1 suíte) + banheiro social, sala com jardim de inverno, edícula com 1 quarto de apoio, área de serviço coberta, garagem para 2 carros pequenos. Ficha do OLX: aluguel R$ 1.800, condomínio R$ 0, IPTU R$ 0. O OLX marca \"Condomínio fechado\" nas características (a confirmar). Não diz se é térrea. Publicado em 23/11/2026 às 15:20. Coordenada aproximada pelo CEP (Rua Duartina).",
+      "nota_grokbot": "Imobiliária: anúncio OLX, código 06273.003. Sem elevador (não se aplica). ~1,9 km da ciclovia da Av. Brasil (linha reta, aproximado). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. A confirmar: se a casa é térrea.",
+      "tags": [
+        "A 2,6 km da ACIM"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/57/579632104997331.jpg"
+      ],
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1555337398",
+      "portal": "OLX (imobiliária, código 06273.003)",
+      "encontrado_em": "2026-11-23",
+      "lat": -23.4076718,
+      "lng": -51.9620243,
       "proximidades": [
         {
           "nome": "Ciclovia da Av. Brasil",
@@ -4618,6 +4563,52 @@
       ]
     },
     {
+      "id": "cnm-45735730",
+      "titulo": "Casa na Rua Pioneiro Olinto Mariani, Jardim Diamante",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 1700,
+      "condominio": null,
+      "iptu": 67,
+      "bairro": "Jardim Diamante",
+      "endereco": "Rua Pioneiro Olinto Mariani, Jardim Diamante (número não informado; perto do nº 315)",
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 2,
+      "area_m2": 85,
+      "destaque": false,
+      "descricao": "Rua Pioneiro Olinto Mariani, Jardim Diamante (número não informado; perto do nº 315). 85 m², terreno de 130 m², 1 suíte. Casa 85 m² (terreno 130 m²): 3 quartos (1 suíte), 2 banheiros, sala, cozinha, copa, área de serviço, churrasqueira, edícula, 2 vagas cobertas. IPTU R$ 67/mês. O nome das fotos no portal diz \"casa-sobrado\": não diz se é térrea. Anúncio atualizado em 23/11/2026 às 18:01. Coordenada no meio da rua (Nominatim).",
+      "nota_grokbot": "Imobiliária: Diamante, ref. CA0027. Sem elevador (não se aplica). ~5,1 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.700. A confirmar: se a casa é térrea.",
+      "tags": [
+        "A 5,2 km da ACIM"
+      ],
+      "fotos": [
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/366633/45735730/pr-maringa-jardim-diamante-rua-pioneiro-olinto-mariani-casa-sobrado-para-alugar-3-quartos-6b04a7dd-1.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/366633/45735730/pr-maringa-jardim-diamante-rua-pioneiro-olinto-mariani-casa-sobrado-para-alugar-3-quartos-6b04a7dd-2.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/366633/45735730/pr-maringa-jardim-diamante-rua-pioneiro-olinto-mariani-casa-sobrado-para-alugar-3-quartos-6b04a7dd-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/366633/45735730/pr-maringa-jardim-diamante-rua-pioneiro-olinto-mariani-casa-sobrado-para-alugar-3-quartos-6b04a7dd-4.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/366633/45735730/pr-maringa-jardim-diamante-rua-pioneiro-olinto-mariani-casa-sobrado-para-alugar-3-quartos-6b04a7dd-5.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/366633/45735730/pr-maringa-jardim-diamante-rua-pioneiro-olinto-mariani-casa-sobrado-para-alugar-3-quartos-6b04a7dd-6.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/366633/45735730/pr-maringa-jardim-diamante-rua-pioneiro-olinto-mariani-casa-sobrado-para-alugar-3-quartos-6b04a7dd-7.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/366633/45735730/pr-maringa-jardim-diamante-rua-pioneiro-olinto-mariani-casa-sobrado-para-alugar-3-quartos-6b04a7dd-8.jpg"
+      ],
+      "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-jardim-diamante-130m2-RS1700/id-45735730/",
+      "portal": "Chaves na Mão (Diamante, ref. CA0027)",
+      "encontrado_em": "2026-11-23",
+      "terreno_m2": 130,
+      "lat": -23.3751662,
+      "lng": -51.9431364,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 5080
+        }
+      ]
+    },
+    {
       "id": "sub100-2020007947",
       "titulo": "Casa na Rua Pioneiro Francisco Castoldo, 186 — Jardim Ouro Cola",
       "finalidade": "aluguel",
@@ -5265,46 +5256,6 @@
       "lng": -51.86605
     },
     {
-      "id": "cnm-49057699",
-      "titulo": "Casa no Jardim Liberdade",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 1500,
-      "condominio": 0,
-      "iptu": null,
-      "bairro": "Jardim Liberdade",
-      "quartos": 3,
-      "suites": 0,
-      "banheiros": 2,
-      "vagas": 2,
-      "area_m2": 100,
-      "destaque": false,
-      "descricao": "100 m². 100 m², 3 quartos, 2 banheiros, 2 vagas. Publicado em 19/11/2026. Fica longe das duas ciclovias (cerca de 2 km da Av. Brasil e mais de 4 km da Cerro Azul); baixa confiança na posição (centro do bairro).",
-      "nota_grokbot": "Imobiliária: Locar Fácil / Mais Fácil. Elevador não informado. ~1,8 km da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 1.500. A confirmar: se a casa é térrea.",
-      "tags": [],
-      "fotos": [
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-1.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-2.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-3.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-4.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-5.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-6.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-7.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/49057699/pr-maringa-jardim-liberdade-casa-sobrado-para-alugar-3-quartos-6aff6048-8.jpg"
-      ],
-      "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-jardim-liberdade-150m2-RS1500/id-49057699/",
-      "portal": "Chaves na Mão (Locar Fácil / Mais Fácil, ref. CAS103)",
-      "encontrado_em": "2026-11-19",
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 1800
-        }
-      ]
-    },
-    {
       "id": "sub100-3420002302",
       "titulo": "Apartamento no Edifício Hika — Av. Brasil, 3006 — Zona 03",
       "finalidade": "aluguel",
@@ -5425,39 +5376,6 @@
           "distancia_m": 2190
         }
       ]
-    },
-    {
-      "id": "cnm-48992334",
-      "titulo": "Casa térrea no Parque Avenida",
-      "finalidade": "aluguel",
-      "tipo": "Casa térrea",
-      "casa": true,
-      "preco": 2150,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Parque Avenida",
-      "quartos": 3,
-      "suites": 0,
-      "banheiros": 2,
-      "vagas": 2,
-      "area_m2": 80,
-      "destaque": false,
-      "descricao": "80 m². 80 m². IPTU não informado.",
-      "nota_grokbot": "Imobiliária: Locar Fácil - Maringá. Elevador não informado. Total aluguel + condomínio: R$ 2.150. A confirmar: IPTU.",
-      "tags": [],
-      "fotos": [
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/48992334/pr-maringa-parque-avenida-casa-sobrado-para-alugar-3-quartos-6afd84fc-1.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/48992334/pr-maringa-parque-avenida-casa-sobrado-para-alugar-3-quartos-6afd84fc-2.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/48992334/pr-maringa-parque-avenida-casa-sobrado-para-alugar-3-quartos-6afd84fc-3.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/48992334/pr-maringa-parque-avenida-casa-sobrado-para-alugar-3-quartos-6afd84fc-4.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/48992334/pr-maringa-parque-avenida-casa-sobrado-para-alugar-3-quartos-6afd84fc-5.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/48992334/pr-maringa-parque-avenida-casa-sobrado-para-alugar-3-quartos-6afd84fc-6.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/48992334/pr-maringa-parque-avenida-casa-sobrado-para-alugar-3-quartos-6afd84fc-7.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/347727/48992334/pr-maringa-parque-avenida-casa-sobrado-para-alugar-3-quartos-6afd84fc-8.jpg"
-      ],
-      "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-parque-avenida-100m2-RS2150/id-48992334/",
-      "portal": "Chaves na Mão (LOCAR FÁCIL - MARINGÁ)",
-      "encontrado_em": "2026-11-22"
     },
     {
       "id": "cnm-43415969",
