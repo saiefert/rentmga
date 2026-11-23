@@ -109,6 +109,8 @@
     bike: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="16.5" r="3.2"/><circle cx="18" cy="16.5" r="3.2"/><path d="M6 16.5L10.2 9h4.3l3.5 7.5M10.2 9l1.8 7.5H6M9 6.5h3M14.5 9l1.2-3H18"/></svg>`,
     play: `<svg viewBox="0 0 20 20" fill="currentColor"><path d="M6.2 4.4a1 1 0 0 1 1.5-.86l8.6 5.6a1 1 0 0 1 0 1.72l-8.6 5.6A1 1 0 0 1 6.2 15.6V4.4z"/></svg>`,
     stop: `<svg viewBox="0 0 20 20" fill="currentColor"><rect x="5" y="5" width="10" height="10" rx="2"/></svg>`,
+    eye: `<svg viewBox="0 0 20 20" fill="none"><path d="M2 10c1.4-2.9 4.5-5 8-5s6.6 2.1 8 5c-1.4 2.9-4.5 5-8 5s-6.6-2.1-8-5z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="10" cy="10" r="2.3" stroke="currentColor" stroke-width="1.7"/></svg>`,
+    eyeOff: `<svg viewBox="0 0 20 20" fill="none"><path d="M3 3l14 14M8.5 8.5a2.5 2.5 0 0 0 3 3M5.6 5.8C3.9 7 2.7 8.5 2 10c1.4 2.9 4.5 5 8 5 1.4 0 2.7-.3 3.9-.9M8.3 5.2c.5-.1 1.1-.2 1.7-.2 3.5 0 6.6 2.1 8 5-.5 1.1-1.3 2.1-2.2 2.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
   };
 
   const GROKBOT_PROMPT = `Você é um buscador de casas e apartamentos em Maringá - PR.
@@ -206,6 +208,7 @@ Regras:
       pets: false,
       quintal: false,
       favoritas: false,
+      ocultos: false,
       near: new Set(),
     },
     simulatedRoute: null, // { houseId, anchorId, anchorType, vehicle: "emoto"|"bike", routeData, loading, animating }
@@ -261,6 +264,7 @@ Regras:
     closeDrawerBtn: document.getElementById("closeDrawerBtn"),
     drawerPeekMapBtn: document.getElementById("drawerPeekMapBtn"),
     drawerCompareBtn: document.getElementById("drawerCompareBtn"),
+    drawerHideBtn: document.getElementById("drawerHideBtn"),
     drawerFavBtn: document.getElementById("drawerFavBtn"),
     drawerBody: document.getElementById("drawerBody"),
     poiCategoryBar: document.getElementById("poiCategoryBar"),
@@ -295,12 +299,13 @@ Regras:
         const parsed = JSON.parse(raw);
         return {
           favorites: parsed.favorites || {},
+          hidden: parsed.hidden || {},
           status: parsed.status || {},
           notes: parsed.notes || {},
         };
       }
     } catch (_) {}
-    return { favorites: {}, status: {}, notes: {} };
+    return { favorites: {}, hidden: {}, status: {}, notes: {} };
   }
 
   function savePrefs() {
@@ -310,11 +315,32 @@ Regras:
     updateSavedIndicators();
   }
 
+  function getHiddenHousesCount() {
+    return state.houses.filter((h) => Boolean(state.prefs.hidden[h.id])).length;
+  }
+
   function updateSavedIndicators() {
+    const hiddenCount = getHiddenHousesCount();
     const savedCount = state.houses.filter(
-      (h) => state.prefs.favorites[h.id] || state.prefs.status[h.id] || state.prefs.notes[h.id]
+      (h) =>
+        !state.prefs.hidden[h.id] &&
+        (state.prefs.favorites[h.id] || state.prefs.status[h.id] || state.prefs.notes[h.id])
     ).length;
-    el.navSavedDot.hidden = savedCount === 0;
+    el.navSavedDot.hidden = savedCount === 0 && hiddenCount === 0;
+
+    document.querySelectorAll('[data-toggle="ocultos"], [data-saved-filter="ocultos"]').forEach((btn) => {
+      btn.hidden = hiddenCount === 0;
+    });
+    document.querySelectorAll("[data-hidden-count]").forEach((span) => {
+      span.textContent = String(hiddenCount);
+    });
+
+    if (hiddenCount === 0 && state.savedFilter === "ocultos") {
+      state.savedFilter = "all";
+      document.querySelectorAll("[data-saved-filter]").forEach((b) => {
+        b.classList.toggle("is-active", b.dataset.savedFilter === "all");
+      });
+    }
   }
 
   function escapeHtml(str) {
@@ -1089,11 +1115,13 @@ Regras:
     for (const house of state.filteredHouses) {
       const isSelected = house.id === state.selectedHouseId;
       const isFav = Boolean(state.prefs.favorites[house.id]);
+      const isHidden = Boolean(state.prefs.hidden[house.id]);
       const imovel = getImovelMeta(house);
       const pinClass = [
         "house-pin",
         house.finalidade === "compra" ? "house-pin--compra" : "house-pin--aluguel",
         `house-pin--${imovel.cls}`,
+        isHidden ? "house-pin--hidden" : "",
         isSelected ? "is-selected" : "",
         house.id === state.hoveredHouseId ? "is-hovered" : "",
       ]
@@ -1978,6 +2006,7 @@ Regras:
     if (f.pets) n++;
     if (f.quintal) n++;
     if (f.favoritas) n++;
+    if (f.ocultos) n++;
     n += f.near.size;
     return n;
   }
@@ -2014,6 +2043,9 @@ Regras:
   function getHousesForCurrentList() {
     if (!isDesktop() && state.activeTab === "salvas") {
       return state.houses.filter((h) => {
+        const isHidden = Boolean(state.prefs.hidden[h.id]);
+        if (state.savedFilter === "ocultos") return isHidden;
+        if (isHidden) return false;
         const isFav = Boolean(state.prefs.favorites[h.id]);
         const st = state.prefs.status[h.id] || "";
         const hasNote = Boolean(state.prefs.notes[h.id]);
@@ -2029,8 +2061,18 @@ Regras:
   function applyFiltersAndRender(shouldFitBounds = false) {
     const f = state.filters;
     const q = normalizeText(f.query);
+    const hiddenCount = getHiddenHousesCount();
+    if (hiddenCount === 0 && f.ocultos) {
+      f.ocultos = false;
+    }
 
     let list = state.houses.filter((h) => {
+      const isHidden = Boolean(state.prefs.hidden[h.id]);
+      if (f.ocultos) {
+        if (!isHidden) return false;
+      } else if (isHidden) {
+        return false;
+      }
       if (f.finalidade !== "todas" && h.finalidade !== f.finalidade) return false;
       if (f.tipoImovel === "casa" && !h.casa) return false;
       if (f.tipoImovel === "apartamento" && h.casa) return false;
@@ -2075,15 +2117,29 @@ Regras:
     });
 
     state.filteredHouses = list;
+    updateSavedIndicators();
     syncFilterControlsUI();
 
+    const visibleTotal = Math.max(0, state.houses.length - hiddenCount);
     el.navListCount.textContent = String(list.length);
     el.sheetApplyFiltersBtn.textContent =
-      list.length === 1 ? "Ver 1 casa" : `Ver ${list.length} casas`;
-    el.resultsCount.textContent =
-      list.length === state.houses.length
-        ? `${list.length} ${list.length === 1 ? "casa" : "casas"} em Maringá`
-        : `Mostrando ${list.length} de ${state.houses.length} casas`;
+      list.length === 1 ? "Ver 1 imóvel" : `Ver ${list.length} imóveis`;
+    if (f.ocultos) {
+      el.resultsCount.textContent =
+        list.length === hiddenCount
+          ? `Mostrando ${list.length} ${list.length === 1 ? "imóvel oculto" : "imóveis ocultos"}`
+          : `Mostrando ${list.length} de ${hiddenCount} ${hiddenCount === 1 ? "imóvel oculto" : "imóveis ocultos"}`;
+    } else if (list.length === visibleTotal) {
+      el.resultsCount.textContent =
+        hiddenCount > 0
+          ? `${list.length} ${list.length === 1 ? "imóvel" : "imóveis"} em Maringá (${hiddenCount} ${hiddenCount === 1 ? "oculto" : "ocultos"})`
+          : `${list.length} ${list.length === 1 ? "casa" : "casas"} em Maringá`;
+    } else {
+      el.resultsCount.textContent =
+        hiddenCount > 0
+          ? `Mostrando ${list.length} de ${visibleTotal} imóveis (${hiddenCount} ${hiddenCount === 1 ? "oculto" : "ocultos"})`
+          : `Mostrando ${list.length} de ${visibleTotal} casas`;
+    }
     el.resetFiltersBtn.hidden = countActiveFilters() === 0 && !f.query;
 
     renderListings();
@@ -2095,18 +2151,30 @@ Regras:
   function renderListings() {
     const list = getHousesForCurrentList();
     const isSavedView = !isDesktop() && state.activeTab === "salvas";
+    const hiddenCount = getHiddenHousesCount();
+    const visibleTotal = Math.max(0, state.houses.length - hiddenCount);
 
     if (isSavedView) {
-      el.savedSubtitle.textContent = `${list.length} ${list.length === 1 ? "casa salva" : "casas salvas"} neste aparelho`;
+      if (state.savedFilter === "ocultos") {
+        el.savedSubtitle.textContent = `${list.length} ${list.length === 1 ? "imóvel oculto" : "imóveis ocultos"} neste aparelho`;
+      } else {
+        el.savedSubtitle.textContent = `${list.length} ${list.length === 1 ? "casa salva" : "casas salvas"} neste aparelho`;
+      }
     }
 
     if (list.length === 0) {
       el.listingsContainer.innerHTML = "";
       el.emptyState.hidden = false;
+      el.emptyResetBtn.dataset.emptyAction = "reset";
       if (isSavedView) {
         el.emptyTitle.textContent = "Nenhuma casa salva ainda";
         el.emptyDesc.textContent = "Toque no coração ou adicione uma anotação em qualquer casa no mapa para acompanhá-la aqui.";
         el.emptyResetBtn.textContent = "Explorar no mapa";
+      } else if (!state.filters.ocultos && hiddenCount > 0 && visibleTotal === 0) {
+        el.emptyTitle.textContent = "Todos os imóveis estão ocultos";
+        el.emptyDesc.textContent = "Você ocultou todos os imóveis da lista. Abra o filtro Ocultos para reexibir algum.";
+        el.emptyResetBtn.textContent = `Ver ocultos (${hiddenCount})`;
+        el.emptyResetBtn.dataset.emptyAction = "show-hidden";
       } else {
         el.emptyTitle.textContent = "Nenhuma casa com esses filtros";
         el.emptyDesc.textContent = "Tente remover um filtro de proximidade ou ampliar a busca em Maringá.";
@@ -2147,6 +2215,7 @@ Regras:
         const id = btn.dataset.houseId;
         const action = btn.dataset.cardAction;
         if (action === "fav") toggleFavorite(id);
+        if (action === "hide") toggleHidden(id);
         if (action === "compare") toggleCompare(id);
       });
     });
@@ -2168,6 +2237,7 @@ Regras:
 
   function renderHouseCard(house) {
     const isFav = Boolean(state.prefs.favorites[house.id]);
+    const isHidden = Boolean(state.prefs.hidden[house.id]);
     const isCmp = state.compareIds.includes(house.id);
     const isSelected = house.id === state.selectedHouseId;
     const statusId = state.prefs.status[house.id] || "";
@@ -2222,7 +2292,7 @@ Regras:
     const hasEscola = (house.commutes || []).some((c) => c.tipo === "escola");
 
     return `
-      <article class="house-card ${isSelected ? "is-selected" : ""}" data-house-id="${escapeHtml(house.id)}" role="listitem">
+      <article class="house-card ${isSelected ? "is-selected" : ""} ${isHidden ? "house-card--hidden" : ""}" data-house-id="${escapeHtml(house.id)}" role="listitem">
         <div class="house-card__media">
           ${mediaHtml}
           <div class="house-card__badges">
@@ -2230,11 +2300,15 @@ Regras:
             <span class="pill-badge pill-badge--${house.finalidade}">${house.finalidade === "compra" ? "Compra" : "Aluguel"}</span>
             ${house.moveis ? '<span class="pill-badge pill-badge--moveis">Com móveis</span>' : ""}
             ${house.destaque ? '<span class="pill-badge pill-badge--destaque">Destaque</span>' : ""}
+            ${isHidden ? `<span class="pill-badge pill-badge--hidden">${UI_ICONS.eyeOff} Oculto</span>` : ""}
             ${statusObj ? `<span class="pill-badge pill-badge--status">${escapeHtml(statusObj.label)}</span>` : ""}
           </div>
           <div class="house-card__top-actions">
             <button type="button" class="card-action-btn ${isCmp ? "is-cmp" : ""}" data-card-action="compare" data-house-id="${escapeHtml(house.id)}" title="Comparar" aria-label="Comparar">
               ${UI_ICONS.compare}
+            </button>
+            <button type="button" class="card-action-btn card-action-btn--hide ${isHidden ? "is-hidden" : ""}" data-card-action="hide" data-house-id="${escapeHtml(house.id)}" title="${isHidden ? "Reexibir imóvel" : "Ocultar imóvel"}" aria-label="${isHidden ? "Reexibir imóvel" : "Ocultar imóvel"}">
+              ${isHidden ? UI_ICONS.eye : UI_ICONS.eyeOff}
             </button>
             <button type="button" class="card-action-btn ${isFav ? "is-fav" : ""}" data-card-action="fav" data-house-id="${escapeHtml(house.id)}" title="Favoritar" aria-label="Favoritar">
               ${UI_ICONS.heart}
@@ -2500,14 +2574,24 @@ Regras:
     }
   }
 
+  function syncDrawerHideButton(isHidden) {
+    if (!el.drawerHideBtn) return;
+    el.drawerHideBtn.classList.toggle("is-hidden-active", isHidden);
+    el.drawerHideBtn.innerHTML = isHidden ? UI_ICONS.eye : UI_ICONS.eyeOff;
+    el.drawerHideBtn.title = isHidden ? "Reexibir imóvel" : "Ocultar imóvel";
+    el.drawerHideBtn.setAttribute("aria-label", isHidden ? "Reexibir imóvel" : "Ocultar imóvel");
+  }
+
   function renderDetailDrawer(house) {
     const isFav = Boolean(state.prefs.favorites[house.id]);
+    const isHidden = Boolean(state.prefs.hidden[house.id]);
     const isCmp = state.compareIds.includes(house.id);
     const currentStatus = state.prefs.status[house.id] || "";
     const currentNote = state.prefs.notes[house.id] || "";
 
     el.drawerFavBtn.classList.toggle("is-active", isFav);
     el.drawerCompareBtn.classList.toggle("is-compare-active", isCmp);
+    syncDrawerHideButton(isHidden);
 
     const hasPhotos = house.fotos.length > 0;
     const currentPhotoIdx = hasPhotos ? ((state.activePhotoIndex % house.fotos.length) + house.fotos.length) % house.fotos.length : 0;
@@ -2966,6 +3050,46 @@ Regras:
     showToast(state.prefs.favorites[houseId] ? "Salva em Favoritas" : "Removida das favoritas");
   }
 
+  function toggleHidden(houseId) {
+    const willHide = !state.prefs.hidden[houseId];
+    if (willHide) {
+      state.prefs.hidden[houseId] = true;
+      const cmpIdx = state.compareIds.indexOf(houseId);
+      if (cmpIdx >= 0) {
+        state.compareIds.splice(cmpIdx, 1);
+        const cnt = String(state.compareIds.length);
+        el.compareCount.textContent = cnt;
+        el.mobileCompareCount.textContent = cnt;
+        el.compareOpenBtn.hidden = state.compareIds.length < 2;
+        el.mobileCompareBtn.hidden = state.compareIds.length < 2;
+      }
+      if (state.simulatedRoute?.houseId === houseId) {
+        clearSimulatedRoute();
+      }
+    } else {
+      delete state.prefs.hidden[houseId];
+    }
+
+    const hiddenCount = getHiddenHousesCount();
+    if (hiddenCount === 0) {
+      state.filters.ocultos = false;
+    }
+    savePrefs();
+
+    if (state.selectedHouseId === houseId) {
+      const viewingHidden =
+        state.filters.ocultos || (!isDesktop() && state.activeTab === "salvas" && state.savedFilter === "ocultos");
+      if (willHide && !viewingHidden) {
+        closeDrawer(true);
+      } else {
+        syncDrawerHideButton(Boolean(state.prefs.hidden[houseId]));
+      }
+    }
+
+    applyFiltersAndRender(false);
+    showToast(willHide ? "Imóvel ocultado · Veja no filtro Ocultos" : "Imóvel exibido novamente");
+  }
+
   function toggleCompare(houseId) {
     const idx = state.compareIds.indexOf(houseId);
     if (idx >= 0) {
@@ -3091,6 +3215,7 @@ Regras:
       pets: false,
       quintal: false,
       favoritas: false,
+      ocultos: false,
       near: new Set(),
     };
     el.searchInput.value = "";
@@ -3208,6 +3333,9 @@ Regras:
     el.emptyResetBtn.addEventListener("click", () => {
       if (!isDesktop() && state.activeTab === "salvas") {
         switchMobileTab("mapa");
+      } else if (el.emptyResetBtn.dataset.emptyAction === "show-hidden") {
+        state.filters.ocultos = true;
+        applyFiltersAndRender(true);
       } else {
         resetAllFilters();
       }
@@ -3249,6 +3377,9 @@ Regras:
     });
     el.drawerFavBtn.addEventListener("click", () => {
       if (state.selectedHouseId) toggleFavorite(state.selectedHouseId);
+    });
+    el.drawerHideBtn.addEventListener("click", () => {
+      if (state.selectedHouseId) toggleHidden(state.selectedHouseId);
     });
     el.drawerCompareBtn.addEventListener("click", () => {
       if (state.selectedHouseId) toggleCompare(state.selectedHouseId);
