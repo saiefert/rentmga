@@ -128,7 +128,7 @@ Consulte a tabela abaixo e escolha no campo `"tipo"` a chave que melhor represen
 | `invasao` | Invasão / Arrombamento | Casa arrombada (âmbar escuro) | Arrombamento de residência ou comércio, invasão domiciliar, violação de domicílio, furto mediante arrombamento (burglary) |
 | `veiculo` | Veículo (Furto/Roubo) | Carro com alerta (ocre) | Furto de carro, furto de moto, roubo de carro, roubo de moto, furto/roubo de caminhonete ou carga veicular |
 | `trafico` | Tráfico / Drogas | Cápsula / pílula (roxo) | Tráfico de drogas, apreensão de entorpecentes, ponto de venda (biqueira), associação para o tráfico, laboratório/plantação ilegal |
-| `agressao` | Agressão / Violência | Punho / impacto (laranja) | Lesão corporal, agressão física, espancamento, esfaqueamento, briga com feridos, ameaça grave, vias de fato |
+| `agressao` | Agressão / Violência | Punho fechado / soco (laranja) | Lesão corporal, agressão física, espancamento, esfaqueamento, briga com feridos, ameaça grave, vias de fato |
 | `violencia_domestica` | Violência Doméstica | Casa com alerta (rosa escuro) | Violência doméstica, Lei Maria da Penha, agressão/ameaça contra cônjuge ou familiar, descumprimento de medida protetiva |
 | `violencia_sexual` | Crime Sexual | Escudo de alerta (magenta) | Estupro, estupro de vulnerável, importunação sexual, assédio sexual, abuso sexual, ato obsceno |
 | `arma` | Arma / Disparo | Mira / disparo (carmim) | Disparo de arma de fogo, tiroteio, troca de tiros, porte ou posse ilegal de arma de fogo, apreensão de armas/munições |

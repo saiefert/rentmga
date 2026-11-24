@@ -144,7 +144,7 @@
       label: "Invasão / Arromb.",
       short: "Arrombamento, invasão domiciliar",
       color: "#b45309",
-      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11L12 4l8.5 7"/><path d="M6 10.5V20h12v-9.5"/><path d="M13 10.5l-2.5 4h2.8L11 18.5" stroke-width="2.1"/></svg>`,
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11L12 4l8.5 7"/><path d="M5.5 10.5V20h13v-9.5"/><path d="M9.5 20v-7.5l4.8-1.4V20" fill="currentColor" fill-opacity="0.28"/><circle cx="12.6" cy="15.8" r="0.9" fill="currentColor" stroke="none"/></svg>`,
     },
     veiculo: {
       id: "veiculo",
@@ -165,7 +165,7 @@
       label: "Agressão / Violência",
       short: "Lesão corporal, briga, ameaça",
       color: "#ea580c",
-      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3L5.5 13h6l-1 8L18.5 11h-6l.5-8z" fill="currentColor" fill-opacity="0.25"/></svg>`,
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 11.5V8.3a1.5 1.5 0 0 1 3 0V11M9 11V7a1.5 1.5 0 0 1 3 0v4M12 11V7.3a1.5 1.5 0 0 1 3 0V11M15 11V8.5a1.5 1.5 0 0 1 3 0v5c0 2.9-1.9 5-4.8 5.4V21H8.8v-2.2C6.9 18 6 16.3 6 14.3v-2.8z" fill="currentColor" fill-opacity="0.22"/><path d="M6 11.5h6.5a1.5 1.5 0 0 1 0 3H9.2"/></svg>`,
     },
     violencia_domestica: {
       id: "violencia_domestica",
