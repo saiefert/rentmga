@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-23T19:35:32-03:00",
+  "atualizado_em": "2026-11-24T14:08:30-03:00",
   "fonte": "Grokbot",
   "cidade": "Maringá - PR",
   "observacao": "Varredura de toda Maringá-PR, com preferência aos imóveis mais próximos da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01). No mínimo 2 quartos e 2 banheiros (suíte conta como banheiro; lavabo não). Teto do site: aluguel + condomínio até R$ 2.350 (IPTU à parte). Teto do e-mail para Dionizia permanece R$ 2.200. Excluídos apenas: Cidade Alta, Conjunto Requião e Jardim Alvorada. A lista do site é ordenada pela distância em linha reta até a ACIM. Imóveis entre R$ 2.200 e R$ 2.350 entram só no site, com a etiqueta “Acima de R$ 2.200”.",
@@ -592,7 +592,7 @@
       "tipo": "Apartamento",
       "casa": false,
       "preco": 2000,
-      "condominio": 301,
+      "condominio": 307,
       "iptu": null,
       "bairro": "Zona 07",
       "endereco": "Rua Rui Barbosa, 1262, Zona 07 (Residencial Perseverance; número cruzado com o cadastro do condomínio e o CEP 87020-090 do anúncio)",
@@ -604,7 +604,7 @@
       "nova": false,
       "destaque": false,
       "descricao": "Rua Rui Barbosa, 1262, Zona 07 (Residencial Perseverance; número cruzado com o cadastro do condomínio e o CEP 87020-090 do anúncio). 59 m², 1 suíte. 59 m², apartamento novo (nunca habitado). Total R$ 2.309 (só no site). O título no OLX abrevia 'RESIDENCIAL PERSEVE'; o condomínio Residencial Perseverance fica na Rua Rui Barbosa, 1262 (CEP do anúncio 87020-090 = Rua Rui Barbosa, até 1569/1570). Coordenada no trecho da rua (Nominatim não devolveu o nº 1262).",
-      "nota_grokbot": "Imobiliária: ref. AP3482, tel. (44) 3226-4…. Elevador: sim (o anúncio cita elevador e área de lazer completa). A 1,0 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.301. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Semimobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Semi-mobiliado e nunca habitado; o anúncio também cita móveis planejados.",
+      "nota_grokbot": "Imobiliária: ref. AP3482, tel. (44) 3226-4…. Elevador: sim (o anúncio cita elevador e área de lazer completa). A 1,0 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.307. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Semimobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Semi-mobiliado e nunca habitado; o anúncio também cita móveis planejados.",
       "tags": [
         "Elevador",
         "Perto da ACIM",
@@ -1479,48 +1479,6 @@
           "distancia_m": 1550
         }
       ]
-    },
-    {
-      "id": "cnm-49034178",
-      "titulo": "Casa na Rua Doutor Naby Zacarias, 262 — Vila Progresso",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 2350,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Vila Progresso",
-      "endereco": "Rua Doutor Naby Zacarias, 262",
-      "quartos": 3,
-      "suites": 0,
-      "banheiros": 2,
-      "vagas": 2,
-      "area_m2": 145,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Doutor Naby Zacarias, 262. 145 m². 145 m². IPTU não informado. É sobrado (térrea não se aplica).",
-      "nota_grokbot": "Imobiliária: Silvio Iwata. Elevador não informado. A 1,9 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.350. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Tem armários ou móveis planejados (conta como com móveis). Armários planejados na cozinha. A confirmar: se a casa é térrea, IPTU.",
-      "tags": [
-        "A 1,9 km da ACIM",
-        "Acima de R$ 2.200",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/49034178/pr-maringa-vila-progresso-rua-doutor-naby-zacarias-casa-sobrado-para-alugar-3-quartos-6afedb31-1.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/49034178/pr-maringa-vila-progresso-rua-doutor-naby-zacarias-casa-sobrado-para-alugar-3-quartos-6afedb31-2.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/49034178/pr-maringa-vila-progresso-rua-doutor-naby-zacarias-casa-sobrado-para-alugar-3-quartos-6afedb31-3.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/49034178/pr-maringa-vila-progresso-rua-doutor-naby-zacarias-casa-sobrado-para-alugar-3-quartos-6afedb31-4.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/49034178/pr-maringa-vila-progresso-rua-doutor-naby-zacarias-casa-sobrado-para-alugar-3-quartos-6afedb31-5.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/49034178/pr-maringa-vila-progresso-rua-doutor-naby-zacarias-casa-sobrado-para-alugar-3-quartos-6afedb31-6.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/49034178/pr-maringa-vila-progresso-rua-doutor-naby-zacarias-casa-sobrado-para-alugar-3-quartos-6afedb31-7.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/49034178/pr-maringa-vila-progresso-rua-doutor-naby-zacarias-casa-sobrado-para-alugar-3-quartos-6afedb31-8.jpg"
-      ],
-      "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-vila-progresso-280m2-RS2350/id-49034178/",
-      "portal": "Chaves na Mão (IMOBILIÁRIA SILVIO IWATA)",
-      "encontrado_em": "2026-11-22",
-      "moveis": true,
-      "lat": -23.410452,
-      "lng": -51.954721
     },
     {
       "id": "sub100-2020007891",
@@ -2687,7 +2645,7 @@
       "banheiros": 2,
       "vagas": 2,
       "area_m2": 78,
-      "nova": true,
+      "nova": false,
       "destaque": false,
       "descricao": "Rua Duartina, Jardim Lucianópolis (CEP 87080-440 do anúncio; número não informado; próx. Av. Mandacaru / Shopping Mandacaru Boulevard). 78 m², 1 suíte. Casa 78 m², 2 quartos (1 suíte) + banheiro social, sala com jardim de inverno, edícula com 1 quarto de apoio, área de serviço coberta, garagem para 2 carros pequenos. Ficha do OLX: aluguel R$ 1.800, condomínio R$ 0, IPTU R$ 0. O OLX marca \"Condomínio fechado\" nas características (a confirmar). Não diz se é térrea. Publicado em 23/11/2026 às 15:20. Coordenada aproximada pelo CEP (Rua Duartina).",
       "nota_grokbot": "Imobiliária: anúncio OLX, código 06273.003. Sem elevador (não se aplica). ~1,9 km da ciclovia da Av. Brasil (linha reta, aproximado). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. A confirmar: se a casa é térrea.",
@@ -2754,52 +2712,6 @@
           "nome": "Ciclovia da Av. Cerro Azul",
           "categoria": "ciclovia",
           "distancia_m": 880
-        }
-      ]
-    },
-    {
-      "id": "sub100-2020004759",
-      "titulo": "Casa na Rua Nadalina Beloto, 116, casa a — Cidade Jardim",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 1900,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Cidade Jardim",
-      "endereco": "Rua Nadalina Beloto, 116, casa a",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Nadalina Beloto, 116, casa a. 1 suíte. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~2,5 km da ciclovia da Av. Brasil (linha reta, aproximado). A 2,7 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.900. Tem armários ou móveis planejados (conta como com móveis). Armários/planejados: cozinha, quarto, suíte. A confirmar: se a casa é térrea.",
-      "tags": [
-        "A 2,7 km da ACIM",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004759/2020004759a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004759/2020004759b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004759/2020004759c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004759/2020004759d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004759/2020004759e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004759/2020004759f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004759/2020004759g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004759/2020004759h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2020004759/locacao/casa-em-maringa-pr/cidade-jardim",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "moveis": true,
-      "lat": -23.39827,
-      "lng": -51.940136,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 2520
         }
       ]
     },
@@ -4684,7 +4596,7 @@
       "banheiros": 2,
       "vagas": 2,
       "area_m2": 85,
-      "nova": true,
+      "nova": false,
       "destaque": false,
       "descricao": "Rua Pioneiro Olinto Mariani, Jardim Diamante (número não informado; perto do nº 315). 85 m², terreno de 130 m², 1 suíte. Casa 85 m² (terreno 130 m²): 3 quartos (1 suíte), 2 banheiros, sala, cozinha, copa, área de serviço, churrasqueira, edícula, 2 vagas cobertas. IPTU R$ 67/mês. O nome das fotos no portal diz \"casa-sobrado\": não diz se é térrea. Anúncio atualizado em 23/11/2026 às 18:01. Coordenada no meio da rua (Nominatim).",
       "nota_grokbot": "Imobiliária: Diamante, ref. CA0027. Sem elevador (não se aplica). ~5,1 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.700. A confirmar: se a casa é térrea.",
@@ -4878,6 +4790,55 @@
       "encontrado_em": "2026-11-22",
       "lat": -23.4697087,
       "lng": -51.9514821
+    },
+    {
+      "id": "cnm-49153317",
+      "titulo": "Casa na Rua Geraldo Garcia Y Garcia, 576 — Jardim Dias I",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 2200,
+      "condominio": 0,
+      "iptu": null,
+      "bairro": "Jardim Dias I",
+      "endereco": "Rua Geraldo Garcia Y Garcia, 576, Jardim Dias I",
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 2,
+      "area_m2": 100,
+      "nova": true,
+      "destaque": false,
+      "descricao": "Rua Geraldo Garcia Y Garcia, 576, Jardim Dias I. 100 m², terreno de 150 m², 1 suíte. Casa 100 m² (terreno 150 m²): sala, 3 quartos (1 suíte com roupeiro), 2 banheiros (1 da suíte + 1 social), cozinha planejada, área de serviço, churrasqueira, 2 vagas cobertas paralelas. Aluguel R$ 2.200 é o valor com bonificação por pagamento pontual (aluguel bruto R$ 2.420). Sem condomínio (casa de rua). IPTU não informado. Não diz se é térrea (o nome das fotos no CNM diz \"casa-sobrado\", padrão do portal). Publicado em 24/11/2026. Perto do Contorno Norte, Mercado Katayama.",
+      "nota_grokbot": "Imobiliária: Sândalo Imóveis, ref. 01495.001. Sem elevador (não se aplica). ~5,0 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,4 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. Com móveis, segundo o anúncio. Armários/planejados: cozinha planejada e roupeiro na suíte. A confirmar: se a casa é térrea, IPTU.",
+      "tags": [
+        "A 5,4 km da ACIM",
+        "Móveis planejados"
+      ],
+      "fotos": [
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025111100.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025211100.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025311100.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025411100.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025511100.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025611100.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025711100.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025811100.jpg"
+      ],
+      "link": "https://www.sandaloimoveis.com.br/imovel/casa?id=11100&ref=01495.001",
+      "portal": "Sândalo Imóveis (site oficial, ref. 01495.001; também no Chaves na Mão)",
+      "encontrado_em": "2026-11-24",
+      "terreno_m2": 150,
+      "moveis": true,
+      "lat": -23.3759573,
+      "lng": -51.9250612,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 5040
+        }
+      ]
     },
     {
       "id": "sub100-2620001201",
@@ -5544,7 +5505,7 @@
       "tipo": "Apartamento",
       "casa": false,
       "preco": 1800,
-      "condominio": null,
+      "condominio": 500,
       "iptu": null,
       "bairro": "Zona 07",
       "quartos": 2,
@@ -5553,9 +5514,10 @@
       "area_m2": 90,
       "nova": false,
       "destaque": false,
-      "descricao": "90 m². 90 m². Título diz 3 quartos, texto diz 2 dormitórios + 2 banheiros. CONDOMÍNIO NÃO INFORMADO. Distância é só da Zona 07 (sem rua), baixa confiança.",
-      "nota_grokbot": "Imobiliária: Locar Fácil / Mais Fácil. Elevador não informado. ~940 m da ciclovia da Av. Brasil (linha reta, aproximado). Condomínio não informado (aluguel R$ 1.800); só serve se o condomínio for até R$ 550 para caber no teto do site. Mobiliado, segundo o anúncio. Também tem armários ou móveis planejados. A ficha marca mobiliado; há armários na cozinha, nos quartos e nos banheiros. A confirmar: condomínio.",
+      "descricao": "90 m². 90 m². Título diz 3 quartos, texto diz 2 dormitórios + 2 banheiros. Condomínio R$ 500 (ficha do Chaves na Mão, conferido em 24/11/2026) → total R$ 2.300, acima do teto do e-mail; fica só no site. Distância é só da Zona 07 (sem rua), baixa confiança.",
+      "nota_grokbot": "Imobiliária: Locar Fácil / Mais Fácil. Elevador não informado. ~940 m da ciclovia da Av. Brasil (linha reta, aproximado). Total aluguel + condomínio: R$ 2.300. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Mobiliado, segundo o anúncio. Também tem armários ou móveis planejados. A ficha marca mobiliado; há armários na cozinha, nos quartos e nos banheiros.",
       "tags": [
+        "Acima de R$ 2.200",
         "Mobiliado",
         "Móveis planejados"
       ],
