@@ -2255,41 +2255,17 @@ Regras:
   }
 
   function renderPoiCategoryDock() {
-    const cats = Object.values(CATEGORIES);
-    const visibleCrimeCount = getVisibleCrimes().length;
-    const visibleTrafficCount = getVisibleTraffic().length;
-    const reportOpen = isCrimeReportOpen();
-    const crimeButtonsHtml = `
-      <button type="button" class="cat-toggle cat-toggle--crime ${state.showCrimes ? "is-on" : ""}" id="toggleCrimesBtn" aria-pressed="${state.showCrimes}">
-        <span class="cat-toggle__dot" style="background:#b91c1c">${UI_ICONS.shieldAlert}</span>
-        <span>Crimes</span>
-        ${state.crimes.length > 0 ? `<span class="cat-toggle__count">${visibleCrimeCount}</span>` : ""}
-      </button>
-      <button type="button" class="cat-toggle cat-toggle--traffic ${state.showTraffic ? "is-on" : ""}" id="toggleTrafficBtn" aria-pressed="${state.showTraffic}">
-        <span class="cat-toggle__dot" style="background:#d97706">${UI_ICONS.trafficAlert}</span>
-        <span>Trânsito</span>
-        ${state.traffic.length > 0 ? `<span class="cat-toggle__count cat-toggle__count--traffic">${visibleTrafficCount}</span>` : ""}
-      </button>
-      <button type="button" class="cat-toggle cat-toggle--crime-legend ${reportOpen ? "is-open" : ""}" id="openCrimeReportDockBtn" aria-pressed="${reportOpen}" title="Abrir relatórios de crimes e acidentes de trânsito">
-        <span>Relatórios</span>
-      </button>
-    `;
-
-    const buildCatBtn = (cat) => {
-      const isOn = state.activeCategories.has(cat.id);
-      return `
-        <button type="button" class="cat-toggle ${isOn ? "is-on" : ""}" data-cat="${cat.id}" aria-pressed="${isOn}">
-          <span class="cat-toggle__dot" style="background:${cat.color}">${cat.icon}</span>
-          <span>${cat.label}</span>
-        </button>
-      `;
-    };
-
-    const parts = [];
-    if (cats.length > 0) parts.push(buildCatBtn(cats[0]));
-    parts.push(crimeButtonsHtml);
-    for (let i = 1; i < cats.length; i++) parts.push(buildCatBtn(cats[i]));
-    el.poiCategoryBar.innerHTML = parts.join("");
+    el.poiCategoryBar.innerHTML = Object.values(CATEGORIES)
+      .map((cat) => {
+        const isOn = state.activeCategories.has(cat.id);
+        return `
+          <button type="button" class="cat-toggle ${isOn ? "is-on" : ""}" data-cat="${cat.id}" aria-pressed="${isOn}">
+            <span class="cat-toggle__dot" style="background:${cat.color}">${cat.icon}</span>
+            <span>${cat.label}</span>
+          </button>
+        `;
+      })
+      .join("");
 
     el.poiCategoryBar.querySelectorAll(".cat-toggle[data-cat]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -2307,31 +2283,6 @@ Regras:
         }
       });
     });
-
-    const toggleCrimesBtn = document.getElementById("toggleCrimesBtn");
-    if (toggleCrimesBtn) {
-      toggleCrimesBtn.addEventListener("click", () => {
-        state.showCrimes = !state.showCrimes;
-        if (!state.showCrimes) state.crimeLegendOpen = false;
-        refreshCrimeViews();
-      });
-    }
-
-    const toggleTrafficBtn = document.getElementById("toggleTrafficBtn");
-    if (toggleTrafficBtn) {
-      toggleTrafficBtn.addEventListener("click", () => {
-        state.showTraffic = !state.showTraffic;
-        refreshCrimeViews();
-      });
-    }
-
-    const reportDockBtn = document.getElementById("openCrimeReportDockBtn");
-    if (reportDockBtn) {
-      reportDockBtn.addEventListener("click", () => {
-        if (isCrimeReportOpen()) closeCrimeReport();
-        else openCrimeReport();
-      });
-    }
   }
 
   function renderCrimeLegendPanel() {
