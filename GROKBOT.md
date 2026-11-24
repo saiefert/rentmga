@@ -122,7 +122,7 @@ Consulte a tabela abaixo e escolha no campo `"tipo"` a chave que melhor represen
 
 | Valor de `"tipo"` | Rótulo no Mapa | Ícone (estilo CrimeReports) | Lista de crimes / ocorrências que se encaixam |
 |---|---|---|---|
-| `homicidio` | Homicídio / Letal | Caveira (vermelho escuro) | Homicídio doloso ou culposo, tentativa de homicídio, latrocínio, feminicídio, execução, morte violenta, achado de cadáver com indício de crime |
+| `homicidio` | Homicídio / Letal | Faca (vermelho escuro) | Homicídio doloso ou culposo, tentativa de homicídio, latrocínio, feminicídio, execução, morte violenta, achado de cadáver com indício de crime |
 | `roubo` | Roubo / Assalto | Máscara de assalto (vermelho) | Roubo a pedestre, assalto à mão armada, roubo a residência, roubo a comércio/posto/farmácia, arrastão, sequestro relâmpago |
 | `furto` | Furto | Ladrão com bolsa (âmbar) | Furto simples ou qualificado, furto de celular/carteira, furto em comércio, furto de bicicleta, furto de fios/cabos/hidrômetro, furto em interior de veículo |
 | `invasao` | Invasão / Arrombamento | Casa arrombada (âmbar escuro) | Arrombamento de residência ou comércio, invasão domiciliar, violação de domicílio, furto mediante arrombamento (burglary) |

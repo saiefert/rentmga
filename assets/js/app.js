@@ -123,7 +123,7 @@
       label: "Homicídio / Letal",
       short: "Homicídio, latrocínio, feminicídio",
       color: "#991b1b",
-      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 11.5a5.5 5.5 0 1 1 11 0c0 2.1-1 3.7-2.2 4.6V19a1.5 1.5 0 0 1-1.5 1.5h-3.6A1.5 1.5 0 0 1 8.7 19v-2.9C7.5 15.2 6.5 13.6 6.5 11.5z"/><circle cx="9.8" cy="11.3" r="1.2" fill="currentColor" stroke="none"/><circle cx="14.2" cy="11.3" r="1.2" fill="currentColor" stroke="none"/><path d="M10.5 17.5v3M13.5 17.5v3"/></svg>`,
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.8 4.2C19.8 8.6 17.4 12.2 12.6 16.2L9.4 13L19.8 4.2z" fill="currentColor"/><path d="M8 11.8l5.8 5.8" stroke-width="2.1"/><path d="M10.2 15.2L5.5 19.9" stroke-width="3.2"/></svg>`,
     },
     roubo: {
       id: "roubo",
