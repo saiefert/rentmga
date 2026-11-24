@@ -186,7 +186,7 @@
       label: "Arma / Disparo",
       short: "Tiroteio, disparo, porte ilegal",
       color: "#be123c",
-      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/><path d="M12 3v3.2M12 17.8V21M3 12h3.2M17.8 12H21"/></svg>`,
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.8 7.5h16.4a.8.8 0 0 1 .8.8v2.7a.8.8 0 0 1-.8.8h-9.7l-1.8 6.9a1 1 0 0 1-1 .8H4.9a.9.9 0 0 1-.9-1.1L5.6 12H3.8a.8.8 0 0 1-.8-.8V8.3a.8.8 0 0 1 .8-.8z" fill="currentColor"/><path d="M10.2 11.8h4.5a1.2 1.2 0 0 1 1.1 1.6l-.5 1.4a1.2 1.2 0 0 1-1.1.8H9.6"/><path d="M12.7 12l-.6 2"/><path d="M19.2 7.5V6.2M4.4 7.5L3.2 6.3"/></svg>`,
     },
     incendio: {
       id: "incendio",
