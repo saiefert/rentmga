@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-24T14:08:30-03:00",
+  "atualizado_em": "2026-11-24T19:21:27-03:00",
   "fonte": "Grokbot",
   "cidade": "Maringá - PR",
   "observacao": "Varredura de toda Maringá-PR, com preferência aos imóveis mais próximos da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01). No mínimo 2 quartos e 2 banheiros (suíte conta como banheiro; lavabo não). Teto do site: aluguel + condomínio até R$ 2.350 (IPTU à parte). Teto do e-mail para Dionizia permanece R$ 2.200. Excluídos apenas: Cidade Alta, Conjunto Requião e Jardim Alvorada. A lista do site é ordenada pela distância em linha reta até a ACIM. Imóveis entre R$ 2.200 e R$ 2.350 entram só no site, com a etiqueta “Acima de R$ 2.200”.",
@@ -2594,44 +2594,7 @@
     },
     {
       "id": "sub100-2020007884",
-      "titulo": "Casa na Rua Duartina, 705, antigo 707 — Jardim Lucianópolis",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 1800,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Lucianópolis",
-      "endereco": "Rua Duartina, 705, antigo 707",
-      "quartos": 2,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Duartina, 705, antigo 707. 1 suíte. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível. Fotos do S3 não abrem; só a capa conferida.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~1,9 km da ciclovia da Av. Brasil (linha reta, aproximado). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. A confirmar: se a casa é térrea.",
-      "tags": [
-        "A 2,6 km da ACIM"
-      ],
-      "fotos": [
-        "https://media.sub100.com.br/imoveis/20/2020007884/2020007884am.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2020007884/locacao/casa-em-maringa-pr/jardim-lucianopolis",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.407672,
-      "lng": -51.962024,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 1850
-        }
-      ]
-    },
-    {
-      "id": "olx-1555337398",
-      "titulo": "Casa na Rua Duartina, Jardim Lucianópolis",
+      "titulo": "Casa na Rua Duartina, 705 — Jardim Lucianópolis",
       "finalidade": "aluguel",
       "tipo": "Casa",
       "casa": true,
@@ -2639,27 +2602,36 @@
       "condominio": 0,
       "iptu": 0,
       "bairro": "Jardim Lucianópolis",
-      "endereco": "Rua Duartina, Jardim Lucianópolis (CEP 87080-440 do anúncio; número não informado; próx. Av. Mandacaru / Shopping Mandacaru Boulevard)",
+      "endereco": "Rua Duartina, 705 (antigo 707), Jardim Lucianópolis",
       "quartos": 2,
       "suites": 1,
       "banheiros": 2,
       "vagas": 2,
-      "area_m2": 78,
+      "area_m2": 77.92,
       "nova": false,
       "destaque": false,
-      "descricao": "Rua Duartina, Jardim Lucianópolis (CEP 87080-440 do anúncio; número não informado; próx. Av. Mandacaru / Shopping Mandacaru Boulevard). 78 m², 1 suíte. Casa 78 m², 2 quartos (1 suíte) + banheiro social, sala com jardim de inverno, edícula com 1 quarto de apoio, área de serviço coberta, garagem para 2 carros pequenos. Ficha do OLX: aluguel R$ 1.800, condomínio R$ 0, IPTU R$ 0. O OLX marca \"Condomínio fechado\" nas características (a confirmar). Não diz se é térrea. Publicado em 23/11/2026 às 15:20. Coordenada aproximada pelo CEP (Rua Duartina).",
-      "nota_grokbot": "Imobiliária: anúncio OLX, código 06273.003. Sem elevador (não se aplica). ~1,9 km da ciclovia da Av. Brasil (linha reta, aproximado). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. A confirmar: se a casa é térrea.",
+      "descricao": "Rua Duartina, 705 (antigo 707), Jardim Lucianópolis. 77,92 m², terreno de 150 m², 1 suíte. Casa geminada 77,92 m² (terreno 150 m²): 2 quartos (1 suíte simples) + banheiro social, sala com jardim de inverno, cozinha, área de serviço coberta nos fundos, edícula com 1 quarto de apoio, garagem para 2 carros pequenos (coberta e descoberta, em gaveta). Aluguel R$ 1.800; OLX informa condomínio R$ 0 e IPTU R$ 0 (a marcação \"Condomínio fechado\" do OLX não aparece no site da Lélo). Sem armários (ficha oficial). Não diz se é térrea. Publicado no OLX em 23/11/2026 às 15:20. Perto do Shopping Mandacaru Boulevard e das avenidas Mandacaru e Alziro Zarur. Coordenada aproximada (Rua Duartina, Nominatim). Mesmo imóvel que o antigo olx-1555337398 (unificado em 24/11/2026 19h).",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis, ref. 06273.003. Sem elevador (não se aplica). ~1,9 km da ciclovia da Av. Brasil (linha reta, aproximado). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. O anúncio diz que o imóvel não tem móveis nem armários. Armários/planejados: não (ficha da Lélo: \"Mobiliado: Não\", \"Armários quarto(s): Não\", \"Armários cozinha: Não\"). A confirmar: se a casa é térrea.",
       "tags": [
         "A 2,6 km da ACIM"
       ],
       "fotos": [
-        "https://img.olx.com.br/images/57/579632104997331.jpg"
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/1409379900/28513879900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/1409379900/28513979900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/1409379900/28514079900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/1409379900/28514179900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/1409379900/28514279900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/1409379900/28514379900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/1409379900/28514479900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/1409379900/28514579900.jpg"
       ],
-      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1555337398",
-      "portal": "OLX (imobiliária, código 06273.003)",
+      "link": "https://www.leloimoveis.com.br/imovel/casa-residencial-2-quartos-jardim-lucianopolis-maringa-2-vagas-78m2-locacao-rs-1800/79900/06273.003",
+      "portal": "Lélo Imóveis (site oficial, ref. 06273.003; também no Sub100 2020007884 e no OLX 1555337398)",
       "encontrado_em": "2026-11-23",
-      "lat": -23.4076718,
-      "lng": -51.9620243,
+      "terreno_m2": 150,
+      "moveis": false,
+      "lat": -23.407672,
+      "lng": -51.962024,
       "proximidades": [
         {
           "nome": "Ciclovia da Av. Brasil",
@@ -3112,6 +3084,54 @@
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
           "distancia_m": 1220
+        }
+      ]
+    },
+    {
+      "id": "marilene-352766",
+      "titulo": "Casa na Rua Francisca Dina de Andrade, 879 — Jardim São Miguel",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 1800,
+      "condominio": 0,
+      "iptu": null,
+      "bairro": "Jardim São Miguel",
+      "endereco": "Rua Francisca Dina de Andrade, 879, Jardim São Miguel",
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 2,
+      "area_m2": 100,
+      "nova": true,
+      "destaque": false,
+      "descricao": "Rua Francisca Dina de Andrade, 879, Jardim São Miguel. 100 m², 1 suíte. Casa térrea (foto da fachada) 100 m²: sala de estar/jantar conjugadas, 3 quartos (1 suíte), banheiro social, cozinha planejada, jardim de inverno, área gourmet com churrasqueira, área de serviço, 2 vagas cobertas, cerca elétrica e portão eletrônico. Sem condomínio (casa de rua). IPTU não informado. Perto do Shopping Catuaí (texto do anúncio).",
+      "nota_grokbot": "Imobiliária: Marilene Insaurralde Imóveis, CRECI F-11007. Sem elevador (não se aplica). ~2,1 km da ciclovia da Av. Brasil (linha reta, aproximado). A 3,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. Com móveis, segundo o anúncio. Armários/planejados: cozinha planejada, item \"Cozinha Planejada\" no site e armários visíveis na foto da cozinha. A confirmar: IPTU.",
+      "tags": [
+        "A 3,5 km da ACIM",
+        "Móveis planejados"
+      ],
+      "fotos": [
+        "https://cdn.imoblist.com/v2/accounts/228/realestates/352766/0169496001789681907.jpg",
+        "https://cdn.imoblist.com/v2/accounts/228/realestates/352766/0176672001789681908.jpg",
+        "https://cdn.imoblist.com/v2/accounts/228/realestates/352766/0764038001789681908.jpg",
+        "https://cdn.imoblist.com/v2/accounts/228/realestates/352766/0741276001789681909.jpg",
+        "https://cdn.imoblist.com/v2/accounts/228/realestates/352766/0479001001789681910.jpg",
+        "https://cdn.imoblist.com/v2/accounts/228/realestates/352766/0305396001789681911.jpg",
+        "https://cdn.imoblist.com/v2/accounts/228/realestates/352766/0393668001789681912.jpg",
+        "https://cdn.imoblist.com/v2/accounts/228/realestates/352766/0882432001789681912.jpg"
+      ],
+      "link": "https://www.marileneimoveis.com.br/imovel/352766",
+      "portal": "Marilene Insaurralde Imóveis (site oficial, ref. 352766; achado via Imovelweb)",
+      "encontrado_em": "2026-11-24",
+      "moveis": true,
+      "lat": -23.4097998,
+      "lng": -51.973455,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 2070
         }
       ]
     },
@@ -4807,7 +4827,7 @@
       "banheiros": 2,
       "vagas": 2,
       "area_m2": 100,
-      "nova": true,
+      "nova": false,
       "destaque": false,
       "descricao": "Rua Geraldo Garcia Y Garcia, 576, Jardim Dias I. 100 m², terreno de 150 m², 1 suíte. Casa 100 m² (terreno 150 m²): sala, 3 quartos (1 suíte com roupeiro), 2 banheiros (1 da suíte + 1 social), cozinha planejada, área de serviço, churrasqueira, 2 vagas cobertas paralelas. Aluguel R$ 2.200 é o valor com bonificação por pagamento pontual (aluguel bruto R$ 2.420). Sem condomínio (casa de rua). IPTU não informado. Não diz se é térrea (o nome das fotos no CNM diz \"casa-sobrado\", padrão do portal). Publicado em 24/11/2026. Perto do Contorno Norte, Mercado Katayama.",
       "nota_grokbot": "Imobiliária: Sândalo Imóveis, ref. 01495.001. Sem elevador (não se aplica). ~5,0 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,4 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. Com móveis, segundo o anúncio. Armários/planejados: cozinha planejada e roupeiro na suíte. A confirmar: se a casa é térrea, IPTU.",
@@ -5135,7 +5155,7 @@
     },
     {
       "id": "olx-1554301245",
-      "titulo": "Casa na Rua Rio Vermelho, Jardim Campos Elísios",
+      "titulo": "Casa na Rua Rio Vermelho, 378 — Jardim Campos Elísios",
       "finalidade": "aluguel",
       "tipo": "Casa",
       "casa": true,
@@ -5143,7 +5163,7 @@
       "condominio": 0,
       "iptu": null,
       "bairro": "Jardim Campos Elísios",
-      "endereco": "Rua Rio Vermelho, Jardim Campos Elísios (número não informado)",
+      "endereco": "Rua Rio Vermelho, 378, Jardim Campos Elísios",
       "quartos": 2,
       "suites": 1,
       "banheiros": 2,
@@ -5151,19 +5171,33 @@
       "area_m2": 72,
       "nova": false,
       "destaque": false,
-      "descricao": "Rua Rio Vermelho, Jardim Campos Elísios (número não informado). 72 m², 1 suíte. Casa 72 m², 2 dormitórios (1 suíte) + banheiro social, sala em 2 ambientes, 2 vagas. Condomínio informado como R$ 0. Super Destaque, atualizado em 18/11/2026. Coordenada no trecho da Rua Rio Vermelho (CEP 87043-410).",
-      "nota_grokbot": "Imobiliária: ref. L30074 / 30074, tel. (44) 3222-8…. Sem elevador (não se aplica). A 6,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. A confirmar: se a casa é térrea.",
+      "descricao": "Rua Rio Vermelho, 378, Jardim Campos Elísios. 72 m², 1 suíte. Casa 72 m², 2 dormitórios (1 suíte) + banheiro social, sala em 2 ambientes, cozinha, área de serviço, 2 vagas. Condomínio R$ 0 (OLX); IPTU não informado. Anúncio não cita armários. Não diz se é térrea. Ref. 30074 atualizada em 23/11 no Sub100. Coordenada no trecho da Rua Rio Vermelho (CEP 87043-410; número não geocodificado).",
+      "nota_grokbot": "Imobiliária: Pedro Granado Imóveis, CRECI J03632, ref. L30074. Sem elevador (não se aplica). ~3,7 km da ciclovia da Av. Brasil (linha reta, aproximado). A 6,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. A confirmar: se a casa é térrea, IPTU.",
       "tags": [
         "A 6,2 km da ACIM"
       ],
       "fotos": [
-        "https://img.olx.com.br/images/24/248635827006154.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012741/2820012741a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012741/2820012741b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012741/2820012741c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012741/2820012741d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012741/2820012741e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012741/2820012741f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012741/2820012741g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012741/2820012741h.jpg"
       ],
-      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1554301245",
-      "portal": "OLX (código L30074, tel. (44) 3222-8…)",
+      "link": "https://sub100.com.br/imoveis/2820012741/locacao/casa-em-maringa-pr/jardim-campos-elisios",
+      "portal": "Sub100 (Pedro Granado Imóveis, ref. L30074 / Sub100 2820012741; também no OLX)",
       "encontrado_em": "2026-11-22",
       "lat": -23.4024117,
-      "lng": -51.8846832
+      "lng": -51.8846832,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 3720
+        }
+      ]
     },
     {
       "id": "sub100-2020002526",
