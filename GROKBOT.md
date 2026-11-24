@@ -80,3 +80,98 @@ Mesmo um JSON enxuto já funciona perfeitamente:
   ]
 }
 ```
+
+---
+
+# Guia de Integração — Grokbot → `data/crimes.json` (Mapa de Ocorrências estilo CrimeReports)
+
+Para exibir ocorrências policiais no mapa de Maringá com ícones por categoria (estilo **CrimeReports** dos EUA), o Grokbot deve gerar ou atualizar o arquivo **`data/crimes.json`**.
+
+O site aceita tanto um objeto com `"ocorrencias": [ ... ]` (recomendado) quanto um array JSON direto `[ { ... }, ... ]`.
+
+## Formato de `data/crimes.json`
+
+```json
+{
+  "atualizado_em": "2026-11-24T12:00:00-03:00",
+  "fonte": "Grokbot",
+  "cidade": "Maringá - PR",
+  "observacao": "Ocorrências policiais recentes coletadas em portais locais.",
+  "ocorrencias": [
+    {
+      "id": "g1-2026-11-20-furto-zona-07",
+      "data": "2026-11-20",
+      "tipo": "furto",
+      "titulo": "Furto de bicicleta em condomínio na Zona 07",
+      "cidade": "Maringá",
+      "bairro": "Zona 07",
+      "endereco": "Rua X (se houver)",
+      "lat": -23.4105,
+      "lng": -51.9378,
+      "precisao": "rua",
+      "fonte": "G1",
+      "link": "https://..."
+    }
+  ]
+}
+```
+
+## Lista de Crimes para o Grok consultar (um ícone para cada grupo de crimes)
+
+Consulte a tabela abaixo e escolha no campo `"tipo"` a chave que melhor representa a ocorrência. Cada chave renderiza um ícone próprio estilo **CrimeReports** no mapa:
+
+| Valor de `"tipo"` | Rótulo no Mapa | Ícone (estilo CrimeReports) | Lista de crimes / ocorrências que se encaixam |
+|---|---|---|---|
+| `homicidio` | Homicídio / Letal | Caveira (vermelho escuro) | Homicídio doloso ou culposo, tentativa de homicídio, latrocínio, feminicídio, execução, morte violenta, achado de cadáver com indício de crime |
+| `roubo` | Roubo / Assalto | Máscara de assalto (vermelho) | Roubo a pedestre, assalto à mão armada, roubo a residência, roubo a comércio/posto/farmácia, arrastão, sequestro relâmpago |
+| `furto` | Furto | Ladrão com bolsa (âmbar) | Furto simples ou qualificado, furto de celular/carteira, furto em comércio, furto de bicicleta, furto de fios/cabos/hidrômetro, furto em interior de veículo |
+| `invasao` | Invasão / Arrombamento | Casa arrombada (âmbar escuro) | Arrombamento de residência ou comércio, invasão domiciliar, violação de domicílio, furto mediante arrombamento (burglary) |
+| `veiculo` | Veículo (Furto/Roubo) | Carro com alerta (ocre) | Furto de carro, furto de moto, roubo de carro, roubo de moto, furto/roubo de caminhonete ou carga veicular |
+| `trafico` | Tráfico / Drogas | Cápsula / pílula (roxo) | Tráfico de drogas, apreensão de entorpecentes, ponto de venda (biqueira), associação para o tráfico, laboratório/plantação ilegal |
+| `agressao` | Agressão / Violência | Punho / impacto (laranja) | Lesão corporal, agressão física, espancamento, esfaqueamento, briga com feridos, ameaça grave, vias de fato |
+| `violencia_domestica` | Violência Doméstica | Casa com alerta (rosa escuro) | Violência doméstica, Lei Maria da Penha, agressão/ameaça contra cônjuge ou familiar, descumprimento de medida protetiva |
+| `violencia_sexual` | Crime Sexual | Escudo de alerta (magenta) | Estupro, estupro de vulnerável, importunação sexual, assédio sexual, abuso sexual, ato obsceno |
+| `arma` | Arma / Disparo | Mira / disparo (carmim) | Disparo de arma de fogo, tiroteio, troca de tiros, porte ou posse ilegal de arma de fogo, apreensão de armas/munições |
+| `incendio` | Incêndio Criminoso | Chama (laranja fogo) | Incêndio criminoso em imóvel, terreno, veículo ou mata, tentativa de atear fogo, artefato explosivo |
+| `vandalismo` | Vandalismo / Dano | Spray / dano (ardósia) | Vandalismo, dano ao patrimônio público ou privado, depredação, pichação, quebra de vidros/veículos |
+| `estelionato` | Estelionato / Golpe | Cartão com alerta (azul escuro) | Estelionato, golpe presencial (falso funcionário, bilhete premiado, falso parente), extorsão, falsificação, fraude local |
+| `operacao_policial` | Operação / Prisão | Algemas (azul polícia) | Operação policial, cumprimento de mandado de prisão, captura de foragido, prisão em flagrante, receptação, perseguição policial |
+| `outro` | Outra Ocorrência | Alerta policial (grafite) | Qualquer outra ocorrência criminal relevante que não se encaixe diretamente nas categorias acima |
+
+> **Observação:** o site também aceita acentos ou termos compostos (ex: `"homicídio"`, `"tráfico"`, `"roubo de moto"`, `"arrombamento"`) e normaliza automaticamente para o ícone correspondente, mas prefira sempre usar as chaves exatas da primeira coluna acima.
+
+## Prompt pronto para o Grokbot (Ocorrências)
+
+```text
+Você é um coletor de ocorrências policiais recentes em Maringá - PR (todas as zonas e bairros da cidade).
+Retorne APENAS um JSON válido para atualizar o arquivo data/crimes.json no formato:
+
+{
+  "atualizado_em": "YYYY-MM-DDTHH:MM:SS-03:00",
+  "fonte": "Grokbot",
+  "cidade": "Maringá - PR",
+  "ocorrencias": [
+    {
+      "id": "fonte-YYYY-MM-DD-slug-unico",
+      "data": "YYYY-MM-DD",
+      "tipo": "furto|roubo|invasao|veiculo|homicidio|trafico|agressao|violencia_domestica|violencia_sexual|arma|incendio|vandalismo|estelionato|operacao_policial|outro",
+      "titulo": "Manchete objetiva da ocorrência",
+      "cidade": "Maringá",
+      "bairro": "Zona 07",
+      "endereco": "Rua X (se houver na matéria, senão deixe vazio)",
+      "lat": -23.4105,
+      "lng": -51.9378,
+      "precisao": "rua|bairro",
+      "fonte": "G1",
+      "link": "https://..."
+    }
+  ]
+}
+
+Regras:
+1. Inclua apenas ocorrências reais com fonte verificável e "link" direto para a notícia.
+2. Escolha em "tipo" o valor da tabela de crimes que melhor se encaixa na ocorrência (use preferencialmente: homicidio, roubo, furto, invasao, veiculo, trafico, agressao, violencia_domestica, violencia_sexual, arma, incendio, vandalismo, estelionato, operacao_policial ou outro).
+3. Use "precisao": "rua" apenas quando houver rua/avenida/esquina confirmada e coordenadas exatas; caso só haja bairro, use "precisao": "bairro".
+4. Se não tiver "lat" e "lng", preencha "bairro" corretamente (ex: "Zona 01", "Zona 02", "Zona 07", "Jardim Alvorada") que o site posiciona automaticamente no mapa.
+5. Mantenha "id" estável para evitar duplicatas entre atualizações.
+```

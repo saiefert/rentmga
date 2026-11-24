@@ -1,0 +1,7 @@
+{
+  "atualizado_em": "2026-11-24T11:45:00-03:00",
+  "fonte": "Grokbot",
+  "cidade": "Maringá - PR",
+  "observacao": "Lista de ocorrências policiais para exibição no mapa. Atualize o array 'ocorrencias' seguindo data/crimes.schema.json e GROKBOT.md.",
+  "ocorrencias": []
+}

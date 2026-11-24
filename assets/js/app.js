@@ -112,6 +112,116 @@
     eye: `<svg viewBox="0 0 20 20" fill="none"><path d="M2 10c1.4-2.9 4.5-5 8-5s6.6 2.1 8 5c-1.4 2.9-4.5 5-8 5s-6.6-2.1-8-5z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="10" cy="10" r="2.3" stroke="currentColor" stroke-width="1.7"/></svg>`,
     eyeOff: `<svg viewBox="0 0 20 20" fill="none"><path d="M3 3l14 14M8.5 8.5a2.5 2.5 0 0 0 3 3M5.6 5.8C3.9 7 2.7 8.5 2 10c1.4 2.9 4.5 5 8 5 1.4 0 2.7-.3 3.9-.9M8.3 5.2c.5-.1 1.1-.2 1.7-.2 3.5 0 6.6 2.1 8 5-.5 1.1-1.3 2.1-2.2 2.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
     star: `<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8l2.45 4.97 5.48.8-3.96 3.86.94 5.46L10 14.32l-4.91 2.57.94-5.46-3.96-3.86 5.48-.8L10 1.8z"/></svg>`,
+    shieldAlert: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.8-3.2 8.7-7.5 9.8-4.3-1.1-7.5-5-7.5-9.8V6L12 3z"/><path d="M12 8.5v4.5"/><circle cx="12" cy="16.2" r="0.9" fill="currentColor" stroke="none"/></svg>`,
+  };
+
+  // CrimeReports-style crime catalog (1 icon per group of related crimes — consulted by Grokbot via GROKBOT.md & data/crimes.schema.json)
+  const CRIME_TYPES = {
+    homicidio: {
+      id: "homicidio",
+      label: "Homicídio / Letal",
+      short: "Homicídio, latrocínio, feminicídio",
+      color: "#991b1b",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 11.5a5.5 5.5 0 1 1 11 0c0 2.1-1 3.7-2.2 4.6V19a1.5 1.5 0 0 1-1.5 1.5h-3.6A1.5 1.5 0 0 1 8.7 19v-2.9C7.5 15.2 6.5 13.6 6.5 11.5z"/><circle cx="9.8" cy="11.3" r="1.2" fill="currentColor" stroke="none"/><circle cx="14.2" cy="11.3" r="1.2" fill="currentColor" stroke="none"/><path d="M10.5 17.5v3M13.5 17.5v3"/></svg>`,
+    },
+    roubo: {
+      id: "roubo",
+      label: "Roubo / Assalto",
+      short: "Assalto, mão armada, arrastão",
+      color: "#dc2626",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11c0-3.5 3.4-6 8-6s8 2.5 8 6v2.2c0 3.2-3.4 5.8-8 5.8s-8-2.6-8-5.8V11z"/><path d="M4.5 11.5h15v2.2c0 .6-.5 1.1-1.1 1.1h-3.3c-.9 0-1.5-.5-2-1.2l-1.1-1.4-1.1 1.4c-.5.7-1.1 1.2-2 1.2H5.6c-.6 0-1.1-.5-1.1-1.1v-2.2z" fill="currentColor" fill-opacity="0.3"/><circle cx="8.8" cy="12.6" r="1" fill="currentColor" stroke="none"/><circle cx="15.2" cy="12.6" r="1" fill="currentColor" stroke="none"/></svg>`,
+    },
+    furto: {
+      id: "furto",
+      label: "Furto",
+      short: "Celular, bike, comércio, fios",
+      color: "#d97706",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14.5" cy="5.5" r="2"/><path d="M12.5 9.5l-3 2.5-2.5-.5"/><path d="M12.5 9.5l3 2 2.5-1"/><path d="M12.5 9.5l-1.5 5 3.5 2.5-.5 3.5"/><path d="M11 14.5l-3.5 2.5-2 3"/><path d="M4.5 9.5c0-1 .8-1.8 1.8-1.8h1.4c1 0 1.8.8 1.8 1.8v2.2a2.5 2.5 0 0 1-5 0V9.5z" fill="currentColor" fill-opacity="0.28"/></svg>`,
+    },
+    invasao: {
+      id: "invasao",
+      label: "Invasão / Arromb.",
+      short: "Arrombamento, invasão domiciliar",
+      color: "#b45309",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11L12 4l8.5 7"/><path d="M6 10.5V20h12v-9.5"/><path d="M13 10.5l-2.5 4h2.8L11 18.5" stroke-width="2.1"/></svg>`,
+    },
+    veiculo: {
+      id: "veiculo",
+      label: "Veículo (Furto/Roubo)",
+      short: "Carro, moto, caminhonete",
+      color: "#ca8a04",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 13.5l1.6-4.4A2 2 0 0 1 7 7.8h6.2"/><path d="M3.5 13.5h17v4h-2v-1.3H5.5v1.3h-2v-4z"/><path d="M20.5 13.5l-1.1-3"/><circle cx="7" cy="13.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="17" cy="13.5" r="1.2" fill="currentColor" stroke="none"/><path d="M18.5 4v4"/><circle cx="18.5" cy="10.2" r="0.9" fill="currentColor" stroke="none"/></svg>`,
+    },
+    trafico: {
+      id: "trafico",
+      label: "Tráfico / Drogas",
+      short: "Entorpecentes, ponto de tráfico",
+      color: "#7c3aed",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.5 6.5l7 7a4.2 4.2 0 1 1-6 6l-7-7a4.2 4.2 0 1 1 6-6z"/><path d="M8.5 15.5l7-7"/><path d="M11.5 18.5a4.2 4.2 0 0 0 6-6l-2-2-6 6 2 2z" fill="currentColor" fill-opacity="0.3"/></svg>`,
+    },
+    agressao: {
+      id: "agressao",
+      label: "Agressão / Violência",
+      short: "Lesão corporal, briga, ameaça",
+      color: "#ea580c",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3L5.5 13h6l-1 8L18.5 11h-6l.5-8z" fill="currentColor" fill-opacity="0.25"/></svg>`,
+    },
+    violencia_domestica: {
+      id: "violencia_domestica",
+      label: "Violência Doméstica",
+      short: "Maria da Penha, medida protetiva",
+      color: "#e11d48",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11L12 4l8.5 7"/><path d="M6 10.5V20h12v-9.5"/><path d="M12 10.5v4"/><circle cx="12" cy="17.2" r="1" fill="currentColor" stroke="none"/></svg>`,
+    },
+    violencia_sexual: {
+      id: "violencia_sexual",
+      label: "Crime Sexual",
+      short: "Estupro, importunação, assédio",
+      color: "#9d174d",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.8-3.2 8.7-7.5 9.8-4.3-1.1-7.5-5-7.5-9.8V6L12 3z"/><path d="M9.2 9.2l5.6 5.6M14.8 9.2l-5.6 5.6"/></svg>`,
+    },
+    arma: {
+      id: "arma",
+      label: "Arma / Disparo",
+      short: "Tiroteio, disparo, porte ilegal",
+      color: "#be123c",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/><path d="M12 3v3.2M12 17.8V21M3 12h3.2M17.8 12H21"/></svg>`,
+    },
+    incendio: {
+      id: "incendio",
+      label: "Incêndio Criminoso",
+      short: "Fogo criminoso, explosivo",
+      color: "#c2410c",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.5 3.5c.8 3.2-1.8 4.8-1.8 7 0 1.2.9 2 2 2 1.5 0 2.3-1.3 2.5-3 2 1.8 3.3 4.1 3.3 6.5a6.5 6.5 0 1 1-13 0c0-3.2 2-5.6 4.2-7.8 1-1 2.1-2.5 2.8-4.7z" fill="currentColor" fill-opacity="0.25"/></svg>`,
+    },
+    vandalismo: {
+      id: "vandalismo",
+      label: "Vandalismo / Dano",
+      short: "Depredação, pichação, dano",
+      color: "#475569",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7.5" y="9" width="9" height="11.5" rx="1.8"/><path d="M9.5 9V6.8a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1V9"/><path d="M12 5.8V4.2M15.5 4.5l2-1M16.5 7h2"/></svg>`,
+    },
+    estelionato: {
+      id: "estelionato",
+      label: "Estelionato / Golpe",
+      short: "Golpe presencial, fraude, extorsão",
+      color: "#0369a1",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="6" width="17" height="12" rx="2.2"/><path d="M3.5 10.2h17"/><path d="M14.2 13.3l2.6 2.6M16.8 13.3l-2.6 2.6"/></svg>`,
+    },
+    operacao_policial: {
+      id: "operacao_policial",
+      label: "Operação / Prisão",
+      short: "Mandado, flagrante, receptação",
+      color: "#1d4ed8",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="14.5" r="3.8"/><circle cx="16.5" cy="14.5" r="3.8"/><path d="M9.6 11.3l1.2-2.8a1.4 1.4 0 0 1 2.4 0l1.2 2.8"/><path d="M11 8.5h2"/></svg>`,
+    },
+    outro: {
+      id: "outro",
+      label: "Outra Ocorrência",
+      short: "Outros registros policiais",
+      color: "#334155",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4L3.5 19h17L12 4z" fill="currentColor" fill-opacity="0.2"/><path d="M12 10v4.2"/><circle cx="12" cy="16.8" r="0.9" fill="currentColor" stroke="none"/></svg>`,
+    },
   };
 
   const GROKBOT_PROMPT = `Você é um buscador de casas e apartamentos em Maringá - PR.
@@ -189,6 +299,12 @@ Regras:
     allPois: [],
     routineAnchors: [],
     liveOsmPoisByHouse: {},
+    crimesFeed: null,
+    crimes: [],
+    showCrimes: true,
+    crimeLegendOpen: false,
+    crimePeriodDays: 0,
+    activeCrimeTypes: new Set(Object.keys(CRIME_TYPES)),
     selectedHouseId: null,
     drawerOpen: false,
     hoveredHouseId: null,
@@ -227,6 +343,7 @@ Regras:
   let cicloviaLayer = null;
   let rotinaLayer = null;
   let poiLayer = null;
+  let crimeLayer = null;
   let houseLayer = null;
   let selectionLayer = null;
   let routeHighlightLayer = null;
@@ -236,6 +353,7 @@ Regras:
   let routeSimRequestSeq = 0;
   const houseMarkers = new Map();
   const poiMarkers = new Map();
+  const crimeMarkers = new Map();
   const anchorMarkers = new Map();
 
   // DOM Elements
@@ -272,6 +390,7 @@ Regras:
     drawerFavBtn: document.getElementById("drawerFavBtn"),
     drawerBody: document.getElementById("drawerBody"),
     poiCategoryBar: document.getElementById("poiCategoryBar"),
+    crimeLegendPanel: document.getElementById("crimeLegendPanel"),
     mapCarousel: document.getElementById("mapCarousel"),
     mapCarouselWrap: document.getElementById("mapCarouselWrap"),
     routeSimPanel: document.getElementById("routeSimPanel"),
@@ -846,6 +965,195 @@ Regras:
     applyFiltersAndRender(true);
   }
 
+  // ==================== CRIMES ENGINE (CRIMEREPORTS STYLE) ====================
+
+  function resolveCrimeType(rawTipo) {
+    const norm = normalizeText(rawTipo || "").replace(/[\s/-]+/g, "_");
+    if (!norm) return "outro";
+    if (CRIME_TYPES[norm]) return norm;
+
+    const text = normalizeText(rawTipo || "");
+    if (/\b(homicidio|latrocinio|feminicidio|assassinato|execucao|cadaver|morte violenta|tentativa de homicidio)\b/.test(text)) {
+      return "homicidio";
+    }
+    if (/\b(maria da penha|violencia domestica|medida protetiva|domestica)\b/.test(text)) {
+      return "violencia_domestica";
+    }
+    if (/\b(estupro|sexual|importunacao|assedio|abuso|ato obsceno)\b/.test(text)) {
+      return "violencia_sexual";
+    }
+    if (/\b(veiculo|carro|moto|motocicleta|caminhonete|automovel|caminhao)\b/.test(text)) {
+      return "veiculo";
+    }
+    if (/\b(invasao|arrombamento|burglary|residencia|domiciliar|violacao de domicilio)\b/.test(text)) {
+      return "invasao";
+    }
+    if (/\b(roubo|assalto|arrastao|sequestro|mao armada)\b/.test(text)) {
+      return "roubo";
+    }
+    if (/\b(furto|subtracao|larceny|theft)\b/.test(text)) {
+      return "furto";
+    }
+    if (/\b(trafico|droga|entorpecente|cocaina|maconha|crack|biqueira|narcotic)\b/.test(text)) {
+      return "trafico";
+    }
+    if (/\b(tiroteio|disparo|arma|armamento|municao|pistola|revolver|tiro)\b/.test(text)) {
+      return "arma";
+    }
+    if (/\b(incendio|fogo|explosivo|arson)\b/.test(text)) {
+      return "incendio";
+    }
+    if (/\b(vandalismo|dano|depredacao|pichacao|quebra)\b/.test(text)) {
+      return "vandalismo";
+    }
+    if (/\b(estelionato|golpe|fraude|extorsao|falsificacao)\b/.test(text)) {
+      return "estelionato";
+    }
+    if (/\b(agressao|lesao corporal|espancamento|esfaqueamento|briga|ameaca|vias de fato|violencia)\b/.test(text)) {
+      return "agressao";
+    }
+    if (/\b(operacao|prisao|mandado|foragido|captura|flagrante|receptacao|policial)\b/.test(text)) {
+      return "operacao_policial";
+    }
+    return "outro";
+  }
+
+  function resolveCrimeCoords(raw, index) {
+    const rawLat = Number(raw.lat);
+    const rawLng = Number(raw.lng);
+    const hasValidCoords =
+      Number.isFinite(rawLat) && Number.isFinite(rawLng) && rawLat !== 0 && rawLng !== 0;
+
+    if (hasValidCoords) {
+      const precNorm = normalizeText(raw.precisao || "");
+      const precisao = precNorm === "rua" ? "rua" : precNorm === "bairro" ? "bairro" : raw.endereco ? "rua" : "bairro";
+      return { lat: rawLat, lng: rawLng, precisao };
+    }
+
+    const bairros = state.cityData?.bairros || {};
+    const bairroKey = normalizeText(raw.bairro || "");
+    const cidadeKey = normalizeText(raw.cidade || "");
+    let match = bairros[bairroKey] || bairros[cidadeKey];
+    if (!match && bairroKey) {
+      const k = Object.keys(bairros).find((key) => bairroKey.includes(key) || key.includes(bairroKey));
+      if (k) match = bairros[k];
+    }
+    if (!match && cidadeKey) {
+      const k = Object.keys(bairros).find((key) => cidadeKey.includes(key) || key.includes(cidadeKey));
+      if (k) match = bairros[k];
+    }
+    const base = match || state.cityData?.centro || { lat: -23.4252, lng: -51.9336 };
+    const seed = hashString(`crime-${raw.id || raw.titulo || index}`);
+    const angle = (seed % 360) * (Math.PI / 180);
+    const dist = 0.0009 + (seed % 5) * 0.00025;
+    return {
+      lat: Number((base.lat + Math.sin(angle) * dist).toFixed(5)),
+      lng: Number((base.lng + Math.cos(angle) * dist).toFixed(5)),
+      precisao: "bairro",
+    };
+  }
+
+  function parseCrimeDateMs(dateStr) {
+    if (!dateStr) return 0;
+    const s = String(dateStr).trim();
+    const iso = /^\d{4}-\d{2}-\d{2}$/.test(s) ? `${s}T12:00:00-03:00` : s;
+    const t = Date.parse(iso);
+    return Number.isFinite(t) ? t : 0;
+  }
+
+  function formatCrimeDate(dateStr) {
+    if (!dateStr) return "";
+    const ms = parseCrimeDateMs(dateStr);
+    if (!ms) return String(dateStr);
+    return new Date(ms).toLocaleDateString("pt-BR", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+    });
+  }
+
+  function ingestCrimes(rawData) {
+    if (!rawData) {
+      state.crimesFeed = null;
+      state.crimes = [];
+      return;
+    }
+
+    const list = Array.isArray(rawData)
+      ? rawData
+      : Array.isArray(rawData.ocorrencias)
+      ? rawData.ocorrencias
+      : Array.isArray(rawData.crimes)
+      ? rawData.crimes
+      : [];
+
+    state.crimesFeed = Array.isArray(rawData) ? null : rawData;
+
+    const normalized = list
+      .filter((item) => item && typeof item === "object")
+      .map((raw, idx) => {
+        const tipo = resolveCrimeType(raw.tipo);
+        const coords = resolveCrimeCoords(raw, idx);
+        const linkRaw = typeof raw.link === "string" ? raw.link.trim() : "";
+        const link = /^https?:\/\//i.test(linkRaw) ? linkRaw : "";
+        const dataStr = String(raw.data || "").trim();
+        const dateMs = parseCrimeDateMs(dataStr);
+        const id = String(raw.id || `crime-${idx + 1}-${hashString(`${raw.titulo || tipo}-${dataStr}`)}`);
+
+        return {
+          id,
+          data: dataStr,
+          dateMs,
+          tipo,
+          tipoOriginal: String(raw.tipo || ""),
+          titulo: String(raw.titulo || CRIME_TYPES[tipo].label),
+          cidade: String(raw.cidade || "Maringá"),
+          bairro: String(raw.bairro || ""),
+          endereco: String(raw.endereco || ""),
+          lat: coords.lat,
+          lng: coords.lng,
+          displayLat: coords.lat,
+          displayLng: coords.lng,
+          precisao: coords.precisao,
+          fonte: String(raw.fonte || state.crimesFeed?.fonte || ""),
+          link,
+          descricao: String(raw.descricao || raw.resumo || ""),
+        };
+      });
+
+    normalized.sort((a, b) => (b.dateMs || 0) - (a.dateMs || 0));
+
+    // Gently spiral-offset crimes that share virtually identical coordinates (e.g. precisao="bairro") so every pin is clickable
+    const buckets = new Map();
+    for (const c of normalized) {
+      const key = `${c.lat.toFixed(4)},${c.lng.toFixed(4)}`;
+      if (!buckets.has(key)) buckets.set(key, []);
+      buckets.get(key).push(c);
+    }
+    for (const group of buckets.values()) {
+      if (group.length <= 1) continue;
+      group.forEach((c, i) => {
+        if (i === 0) return;
+        const angle = (i * 137.508 * Math.PI) / 180;
+        const radius = 0.00038 + Math.floor(i / 6) * 0.00028;
+        c.displayLat = Number((c.lat + Math.sin(angle) * radius).toFixed(5));
+        c.displayLng = Number((c.lng + Math.cos(angle) * radius).toFixed(5));
+      });
+    }
+
+    state.crimes = normalized;
+  }
+
+  function getCrimesMatchingPeriod() {
+    if (!state.crimePeriodDays) return state.crimes;
+    const cutoff = Date.now() - state.crimePeriodDays * 86400000;
+    return state.crimes.filter((c) => !c.dateMs || c.dateMs >= cutoff);
+  }
+
+  function getVisibleCrimes() {
+    return getCrimesMatchingPeriod().filter((c) => state.activeCrimeTypes.has(c.tipo));
+  }
+
   // ==================== MAP INITIALIZATION & LAYERS ====================
 
   function initMap() {
@@ -892,6 +1200,7 @@ Regras:
     routeSimLayer = L.layerGroup().addTo(map);
     routeHighlightLayer = L.layerGroup().addTo(map);
     poiLayer = L.layerGroup().addTo(map);
+    crimeLayer = L.layerGroup().addTo(map);
     rotinaLayer = L.layerGroup().addTo(map);
     houseLayer = L.layerGroup().addTo(map);
 
@@ -932,19 +1241,40 @@ Regras:
   }
 
   function renderPoiCategoryDock() {
-    el.poiCategoryBar.innerHTML = Object.values(CATEGORIES)
-      .map((cat) => {
-        const isOn = state.activeCategories.has(cat.id);
-        return `
-          <button type="button" class="cat-toggle ${isOn ? "is-on" : ""}" data-cat="${cat.id}" aria-pressed="${isOn}">
-            <span class="cat-toggle__dot" style="background:${cat.color}">${cat.icon}</span>
-            <span>${cat.label}</span>
-          </button>
-        `;
-      })
-      .join("");
+    const cats = Object.values(CATEGORIES);
+    const visibleCrimeCount = getVisibleCrimes().length;
+    const crimeButtonsHtml = `
+      <button type="button" class="cat-toggle cat-toggle--crime ${state.showCrimes ? "is-on" : ""}" id="toggleCrimesBtn" aria-pressed="${state.showCrimes}">
+        <span class="cat-toggle__dot" style="background:#b91c1c">${UI_ICONS.shieldAlert}</span>
+        <span>Crimes</span>
+        ${state.crimes.length > 0 ? `<span class="cat-toggle__count">${visibleCrimeCount}</span>` : ""}
+      </button>
+      ${
+        state.showCrimes
+          ? `<button type="button" class="cat-toggle cat-toggle--crime-legend ${state.crimeLegendOpen ? "is-open" : ""}" id="toggleCrimeLegendBtn" aria-expanded="${state.crimeLegendOpen}" title="Abrir legenda e filtros de tipos de crime">
+              <span>Legenda ${state.crimeLegendOpen ? "▴" : "▾"}</span>
+            </button>`
+          : ""
+      }
+    `;
 
-    el.poiCategoryBar.querySelectorAll(".cat-toggle").forEach((btn) => {
+    const buildCatBtn = (cat) => {
+      const isOn = state.activeCategories.has(cat.id);
+      return `
+        <button type="button" class="cat-toggle ${isOn ? "is-on" : ""}" data-cat="${cat.id}" aria-pressed="${isOn}">
+          <span class="cat-toggle__dot" style="background:${cat.color}">${cat.icon}</span>
+          <span>${cat.label}</span>
+        </button>
+      `;
+    };
+
+    const parts = [];
+    if (cats.length > 0) parts.push(buildCatBtn(cats[0]));
+    parts.push(crimeButtonsHtml);
+    for (let i = 1; i < cats.length; i++) parts.push(buildCatBtn(cats[i]));
+    el.poiCategoryBar.innerHTML = parts.join("");
+
+    el.poiCategoryBar.querySelectorAll(".cat-toggle[data-cat]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const catId = btn.dataset.cat;
         if (state.activeCategories.has(catId)) state.activeCategories.delete(catId);
@@ -960,6 +1290,277 @@ Regras:
         }
       });
     });
+
+    const toggleCrimesBtn = document.getElementById("toggleCrimesBtn");
+    if (toggleCrimesBtn) {
+      toggleCrimesBtn.addEventListener("click", () => {
+        state.showCrimes = !state.showCrimes;
+        if (!state.showCrimes) state.crimeLegendOpen = false;
+        renderPoiCategoryDock();
+        renderCrimeLayer();
+        renderCrimeLegendPanel();
+      });
+    }
+
+    const legendBtn = document.getElementById("toggleCrimeLegendBtn");
+    if (legendBtn) {
+      legendBtn.addEventListener("click", () => {
+        state.crimeLegendOpen = !state.crimeLegendOpen;
+        renderPoiCategoryDock();
+        renderCrimeLegendPanel();
+      });
+    }
+  }
+
+  function renderCrimeLegendPanel() {
+    if (!el.crimeLegendPanel) return;
+    if (!state.showCrimes || !state.crimeLegendOpen) {
+      el.crimeLegendPanel.hidden = true;
+      return;
+    }
+
+    const periodCrimes = getCrimesMatchingPeriod();
+    const visibleCrimes = getVisibleCrimes();
+    const countsByType = {};
+    for (const c of periodCrimes) {
+      countsByType[c.tipo] = (countsByType[c.tipo] || 0) + 1;
+    }
+
+    const updatedLabel = state.crimesFeed?.atualizado_em ? formatDateShort(state.crimesFeed.atualizado_em) : "";
+    const subText =
+      state.crimes.length === 0
+        ? "Aguardando ocorrências em data/crimes.json"
+        : `${visibleCrimes.length} de ${periodCrimes.length} ${periodCrimes.length === 1 ? "ocorrência" : "ocorrências"}${updatedLabel ? ` · Atualizado ${updatedLabel}` : ""}`;
+
+    const periods = [
+      { days: 0, label: "Todos" },
+      { days: 30, label: "30d" },
+      { days: 90, label: "90d" },
+      { days: 365, label: "1 ano" },
+    ];
+
+    const legendItemsHtml = Object.values(CRIME_TYPES)
+      .map((ct) => {
+        const count = countsByType[ct.id] || 0;
+        const isOn = state.activeCrimeTypes.has(ct.id);
+        return `
+          <button type="button" class="crime-legend-item ${isOn ? "" : "is-off"} ${count === 0 ? "is-empty" : ""}" data-crime-type="${ct.id}" aria-pressed="${isOn}" title="${escapeHtml(ct.label)} — ${escapeHtml(ct.short)}">
+            <span class="crime-legend-item__ico" style="background:${ct.color}">${ct.icon}</span>
+            <span class="crime-legend-item__text">
+              <strong>${escapeHtml(ct.label)}</strong>
+              <small>${escapeHtml(ct.short)}</small>
+            </span>
+            <span class="crime-legend-item__cnt">${count}</span>
+          </button>
+        `;
+      })
+      .join("");
+
+    el.crimeLegendPanel.hidden = false;
+    el.crimeLegendPanel.innerHTML = `
+      <div class="crime-panel__head">
+        <div>
+          <h3><span style="width:16px;height:16px;color:#b91c1c;display:inline-grid;place-items:center">${UI_ICONS.shieldAlert}</span> Mapa de Crimes</h3>
+          <p>${escapeHtml(subText)}</p>
+        </div>
+        <button type="button" class="crime-panel__close" id="closeCrimeLegendBtn" aria-label="Fechar legenda">×</button>
+      </div>
+
+      ${
+        state.crimes.length === 0
+          ? `<p class="crime-panel__empty-note">Nenhuma ocorrência cadastrada ainda em <code>data/crimes.json</code>. Abaixo está o catálogo completo de ícones estilo CrimeReports que o Grokbot pode usar.</p>`
+          : `<div class="crime-panel__toolbar">
+              <div class="crime-period-row" role="group" aria-label="Filtrar período">
+                ${periods
+                  .map(
+                    (p) =>
+                      `<button type="button" class="crime-period-pill ${state.crimePeriodDays === p.days ? "is-active" : ""}" data-crime-period="${p.days}">${p.label}</button>`
+                  )
+                  .join("")}
+              </div>
+              <div class="crime-panel__quick">
+                <button type="button" id="crimeSelectAllBtn">Todos</button>
+                <button type="button" id="crimeClearAllBtn">Limpar</button>
+              </div>
+            </div>`
+      }
+
+      <div class="crime-legend-grid">${legendItemsHtml}</div>
+
+      <div class="crime-panel__foot">
+        <span><span class="crime-prec-pill crime-prec-pill--rua">Rua</span> pino exato</span>
+        <span><span class="crime-prec-pill crime-prec-pill--bairro">Bairro</span> borda tracejada (aprox.)</span>
+      </div>
+    `;
+
+    const closeBtn = document.getElementById("closeCrimeLegendBtn");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => {
+        state.crimeLegendOpen = false;
+        renderPoiCategoryDock();
+        renderCrimeLegendPanel();
+      });
+    }
+
+    el.crimeLegendPanel.querySelectorAll("[data-crime-period]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.crimePeriodDays = Number(btn.dataset.crimePeriod) || 0;
+        renderPoiCategoryDock();
+        renderCrimeLayer();
+        renderCrimeLegendPanel();
+        if (state.selectedHouseId && state.drawerOpen) {
+          const house = state.houses.find((h) => h.id === state.selectedHouseId);
+          if (house) renderDetailDrawer(house);
+        }
+      });
+    });
+
+    const allBtn = document.getElementById("crimeSelectAllBtn");
+    if (allBtn) {
+      allBtn.addEventListener("click", () => {
+        state.activeCrimeTypes = new Set(Object.keys(CRIME_TYPES));
+        renderPoiCategoryDock();
+        renderCrimeLayer();
+        renderCrimeLegendPanel();
+      });
+    }
+
+    const clearBtn = document.getElementById("crimeClearAllBtn");
+    if (clearBtn) {
+      clearBtn.addEventListener("click", () => {
+        state.activeCrimeTypes.clear();
+        renderPoiCategoryDock();
+        renderCrimeLayer();
+        renderCrimeLegendPanel();
+      });
+    }
+
+    el.crimeLegendPanel.querySelectorAll("[data-crime-type]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const typeId = btn.dataset.crimeType;
+        if (state.activeCrimeTypes.has(typeId)) state.activeCrimeTypes.delete(typeId);
+        else state.activeCrimeTypes.add(typeId);
+        renderPoiCategoryDock();
+        renderCrimeLayer();
+        renderCrimeLegendPanel();
+      });
+    });
+  }
+
+  function createCrimePopupHtml(crime, house) {
+    const ct = CRIME_TYPES[crime.tipo] || CRIME_TYPES.outro;
+    const locParts = [crime.bairro, crime.endereco].filter(Boolean);
+    if (crime.cidade && normalizeText(crime.cidade) !== "maringa") {
+      locParts.push(crime.cidade);
+    }
+    const precLabel = crime.precisao === "rua" ? "Local exato (rua)" : "Aproximado (bairro)";
+    const precClass = crime.precisao === "rua" ? "crime-prec-pill--rua" : "crime-prec-pill--bairro";
+
+    let distHtml = "";
+    if (house) {
+      const d = haversine(house.lat, house.lng, crime.lat, crime.lng);
+      distHtml = `<div class="crime-popup__dist">${formatDistance(d)} da casa selecionada${d <= 2500 ? ` · ${walkMinutes(d)} min a pé` : ""}</div>`;
+    }
+
+    return `
+      <div class="crime-popup">
+        <div class="crime-popup__head">
+          <span class="crime-popup__badge" style="background:${ct.color}">${ct.icon}<span>${escapeHtml(ct.label)}</span></span>
+          ${crime.data ? `<span class="crime-popup__date">${escapeHtml(formatCrimeDate(crime.data))}</span>` : ""}
+        </div>
+        <h4 class="crime-popup__title">${escapeHtml(crime.titulo)}</h4>
+        ${locParts.length ? `<p class="crime-popup__loc"><strong>Local:</strong> ${escapeHtml(locParts.join(" · "))}</p>` : ""}
+        ${crime.descricao ? `<p class="crime-popup__desc">${escapeHtml(crime.descricao)}</p>` : ""}
+        ${distHtml}
+        <div class="crime-popup__meta">
+          <span class="crime-prec-pill ${precClass}">${precLabel}</span>
+          <div class="crime-popup__source">
+            <span>${crime.fonte ? `Fonte: ${escapeHtml(crime.fonte)}` : "Registro local"}</span>
+            ${crime.link ? `<a href="${escapeHtml(crime.link)}" target="_blank" rel="noopener noreferrer">Ver matéria ↗</a>` : ""}
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderCrimeLayer() {
+    if (!map || !crimeLayer) return;
+    crimeLayer.clearLayers();
+    crimeMarkers.clear();
+
+    if (!state.showCrimes) return;
+
+    const selectedHouse = state.selectedHouseId
+      ? state.houses.find((h) => h.id === state.selectedHouseId)
+      : null;
+
+    for (const crime of getVisibleCrimes()) {
+      const ct = CRIME_TYPES[crime.tipo] || CRIME_TYPES.outro;
+      let stateClass = "";
+      if (selectedHouse) {
+        const d = haversine(selectedHouse.lat, selectedHouse.lng, crime.lat, crime.lng);
+        stateClass = d <= state.radiusMeters ? "is-inside" : "is-dimmed";
+      }
+      const approxClass = crime.precisao === "bairro" ? "crime-pin--approx" : "";
+
+      const icon = L.divIcon({
+        className: "crime-pin-wrap",
+        html: `<div class="crime-pin ${approxClass} ${stateClass}" style="background:${ct.color}" title="${escapeHtml(ct.label)}: ${escapeHtml(crime.titulo)}">${ct.icon}</div>`,
+        iconSize: [0, 0],
+      });
+
+      const marker = L.marker([crime.displayLat, crime.displayLng], {
+        icon,
+        zIndexOffset: stateClass === "is-inside" ? 310 : 140,
+      }).addTo(crimeLayer);
+
+      marker.bindPopup(() => createCrimePopupHtml(crime, selectedHouse));
+      marker.on("mouseover", () => {
+        if (selectedHouse) highlightRouteToCrime(selectedHouse, crime);
+      });
+      marker.on("mouseout", () => clearRouteHighlight());
+
+      crimeMarkers.set(crime.id, { marker, crime });
+    }
+  }
+
+  function highlightRouteToCrime(house, crime) {
+    clearRouteHighlight();
+    if (!house || !crime || !map) return;
+    const ct = CRIME_TYPES[crime.tipo] || CRIME_TYPES.outro;
+    const dist = haversine(house.lat, house.lng, crime.lat, crime.lng);
+
+    L.polyline(
+      [
+        [house.lat, house.lng],
+        [crime.displayLat, crime.displayLng],
+      ],
+      {
+        color: ct.color,
+        weight: 3.2,
+        opacity: 0.9,
+        dashArray: "5 5",
+        interactive: false,
+      }
+    ).addTo(routeHighlightLayer);
+
+    const midLat = (house.lat + crime.displayLat) / 2;
+    const midLng = (house.lng + crime.displayLng) / 2;
+    L.marker([midLat, midLng], {
+      interactive: false,
+      zIndexOffset: 710,
+      icon: L.divIcon({
+        className: "dist-tag-wrap",
+        html: `<span class="dist-tag" style="background:${ct.color}">${escapeHtml(ct.label)} · ${formatDistance(dist)}</span>`,
+        iconSize: [0, 0],
+      }),
+    }).addTo(routeHighlightLayer);
+
+    const entry = crimeMarkers.get(crime.id);
+    if (entry) {
+      const domEl = entry.marker.getElement()?.querySelector(".crime-pin");
+      if (domEl) domEl.classList.add("is-highlighted");
+    }
   }
 
   function createPoiPopupHtml(poi, house) {
@@ -1123,6 +1724,8 @@ Regras:
 
       poiMarkers.set(poi.id, { marker, poi });
     }
+
+    renderCrimeLayer();
   }
 
   function renderHouseMarkers() {
@@ -1346,7 +1949,7 @@ Regras:
 
   function clearRouteHighlight() {
     if (routeHighlightLayer) routeHighlightLayer.clearLayers();
-    document.querySelectorAll(".poi-pin.is-highlighted").forEach((n) => n.classList.remove("is-highlighted"));
+    document.querySelectorAll(".poi-pin.is-highlighted, .crime-pin.is-highlighted").forEach((n) => n.classList.remove("is-highlighted"));
   }
 
   // ==================== ROUTE SIMULATION (CICLOVIAS / CALÇADAS / VIAS · MOTO ELÉTRICA & BIKE) ====================
@@ -2715,6 +3318,58 @@ Regras:
     const streetViewUrl = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${house.lat},${house.lng}`;
     const osmLoaded = Boolean(state.liveOsmPoisByHouse[house.id]);
 
+    const periodCrimes = getCrimesMatchingPeriod();
+    const crimesWithDist = periodCrimes
+      .map((c) => ({ ...c, distance: haversine(house.lat, house.lng, c.lat, c.lng) }))
+      .sort((a, b) => a.distance - b.distance);
+    const crimesInsideRadius = crimesWithDist.filter((c) => c.distance <= state.radiusMeters);
+    const crimesToDisplay = (crimesInsideRadius.length ? crimesInsideRadius : crimesWithDist.slice(0, 3)).slice(0, 8);
+    const crimesListHtml = crimesToDisplay
+      .map((c) => {
+        const ct = CRIME_TYPES[c.tipo] || CRIME_TYPES.outro;
+        const subParts = [ct.label, c.data ? formatCrimeDate(c.data) : "", c.precisao === "bairro" ? "Aprox. bairro" : "Rua", c.fonte].filter(Boolean);
+        return `
+          <button type="button" class="crime-nearby-item" data-nearby-crime-id="${escapeHtml(c.id)}">
+            <span class="crime-nearby-item__ico" style="background:${ct.color}">${ct.icon}</span>
+            <span class="crime-nearby-item__info">
+              <span class="crime-nearby-item__title">${escapeHtml(c.titulo)}</span>
+              <span class="crime-nearby-item__sub">${escapeHtml(subParts.join(" · "))}</span>
+            </span>
+            <span class="crime-nearby-item__dist">
+              <strong>${formatDistance(c.distance)}</strong>
+              <small>${c.distance <= state.radiusMeters ? "No raio" : "Mais próx."}</small>
+            </span>
+          </button>
+        `;
+      })
+      .join("");
+    const safetySectionHtml =
+      state.crimes.length === 0
+        ? `<div class="detail-section">
+            <div class="detail-section__head">
+              <h3>Segurança no entorno</h3>
+              <small style="color:var(--ink-subtle);font-size:11.5px">data/crimes.json</small>
+            </div>
+            <div class="crime-summary-banner crime-summary-banner--calm">
+              <span>Sem ocorrências cadastradas ainda em data/crimes.json.</span>
+              <button type="button" class="link-btn" data-open-crime-legend>Ver ícones</button>
+            </div>
+          </div>`
+        : `<div class="detail-section">
+            <div class="detail-section__head">
+              <h3>Segurança no entorno (${formatDistance(state.radiusMeters)})</h3>
+              <button type="button" class="link-btn" data-open-crime-legend>Legenda</button>
+            </div>
+            <div class="crime-summary-banner ${crimesInsideRadius.length === 0 ? "crime-summary-banner--calm" : ""}">
+              <span>${
+                crimesInsideRadius.length === 0
+                  ? `Nenhuma ocorrência registrada em até ${formatDistance(state.radiusMeters)}`
+                  : `${crimesInsideRadius.length} ${crimesInsideRadius.length === 1 ? "ocorrência registrada" : "ocorrências registradas"} em até ${formatDistance(state.radiusMeters)}`
+              }</span>
+            </div>
+            ${crimesListHtml ? `<div class="crime-nearby-list">${crimesListHtml}</div>` : ""}
+          </div>`;
+
     const imovel = getImovelMeta(house);
     const workCommute = (house.commutes || []).find((c) => c.tipo === "trabalho");
     const schoolCommute = (house.commutes || []).find((c) => c.tipo === "escola");
@@ -2869,6 +3524,8 @@ Regras:
         </button>
       </div>
 
+      ${safetySectionHtml}
+
       <div class="detail-section">
         <div class="detail-section__head">
           <h3>Minhas anotações</h3>
@@ -2986,6 +3643,43 @@ Regras:
     if (osmBtn && !osmLoaded) {
       osmBtn.addEventListener("click", () => fetchLiveOsmPois(house, osmBtn));
     }
+
+    el.drawerBody.querySelectorAll("[data-open-crime-legend]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.showCrimes = true;
+        state.crimeLegendOpen = true;
+        renderPoiCategoryDock();
+        renderCrimeLayer();
+        renderCrimeLegendPanel();
+        if (!isDesktop()) {
+          closeDrawer(false);
+          switchMobileTab("mapa");
+        }
+      });
+    });
+
+    el.drawerBody.querySelectorAll("[data-nearby-crime-id]").forEach((btn) => {
+      const crime = state.crimes.find((c) => c.id === btn.dataset.nearbyCrimeId);
+      if (!crime) return;
+      btn.addEventListener("mouseenter", () => highlightRouteToCrime(house, crime));
+      btn.addEventListener("mouseleave", () => clearRouteHighlight());
+      btn.addEventListener("click", () => {
+        if (!state.showCrimes || !state.activeCrimeTypes.has(crime.tipo)) {
+          state.showCrimes = true;
+          state.activeCrimeTypes.add(crime.tipo);
+          renderPoiCategoryDock();
+          renderCrimeLayer();
+        }
+        if (!isDesktop()) {
+          closeDrawer(false);
+          switchMobileTab("mapa");
+        }
+        highlightRouteToCrime(house, crime);
+        map.flyTo([crime.displayLat, crime.displayLng], Math.max(map.getZoom(), 16), { duration: 0.5 });
+        const entry = crimeMarkers.get(crime.id);
+        if (entry) setTimeout(() => entry.marker.openPopup(), 450);
+      });
+    });
 
     el.drawerBody.querySelectorAll("[data-status-val]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -3188,6 +3882,13 @@ Regras:
               <div class="compare-row"><span>Academia</span><strong>${formatDistance(h.nearestByCat.academia?.distance)}</strong></div>
               <div class="compare-row"><span>Parque</span><strong>${formatDistance(h.nearestByCat.parque?.distance)}</strong></div>
               <div class="compare-row"><span>Mercado</span><strong>${formatDistance(h.nearestByCat.mercado?.distance)}</strong></div>
+              ${
+                state.crimes.length > 0
+                  ? `<div class="compare-row"><span>Ocorrências (${formatDistance(state.radiusMeters)})</span><strong>${
+                      getCrimesMatchingPeriod().filter((c) => haversine(h.lat, h.lng, c.lat, c.lng) <= state.radiusMeters).length
+                    }</strong></div>`
+                  : ""
+              }
             </div>
             <button type="button" class="btn-outline btn-sm" data-focus-house="${escapeHtml(h.id)}">Ver no mapa</button>
           </div>
@@ -3447,6 +4148,11 @@ Regras:
       if (e.key === "Escape") {
         closeModal("compareModal");
         closeModal("filtersModal");
+        if (state.crimeLegendOpen) {
+          state.crimeLegendOpen = false;
+          renderPoiCategoryDock();
+          renderCrimeLegendPanel();
+        }
         if (state.simulatedRoute) clearSimulatedRoute();
         if (state.drawerOpen) closeDrawer(isDesktop());
       }
@@ -3467,11 +4173,14 @@ Regras:
     try {
       const params = new URLSearchParams(window.location.search);
       const externalJsonUrl = params.get("json");
+      const externalCrimesUrl = params.get("crimes");
       const casasUrl = externalJsonUrl || "./data/casas.json";
+      const crimesUrl = externalCrimesUrl || "./data/crimes.json";
 
-      const [cityResp, casasResp] = await Promise.all([
+      const [cityResp, casasResp, crimesResp] = await Promise.all([
         fetch("./data/maringa-pois.json", { cache: "no-cache" }),
         fetch(casasUrl, { cache: "no-cache" }),
+        fetch(crimesUrl, { cache: "no-cache" }).catch(() => null),
       ]);
 
       if (!cityResp.ok) throw new Error("Não foi possível carregar data/maringa-pois.json");
@@ -3480,7 +4189,18 @@ Regras:
       state.cityData = await cityResp.json();
       state.publishedFeed = await casasResp.json();
 
+      if (crimesResp && crimesResp.ok) {
+        try {
+          const crimesJson = await crimesResp.json();
+          ingestCrimes(crimesJson);
+        } catch (crimeErr) {
+          console.warn("Aviso ao ler data/crimes.json:", crimeErr);
+          ingestCrimes(null);
+        }
+      }
+
       initMap();
+      renderPoiCategoryDock();
       ingestFeed(state.publishedFeed, false);
     } catch (err) {
       console.error(err);
