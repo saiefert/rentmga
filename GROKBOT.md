@@ -175,3 +175,93 @@ Regras:
 4. Se não tiver "lat" e "lng", preencha "bairro" corretamente (ex: "Zona 01", "Zona 02", "Zona 07", "Jardim Alvorada") que o site posiciona automaticamente no mapa.
 5. Mantenha "id" estável para evitar duplicatas entre atualizações.
 ```
+
+---
+
+# Guia de Integração — Grokbot → `data/transito.json` (Mapa de Acidentes de Trânsito)
+
+Para exibir acidentes de trânsito no mapa de Maringá com ícones de advertência viária por categoria e filtros por data, o Grokbot deve gerar ou atualizar o arquivo **`data/transito.json`**.
+
+O site aceita tanto um objeto com `"ocorrencias": [ ... ]` (ou `"acidentes": [ ... ]`) quanto um array JSON direto `[ { ... }, ... ]`.
+
+## Formato de `data/transito.json`
+
+```json
+{
+  "atualizado_em": "2026-11-24T13:00:00-03:00",
+  "fonte": "Grokbot",
+  "cidade": "Maringá - PR",
+  "observacao": "Acidentes de trânsito recentes coletados em portais locais.",
+  "ocorrencias": [
+    {
+      "id": "gmc-2026-11-20-colisao-av-colombo",
+      "data": "2026-11-20",
+      "tipo": "colisao",
+      "titulo": "Colisão entre carro e moto na Av. Colombo deixa ferido",
+      "cidade": "Maringá",
+      "bairro": "Zona 07",
+      "endereco": "Av. Colombo esquina com Av. Paraná",
+      "lat": -23.4095,
+      "lng": -51.9382,
+      "precisao": "rua",
+      "gravidade": "leve",
+      "fonte": "GMC Online",
+      "link": "https://..."
+    }
+  ]
+}
+```
+
+## Lista de Acidentes de Trânsito para o Grok consultar (1 ícone por tipo)
+
+| Valor de `"tipo"` | Rótulo no Mapa | Ícone (Placa Viária) | Lista de acidentes que se encaixam |
+|---|---|---|---|
+| `fatal` | Acidente Fatal | Cruz de alerta (vermelho escuro) | Qualquer acidente de trânsito com morte/óbito no local ou posterior |
+| `atropelamento` | Atropelamento | Pedestre + alerta (vermelho) | Atropelamento de pedestre em via urbana, faixa, calçada ou rodovia |
+| `moto` | Acidente de Moto | Motocicleta (laranja vivo) | Queda de moto, colisão carro x moto, acidente com motoboy/entregador ou motoneta |
+| `colisao` | Colisão / Batida | Impacto entre carros (âmbar) | Colisão frontal, lateral ou traseira, engavetamento, batida em cruzamento, choque contra poste/muro/árvore |
+| `capotamento` | Capotamento / Tomb. | Giro / capotamento (âmbar escuro) | Capotamento de carro, tombamento de veículo, saída de pista, queda em barranco/valeta |
+| `ciclista` | Ciclista / Bike | Bicicleta (verde-azulado) | Atropelamento ou colisão envolvendo ciclista, bike elétrica, patinete ou ciclovia |
+| `onibus_caminhao` | Ônibus / Caminhão | Veículo pesado (azul escuro) | Acidente envolvendo caminhão, carreta, ônibus urbano/rodoviário ou van escolar |
+| `embriaguez` | Embriaguez / Perigo | Alerta embriaguez (roxo) | Acidente por embriaguez ao volante, bafômetro positivo, racha, direção perigosa ou fuga sem socorro |
+| `rodovia` | Rodovia / Trevo | Estrada / rodovia (ardósia) | Acidente em rodovia, trevo ou contorno (ex.: BR-376, PR-317, Contorno Norte, Contorno Sul) |
+| `outro` | Outro Acidente | Triângulo viário (ocre) | Incêndio em veículo na via, queda de árvore/carga bloqueando rua, animal na pista ou outras ocorrências viárias |
+
+> **Campo opcional `"gravidade"`:** `"fatal"`, `"grave"`, `"leve"` ou `"sem_vitimas"`.
+> **Normalização automática:** o site aceita acentos ou termos compostos (ex.: `"colisão"`, `"atropelamento de ciclista"`, `"caminhão tombado"`), mas prefira usar a chave exata da primeira coluna.
+
+## Prompt pronto para o Grokbot (Acidentes de Trânsito)
+
+```text
+Você é um coletor de acidentes de trânsito recentes em Maringá - PR (vias urbanas, avenidas, ciclovias e contornos/rodovias locais).
+Retorne APENAS um JSON válido para atualizar o arquivo data/transito.json no formato:
+
+{
+  "atualizado_em": "YYYY-MM-DDTHH:MM:SS-03:00",
+  "fonte": "Grokbot",
+  "cidade": "Maringá - PR",
+  "ocorrencias": [
+    {
+      "id": "fonte-YYYY-MM-DD-slug-unico",
+      "data": "YYYY-MM-DD",
+      "tipo": "fatal|atropelamento|moto|colisao|capotamento|ciclista|onibus_caminhao|embriaguez|rodovia|outro",
+      "titulo": "Manchete objetiva do acidente",
+      "cidade": "Maringá",
+      "bairro": "Zona 07",
+      "endereco": "Rua/Avenida/Cruzamento ou km da rodovia (se houver)",
+      "lat": -23.4105,
+      "lng": -51.9378,
+      "precisao": "rua|bairro",
+      "gravidade": "fatal|grave|leve|sem_vitimas",
+      "fonte": "GMC Online",
+      "link": "https://..."
+    }
+  ]
+}
+
+Regras:
+1. Inclua apenas acidentes reais com fonte verificável e "link" direto para a notícia.
+2. Se houve óbito, use "tipo": "fatal" (e "gravidade": "fatal"). Caso contrário, escolha o tipo que melhor descreve o acidente na tabela acima.
+3. Use "precisao": "rua" apenas quando houver rua/avenida/cruzamento/km confirmado e coordenadas exatas; caso contrário use "precisao": "bairro".
+4. Mantenha "id" estável para evitar duplicatas entre atualizações.
+```

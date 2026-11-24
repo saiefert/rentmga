@@ -9,8 +9,10 @@ Site estático limpo e interativo para ajudar a encontrar casas em **Maringá �
 - `assets/js/app.js` — mapa (Leaflet), ícones SVG customizados, cálculo automático de distâncias, raio de caminhada/bike, notas pessoais em `localStorage`, comparador e pré-visualização de JSON.
 - `data/casas.json` — **arquivo principal que o Grokbot atualiza** com as casas encontradas.
 - `data/casas.schema.json` — schema JSON formal com todos os campos aceitos.
-- `data/crimes.json` — **arquivo de ocorrências policiais** exibidas no mapa com ícones por categoria estilo **CrimeReports** (EUA).
+- `data/crimes.json` — **arquivo de ocorrências policiais** exibidas no mapa com ícones por categoria estilo **CrimeReports** (EUA) e menu de relatório com filtros de data.
 - `data/crimes.schema.json` — schema JSON formal e catálogo de tipos de crime para o Grokbot consultar.
+- `data/transito.json` — **arquivo de acidentes de trânsito** exibidos no mapa com placas de advertência viária por categoria e menu de relatório com filtros de data.
+- `data/transito.schema.json` — schema JSON formal e catálogo de tipos de acidente de trânsito para o Grokbot consultar.
 - `data/maringa-pois.json` — catálogo embutido de pontos de interesse em Maringá (áreas pet, ciclovias reais, academias, parques, mercados, cafés, saúde e educação).
 - `GROKBOT.md` — guia e prompt pronto para copiar e colar no Grokbot.
 - `.nojekyll` e `404.html` — suporte direto ao GitHub Pages, sem etapa de build.

@@ -62,6 +62,26 @@
         <span id="feedStatusText">Carregando…</span>
       </span>
 
+      <button id="openCrimeReportBtn" class="btn-crime-nav" type="button" aria-pressed="false" title="Abrir relatório geral de crimes e filtros">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3l7.5 3v5.5c0 4.8-3.2 8.7-7.5 9.8-4.3-1.1-7.5-5-7.5-9.8V6L12 3z"/>
+          <path d="M12 8.5v4.5"/>
+          <circle cx="12" cy="16.2" r="0.9" fill="currentColor" stroke="none"/>
+        </svg>
+        <span>Crimes</span>
+        <span class="btn-crime-nav__count" id="headerCrimeCount" hidden>0</span>
+      </button>
+
+      <button id="openTrafficReportBtn" class="btn-traffic-nav" type="button" aria-pressed="false" title="Abrir relatório de acidentes de trânsito e filtros">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3L21 12L12 21L3 12L12 3z"/>
+          <path d="M12 8.2v4.3"/>
+          <circle cx="12" cy="15.8" r="0.9" fill="currentColor" stroke="none"/>
+        </svg>
+        <span>Trânsito</span>
+        <span class="btn-traffic-nav__count" id="headerTrafficCount" hidden>0</span>
+      </button>
+
       <button id="compareOpenBtn" class="btn-ghost" type="button" hidden>
         <svg class="ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
           <rect x="2.5" y="4" width="6" height="12" rx="1.5" stroke="currentColor" stroke-width="1.7"/>
@@ -174,6 +194,9 @@
         <p id="emptyDesc">Tente remover um filtro de proximidade ou ampliar a busca em Maringá.</p>
         <button id="emptyResetBtn" type="button" class="btn-primary">Mostrar todas as casas</button>
       </div>
+
+      <!-- Dedicated Crime Report Panel (Mobile Crimes tab / Desktop Relatório de Crimes mode) -->
+      <section class="crime-report" id="crimeReportView" aria-label="Relatório de crimes"></section>
     </aside>
 
     <!-- MAP STAGE (Full-bleed primary view on mobile Mapa tab; Right pane on desktop) -->
@@ -301,6 +324,16 @@
       </svg>
       <span>Salvas</span>
       <span class="bottom-nav__dot" id="navSavedDot" hidden></span>
+    </button>
+
+    <button type="button" class="bottom-nav__btn bottom-nav__btn--crimes" data-nav-tab="crimes">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 3l7.5 3v5.5c0 4.8-3.2 8.7-7.5 9.8-4.3-1.1-7.5-5-7.5-9.8V6L12 3z"/>
+        <path d="M12 8.5v4.5"/>
+        <circle cx="12" cy="16.2" r="0.9" fill="currentColor" stroke="none"/>
+      </svg>
+      <span>Alertas</span>
+      <span class="bottom-nav__pill bottom-nav__pill--crime" id="navCrimesCount" hidden>0</span>
     </button>
   </nav>
 

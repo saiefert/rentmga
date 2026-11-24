@@ -1,0 +1,7 @@
+{
+  "atualizado_em": "2026-11-24T13:00:00-03:00",
+  "fonte": "Grokbot",
+  "cidade": "Maringá - PR",
+  "observacao": "Lista de acidentes de trânsito para exibição no mapa. Atualize o array 'ocorrencias' seguindo data/transito.schema.json e GROKBOT.md.",
+  "ocorrencias": []
+}

@@ -113,6 +113,7 @@
     eyeOff: `<svg viewBox="0 0 20 20" fill="none"><path d="M3 3l14 14M8.5 8.5a2.5 2.5 0 0 0 3 3M5.6 5.8C3.9 7 2.7 8.5 2 10c1.4 2.9 4.5 5 8 5 1.4 0 2.7-.3 3.9-.9M8.3 5.2c.5-.1 1.1-.2 1.7-.2 3.5 0 6.6 2.1 8 5-.5 1.1-1.3 2.1-2.2 2.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
     star: `<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8l2.45 4.97 5.48.8-3.96 3.86.94 5.46L10 14.32l-4.91 2.57.94-5.46-3.96-3.86 5.48-.8L10 1.8z"/></svg>`,
     shieldAlert: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.8-3.2 8.7-7.5 9.8-4.3-1.1-7.5-5-7.5-9.8V6L12 3z"/><path d="M12 8.5v4.5"/><circle cx="12" cy="16.2" r="0.9" fill="currentColor" stroke="none"/></svg>`,
+    trafficAlert: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3L21 12L12 21L3 12L12 3z"/><path d="M12 8.2v4.3"/><circle cx="12" cy="15.8" r="0.9" fill="currentColor" stroke="none"/></svg>`,
   };
 
   // CrimeReports-style crime catalog (1 icon per group of related crimes — consulted by Grokbot via GROKBOT.md & data/crimes.schema.json)
@@ -224,6 +225,87 @@
     },
   };
 
+  // Traffic accidents catalog (road-warning sign pins — consulted by Grokbot via GROKBOT.md & data/transito.schema.json)
+  const TRAFFIC_TYPES = {
+    fatal: {
+      id: "fatal",
+      label: "Acidente Fatal",
+      short: "Acidente com óbito / vítima fatal",
+      color: "#991b1b",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4.5v15M7 9.5h10"/></svg>`,
+    },
+    atropelamento: {
+      id: "atropelamento",
+      label: "Atropelamento",
+      short: "Pedestre atropelado na via",
+      color: "#dc2626",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5.5" r="2"/><path d="M12 8.5l-1 5.5-3 4.5M11 14l4.5 1.5 2 3M8.5 11l3.5-1.5 3.5 1.5"/></svg>`,
+    },
+    moto: {
+      id: "moto",
+      label: "Acidente de Moto",
+      short: "Queda ou colisão com motocicleta",
+      color: "#ea580c",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6.2" cy="16.5" r="2.8"/><circle cx="17.8" cy="16.5" r="2.8"/><path d="M9 16.5h4.2l2.3-5.2h-4l-1.5 3H8M14.2 7.5h3l1.3 3.8"/></svg>`,
+    },
+    colisao: {
+      id: "colisao",
+      label: "Colisão / Batida",
+      short: "Batida entre veículos, cruzamento",
+      color: "#d97706",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 15l1.3-3.8a1.6 1.6 0 0 1 1.5-1.1h4.2l1.2 2.4H3.5v3.5h1.5v-1h5.8"/><path d="M20.5 15l-1.3-3.8a1.6 1.6 0 0 0-1.5-1.1h-3.2l-.8 2.4h6.8v3.5h-1.5v-1h-4.8"/><path d="M12 4.5v3M9.5 6l1.5 1.8M14.5 6L13 7.8"/></svg>`,
+    },
+    capotamento: {
+      id: "capotamento",
+      label: "Capotamento / Tomb.",
+      short: "Veículo capotado ou saída de pista",
+      color: "#b45309",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 14.5l1.5-3.5a2 2 0 0 1 1.8-1.2h6.4a2 2 0 0 1 1.8 1.2l1.5 3.5H5.5z" transform="rotate(180 12 13)"/><path d="M18.5 7.5A7.5 7.5 0 0 0 6 7.5"/><path d="M16 4.8l2.8 2.7-3.2.8"/></svg>`,
+    },
+    ciclista: {
+      id: "ciclista",
+      label: "Ciclista / Bike",
+      short: "Bicicleta, bike elétrica, ciclovia",
+      color: "#0d9488",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6.2" cy="16.2" r="3"/><circle cx="17.8" cy="16.2" r="3"/><path d="M6.2 16.2L10.3 9.5h4l3.5 6.7M10.3 9.5l1.7 6.7H6.2M9.2 7h2.8M14.3 9.5l1.1-2.5H18"/></svg>`,
+    },
+    onibus_caminhao: {
+      id: "onibus_caminhao",
+      label: "Ônibus / Caminhão",
+      short: "Veículo pesado, carreta, ônibus",
+      color: "#0369a1",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="11.5" height="9" rx="1.5"/><path d="M14.5 10h3.8l2.2 2.8V16h-6v-6z"/><circle cx="7" cy="17.2" r="1.7"/><circle cx="17.5" cy="17.2" r="1.7"/></svg>`,
+    },
+    embriaguez: {
+      id: "embriaguez",
+      label: "Embriaguez / Perigo",
+      short: "Bafômetro, racha, fuga do local",
+      color: "#7c3aed",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="7.5"/><circle cx="12" cy="12" r="2"/><path d="M5 11h5M14 11h5M12 14v5.5"/><path d="M4.5 4.5l15 15"/></svg>`,
+    },
+    rodovia: {
+      id: "rodovia",
+      label: "Rodovia / Trevo",
+      short: "Rodovia, trevo, contorno, vicinal",
+      color: "#475569",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 20L10 4M17 20L14 4M12 6.5v2.5M12 12v2.5M12 17.5V20"/></svg>`,
+    },
+    outro: {
+      id: "outro",
+      label: "Outro Acidente",
+      short: "Pane/incêndio, carga, animal na via",
+      color: "#ca8a04",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4.5L3.8 19h16.4L12 4.5z" fill="currentColor" fill-opacity="0.22"/><path d="M12 10v4"/><circle cx="12" cy="16.5" r="0.9" fill="currentColor" stroke="none"/></svg>`,
+    },
+  };
+
+  const TRAFFIC_GRAVIDADE_LABELS = {
+    fatal: "Fatal",
+    grave: "Grave",
+    leve: "Leve",
+    sem_vitimas: "Sem vítimas",
+  };
+
   const GROKBOT_PROMPT = `Você é um buscador de casas e apartamentos em Maringá - PR.
 Sempre que encontrar imóveis relevantes, retorne APENAS um JSON válido seguindo exatamente o formato abaixo para atualizar o arquivo data/casas.json do site:
 
@@ -288,7 +370,8 @@ Regras:
 
   // App state
   const state = {
-    activeTab: "mapa", // mobile tab: "mapa" | "lista" | "salvas"
+    activeTab: "mapa", // mobile tab: "mapa" | "lista" | "salvas" | "crimes"
+    sidebarMode: "imoveis", // desktop sidebar mode: "imoveis" | "crimes"
     savedFilter: "all", // "all" | "fav" | "visitar" | "visitada"
     cityData: null,
     publishedFeed: null,
@@ -303,8 +386,26 @@ Regras:
     crimes: [],
     showCrimes: true,
     crimeLegendOpen: false,
-    crimePeriodDays: 0,
+    crimePeriodDays: 0, // 0 | 1 | 3 | 7 | 15 | 30 | 90 | 365 | "custom"
+    crimeDateFrom: "",
+    crimeDateTo: "",
+    crimeQuery: "",
+    crimePrecisao: "todas", // "todas" | "rua" | "bairro"
+    crimeSort: "recente", // "recente" | "antigo" | "tipo" | "bairro" | "perto"
+    crimeTypesExpanded: false,
     activeCrimeTypes: new Set(Object.keys(CRIME_TYPES)),
+    reportKind: "crimes", // "crimes" | "transito"
+    trafficFeed: null,
+    traffic: [],
+    showTraffic: true,
+    trafficPeriodDays: 0, // 0 | 1 | 3 | 7 | 15 | 30 | 90 | 365 | "custom"
+    trafficDateFrom: "",
+    trafficDateTo: "",
+    trafficQuery: "",
+    trafficPrecisao: "todas", // "todas" | "rua" | "bairro"
+    trafficSort: "recente", // "recente" | "antigo" | "tipo" | "bairro" | "perto"
+    trafficTypesExpanded: false,
+    activeTrafficTypes: new Set(Object.keys(TRAFFIC_TYPES)),
     selectedHouseId: null,
     drawerOpen: false,
     hoveredHouseId: null,
@@ -344,6 +445,7 @@ Regras:
   let rotinaLayer = null;
   let poiLayer = null;
   let crimeLayer = null;
+  let trafficLayer = null;
   let houseLayer = null;
   let selectionLayer = null;
   let routeHighlightLayer = null;
@@ -354,6 +456,7 @@ Regras:
   const houseMarkers = new Map();
   const poiMarkers = new Map();
   const crimeMarkers = new Map();
+  const trafficMarkers = new Map();
   const anchorMarkers = new Map();
 
   // DOM Elements
@@ -364,12 +467,18 @@ Regras:
     filterCountBadge: document.getElementById("filterCountBadge"),
     feedStatus: document.getElementById("feedStatus"),
     feedStatusText: document.getElementById("feedStatusText"),
+    openCrimeReportBtn: document.getElementById("openCrimeReportBtn"),
+    headerCrimeCount: document.getElementById("headerCrimeCount"),
+    openTrafficReportBtn: document.getElementById("openTrafficReportBtn"),
+    headerTrafficCount: document.getElementById("headerTrafficCount"),
     compareOpenBtn: document.getElementById("compareOpenBtn"),
     compareCount: document.getElementById("compareCount"),
     mobileCompareBtn: document.getElementById("mobileCompareBtn"),
     mobileCompareCount: document.getElementById("mobileCompareCount"),
     navListCount: document.getElementById("navListCount"),
     navSavedDot: document.getElementById("navSavedDot"),
+    navCrimesCount: document.getElementById("navCrimesCount"),
+    crimeReportView: document.getElementById("crimeReportView"),
     sortFilter: document.getElementById("sortFilter"),
     sheetSortSelect: document.getElementById("sheetSortSelect"),
     resultsCount: document.getElementById("resultsCount"),
@@ -1144,14 +1253,918 @@ Regras:
     state.crimes = normalized;
   }
 
+  const CRIME_PERIOD_OPTIONS = [
+    { value: "0", label: "Todos" },
+    { value: "1", label: "Hoje" },
+    { value: "3", label: "3 dias" },
+    { value: "7", label: "7 dias" },
+    { value: "15", label: "15 dias" },
+    { value: "30", label: "30 dias" },
+    { value: "90", label: "90 dias" },
+    { value: "365", label: "1 ano" },
+    { value: "custom", label: "Período" },
+  ];
+
+  function formatRelativeCrimeDate(dateStr) {
+    const ms = parseCrimeDateMs(dateStr);
+    if (!ms) return "";
+    const today = new Date();
+    today.setHours(12, 0, 0, 0);
+    const diffDays = Math.round((today.getTime() - ms) / 86400000);
+    if (diffDays <= 0) return "hoje";
+    if (diffDays === 1) return "ontem";
+    if (diffDays < 30) return `há ${diffDays} dias`;
+    const months = Math.floor(diffDays / 30);
+    return months === 1 ? "há 1 mês" : `há ${months} meses`;
+  }
+
   function getCrimesMatchingPeriod() {
-    if (!state.crimePeriodDays) return state.crimes;
-    const cutoff = Date.now() - state.crimePeriodDays * 86400000;
-    return state.crimes.filter((c) => !c.dateMs || c.dateMs >= cutoff);
+    if (state.crimePeriodDays === "custom") {
+      const from = state.crimeDateFrom;
+      const to = state.crimeDateTo;
+      if (!from && !to) return state.crimes;
+      return state.crimes.filter((c) => {
+        if (!c.data) return false;
+        if (from && c.data < from) return false;
+        if (to && c.data > to) return false;
+        return true;
+      });
+    }
+    const days = Number(state.crimePeriodDays) || 0;
+    if (!days) return state.crimes;
+    const startOfToday = new Date();
+    startOfToday.setHours(0, 0, 0, 0);
+    const cutoff = startOfToday.getTime() - (days - 1) * 86400000;
+    return state.crimes.filter((c) => c.dateMs && c.dateMs >= cutoff);
+  }
+
+  function getFilteredCrimes({ ignoreTypes = false } = {}) {
+    const q = normalizeText(state.crimeQuery);
+    const selectedHouse = state.selectedHouseId
+      ? state.houses.find((h) => h.id === state.selectedHouseId)
+      : null;
+
+    const list = getCrimesMatchingPeriod().filter((c) => {
+      if (!ignoreTypes && !state.activeCrimeTypes.has(c.tipo)) return false;
+      if (state.crimePrecisao !== "todas" && c.precisao !== state.crimePrecisao) return false;
+      if (q) {
+        const ct = CRIME_TYPES[c.tipo] || CRIME_TYPES.outro;
+        const hay = normalizeText(
+          `${c.titulo} ${c.bairro} ${c.endereco} ${c.cidade} ${c.fonte} ${c.descricao} ${ct.label} ${ct.short} ${c.tipoOriginal} ${c.data}`
+        );
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+
+    list.sort((a, b) => {
+      if (state.crimeSort === "antigo") return (a.dateMs || 0) - (b.dateMs || 0);
+      if (state.crimeSort === "tipo") {
+        const la = (CRIME_TYPES[a.tipo] || CRIME_TYPES.outro).label;
+        const lb = (CRIME_TYPES[b.tipo] || CRIME_TYPES.outro).label;
+        const cmp = la.localeCompare(lb, "pt-BR");
+        return cmp !== 0 ? cmp : (b.dateMs || 0) - (a.dateMs || 0);
+      }
+      if (state.crimeSort === "bairro") {
+        const cmp = (a.bairro || "").localeCompare(b.bairro || "", "pt-BR");
+        return cmp !== 0 ? cmp : (b.dateMs || 0) - (a.dateMs || 0);
+      }
+      if (state.crimeSort === "perto" && selectedHouse) {
+        const da = haversine(selectedHouse.lat, selectedHouse.lng, a.lat, a.lng);
+        const db = haversine(selectedHouse.lat, selectedHouse.lng, b.lat, b.lng);
+        return da - db;
+      }
+      return (b.dateMs || 0) - (a.dateMs || 0);
+    });
+
+    return list;
   }
 
   function getVisibleCrimes() {
-    return getCrimesMatchingPeriod().filter((c) => state.activeCrimeTypes.has(c.tipo));
+    return getFilteredCrimes();
+  }
+
+  // ==================== TRAFFIC ACCIDENTS ENGINE ====================
+
+  function resolveTrafficType(rawTipo) {
+    const norm = normalizeText(rawTipo || "").replace(/[\s/-]+/g, "_");
+    if (!norm) return "outro";
+    if (TRAFFIC_TYPES[norm]) return norm;
+
+    const text = normalizeText(rawTipo || "");
+    if (/\b(fatal|morte|obito|morre|morreu|vitima fatal)\b/.test(text)) return "fatal";
+    if (/\b(atropelamento|atropela|pedestre)\b/.test(text)) return "atropelamento";
+    if (/\b(ciclista|bicicleta|bike|patinete|ciclovia)\b/.test(text)) return "ciclista";
+    if (/\b(embriaguez|alcool|bafometro|embriagado|racha|direcao perigosa|fuga)\b/.test(text)) return "embriaguez";
+    if (/\b(capotamento|capota|tombamento|tomba|saida de pista|ribanceira)\b/.test(text)) return "capotamento";
+    if (/\b(onibus|caminhao|carreta|bi-trem|bitrem|pesado|van escolar)\b/.test(text)) return "onibus_caminhao";
+    if (/\b(moto|motocicleta|motoneta|motoboy|motociclista)\b/.test(text)) return "moto";
+    if (/\b(rodovia|estrada|trevo|contorno|anel viario|vicinal|sp-\d+|br-\d+|pr-\d+)\b/.test(text)) return "rodovia";
+    if (/\b(colisao|batida|engavetamento|choque|abalroamento|cruzamento)\b/.test(text)) return "colisao";
+    return "outro";
+  }
+
+  function resolveTrafficGravidade(rawGrav, resolvedTipo) {
+    const g = normalizeText(rawGrav || "").replace(/[\s-]+/g, "_");
+    if (TRAFFIC_GRAVIDADE_LABELS[g]) return g;
+    if (g.includes("fatal") || g.includes("morte") || g.includes("obito")) return "fatal";
+    if (g.includes("grave")) return "grave";
+    if (g.includes("leve") || g.includes("ferido")) return "leve";
+    if (g.includes("sem") || g.includes("material") || g.includes("dano")) return "sem_vitimas";
+    return resolvedTipo === "fatal" ? "fatal" : "";
+  }
+
+  function ingestTraffic(rawData) {
+    if (!rawData) {
+      state.trafficFeed = null;
+      state.traffic = [];
+      return;
+    }
+
+    const list = Array.isArray(rawData)
+      ? rawData
+      : Array.isArray(rawData.ocorrencias)
+      ? rawData.ocorrencias
+      : Array.isArray(rawData.acidentes)
+      ? rawData.acidentes
+      : [];
+
+    state.trafficFeed = Array.isArray(rawData) ? null : rawData;
+
+    const normalized = list
+      .filter((item) => item && typeof item === "object")
+      .map((raw, idx) => {
+        const tipo = resolveTrafficType(raw.tipo);
+        const coords = resolveCrimeCoords(raw, idx + 10000);
+        const linkRaw = typeof raw.link === "string" ? raw.link.trim() : "";
+        const link = /^https?:\/\//i.test(linkRaw) ? linkRaw : "";
+        const dataStr = String(raw.data || "").trim();
+        const dateMs = parseCrimeDateMs(dataStr);
+        const id = String(raw.id || `transito-${idx + 1}-${hashString(`${raw.titulo || tipo}-${dataStr}`)}`);
+
+        return {
+          id,
+          data: dataStr,
+          dateMs,
+          tipo,
+          tipoOriginal: String(raw.tipo || ""),
+          gravidade: resolveTrafficGravidade(raw.gravidade, tipo),
+          titulo: String(raw.titulo || TRAFFIC_TYPES[tipo].label),
+          cidade: String(raw.cidade || "Maringá"),
+          bairro: String(raw.bairro || ""),
+          endereco: String(raw.endereco || ""),
+          lat: coords.lat,
+          lng: coords.lng,
+          displayLat: coords.lat,
+          displayLng: coords.lng,
+          precisao: coords.precisao,
+          fonte: String(raw.fonte || state.trafficFeed?.fonte || ""),
+          link,
+          descricao: String(raw.descricao || raw.resumo || ""),
+        };
+      });
+
+    normalized.sort((a, b) => (b.dateMs || 0) - (a.dateMs || 0));
+
+    const buckets = new Map();
+    for (const t of normalized) {
+      const key = `${t.lat.toFixed(4)},${t.lng.toFixed(4)}`;
+      if (!buckets.has(key)) buckets.set(key, []);
+      buckets.get(key).push(t);
+    }
+    for (const group of buckets.values()) {
+      if (group.length <= 1) continue;
+      group.forEach((t, i) => {
+        if (i === 0) return;
+        const angle = ((i * 137.508 + 45) * Math.PI) / 180;
+        const radius = 0.00038 + Math.floor(i / 6) * 0.00028;
+        t.displayLat = Number((t.lat + Math.sin(angle) * radius).toFixed(5));
+        t.displayLng = Number((t.lng + Math.cos(angle) * radius).toFixed(5));
+      });
+    }
+
+    state.traffic = normalized;
+  }
+
+  function getTrafficMatchingPeriod() {
+    if (state.trafficPeriodDays === "custom") {
+      const from = state.trafficDateFrom;
+      const to = state.trafficDateTo;
+      if (!from && !to) return state.traffic;
+      return state.traffic.filter((t) => {
+        if (!t.data) return false;
+        if (from && t.data < from) return false;
+        if (to && t.data > to) return false;
+        return true;
+      });
+    }
+    const days = Number(state.trafficPeriodDays) || 0;
+    if (!days) return state.traffic;
+    const startOfToday = new Date();
+    startOfToday.setHours(0, 0, 0, 0);
+    const cutoff = startOfToday.getTime() - (days - 1) * 86400000;
+    return state.traffic.filter((t) => t.dateMs && t.dateMs >= cutoff);
+  }
+
+  function getFilteredTraffic({ ignoreTypes = false } = {}) {
+    const q = normalizeText(state.trafficQuery);
+    const selectedHouse = state.selectedHouseId
+      ? state.houses.find((h) => h.id === state.selectedHouseId)
+      : null;
+
+    const list = getTrafficMatchingPeriod().filter((t) => {
+      if (!ignoreTypes && !state.activeTrafficTypes.has(t.tipo)) return false;
+      if (state.trafficPrecisao !== "todas" && t.precisao !== state.trafficPrecisao) return false;
+      if (q) {
+        const tt = TRAFFIC_TYPES[t.tipo] || TRAFFIC_TYPES.outro;
+        const gravLabel = TRAFFIC_GRAVIDADE_LABELS[t.gravidade] || "";
+        const hay = normalizeText(
+          `${t.titulo} ${t.bairro} ${t.endereco} ${t.cidade} ${t.fonte} ${t.descricao} ${tt.label} ${tt.short} ${t.tipoOriginal} ${gravLabel} ${t.data}`
+        );
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+
+    list.sort((a, b) => {
+      if (state.trafficSort === "antigo") return (a.dateMs || 0) - (b.dateMs || 0);
+      if (state.trafficSort === "tipo") {
+        const la = (TRAFFIC_TYPES[a.tipo] || TRAFFIC_TYPES.outro).label;
+        const lb = (TRAFFIC_TYPES[b.tipo] || TRAFFIC_TYPES.outro).label;
+        const cmp = la.localeCompare(lb, "pt-BR");
+        return cmp !== 0 ? cmp : (b.dateMs || 0) - (a.dateMs || 0);
+      }
+      if (state.trafficSort === "bairro") {
+        const cmp = (a.bairro || "").localeCompare(b.bairro || "", "pt-BR");
+        return cmp !== 0 ? cmp : (b.dateMs || 0) - (a.dateMs || 0);
+      }
+      if (state.trafficSort === "perto" && selectedHouse) {
+        const da = haversine(selectedHouse.lat, selectedHouse.lng, a.lat, a.lng);
+        const db = haversine(selectedHouse.lat, selectedHouse.lng, b.lat, b.lng);
+        return da - db;
+      }
+      return (b.dateMs || 0) - (a.dateMs || 0);
+    });
+
+    return list;
+  }
+
+  function getVisibleTraffic() {
+    return getFilteredTraffic();
+  }
+
+  function countActiveTrafficFilters() {
+    let n = 0;
+    if (String(state.trafficPeriodDays) !== "0") n++;
+    if (state.trafficQuery.trim()) n++;
+    if (state.trafficPrecisao !== "todas") n++;
+    if (state.activeTrafficTypes.size < Object.keys(TRAFFIC_TYPES).length) n++;
+    return n;
+  }
+
+  function countActiveCrimeFilters() {
+    let n = 0;
+    if (String(state.crimePeriodDays) !== "0") n++;
+    if (state.crimeQuery.trim()) n++;
+    if (state.crimePrecisao !== "todas") n++;
+    if (state.activeCrimeTypes.size < Object.keys(CRIME_TYPES).length) n++;
+    return n;
+  }
+
+  function syncCrimeBadges() {
+    const visibleCrimes = getVisibleCrimes().length;
+    const visibleTraffic = getVisibleTraffic().length;
+    const totalAlerts = visibleCrimes + visibleTraffic;
+    const hasAlerts = state.crimes.length > 0 || state.traffic.length > 0;
+    const reportOpen = isCrimeReportOpen();
+
+    if (el.navCrimesCount) {
+      el.navCrimesCount.textContent = String(totalAlerts);
+      el.navCrimesCount.hidden = !hasAlerts;
+    }
+    if (el.headerCrimeCount) {
+      el.headerCrimeCount.textContent = String(visibleCrimes);
+      el.headerCrimeCount.hidden = state.crimes.length === 0;
+    }
+    if (el.headerTrafficCount) {
+      el.headerTrafficCount.textContent = String(visibleTraffic);
+      el.headerTrafficCount.hidden = state.traffic.length === 0;
+    }
+    if (el.openCrimeReportBtn) {
+      const active = reportOpen && state.reportKind === "crimes";
+      el.openCrimeReportBtn.classList.toggle("is-active", active);
+      el.openCrimeReportBtn.setAttribute("aria-pressed", String(active));
+    }
+    if (el.openTrafficReportBtn) {
+      const active = reportOpen && state.reportKind === "transito";
+      el.openTrafficReportBtn.classList.toggle("is-active", active);
+      el.openTrafficReportBtn.setAttribute("aria-pressed", String(active));
+    }
+  }
+
+  function refreshCrimeViews() {
+    syncCrimeBadges();
+    renderPoiCategoryDock();
+    renderCrimeLayer();
+    renderTrafficLayer();
+    renderCrimeLegendPanel();
+    updateCrimeReportContent();
+    if (state.selectedHouseId && state.drawerOpen) {
+      const house = state.houses.find((h) => h.id === state.selectedHouseId);
+      if (house) renderDetailDrawer(house);
+    }
+  }
+
+  function resetActiveReportFilters() {
+    if (state.reportKind === "transito") {
+      state.trafficPeriodDays = 0;
+      state.trafficDateFrom = "";
+      state.trafficDateTo = "";
+      state.trafficQuery = "";
+      state.trafficPrecisao = "todas";
+      state.trafficSort = "recente";
+      state.activeTrafficTypes = new Set(Object.keys(TRAFFIC_TYPES));
+    } else {
+      state.crimePeriodDays = 0;
+      state.crimeDateFrom = "";
+      state.crimeDateTo = "";
+      state.crimeQuery = "";
+      state.crimePrecisao = "todas";
+      state.crimeSort = "recente";
+      state.activeCrimeTypes = new Set(Object.keys(CRIME_TYPES));
+    }
+    syncReportInputsFromState();
+    refreshCrimeViews();
+  }
+
+  function syncReportInputsFromState() {
+    const isTraffic = state.reportKind === "transito";
+    const searchEl = document.getElementById("crimeSearchInput");
+    if (searchEl) searchEl.value = isTraffic ? state.trafficQuery : state.crimeQuery;
+    const fromEl = document.getElementById("crimeDateFromInput");
+    if (fromEl) fromEl.value = isTraffic ? state.trafficDateFrom : state.crimeDateFrom;
+    const toEl = document.getElementById("crimeDateToInput");
+    if (toEl) toEl.value = isTraffic ? state.trafficDateTo : state.crimeDateTo;
+  }
+
+  function isCrimeReportOpen() {
+    return isDesktop() ? state.sidebarMode === "crimes" : state.activeTab === "crimes";
+  }
+
+  function openCrimeReport(kind = null) {
+    if (kind === "crimes" || kind === "transito") {
+      state.reportKind = kind;
+    }
+    state.crimeLegendOpen = false;
+    if (state.reportKind === "transito") state.showTraffic = true;
+    else state.showCrimes = true;
+
+    if (state.drawerOpen) closeDrawer(false);
+    if (isDesktop()) {
+      state.sidebarMode = "crimes";
+      document.body.dataset.sidebarMode = "crimes";
+    } else {
+      state.activeTab = "crimes";
+      document.body.dataset.tab = "crimes";
+      document.querySelectorAll("[data-nav-tab]").forEach((btn) => {
+        btn.classList.toggle("is-active", btn.dataset.navTab === "crimes");
+      });
+    }
+    renderCrimeReport();
+    syncReportInputsFromState();
+    refreshCrimeViews();
+  }
+
+  function closeCrimeReport() {
+    if (isDesktop()) {
+      state.sidebarMode = "imoveis";
+      document.body.dataset.sidebarMode = "imoveis";
+      syncCrimeBadges();
+      renderPoiCategoryDock();
+    } else {
+      switchMobileTab("mapa");
+    }
+  }
+
+  function focusCrimeOnMap(crimeId) {
+    const crime = state.crimes.find((c) => c.id === crimeId);
+    if (!crime) return;
+    if (!state.showCrimes || !state.activeCrimeTypes.has(crime.tipo)) {
+      state.showCrimes = true;
+      state.activeCrimeTypes.add(crime.tipo);
+      refreshCrimeViews();
+    }
+    if (!isDesktop()) {
+      switchMobileTab("mapa");
+    }
+    if (map) {
+      map.flyTo([crime.displayLat, crime.displayLng], Math.max(map.getZoom(), 16), { duration: 0.5 });
+      const entry = crimeMarkers.get(crime.id);
+      if (entry) setTimeout(() => entry.marker.openPopup(), 420);
+    }
+  }
+
+  function focusTrafficOnMap(trafficId) {
+    const item = state.traffic.find((t) => t.id === trafficId);
+    if (!item) return;
+    if (!state.showTraffic || !state.activeTrafficTypes.has(item.tipo)) {
+      state.showTraffic = true;
+      state.activeTrafficTypes.add(item.tipo);
+      refreshCrimeViews();
+    }
+    if (!isDesktop()) {
+      switchMobileTab("mapa");
+    }
+    if (map) {
+      map.flyTo([item.displayLat, item.displayLng], Math.max(map.getZoom(), 16), { duration: 0.5 });
+      const entry = trafficMarkers.get(item.id);
+      if (entry) setTimeout(() => entry.marker.openPopup(), 420);
+    }
+  }
+
+  let crimeReportShellReady = false;
+  function renderCrimeReport() {
+    if (!el.crimeReportView) return;
+    if (!crimeReportShellReady) {
+      el.crimeReportView.innerHTML = `
+        <div class="crime-report__head">
+          <div class="crime-report__head-top">
+            <div class="crime-report__title-wrap">
+              <h2>
+                <span class="crime-report__title-ico" id="crimeReportTitleIco">${UI_ICONS.shieldAlert}</span>
+                <span id="crimeReportTitleText">Relatório de Crimes</span>
+              </h2>
+              <p id="crimeReportSubtitle">Carregando ocorrências…</p>
+            </div>
+            <button type="button" class="crime-report__back-btn" id="crimeReportBackBtn">← Imóveis</button>
+          </div>
+
+          <div class="report-mode-switch" role="tablist" aria-label="Tipo de relatório">
+            <button type="button" class="report-mode-tab is-active" data-report-kind="crimes" role="tab" aria-selected="true">
+              ${UI_ICONS.shieldAlert}
+              <span>Crimes</span>
+              <span class="report-mode-tab__cnt" id="reportTabCrimesCnt">0</span>
+            </button>
+            <button type="button" class="report-mode-tab" data-report-kind="transito" role="tab" aria-selected="false">
+              ${UI_ICONS.trafficAlert}
+              <span>Trânsito</span>
+              <span class="report-mode-tab__cnt" id="reportTabTrafficCnt">0</span>
+            </button>
+          </div>
+
+          <div class="crime-hidden-banner" id="crimeHiddenMapBanner" hidden>
+            <span id="crimeHiddenMapText">Os pinos estão ocultos no mapa</span>
+            <button type="button" id="crimeShowOnMapBtn">Mostrar no mapa</button>
+          </div>
+
+          <label class="crime-searchbox" aria-label="Buscar por bairro, rua, título ou fonte">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.9"/>
+              <path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+            </svg>
+            <input id="crimeSearchInput" type="search" placeholder="Bairro, rua, título, fonte…" autocomplete="off" enterkeyhint="search">
+            <button id="clearCrimeSearchBtn" class="crime-searchbox__clear" type="button" hidden aria-label="Limpar busca">×</button>
+          </label>
+
+          <div class="crime-report__filter-block">
+            <div class="crime-report__filter-head">
+              <span>Período / Data</span>
+            </div>
+            <div class="crime-date-chips" id="crimeDateChips" role="group" aria-label="Filtrar por data">
+              ${CRIME_PERIOD_OPTIONS.map(
+                (opt) =>
+                  `<button type="button" class="crime-date-chip" data-report-period="${opt.value}">${opt.label}</button>`
+              ).join("")}
+            </div>
+            <div class="crime-date-range" id="crimeDateRangeBox" hidden>
+              <label>
+                <span>De</span>
+                <input type="date" id="crimeDateFromInput">
+              </label>
+              <label>
+                <span>Até</span>
+                <input type="date" id="crimeDateToInput">
+              </label>
+            </div>
+          </div>
+
+          <div class="crime-report__filter-block">
+            <div class="crime-report__filter-head">
+              <span id="crimeReportTypesLabel">Tipos de crime (CrimeReports)</span>
+              <span class="crime-report__filter-links">
+                <button type="button" id="reportCrimeAllTypesBtn">Todos</button>
+                <button type="button" id="reportCrimeClearTypesBtn">Nenhum</button>
+                <button type="button" id="reportCrimeExpandTypesBtn">Ver 15 ▾</button>
+              </span>
+            </div>
+            <div class="crime-type-chips" id="crimeReportTypeChips" role="group" aria-label="Filtrar por tipo"></div>
+          </div>
+
+          <div class="crime-report__controls-row">
+            <div class="segmented" role="group" aria-label="Precisão do local">
+              <button type="button" class="segmented__btn is-active" data-crime-prec="todas">Todas</button>
+              <button type="button" class="segmented__btn" data-crime-prec="rua">Rua</button>
+              <button type="button" class="segmented__btn" data-crime-prec="bairro">Bairro</button>
+            </div>
+            <select id="crimeSortSelect" class="select-pill" aria-label="Ordenar ocorrências">
+              <option value="recente">Mais recentes</option>
+              <option value="antigo">Mais antigas</option>
+              <option value="tipo">Tipo</option>
+              <option value="bairro">Bairro (A–Z)</option>
+              <option value="perto">Perto da casa</option>
+            </select>
+          </div>
+
+          <div class="crime-report__meta">
+            <span id="crimeReportMetaCount">0 ocorrências</span>
+            <button type="button" class="link-btn" id="resetCrimeFiltersBtn" hidden>Limpar filtros</button>
+          </div>
+        </div>
+
+        <div class="crime-report__summary" id="crimeReportSummary" hidden></div>
+        <div class="crime-report__list" id="crimeReportList" role="list"></div>
+      `;
+
+      document.getElementById("crimeReportBackBtn").addEventListener("click", closeCrimeReport);
+      document.getElementById("crimeShowOnMapBtn").addEventListener("click", () => {
+        if (state.reportKind === "transito") state.showTraffic = true;
+        else state.showCrimes = true;
+        refreshCrimeViews();
+      });
+
+      el.crimeReportView.querySelectorAll("[data-report-kind]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const kind = btn.dataset.reportKind;
+          if (kind === state.reportKind) return;
+          state.reportKind = kind;
+          syncReportInputsFromState();
+          refreshCrimeViews();
+        });
+      });
+
+      const searchInput = document.getElementById("crimeSearchInput");
+      const clearSearchBtn = document.getElementById("clearCrimeSearchBtn");
+      searchInput.addEventListener("input", () => {
+        if (state.reportKind === "transito") state.trafficQuery = searchInput.value;
+        else state.crimeQuery = searchInput.value;
+        clearSearchBtn.hidden = !searchInput.value;
+        refreshCrimeViews();
+      });
+      clearSearchBtn.addEventListener("click", () => {
+        searchInput.value = "";
+        if (state.reportKind === "transito") state.trafficQuery = "";
+        else state.crimeQuery = "";
+        clearSearchBtn.hidden = true;
+        refreshCrimeViews();
+      });
+
+      el.crimeReportView.querySelectorAll("[data-report-period]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const val = btn.dataset.reportPeriod;
+          const parsed = val === "custom" ? "custom" : Number(val) || 0;
+          if (state.reportKind === "transito") state.trafficPeriodDays = parsed;
+          else state.crimePeriodDays = parsed;
+          refreshCrimeViews();
+        });
+      });
+
+      const fromInput = document.getElementById("crimeDateFromInput");
+      const toInput = document.getElementById("crimeDateToInput");
+      fromInput.addEventListener("change", () => {
+        if (state.reportKind === "transito") {
+          state.trafficDateFrom = fromInput.value;
+          state.trafficPeriodDays = "custom";
+        } else {
+          state.crimeDateFrom = fromInput.value;
+          state.crimePeriodDays = "custom";
+        }
+        refreshCrimeViews();
+      });
+      toInput.addEventListener("change", () => {
+        if (state.reportKind === "transito") {
+          state.trafficDateTo = toInput.value;
+          state.trafficPeriodDays = "custom";
+        } else {
+          state.crimeDateTo = toInput.value;
+          state.crimePeriodDays = "custom";
+        }
+        refreshCrimeViews();
+      });
+
+      document.getElementById("reportCrimeAllTypesBtn").addEventListener("click", () => {
+        if (state.reportKind === "transito") state.activeTrafficTypes = new Set(Object.keys(TRAFFIC_TYPES));
+        else state.activeCrimeTypes = new Set(Object.keys(CRIME_TYPES));
+        refreshCrimeViews();
+      });
+      document.getElementById("reportCrimeClearTypesBtn").addEventListener("click", () => {
+        if (state.reportKind === "transito") state.activeTrafficTypes.clear();
+        else state.activeCrimeTypes.clear();
+        refreshCrimeViews();
+      });
+      document.getElementById("reportCrimeExpandTypesBtn").addEventListener("click", () => {
+        if (state.reportKind === "transito") state.trafficTypesExpanded = !state.trafficTypesExpanded;
+        else state.crimeTypesExpanded = !state.crimeTypesExpanded;
+        updateCrimeReportContent();
+      });
+
+      el.crimeReportView.querySelectorAll("[data-crime-prec]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (state.reportKind === "transito") state.trafficPrecisao = btn.dataset.crimePrec;
+          else state.crimePrecisao = btn.dataset.crimePrec;
+          refreshCrimeViews();
+        });
+      });
+
+      const sortSelect = document.getElementById("crimeSortSelect");
+      sortSelect.addEventListener("change", () => {
+        if (state.reportKind === "transito") state.trafficSort = sortSelect.value;
+        else state.crimeSort = sortSelect.value;
+        refreshCrimeViews();
+      });
+
+      document.getElementById("resetCrimeFiltersBtn").addEventListener("click", resetActiveReportFilters);
+      crimeReportShellReady = true;
+    }
+
+    updateCrimeReportContent();
+  }
+
+  function updateCrimeReportContent() {
+    if (!crimeReportShellReady || !el.crimeReportView) return;
+
+    const isTraffic = state.reportKind === "transito";
+    el.crimeReportView.classList.toggle("crime-report--traffic", isTraffic);
+
+    const catalog = isTraffic ? TRAFFIC_TYPES : CRIME_TYPES;
+    const allItems = isTraffic ? state.traffic : state.crimes;
+    const feedMeta = isTraffic ? state.trafficFeed : state.crimesFeed;
+    const activeTypes = isTraffic ? state.activeTrafficTypes : state.activeCrimeTypes;
+    const periodVal = isTraffic ? state.trafficPeriodDays : state.crimePeriodDays;
+    const queryVal = isTraffic ? state.trafficQuery : state.crimeQuery;
+    const precVal = isTraffic ? state.trafficPrecisao : state.crimePrecisao;
+    const sortVal = isTraffic ? state.trafficSort : state.crimeSort;
+    const expanded = isTraffic ? state.trafficTypesExpanded : state.crimeTypesExpanded;
+    const showOnMap = isTraffic ? state.showTraffic : state.showCrimes;
+
+    const filtered = isTraffic ? getFilteredTraffic() : getFilteredCrimes();
+    const baseWithoutTypes = isTraffic
+      ? getFilteredTraffic({ ignoreTypes: true })
+      : getFilteredCrimes({ ignoreTypes: true });
+    const countsByType = {};
+    for (const item of baseWithoutTypes) {
+      countsByType[item.tipo] = (countsByType[item.tipo] || 0) + 1;
+    }
+
+    const titleIcoEl = document.getElementById("crimeReportTitleIco");
+    if (titleIcoEl) titleIcoEl.innerHTML = isTraffic ? UI_ICONS.trafficAlert : UI_ICONS.shieldAlert;
+    const titleTextEl = document.getElementById("crimeReportTitleText");
+    if (titleTextEl) titleTextEl.textContent = isTraffic ? "Acidentes de Trânsito" : "Relatório de Crimes";
+
+    const tabCrimesCnt = document.getElementById("reportTabCrimesCnt");
+    if (tabCrimesCnt) tabCrimesCnt.textContent = String(getVisibleCrimes().length);
+    const tabTrafficCnt = document.getElementById("reportTabTrafficCnt");
+    if (tabTrafficCnt) tabTrafficCnt.textContent = String(getVisibleTraffic().length);
+
+    el.crimeReportView.querySelectorAll("[data-report-kind]").forEach((btn) => {
+      const on = btn.dataset.reportKind === state.reportKind;
+      btn.classList.toggle("is-active", on);
+      btn.setAttribute("aria-selected", String(on));
+    });
+
+    const updatedLabel = feedMeta?.atualizado_em ? formatDateShort(feedMeta.atualizado_em) : "";
+    const subEl = document.getElementById("crimeReportSubtitle");
+    if (subEl) {
+      const fileLabel = isTraffic ? "data/transito.json" : "data/crimes.json";
+      subEl.textContent =
+        allItems.length === 0
+          ? `Pronto para receber registros de ${fileLabel}`
+          : `${allItems.length} ${allItems.length === 1 ? "registro total" : "registros totais"}${updatedLabel ? ` · Atualizado ${updatedLabel}` : ""}`;
+    }
+
+    const hiddenBanner = document.getElementById("crimeHiddenMapBanner");
+    const hiddenText = document.getElementById("crimeHiddenMapText");
+    if (hiddenBanner) hiddenBanner.hidden = showOnMap;
+    if (hiddenText) {
+      hiddenText.textContent = isTraffic
+        ? "Pinos de acidentes estão ocultos no mapa"
+        : "Pinos de crimes estão ocultos no mapa";
+    }
+
+    const searchEl = document.getElementById("crimeSearchInput");
+    if (searchEl) {
+      searchEl.placeholder = isTraffic
+        ? "Avenida, rodovia, bairro, moto, fonte…"
+        : "Bairro, rua, título, fonte…";
+    }
+    const clearSearchBtn = document.getElementById("clearCrimeSearchBtn");
+    if (clearSearchBtn) clearSearchBtn.hidden = !queryVal;
+
+    el.crimeReportView.querySelectorAll("[data-report-period]").forEach((btn) => {
+      btn.classList.toggle("is-active", btn.dataset.reportPeriod === String(periodVal));
+    });
+    const rangeBox = document.getElementById("crimeDateRangeBox");
+    if (rangeBox) rangeBox.hidden = periodVal !== "custom";
+
+    el.crimeReportView.querySelectorAll("[data-crime-prec]").forEach((btn) => {
+      btn.classList.toggle("is-active", btn.dataset.crimePrec === precVal);
+    });
+
+    const sortSelect = document.getElementById("crimeSortSelect");
+    if (sortSelect) sortSelect.value = sortVal;
+
+    const typesLabelEl = document.getElementById("crimeReportTypesLabel");
+    if (typesLabelEl) {
+      typesLabelEl.textContent = isTraffic ? "Tipos de acidente" : "Tipos de crime (CrimeReports)";
+    }
+    const totalTypesCount = Object.keys(catalog).length;
+    const expandBtn = document.getElementById("reportCrimeExpandTypesBtn");
+    if (expandBtn) {
+      expandBtn.textContent = expanded ? "Recolher ▴" : `Ver ${totalTypesCount} ▾`;
+    }
+
+    const typesContainer = document.getElementById("crimeReportTypeChips");
+    if (typesContainer) {
+      typesContainer.classList.toggle("is-expanded", expanded);
+      const orderedTypes = Object.values(catalog).sort((a, b) => {
+        const ca = countsByType[a.id] || 0;
+        const cb = countsByType[b.id] || 0;
+        if (cb !== ca) return cb - ca;
+        return 0;
+      });
+      typesContainer.innerHTML = orderedTypes
+        .map((ct) => {
+          const cnt = countsByType[ct.id] || 0;
+          const isOn = activeTypes.has(ct.id);
+          return `
+            <button type="button" class="crime-type-chip ${isOn ? "" : "is-off"} ${cnt === 0 ? "is-empty" : ""}" data-report-crime-type="${ct.id}" aria-pressed="${isOn}" title="${escapeHtml(ct.label)} — ${escapeHtml(ct.short)}">
+              <span class="crime-type-chip__ico" style="background:${ct.color}">${ct.icon}</span>
+              <span>${escapeHtml(ct.label)}</span>
+              <span class="crime-type-chip__cnt">${cnt}</span>
+            </button>
+          `;
+        })
+        .join("");
+
+      typesContainer.querySelectorAll("[data-report-crime-type]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const id = btn.dataset.reportCrimeType;
+          if (activeTypes.has(id)) activeTypes.delete(id);
+          else activeTypes.add(id);
+          refreshCrimeViews();
+        });
+      });
+    }
+
+    const activeFilters = isTraffic ? countActiveTrafficFilters() : countActiveCrimeFilters();
+    const singularNoun = isTraffic ? "acidente" : "ocorrência";
+    const pluralNoun = isTraffic ? "acidentes" : "ocorrências";
+    const metaEl = document.getElementById("crimeReportMetaCount");
+    if (metaEl) {
+      metaEl.textContent =
+        allItems.length === 0
+          ? isTraffic
+            ? "Nenhum acidente cadastrado ainda"
+            : "Nenhuma ocorrência cadastrada ainda"
+          : filtered.length === allItems.length
+          ? `${filtered.length} ${filtered.length === 1 ? singularNoun : pluralNoun} no relatório`
+          : `Mostrando ${filtered.length} de ${allItems.length} ${pluralNoun}`;
+    }
+    const resetBtn = document.getElementById("resetCrimeFiltersBtn");
+    if (resetBtn) resetBtn.hidden = activeFilters === 0;
+
+    const summaryEl = document.getElementById("crimeReportSummary");
+    if (summaryEl) {
+      if (filtered.length === 0) {
+        summaryEl.hidden = true;
+        summaryEl.innerHTML = "";
+      } else {
+        const filteredCounts = {};
+        for (const item of filtered) filteredCounts[item.tipo] = (filteredCounts[item.tipo] || 0) + 1;
+        const topStats = Object.entries(filteredCounts)
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 6)
+          .map(([tipo, count]) => {
+            const ct = catalog[tipo] || catalog.outro;
+            return `
+              <span class="crime-stat-pill">
+                <span class="crime-stat-pill__dot" style="background:${ct.color}">${ct.icon}</span>
+                <span>${count} ${escapeHtml(ct.label)}</span>
+              </span>
+            `;
+          })
+          .join("");
+        summaryEl.hidden = false;
+        summaryEl.innerHTML = topStats;
+      }
+    }
+
+    const listEl = document.getElementById("crimeReportList");
+    if (!listEl) return;
+
+    if (allItems.length === 0) {
+      const fileLabel = isTraffic ? "data/transito.json" : "data/crimes.json";
+      listEl.innerHTML = `
+        <div class="crime-report__empty">
+          <h3>${isTraffic ? "Nenhum acidente em data/transito.json" : "Nenhuma ocorrência em data/crimes.json"}</h3>
+          <p>Assim que o Grokbot adicionar registros em <code>${fileLabel}</code>, eles aparecerão aqui com filtros por data, bairro e tipo.</p>
+        </div>
+      `;
+      return;
+    }
+
+    if (filtered.length === 0) {
+      listEl.innerHTML = `
+        <div class="crime-report__empty">
+          <h3>${isTraffic ? "Nenhum acidente com esses filtros" : "Nenhuma ocorrência com esses filtros"}</h3>
+          <p>Tente ampliar o período de data (ex.: 30 dias ou Todos) ou reativar os tipos no filtro acima.</p>
+          <button type="button" class="btn-primary btn-sm" id="emptyCrimeResetBtn">Limpar filtros do relatório</button>
+        </div>
+      `;
+      const btn = document.getElementById("emptyCrimeResetBtn");
+      if (btn) btn.addEventListener("click", resetActiveReportFilters);
+      return;
+    }
+
+    const selectedHouse = state.selectedHouseId
+      ? state.houses.find((h) => h.id === state.selectedHouseId)
+      : null;
+
+    listEl.innerHTML = filtered
+      .map((item) => {
+        const ct = catalog[item.tipo] || catalog.outro;
+        const rel = formatRelativeCrimeDate(item.data);
+        const dateLabel = item.data ? `${formatCrimeDate(item.data)}${rel ? ` · ${rel}` : ""}` : "";
+        const locParts = [item.bairro, item.endereco].filter(Boolean);
+        if (item.cidade && normalizeText(item.cidade) !== "maringa") locParts.push(item.cidade);
+        const precPill =
+          item.precisao === "rua"
+            ? `<span class="crime-prec-pill crime-prec-pill--rua">Rua</span>`
+            : `<span class="crime-prec-pill crime-prec-pill--bairro">Bairro aprox.</span>`;
+        const gravPill =
+          isTraffic && item.gravidade && TRAFFIC_GRAVIDADE_LABELS[item.gravidade]
+            ? `<span class="traffic-grav-pill traffic-grav-pill--${item.gravidade}">${TRAFFIC_GRAVIDADE_LABELS[item.gravidade]}</span>`
+            : "";
+        const distBadge = selectedHouse
+          ? `<span>· ${formatDistance(haversine(selectedHouse.lat, selectedHouse.lng, item.lat, item.lng))} da casa</span>`
+          : "";
+        return `
+          <article class="crime-card" style="--crime-color:${ct.color}" data-crime-card-id="${escapeHtml(item.id)}" role="listitem">
+            <div class="crime-card__top">
+              <span class="crime-card__type" style="background:${ct.color}">${ct.icon}<span>${escapeHtml(ct.label)}</span></span>
+              ${dateLabel ? `<span class="crime-card__date">${escapeHtml(dateLabel)}</span>` : ""}
+            </div>
+            <h3 class="crime-card__title">${escapeHtml(item.titulo)}</h3>
+            <p class="crime-card__loc">
+              <span>${escapeHtml(locParts.join(" · ") || item.cidade || "Maringá")}</span>
+              ${gravPill}
+              ${precPill}
+              ${distBadge}
+            </p>
+            ${item.descricao ? `<p class="crime-card__desc">${escapeHtml(item.descricao)}</p>` : ""}
+            <div class="crime-card__foot">
+              <span class="crime-card__source">${item.fonte ? `Fonte: ${escapeHtml(item.fonte)}` : "Registro local"}</span>
+              <div class="crime-card__actions">
+                <button type="button" class="crime-card__btn crime-card__btn--map" data-focus-crime="${escapeHtml(item.id)}">Ver no mapa</button>
+                ${
+                  item.link
+                    ? `<a class="crime-card__btn" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">Matéria ↗</a>`
+                    : ""
+                }
+              </div>
+            </div>
+          </article>
+        `;
+      })
+      .join("");
+
+    listEl.querySelectorAll(".crime-card").forEach((card) => {
+      const id = card.dataset.crimeCardId;
+      const item = allItems.find((x) => x.id === id);
+      card.addEventListener("click", (e) => {
+        if (e.target.closest("a")) return;
+        if (isTraffic) focusTrafficOnMap(id);
+        else focusCrimeOnMap(id);
+      });
+      card.addEventListener("mouseenter", () => {
+        if (!item) return;
+        if (isTraffic) {
+          const entry = trafficMarkers.get(id);
+          if (entry) {
+            const pin = entry.marker.getElement()?.querySelector(".traffic-pin");
+            if (pin) pin.classList.add("is-highlighted");
+          }
+          if (selectedHouse) highlightRouteToTraffic(selectedHouse, item);
+        } else {
+          const entry = crimeMarkers.get(id);
+          if (entry) {
+            const pin = entry.marker.getElement()?.querySelector(".crime-pin");
+            if (pin) pin.classList.add("is-highlighted");
+          }
+          if (selectedHouse) highlightRouteToCrime(selectedHouse, item);
+        }
+      });
+      card.addEventListener("mouseleave", () => clearRouteHighlight());
+    });
   }
 
   // ==================== MAP INITIALIZATION & LAYERS ====================
@@ -1201,6 +2214,7 @@ Regras:
     routeHighlightLayer = L.layerGroup().addTo(map);
     poiLayer = L.layerGroup().addTo(map);
     crimeLayer = L.layerGroup().addTo(map);
+    trafficLayer = L.layerGroup().addTo(map);
     rotinaLayer = L.layerGroup().addTo(map);
     houseLayer = L.layerGroup().addTo(map);
 
@@ -1243,19 +2257,22 @@ Regras:
   function renderPoiCategoryDock() {
     const cats = Object.values(CATEGORIES);
     const visibleCrimeCount = getVisibleCrimes().length;
+    const visibleTrafficCount = getVisibleTraffic().length;
+    const reportOpen = isCrimeReportOpen();
     const crimeButtonsHtml = `
       <button type="button" class="cat-toggle cat-toggle--crime ${state.showCrimes ? "is-on" : ""}" id="toggleCrimesBtn" aria-pressed="${state.showCrimes}">
         <span class="cat-toggle__dot" style="background:#b91c1c">${UI_ICONS.shieldAlert}</span>
         <span>Crimes</span>
         ${state.crimes.length > 0 ? `<span class="cat-toggle__count">${visibleCrimeCount}</span>` : ""}
       </button>
-      ${
-        state.showCrimes
-          ? `<button type="button" class="cat-toggle cat-toggle--crime-legend ${state.crimeLegendOpen ? "is-open" : ""}" id="toggleCrimeLegendBtn" aria-expanded="${state.crimeLegendOpen}" title="Abrir legenda e filtros de tipos de crime">
-              <span>Legenda ${state.crimeLegendOpen ? "▴" : "▾"}</span>
-            </button>`
-          : ""
-      }
+      <button type="button" class="cat-toggle cat-toggle--traffic ${state.showTraffic ? "is-on" : ""}" id="toggleTrafficBtn" aria-pressed="${state.showTraffic}">
+        <span class="cat-toggle__dot" style="background:#d97706">${UI_ICONS.trafficAlert}</span>
+        <span>Trânsito</span>
+        ${state.traffic.length > 0 ? `<span class="cat-toggle__count cat-toggle__count--traffic">${visibleTrafficCount}</span>` : ""}
+      </button>
+      <button type="button" class="cat-toggle cat-toggle--crime-legend ${reportOpen ? "is-open" : ""}" id="openCrimeReportDockBtn" aria-pressed="${reportOpen}" title="Abrir relatórios de crimes e acidentes de trânsito">
+        <span>Relatórios</span>
+      </button>
     `;
 
     const buildCatBtn = (cat) => {
@@ -1296,18 +2313,23 @@ Regras:
       toggleCrimesBtn.addEventListener("click", () => {
         state.showCrimes = !state.showCrimes;
         if (!state.showCrimes) state.crimeLegendOpen = false;
-        renderPoiCategoryDock();
-        renderCrimeLayer();
-        renderCrimeLegendPanel();
+        refreshCrimeViews();
       });
     }
 
-    const legendBtn = document.getElementById("toggleCrimeLegendBtn");
-    if (legendBtn) {
-      legendBtn.addEventListener("click", () => {
-        state.crimeLegendOpen = !state.crimeLegendOpen;
-        renderPoiCategoryDock();
-        renderCrimeLegendPanel();
+    const toggleTrafficBtn = document.getElementById("toggleTrafficBtn");
+    if (toggleTrafficBtn) {
+      toggleTrafficBtn.addEventListener("click", () => {
+        state.showTraffic = !state.showTraffic;
+        refreshCrimeViews();
+      });
+    }
+
+    const reportDockBtn = document.getElementById("openCrimeReportDockBtn");
+    if (reportDockBtn) {
+      reportDockBtn.addEventListener("click", () => {
+        if (isCrimeReportOpen()) closeCrimeReport();
+        else openCrimeReport();
       });
     }
   }
@@ -1563,6 +2585,129 @@ Regras:
     }
   }
 
+  function createTrafficPopupHtml(item, house) {
+    const tt = TRAFFIC_TYPES[item.tipo] || TRAFFIC_TYPES.outro;
+    const locParts = [item.bairro, item.endereco].filter(Boolean);
+    if (item.cidade && normalizeText(item.cidade) !== "maringa") {
+      locParts.push(item.cidade);
+    }
+    const precLabel = item.precisao === "rua" ? "Local exato (rua)" : "Aproximado (bairro)";
+    const precClass = item.precisao === "rua" ? "crime-prec-pill--rua" : "crime-prec-pill--bairro";
+    const gravBadge =
+      item.gravidade && TRAFFIC_GRAVIDADE_LABELS[item.gravidade]
+        ? `<span class="traffic-grav-pill traffic-grav-pill--${item.gravidade}">${TRAFFIC_GRAVIDADE_LABELS[item.gravidade]}</span>`
+        : "";
+
+    let distHtml = "";
+    if (house) {
+      const d = haversine(house.lat, house.lng, item.lat, item.lng);
+      distHtml = `<div class="crime-popup__dist traffic-popup__dist">${formatDistance(d)} da casa selecionada${d <= 2500 ? ` · ${walkMinutes(d)} min a pé` : ""}</div>`;
+    }
+
+    return `
+      <div class="crime-popup">
+        <div class="crime-popup__head">
+          <span class="crime-popup__badge" style="background:${tt.color}">${tt.icon}<span>${escapeHtml(tt.label)}</span></span>
+          ${item.data ? `<span class="crime-popup__date">${escapeHtml(formatCrimeDate(item.data))}</span>` : ""}
+        </div>
+        <h4 class="crime-popup__title">${escapeHtml(item.titulo)}</h4>
+        ${locParts.length ? `<p class="crime-popup__loc"><strong>Local:</strong> ${escapeHtml(locParts.join(" · "))}</p>` : ""}
+        ${item.descricao ? `<p class="crime-popup__desc">${escapeHtml(item.descricao)}</p>` : ""}
+        ${distHtml}
+        <div class="crime-popup__meta">
+          <div style="display:flex;gap:5px;flex-wrap:wrap;align-items:center">
+            ${gravBadge}
+            <span class="crime-prec-pill ${precClass}">${precLabel}</span>
+          </div>
+          <div class="crime-popup__source traffic-popup__source">
+            <span>${item.fonte ? `Fonte: ${escapeHtml(item.fonte)}` : "Registro local"}</span>
+            ${item.link ? `<a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">Ver matéria ↗</a>` : ""}
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderTrafficLayer() {
+    if (!map || !trafficLayer) return;
+    trafficLayer.clearLayers();
+    trafficMarkers.clear();
+
+    if (!state.showTraffic) return;
+
+    const selectedHouse = state.selectedHouseId
+      ? state.houses.find((h) => h.id === state.selectedHouseId)
+      : null;
+
+    for (const item of getVisibleTraffic()) {
+      const tt = TRAFFIC_TYPES[item.tipo] || TRAFFIC_TYPES.outro;
+      let stateClass = "";
+      if (selectedHouse) {
+        const d = haversine(selectedHouse.lat, selectedHouse.lng, item.lat, item.lng);
+        stateClass = d <= state.radiusMeters ? "is-inside" : "is-dimmed";
+      }
+      const approxClass = item.precisao === "bairro" ? "traffic-pin--approx" : "";
+
+      const icon = L.divIcon({
+        className: "traffic-pin-wrap",
+        html: `<div class="traffic-pin ${approxClass} ${stateClass}" style="background:${tt.color}" title="${escapeHtml(tt.label)}: ${escapeHtml(item.titulo)}">${tt.icon}</div>`,
+        iconSize: [0, 0],
+      });
+
+      const marker = L.marker([item.displayLat, item.displayLng], {
+        icon,
+        zIndexOffset: stateClass === "is-inside" ? 305 : 135,
+      }).addTo(trafficLayer);
+
+      marker.bindPopup(() => createTrafficPopupHtml(item, selectedHouse));
+      marker.on("mouseover", () => {
+        if (selectedHouse) highlightRouteToTraffic(selectedHouse, item);
+      });
+      marker.on("mouseout", () => clearRouteHighlight());
+
+      trafficMarkers.set(item.id, { marker, item });
+    }
+  }
+
+  function highlightRouteToTraffic(house, item) {
+    clearRouteHighlight();
+    if (!house || !item || !map) return;
+    const tt = TRAFFIC_TYPES[item.tipo] || TRAFFIC_TYPES.outro;
+    const dist = haversine(house.lat, house.lng, item.lat, item.lng);
+
+    L.polyline(
+      [
+        [house.lat, house.lng],
+        [item.displayLat, item.displayLng],
+      ],
+      {
+        color: tt.color,
+        weight: 3.2,
+        opacity: 0.9,
+        dashArray: "5 5",
+        interactive: false,
+      }
+    ).addTo(routeHighlightLayer);
+
+    const midLat = (house.lat + item.displayLat) / 2;
+    const midLng = (house.lng + item.displayLng) / 2;
+    L.marker([midLat, midLng], {
+      interactive: false,
+      zIndexOffset: 710,
+      icon: L.divIcon({
+        className: "dist-tag-wrap",
+        html: `<span class="dist-tag" style="background:${tt.color}">${escapeHtml(tt.label)} · ${formatDistance(dist)}</span>`,
+        iconSize: [0, 0],
+      }),
+    }).addTo(routeHighlightLayer);
+
+    const entry = trafficMarkers.get(item.id);
+    if (entry) {
+      const domEl = entry.marker.getElement()?.querySelector(".traffic-pin");
+      if (domEl) domEl.classList.add("is-highlighted");
+    }
+  }
+
   function createPoiPopupHtml(poi, house) {
     const cat = CATEGORIES[poi.categoria] || CATEGORIES.parque;
     let distHtml = "";
@@ -1726,6 +2871,7 @@ Regras:
     }
 
     renderCrimeLayer();
+    renderTrafficLayer();
   }
 
   function renderHouseMarkers() {
@@ -1949,7 +3095,7 @@ Regras:
 
   function clearRouteHighlight() {
     if (routeHighlightLayer) routeHighlightLayer.clearLayers();
-    document.querySelectorAll(".poi-pin.is-highlighted, .crime-pin.is-highlighted").forEach((n) => n.classList.remove("is-highlighted"));
+    document.querySelectorAll(".poi-pin.is-highlighted, .crime-pin.is-highlighted, .traffic-pin.is-highlighted").forEach((n) => n.classList.remove("is-highlighted"));
   }
 
   // ==================== ROUTE SIMULATION (CICLOVIAS / CALÇADAS / VIAS · MOTO ELÉTRICA & BIKE) ====================
@@ -3352,13 +4498,13 @@ Regras:
             </div>
             <div class="crime-summary-banner crime-summary-banner--calm">
               <span>Sem ocorrências cadastradas ainda em data/crimes.json.</span>
-              <button type="button" class="link-btn" data-open-crime-legend>Ver ícones</button>
+              <button type="button" class="link-btn" data-open-crime-legend>Relatório</button>
             </div>
           </div>`
         : `<div class="detail-section">
             <div class="detail-section__head">
               <h3>Segurança no entorno (${formatDistance(state.radiusMeters)})</h3>
-              <button type="button" class="link-btn" data-open-crime-legend>Legenda</button>
+              <button type="button" class="link-btn" data-open-crime-legend>Abrir relatório</button>
             </div>
             <div class="crime-summary-banner ${crimesInsideRadius.length === 0 ? "crime-summary-banner--calm" : ""}">
               <span>${
@@ -3368,6 +4514,58 @@ Regras:
               }</span>
             </div>
             ${crimesListHtml ? `<div class="crime-nearby-list">${crimesListHtml}</div>` : ""}
+          </div>`;
+
+    const periodTraffic = getTrafficMatchingPeriod();
+    const trafficWithDist = periodTraffic
+      .map((t) => ({ ...t, distance: haversine(house.lat, house.lng, t.lat, t.lng) }))
+      .sort((a, b) => a.distance - b.distance);
+    const trafficInsideRadius = trafficWithDist.filter((t) => t.distance <= state.radiusMeters);
+    const trafficToDisplay = (trafficInsideRadius.length ? trafficInsideRadius : trafficWithDist.slice(0, 3)).slice(0, 8);
+    const trafficListHtml = trafficToDisplay
+      .map((t) => {
+        const tt = TRAFFIC_TYPES[t.tipo] || TRAFFIC_TYPES.outro;
+        const subParts = [tt.label, t.data ? formatCrimeDate(t.data) : "", t.precisao === "bairro" ? "Aprox. bairro" : "Rua", t.fonte].filter(Boolean);
+        return `
+          <button type="button" class="crime-nearby-item" data-nearby-traffic-id="${escapeHtml(t.id)}">
+            <span class="crime-nearby-item__ico" style="background:${tt.color}">${tt.icon}</span>
+            <span class="crime-nearby-item__info">
+              <span class="crime-nearby-item__title">${escapeHtml(t.titulo)}</span>
+              <span class="crime-nearby-item__sub">${escapeHtml(subParts.join(" · "))}</span>
+            </span>
+            <span class="crime-nearby-item__dist">
+              <strong style="color:#b45309">${formatDistance(t.distance)}</strong>
+              <small>${t.distance <= state.radiusMeters ? "No raio" : "Mais próx."}</small>
+            </span>
+          </button>
+        `;
+      })
+      .join("");
+    const trafficSectionHtml =
+      state.traffic.length === 0
+        ? `<div class="detail-section">
+            <div class="detail-section__head">
+              <h3>Trânsito no entorno</h3>
+              <small style="color:var(--ink-subtle);font-size:11.5px">data/transito.json</small>
+            </div>
+            <div class="crime-summary-banner crime-summary-banner--calm">
+              <span>Sem acidentes cadastrados ainda em data/transito.json.</span>
+              <button type="button" class="link-btn" data-open-traffic-report>Relatório</button>
+            </div>
+          </div>`
+        : `<div class="detail-section">
+            <div class="detail-section__head">
+              <h3>Trânsito no entorno (${formatDistance(state.radiusMeters)})</h3>
+              <button type="button" class="link-btn" data-open-traffic-report>Abrir relatório</button>
+            </div>
+            <div class="crime-summary-banner ${trafficInsideRadius.length === 0 ? "crime-summary-banner--calm" : "traffic-summary-banner"}">
+              <span>${
+                trafficInsideRadius.length === 0
+                  ? `Nenhum acidente registrado em até ${formatDistance(state.radiusMeters)}`
+                  : `${trafficInsideRadius.length} ${trafficInsideRadius.length === 1 ? "acidente registrado" : "acidentes registrados"} em até ${formatDistance(state.radiusMeters)}`
+              }</span>
+            </div>
+            ${trafficListHtml ? `<div class="crime-nearby-list">${trafficListHtml}</div>` : ""}
           </div>`;
 
     const imovel = getImovelMeta(house);
@@ -3525,6 +4723,7 @@ Regras:
       </div>
 
       ${safetySectionHtml}
+      ${trafficSectionHtml}
 
       <div class="detail-section">
         <div class="detail-section__head">
@@ -3646,15 +4845,35 @@ Regras:
 
     el.drawerBody.querySelectorAll("[data-open-crime-legend]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        state.showCrimes = true;
-        state.crimeLegendOpen = true;
-        renderPoiCategoryDock();
-        renderCrimeLayer();
-        renderCrimeLegendPanel();
+        openCrimeReport("crimes");
+      });
+    });
+
+    el.drawerBody.querySelectorAll("[data-open-traffic-report]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        openCrimeReport("transito");
+      });
+    });
+
+    el.drawerBody.querySelectorAll("[data-nearby-traffic-id]").forEach((btn) => {
+      const item = state.traffic.find((t) => t.id === btn.dataset.nearbyTrafficId);
+      if (!item) return;
+      btn.addEventListener("mouseenter", () => highlightRouteToTraffic(house, item));
+      btn.addEventListener("mouseleave", () => clearRouteHighlight());
+      btn.addEventListener("click", () => {
+        if (!state.showTraffic || !state.activeTrafficTypes.has(item.tipo)) {
+          state.showTraffic = true;
+          state.activeTrafficTypes.add(item.tipo);
+          refreshCrimeViews();
+        }
         if (!isDesktop()) {
           closeDrawer(false);
           switchMobileTab("mapa");
         }
+        highlightRouteToTraffic(house, item);
+        map.flyTo([item.displayLat, item.displayLng], Math.max(map.getZoom(), 16), { duration: 0.5 });
+        const entry = trafficMarkers.get(item.id);
+        if (entry) setTimeout(() => entry.marker.openPopup(), 450);
       });
     });
 
@@ -3889,6 +5108,13 @@ Regras:
                     }</strong></div>`
                   : ""
               }
+              ${
+                state.traffic.length > 0
+                  ? `<div class="compare-row"><span>Acidentes (${formatDistance(state.radiusMeters)})</span><strong>${
+                      getTrafficMatchingPeriod().filter((t) => haversine(h.lat, h.lng, t.lat, t.lng) <= state.radiusMeters).length
+                    }</strong></div>`
+                  : ""
+              }
             </div>
             <button type="button" class="btn-outline btn-sm" data-focus-house="${escapeHtml(h.id)}">Ver no mapa</button>
           </div>
@@ -3923,9 +5149,13 @@ Regras:
     });
     if (tab === "mapa" && map) {
       setTimeout(() => map.invalidateSize(), 180);
+    } else if (tab === "crimes") {
+      renderCrimeReport();
     } else {
       renderListings();
     }
+    syncCrimeBadges();
+    renderPoiCategoryDock();
   }
 
   // ==================== MODALS & GROKBOT JSON ====================
@@ -3973,6 +5203,20 @@ Regras:
     document.querySelectorAll("[data-nav-tab]").forEach((btn) => {
       btn.addEventListener("click", () => switchMobileTab(btn.dataset.navTab));
     });
+
+    // Desktop header Crime & Traffic Report buttons
+    if (el.openCrimeReportBtn) {
+      el.openCrimeReportBtn.addEventListener("click", () => {
+        if (isCrimeReportOpen() && state.reportKind === "crimes") closeCrimeReport();
+        else openCrimeReport("crimes");
+      });
+    }
+    if (el.openTrafficReportBtn) {
+      el.openTrafficReportBtn.addEventListener("click", () => {
+        if (isCrimeReportOpen() && state.reportKind === "transito") closeCrimeReport();
+        else openCrimeReport("transito");
+      });
+    }
 
     // Mobile saved sub-pills
     document.querySelectorAll("[data-saved-filter]").forEach((btn) => {
@@ -4174,13 +5418,16 @@ Regras:
       const params = new URLSearchParams(window.location.search);
       const externalJsonUrl = params.get("json");
       const externalCrimesUrl = params.get("crimes");
+      const externalTrafficUrl = params.get("transito");
       const casasUrl = externalJsonUrl || "./data/casas.json";
       const crimesUrl = externalCrimesUrl || "./data/crimes.json";
+      const trafficUrl = externalTrafficUrl || "./data/transito.json";
 
-      const [cityResp, casasResp, crimesResp] = await Promise.all([
+      const [cityResp, casasResp, crimesResp, trafficResp] = await Promise.all([
         fetch("./data/maringa-pois.json", { cache: "no-cache" }),
         fetch(casasUrl, { cache: "no-cache" }),
         fetch(crimesUrl, { cache: "no-cache" }).catch(() => null),
+        fetch(trafficUrl, { cache: "no-cache" }).catch(() => null),
       ]);
 
       if (!cityResp.ok) throw new Error("Não foi possível carregar data/maringa-pois.json");
@@ -4199,7 +5446,18 @@ Regras:
         }
       }
 
+      if (trafficResp && trafficResp.ok) {
+        try {
+          const trafficJson = await trafficResp.json();
+          ingestTraffic(trafficJson);
+        } catch (trafficErr) {
+          console.warn("Aviso ao ler data/transito.json:", trafficErr);
+          ingestTraffic(null);
+        }
+      }
+
       initMap();
+      syncCrimeBadges();
       renderPoiCategoryDock();
       ingestFeed(state.publishedFeed, false);
     } catch (err) {
