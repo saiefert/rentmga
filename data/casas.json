@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-24T19:21:27-03:00",
+  "atualizado_em": "2026-11-27T19:49:38-03:00",
   "fonte": "Grokbot",
   "cidade": "Maringá - PR",
   "observacao": "Varredura de toda Maringá-PR, com preferência aos imóveis mais próximos da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01). No mínimo 2 quartos e 2 banheiros (suíte conta como banheiro; lavabo não). Teto do site: aluguel + condomínio até R$ 2.350 (IPTU à parte). Teto do e-mail para Dionizia permanece R$ 2.200. Excluídos apenas: Cidade Alta, Conjunto Requião e Jardim Alvorada. A lista do site é ordenada pela distância em linha reta até a ACIM. Imóveis entre R$ 2.200 e R$ 2.350 entram só no site, com a etiqueta “Acima de R$ 2.200”.",
@@ -166,7 +166,14 @@
         "A 680 m da ACIM"
       ],
       "fotos": [
-        "https://img.olx.com.br/images/51/511685576389076.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000525/2620000525a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000525/2620000525b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000525/2620000525c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000525/2620000525d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000525/2620000525e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000525/2620000525f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000525/2620000525g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000525/2620000525h.jpg"
       ],
       "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/apartamento-para-alugar-no-condominio-virmond-no-bairro-zona-01-1549130242",
       "portal": "OLX (Paiaguás Imóveis, tel. (44) 3222-7…, código 00000534; também visto na Viva Real/ZAP como Av. Herval, 60 m², R$ 1.400 isento, IPTU 257)",
@@ -614,9 +621,16 @@
         "Móveis planejados"
       ],
       "fotos": [
-        "https://img.olx.com.br/images/19/195622817218512.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000825/9120000825a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000825/9120000825b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000825/9120000825c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000825/9120000825d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000825/9120000825e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000825/9120000825f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000825/9120000825g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000825/9120000825h.jpg"
       ],
-      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1494700116",
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/apartamento-para-alugar-em-maringa-zona-07-com-2-quartos-com-59-m2-residencial-perseve-1494700116",
       "portal": "OLX (código AP3482, tel. (44) 3226-4…)",
       "encontrado_em": "2026-11-22",
       "moveis": true,
@@ -638,14 +652,16 @@
       "suites": 1,
       "banheiros": 2,
       "vagas": 1,
+      "area_m2": 66,
       "nova": false,
       "destaque": false,
-      "descricao": "Av. Mauá, 1308, 6º andar, Zona 03 (Edifício Amazonas). 1 suíte. parece ser o mesmo apartamento anunciado por três imobiliárias; confirmar com uma delas. IPTU de uns R$ 133 à parte.",
-      "nota_grokbot": "Imobiliária: Silvio Iwata (também Marilene Insaurralde e Imobiliária Delta). Com elevador. Perto da ciclovia da Av. Brasil (~150 m, linha reta). A 1,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.150. Tem armários ou móveis planejados (conta como com móveis). Guarda-roupa nos quartos; armários nos banheiros e na cozinha.",
+      "descricao": "Av. Mauá, 1308, 6º andar, Zona 03 (Edifício Amazonas). 66 m², 1 suíte. parece ser o mesmo apartamento anunciado por três imobiliárias; confirmar com uma delas. IPTU de uns R$ 133 à parte. Confirmado em 27/11: unificado com cnm-47956402 (mesmo apto no 6º andar, 66 m², semimobiliado). Mantidos o id mais antigo e o link oficial da Silvio Iwata no Sub100.",
+      "nota_grokbot": "Imobiliária: Silvio Iwata (também Marilene Insaurralde e Imobiliária Delta). Com elevador. Perto da ciclovia da Av. Brasil (~150 m, linha reta). A 1,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.150. Semimobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Semimobiliado (sofá, rack, mesa e cadeiras); guarda-roupa nos quartos; armários na cozinha, lavanderia e banheiros.",
       "tags": [
         "Elevador",
         "A 1,2 km da ACIM",
         "Perto da ciclovia",
+        "Semimobiliado",
         "Móveis planejados"
       ],
       "fotos": [
@@ -671,48 +687,6 @@
           "distancia_m": 150
         }
       ]
-    },
-    {
-      "id": "cnm-47956402",
-      "titulo": "Apartamento no Edifício Amazonas — Av. Mauá, 1308 — Zona 03",
-      "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 1600,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Zona 03",
-      "endereco": "Av. Mauá, 1308, 6º andar, Zona 03 (Edifício Amazonas)",
-      "quartos": 3,
-      "suites": 0,
-      "banheiros": 2,
-      "area_m2": 66,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Av. Mauá, 1308, 6º andar, Zona 03 (Edifício Amazonas). 66 m². 66 m². IPTU não informado. 6º andar do Edifício Amazonas (Av. Mauá, 1308). Semimobiliado (sofá, rack, mesa e cadeiras). Elevador. O anúncio de 2 quartos no mesmo prédio indica condomínio de R$ 550 (a confirmar neste de 3 quartos).",
-      "nota_grokbot": "Imobiliária: Marilene Insaurralde  Imoveis. Com elevador. A 1,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Condomínio não informado (aluguel R$ 1.600); só serve se o condomínio for até R$ 750 para caber no teto do site. Semimobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Semimobiliado (sofá, rack, mesa e cadeiras); também tem guarda-roupa e armários na cozinha, lavanderia e banheiros. A confirmar: IPTU.",
-      "tags": [
-        "Elevador",
-        "A 1,2 km da ACIM",
-        "Semimobiliado",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1000911/47956402/pr-maringa-zona-03-avenida-maua-apartamento-para-alugar-3-quartos-6ad8c2df-1.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1000911/47956402/pr-maringa-zona-03-avenida-maua-apartamento-para-alugar-3-quartos-6ad8c2df-2.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1000911/47956402/pr-maringa-zona-03-avenida-maua-apartamento-para-alugar-3-quartos-6ad8c2df-3.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1000911/47956402/pr-maringa-zona-03-avenida-maua-apartamento-para-alugar-3-quartos-6ad8c2df-4.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1000911/47956402/pr-maringa-zona-03-avenida-maua-apartamento-para-alugar-3-quartos-6ad8c2df-5.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1000911/47956402/pr-maringa-zona-03-avenida-maua-apartamento-para-alugar-3-quartos-6ad8c2df-6.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1000911/47956402/pr-maringa-zona-03-avenida-maua-apartamento-para-alugar-3-quartos-6ad8c2df-7.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1000911/47956402/pr-maringa-zona-03-avenida-maua-apartamento-para-alugar-3-quartos-6ad8c2df-8.jpg"
-      ],
-      "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-3-quartos-pr-maringa-zona-03-90m2-RS1600/id-47956402/",
-      "portal": "Chaves na Mão (MARILENE INSAURRALDE  IMOVEIS)",
-      "encontrado_em": "2026-11-22",
-      "moveis": true,
-      "lat": -23.4199674,
-      "lng": -51.9294986
     },
     {
       "id": "cnm-47656458",
@@ -2539,7 +2513,14 @@
         "Móveis planejados"
       ],
       "fotos": [
-        "https://img.olx.com.br/images/33/332647829827799.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005006/2020005006a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005006/2020005006b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005006/2020005006c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005006/2020005006d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005006/2020005006e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005006/2020005006f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005006/2020005006g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005006/2020005006h.jpg"
       ],
       "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/apartamento-mobiliado-para-locacao-proximo-a-unicesumar-com-2-quartos-suite-e-sacada-com-1546729617",
       "portal": "OLX (Lélo Imóveis, código 05618.001)",
@@ -3559,9 +3540,16 @@
         "Móveis planejados"
       ],
       "fotos": [
-        "https://img.olx.com.br/images/95/955625704515029.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381h.jpg"
       ],
-      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1546729014",
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/casa-jd-ipanema-prox-hospital-municipal-av-nildo-ribeiro-1546729014",
       "portal": "OLX (Lélo Imóveis, código 02262.001)",
       "encontrado_em": "2026-11-22",
       "quintal": true,
@@ -3765,9 +3753,16 @@
         "A 4,5 km da ACIM"
       ],
       "fotos": [
-        "https://img.olx.com.br/images/33/338639823704548.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003978/2020003978a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003978/2020003978b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003978/2020003978c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003978/2020003978d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003978/2020003978e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003978/2020003978f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003978/2020003978g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003978/2020003978h.jpg"
       ],
-      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1476827138",
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/apartamento-para-alugar-em-maringa-no-parque-residencial-aeroporto-com-2-quartos-suite-1476827138",
       "portal": "OLX (Lélo Imóveis, código 02186.001, tel. 0443 225-…)",
       "encontrado_em": "2026-11-22",
       "lat": -23.44957,
@@ -4546,9 +4541,16 @@
         "Móveis planejados"
       ],
       "fotos": [
-        "https://img.olx.com.br/images/35/358689466562473.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000924/9120000924a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000924/9120000924b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000924/9120000924c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000924/9120000924d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000924/9120000924e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000924/9120000924f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000924/9120000924g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/91/9120000924/9120000924h.jpg"
       ],
-      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1513083306",
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/aluga-casa-com-suite-e-espaco-gourmet-no-parque-residencial-aeroporto-maringa-pr-1513083306",
       "portal": "OLX (código CA3472, tel. (44) 3226-4…)",
       "encontrado_em": "2026-11-22",
       "quintal": true,
@@ -4803,9 +4805,16 @@
         "Acima de R$ 2.200"
       ],
       "fotos": [
-        "https://img.olx.com.br/images/93/937667461528866.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/662/66220001713/66220001713a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/662/66220001713/66220001713b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/662/66220001713/66220001713c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/662/66220001713/66220001713d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/662/66220001713/66220001713e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/662/66220001713/66220001713f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/662/66220001713/66220001713g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/662/66220001713/66220001713h.jpg"
       ],
-      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1553882227",
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/casa-para-alugar-em-maringa-jardim-atami-com-2-quartos-com-105-m2-1553882227",
       "portal": "OLX (Prado Imóveis, código CA0948, tel. (44) 3222-2…)",
       "encontrado_em": "2026-11-22",
       "lat": -23.4697087,
@@ -5099,9 +5108,16 @@
         "A 5,6 km da ACIM"
       ],
       "fotos": [
-        "https://img.olx.com.br/images/32/320616948240178.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007718/2020007718a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007718/2020007718b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007718/2020007718c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007718/2020007718d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007718/2020007718e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007718/2020007718f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007718/2020007718g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007718/2020007718h.jpg"
       ],
-      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/a-1530709299",
+      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/casa-de-2-quartos-para-alugar-no-jardim-novo-alvorada-em-maringa-com-suite-e-amplo-quintal-1530709299",
       "portal": "OLX (Lélo Imóveis, código 06380.001)",
       "encontrado_em": "2026-11-22",
       "terreno_m2": 300,
