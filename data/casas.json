@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-27T19:56:15-03:00",
+  "atualizado_em": "2026-11-28T14:49:39-03:00",
   "fonte": "Grokbot",
   "cidade": "Maringá - PR",
   "observacao": "Varredura de toda Maringá-PR, com preferência aos imóveis mais próximos da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01). No mínimo 2 quartos e 2 banheiros (suíte conta como banheiro; lavabo não). Teto do site: aluguel + condomínio até R$ 2.350 (IPTU à parte). Teto do e-mail para Dionizia permanece R$ 2.200. Excluídos apenas: Cidade Alta, Conjunto Requião e Jardim Alvorada. A lista do site é ordenada pela distância em linha reta até a ACIM. Imóveis entre R$ 2.200 e R$ 2.350 entram só no site, com a etiqueta “Acima de R$ 2.200”.",
@@ -93,53 +93,6 @@
       "encontrado_em": "2026-11-22",
       "lat": -23.42484,
       "lng": -51.94522
-    },
-    {
-      "id": "sub100-2020000352",
-      "titulo": "Apartamento no Andorinha — Avenida Paraná, 1627 — Zona 07",
-      "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 2100,
-      "condominio": 220,
-      "iptu": null,
-      "bairro": "Zona 07",
-      "endereco": "Avenida Paraná, 1627, ap 10",
-      "quartos": 4,
-      "suites": 1,
-      "banheiros": 3,
-      "area_m2": 127,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Avenida Paraná, 1627, ap 10. 127 m², 1 suíte. 127,00 m² de área privativa. falta confirmar elevador. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Elevador não informado. ~600 m da ciclovia da Av. Brasil (linha reta, aproximado). A 500 m da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.320. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. A confirmar: elevador.",
-      "tags": [
-        "Perto da ACIM",
-        "A 500 m da ACIM",
-        "Acima de R$ 2.200"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020000352/2020000352a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020000352/2020000352b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020000352/2020000352c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020000352/2020000352d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020000352/2020000352e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020000352/2020000352f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020000352/2020000352g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020000352/2020000352h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2020000352/locacao/apartamento-em-maringa-pr/zona-07",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.426352,
-      "lng": -51.943403,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 600
-        }
-      ]
     },
     {
       "id": "olx-1549130242",
@@ -271,96 +224,6 @@
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
           "distancia_m": 150
-        }
-      ]
-    },
-    {
-      "id": "cnm-32801278",
-      "titulo": "Apartamento no Edifício Sunshine Residence — Rua Caramuru, 646 — Zona 06",
-      "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 1900,
-      "condominio": 345,
-      "iptu": null,
-      "bairro": "Zona 06",
-      "endereco": "Rua Caramuru, 646",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "vagas": 1,
-      "area_m2": 67,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Caramuru, 646. 67 m², 1 suíte. 67 m². IPTU não informado. 3 elevadores, portaria, área de lazer (playground, salão de festas, academia, mini mercado). 3 quartos (1 suíte), sacada, 1 vaga gaveta coberta.",
-      "nota_grokbot": "Imobiliária: Sândalo Imóveis. Com elevador. A 910 m da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.245. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. A confirmar: IPTU.",
-      "tags": [
-        "Elevador",
-        "Perto da ACIM",
-        "A 910 m da ACIM",
-        "Acima de R$ 2.200"
-      ],
-      "fotos": [
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32801278/pr-maringa-zona-06-rua-caramuru-apartamento-para-alugar-3-quartos-6afc4cf2-1.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32801278/pr-maringa-zona-06-rua-caramuru-apartamento-para-alugar-3-quartos-6afc4cf2-2.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32801278/pr-maringa-zona-06-rua-caramuru-apartamento-para-alugar-3-quartos-6afc4cf2-3.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32801278/pr-maringa-zona-06-rua-caramuru-apartamento-para-alugar-3-quartos-6afc4cf2-4.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32801278/pr-maringa-zona-06-rua-caramuru-apartamento-para-alugar-3-quartos-6afc4cf2-5.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32801278/pr-maringa-zona-06-rua-caramuru-apartamento-para-alugar-3-quartos-6afc4cf2-6.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32801278/pr-maringa-zona-06-rua-caramuru-apartamento-para-alugar-3-quartos-6afc4cf2-7.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32801278/pr-maringa-zona-06-rua-caramuru-apartamento-para-alugar-3-quartos-6afc4cf2-8.jpg"
-      ],
-      "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-3-quartos-com-garagem-pr-maringa-zona-06-78m2-RS1900/id-32801278/",
-      "portal": "Chaves na Mão (SÂNDALO IMÓVEIS)",
-      "encontrado_em": "2026-11-22",
-      "lat": -23.42054,
-      "lng": -51.95012
-    },
-    {
-      "id": "sub100-79220000085",
-      "titulo": "Apartamento na Rua Visconde de Nassau — Zona 07",
-      "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 1650,
-      "condominio": 600,
-      "iptu": null,
-      "bairro": "Zona 07",
-      "endereco": "Rua Visconde de Nassau",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Visconde de Nassau. 1 suíte. falta confirmar elevador. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: RENOVA Gestão de Imóveis. Elevador não informado. ~810 m da ciclovia da Av. Brasil (linha reta, aproximado). A 950 m da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.250. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Tem armários ou móveis planejados (conta como com móveis). Armários/planejados: cozinha. A confirmar: elevador.",
-      "tags": [
-        "Perto da ACIM",
-        "A 950 m da ACIM",
-        "Acima de R$ 2.200",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/792/79220000085/79220000085a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/792/79220000085/79220000085b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/792/79220000085/79220000085c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/792/79220000085/79220000085d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/792/79220000085/79220000085e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/792/79220000085/79220000085f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/792/79220000085/79220000085g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/792/79220000085/79220000085h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/79220000085/locacao/apartamento-em-maringa-pr/zona-07",
-      "portal": "Sub100 (RENOVA Gestão de Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "moveis": true,
-      "lat": -23.413708,
-      "lng": -51.94139,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 810
         }
       ]
     },
@@ -497,109 +360,13 @@
       "lng": -51.9322757
     },
     {
-      "id": "sub100-2820012748",
-      "titulo": "Apartamento no Ed Marambaia — Avenida Prudente de Morais, 260, 61 — Zona 07",
-      "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 1700,
-      "condominio": 480,
-      "iptu": null,
-      "bairro": "Zona 07",
-      "endereco": "Avenida Prudente de Morais, 260, 61",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "area_m2": 89,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Avenida Prudente de Morais, 260, 61. 89 m², 1 suíte. 89,00 m² de área privativa. falta confirmar elevador. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Pedro Granado Imóveis. Elevador não informado. ~570 m da ciclovia da Av. Brasil (linha reta, aproximado). A 990 m da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.180. Tem armários ou móveis planejados (conta como com móveis). Armários/planejados: cozinha, quarto, banheiro, lavanderia, suíte, sala. A confirmar: elevador.",
-      "tags": [
-        "Perto da ACIM",
-        "A 990 m da ACIM",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012748/2820012748a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012748/2820012748b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012748/2820012748c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012748/2820012748d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012748/2820012748e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012748/2820012748f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012748/2820012748g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820012748/2820012748h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2820012748/locacao/apartamento-em-maringa-pr/zona-07",
-      "portal": "Sub100 (Pedro Granado Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "moveis": true,
-      "lat": -23.415729,
-      "lng": -51.934759,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 570
-        }
-      ]
-    },
-    {
-      "id": "sub100-40720004973",
-      "titulo": "Apartamento no Costa do Marfim — Avenida Curitiba, 149 — Zona 04",
-      "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 1650,
-      "condominio": 680,
-      "iptu": null,
-      "bairro": "Zona 04",
-      "endereco": "Avenida Curitiba, 149",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "area_m2": 135.5,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Avenida Curitiba, 149. 135,5 m², 1 suíte. 135,50 m² de área privativa. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Ideal Maringá Imóveis. Sem elevador (não). Perto da ciclovia da Av. Brasil (~230 m, linha reta). A 990 m da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.330. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350.",
-      "tags": [
-        "Perto da ACIM",
-        "A 990 m da ACIM",
-        "Perto da ciclovia",
-        "Acima de R$ 2.200"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004973/40720004973a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004973/40720004973b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004973/40720004973c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004973/40720004973d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004973/40720004973e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004973/40720004973f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004973/40720004973g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004973/40720004973h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/40720004973/locacao/apartamento-em-maringa-pr/zona-04",
-      "portal": "Sub100 (Ideal Maringá Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.424037,
-      "lng": -51.950876,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 230
-        }
-      ]
-    },
-    {
       "id": "olx-1494700116",
       "titulo": "Apartamento no Residencial Perseverance — Rua Rui Barbosa, 1262 — Zona 07",
       "finalidade": "aluguel",
       "tipo": "Apartamento",
       "casa": false,
       "preco": 2000,
-      "condominio": 307,
+      "condominio": 306,
       "iptu": null,
       "bairro": "Zona 07",
       "endereco": "Rua Rui Barbosa, 1262, Zona 07 (Residencial Perseverance; número cruzado com o cadastro do condomínio e o CEP 87020-090 do anúncio)",
@@ -610,8 +377,8 @@
       "area_m2": 59,
       "nova": false,
       "destaque": false,
-      "descricao": "Rua Rui Barbosa, 1262, Zona 07 (Residencial Perseverance; número cruzado com o cadastro do condomínio e o CEP 87020-090 do anúncio). 59 m², 1 suíte. 59 m², apartamento novo (nunca habitado). Total R$ 2.309 (só no site). O título no OLX abrevia 'RESIDENCIAL PERSEVE'; o condomínio Residencial Perseverance fica na Rua Rui Barbosa, 1262 (CEP do anúncio 87020-090 = Rua Rui Barbosa, até 1569/1570). Coordenada no trecho da rua (Nominatim não devolveu o nº 1262).",
-      "nota_grokbot": "Imobiliária: ref. AP3482, tel. (44) 3226-4…. Elevador: sim (o anúncio cita elevador e área de lazer completa). A 1,0 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.307. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Semimobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Semi-mobiliado e nunca habitado; o anúncio também cita móveis planejados.",
+      "descricao": "Rua Rui Barbosa, 1262, Zona 07 (Residencial Perseverance; número cruzado com o cadastro do condomínio e o CEP 87020-090 do anúncio). 59 m², 1 suíte. 59 m², apartamento novo (nunca habitado). Total R$ 2.306 (só no site). O título no OLX abrevia 'RESIDENCIAL PERSEVE'; o condomínio Residencial Perseverance fica na Rua Rui Barbosa, 1262 (CEP do anúncio 87020-090 = Rua Rui Barbosa, até 1569/1570). Coordenada no trecho da rua (Nominatim não devolveu o nº 1262). 28/11: OLX mostra condomínio R$ 306 (era 307).",
+      "nota_grokbot": "Imobiliária: ref. AP3482, tel. (44) 3226-4…. Elevador: sim (o anúncio cita elevador e área de lazer completa). A 1,0 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.306. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Semimobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Semi-mobiliado e nunca habitado; o anúncio também cita móveis planejados.",
       "tags": [
         "Elevador",
         "Perto da ACIM",
@@ -636,57 +403,6 @@
       "moveis": true,
       "lat": -23.4133111,
       "lng": -51.9431493
-    },
-    {
-      "id": "amazonas-maua1308",
-      "titulo": "Apartamento no Edifício Amazonas — Av. Mauá, 1308 — Zona 03",
-      "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 1600,
-      "condominio": 550,
-      "iptu": 133,
-      "bairro": "Zona 03",
-      "endereco": "Av. Mauá, 1308, 6º andar, Zona 03 (Edifício Amazonas)",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "vagas": 1,
-      "area_m2": 66,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Av. Mauá, 1308, 6º andar, Zona 03 (Edifício Amazonas). 66 m², 1 suíte. parece ser o mesmo apartamento anunciado por três imobiliárias; confirmar com uma delas. IPTU de uns R$ 133 à parte. Confirmado em 27/11: unificado com cnm-47956402 (mesmo apto no 6º andar, 66 m², semimobiliado). Mantidos o id mais antigo e o link oficial da Silvio Iwata no Sub100.",
-      "nota_grokbot": "Imobiliária: Silvio Iwata (também Marilene Insaurralde e Imobiliária Delta). Com elevador. Perto da ciclovia da Av. Brasil (~150 m, linha reta). A 1,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.150. Semimobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Semimobiliado (sofá, rack, mesa e cadeiras); guarda-roupa nos quartos; armários na cozinha, lavanderia e banheiros.",
-      "tags": [
-        "Elevador",
-        "A 1,2 km da ACIM",
-        "Perto da ciclovia",
-        "Semimobiliado",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008445/3620008445h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/3620008445/locacao/apartamento-em-maringa-pr/zona-03",
-      "portal": "Sub100 + Chaves na Mão",
-      "encontrado_em": "2026-11-21",
-      "moveis": true,
-      "lat": -23.4199674,
-      "lng": -51.9294986,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 150
-        }
-      ]
     },
     {
       "id": "cnm-47656458",
@@ -737,46 +453,51 @@
       ]
     },
     {
-      "id": "sub100-2020003398",
-      "titulo": "Apartamento na Rua Tietê, 438 — Zona 07",
+      "id": "cnm-47489842",
+      "titulo": "Apartamento no Edifício Helena Moser — Zona 07",
       "finalidade": "aluguel",
       "tipo": "Apartamento",
       "casa": false,
-      "preco": 1600,
-      "condominio": 450,
-      "iptu": 0,
+      "preco": 1650,
+      "condominio": 460,
+      "iptu": 180,
       "bairro": "Zona 07",
-      "endereco": "Rua Tietê, 438, ap 302, Zona 07",
+      "endereco": "Edifício Helena Moser, Zona 07 (número não divulgado no portal; o prédio fica na Rua Bragança, 665)",
       "quartos": 2,
       "suites": 1,
       "banheiros": 2,
       "vagas": 1,
-      "area_m2": 67,
-      "nova": false,
+      "area_m2": 46,
+      "nova": true,
       "destaque": false,
-      "descricao": "Rua Tietê, 438, ap 302, Zona 07. 67 m², 1 suíte. nada importante. Mesmo imóvel no OLX 1551215430 (Ed. Spring, 67 m², IPTU 0, código 02928.002); mantido o link oficial da Sub100/Lélo. Incluí a capa do OLX porque o S3 da Sub100 só deixou a miniatura.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Com elevador. ~1,1 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.050. Semimobiliado, segundo o anúncio. Também tem armários ou móveis planejados. Semimobiliado (mesa na cozinha) e armários na cozinha.",
+      "descricao": "Edifício Helena Moser, Zona 07 (número não divulgado no portal; o prédio fica na Rua Bragança, 665). 46 m², 1 suíte. 46 m². Suíte + 1 quarto, sala integrada à cozinha com painel de TV e sacada, cozinha com armários planejados, bancada de granito e cooktop, banheiro social, banheiros com box, espelhos e gabinetes, área de serviço com armário, 1 vaga. Condomínio com academia, playground, minimercado, salão de festas e espaço gourmet. IPTU R$ 180/mês. Atualizado em 25/11/2026. Fotos comparadas em 28/11: é outra unidade do mesmo prédio, não o ap 306 da Lélo (sub100-2020004469). Aqui o banheiro tem granito claro com cuba de apoio e a sala tem painel de TV ripado. Anúncio aberto em 28/11/2026.",
+      "nota_grokbot": "Imobiliária: Fortaleza Imóveis, CRECI 3889 J. Elevador: SIM (prédio com elevadores — mesmo condomínio do sub100-2020004469). ~990 m da ciclovia da Av. Brasil (linha reta, aproximado). A 1,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.110. Com móveis, segundo o anúncio. Cozinha com armários planejados, gabinetes nos banheiros e armário na área de serviço (descrição).",
       "tags": [
         "Elevador",
         "A 1,3 km da ACIM",
-        "Semimobiliado",
         "Móveis planejados"
       ],
       "fotos": [
-        "https://img.olx.com.br/images/45/453687580175294.jpg",
-        "https://media.sub100.com.br/imoveis/20/2020003398/2020003398am.jpg"
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/645335/47489842/pr-maringa-zona-07-apartamento-para-alugar-2-quartos-6ac643bd-1.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/645335/47489842/pr-maringa-zona-07-apartamento-para-alugar-2-quartos-6ac643bd-2.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/645335/47489842/pr-maringa-zona-07-apartamento-para-alugar-2-quartos-6ac643bd-3.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/645335/47489842/pr-maringa-zona-07-apartamento-para-alugar-2-quartos-6ac643bd-4.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/645335/47489842/pr-maringa-zona-07-apartamento-para-alugar-2-quartos-6ac643bd-5.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/645335/47489842/pr-maringa-zona-07-apartamento-para-alugar-2-quartos-6ac643bd-6.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/645335/47489842/pr-maringa-zona-07-apartamento-para-alugar-2-quartos-6ac643bd-7.jpg",
+        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/645335/47489842/pr-maringa-zona-07-apartamento-para-alugar-2-quartos-6ac643bd-8.jpg"
       ],
-      "link": "https://sub100.com.br/imoveis/2020003398/locacao/apartamento-em-maringa-pr/zona-07",
-      "portal": "Sub100",
-      "encontrado_em": "2026-11-21",
+      "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-maringa-zona-07-46m2-RS1650/id-47489842/",
+      "portal": "Chaves na Mão (Fortaleza Imóveis, ref. FI-100)",
+      "encontrado_em": "2026-11-28",
       "moveis": true,
-      "lat": -23.4111592,
-      "lng": -51.9457419,
+      "lat": -23.4119896,
+      "lng": -51.9355321,
       "proximidades": [
         {
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
-          "distancia_m": 1070
+          "distancia_m": 990
         }
       ]
     },
@@ -978,22 +699,20 @@
       "vagas": 1,
       "nova": false,
       "destaque": true,
-      "descricao": "Rua Mandaguari, 198. 1 suíte. Confirmado em 27/11: 1 suíte, 1 vaga, aceita pets. Título do anúncio: \"3 quartos 2 banheiros Apartamento\". Condomínio NÃO informado: só serve se o condomínio for até R$ 200. Ainda falta conferir o valor do condomínio e se o anunciante é mesmo particular.",
-      "nota_grokbot": "Particular: Karen Meireles, aparenta pessoa física. Com elevador. ~1,2 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Condomínio não informado (aluguel R$ 1.800); só serve se o condomínio for até R$ 550 para caber no teto do site. A confirmar: condomínio, se o anunciante é mesmo particular.",
+      "descricao": "Rua Mandaguari, 198. 1 suíte. Conferido de novo em 28/11 (navegador sem login): disponível, R$ 1.800/mês, 3 quartos (1 suíte), 2 banheiros, sala, cozinha e área de serviço, 1 vaga, elevador (\"Lift\"), bicicletário, aceita cães e gatos e seguro fiança. Título: \"3 quartos 2 banheiros Apartamento\". Endereço no anúncio: Rua Mandaguari, 198, CEP 87020, perto dos portões da UEM, do estádio e da Vila Olímpica. Condomínio NÃO informado: só serve se o condomínio for até R$ 400 (teto do e-mail R$ 2.200). Armários não mencionados. Ainda falta confirmar o valor do condomínio e se o anunciante é mesmo particular.",
+      "nota_grokbot": "Particular: Karen Meireles, aparenta pessoa física. Elevador: sim (\"Lift\" no anúncio; tem bicicletário). ~1,2 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Condomínio não informado (aluguel R$ 1.800); só serve se o condomínio for até R$ 550 para caber no teto do site. A confirmar: condomínio, se o anunciante é mesmo particular.",
       "tags": [
         "Particular",
         "Elevador",
         "A 1,5 km da ACIM"
       ],
       "fotos": [
-        "https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/897723526_122214108176908232_1244317980199209420_n.jpg?stp=c0.132.1200.1200a_dst-jpg_tt6&cstp=mx1200x1200&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=454cf4&_nc_eui2=AeHDcMxNj3j3DiP-xZRTgECR4_G6aFO_N0rj8bpoU783Shi4wTCk5hWeAr8Z9QzBL-YQuEiDi_qnJT7XPfCN7AWi&_nc_ohc=7UWTWElC7xQQ7kNvwEuzTR8&_nc_oc=Adox-D87rGoZI7vdIdTmdrU-4-Y8cRV-L3xjDAaT7uTOHRfrNQ1Wis4cWm_I4AuberDdHzP8xF1UE8DhzEqPD_7Z&_nc_zt=23&_nc_ht=scontent-gru2-2.xx&_nc_gid=lRsxwJLq5ALA0_WmlX910w&_nc_ss=7b3a8&oh=00_AQXLKsOOp2MRH_mra31nj1xeoHcBVdOT1H6zhocNSUuQCA&oe=6B0FE86C",
-        "https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/904945701_1147770560926953_4321421096484616644_n.jpg?stp=c162.0.415.415a_dst-jpg_tt6&cstp=mx415x415&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=454cf4&_nc_eui2=AeGZvJeP05mu9IdvGvgWBNX8-_z3BMOP4Wb7_PcEw4_hZgHz69RrZnGl9LqK3fDwKVWjmMVlJad9B7zxseae7dwX&_nc_ohc=KROVHu26IuoQ7kNvwF-s6MX&_nc_oc=AdqXy04LTt9TBT2A2MUUGiNF8SECZS27EXoZq1HISSESG_EbXuRVj4ns4ggKfZN1S6WMhFuZkqS86WO9q7bIsQ0h&_nc_zt=23&_nc_ht=scontent-gru1-1.xx&_nc_gid=lRsxwJLq5ALA0_WmlX910w&_nc_ss=7b3a8&oh=00_AQXuM4BeIEvgImfPAnbP4xNQJH4p_DfLNz5-zcgj14m5gQ&oe=6B0FEDDE",
-        "https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/930666454_1706668004417916_5825681469069720451_n.jpg?stp=c256.0.1536.1536a_dst-jpg_tt6&cstp=mx1536x1536&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=454cf4&_nc_eui2=AeFFYKkkJCHkECl2y3RzK-fJVYVHFTvUPwRVhUcVO9Q_BIHrS_nI4Sw_iMc09rF9XErjcyfMEwA2EAYSTO-V502X&_nc_ohc=9jkSxe-WS_sQ7kNvwEaTRjE&_nc_oc=Adol1uNUmlyOai6uuSje8kocvps6wHu5i6-SP5y4AQfPXBt3cLInLLpFETcKCDHv2sX6tYumnu2rlz3ggj3II1uq&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=lRsxwJLq5ALA0_WmlX910w&_nc_ss=7b3a8&oh=00_AQU6nIEAhIczh4Z5muI0-JV6IUbefLnKky5dF2I_W6xaLg&oe=6B0FEF69",
-        "https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/490233098_3164007047089325_5622479414695311354_n.jpg?stp=c200.0.1200.1200a_dst-jpg_tt6&cstp=mx1200x1200&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=946e27&_nc_eui2=AeGEDSEkWraQUowz92biH-otf_ujDmGNqOJ_-6MOYY2o4oXRpxt8b6ZVP61JyzvWasfU5ln6eD8RwXAmA2uJjAqs&_nc_ohc=AIZ1JQ_zD-0Q7kNvwFKBpEt&_nc_oc=AdrQygcoAUW2PKIx1urlMBuelpkvmBkvHSD7AnrcTjhD_CV4NfINNyYgBxRtVv0MndZL7Ve10MOZf9sCpvmrnJhD&_nc_zt=23&_nc_ht=scontent-gru2-2.xx&_nc_gid=lRsxwJLq5ALA0_WmlX910w&_nc_ss=7b3a8&oh=00_AQVPtRghE8bS8bZboweqcIzJQRpsBSHRXDhNq3DxpjCehQ&oe=6B0FD176",
-        "https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/897386524_2704028560115695_6166860810425006935_n.jpg?stp=c0.169.1537.1537a_dst-jpg_tt6&cstp=mx1537x1537&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=454cf4&_nc_eui2=AeGGsNSslIJpK9xsi9H4-oqOlP3kEMV72ZiU_eQQxXvZmGBpNomdMejIAMe4B287KoDzeBwOSeTCZgZf--nyO3BL&_nc_ohc=6Pw4K8lA_EUQ7kNvwGOvuuq&_nc_oc=AdpmrWVH7Lxm5Cq0AcozhI1a371lGpk3MoBvsxB36MhcHfipS4df7Uxvp_OTFxLCfdGFkScjMBQgHjQNp3CcKq_O&_nc_zt=23&_nc_ht=scontent-gru1-1.xx&_nc_gid=lRsxwJLq5ALA0_WmlX910w&_nc_ss=7b3a8&oh=00_AQWnpe-yC_l7PsO3qNq_KbPSzgp_Q3g8H6rJXelVVg-ilg&oe=6B0FC1ED",
-        "https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/917261634_29915809858024932_241070558418016751_n.jpg?stp=c255.0.1538.1538a_dst-jpg_tt6&cstp=mx1538x1538&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=454cf4&_nc_eui2=AeF2nDEgAEsbZwVbp_175vwlPO308CZpQ2M87fTwJmlDY5b4qveB6bdvPlq1gCUDtU3yPgacnJiPcFGzD0W1AmBo&_nc_ohc=WaaVH8zOuhcQ7kNvwH1PHdh&_nc_oc=Adp-1JD0NlwoX-RQm8JW458RKOuYPI3MyoFxABZTzK0M1uOnLy4mTJRNb3XognBrTysPNfRfnZYnoWB5QOZxiuec&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=lRsxwJLq5ALA0_WmlX910w&_nc_ss=7b3a8&oh=00_AQXpaPPl6XfeC9QeAGF67vydogTIBda84Zka7LOjk_949A&oe=6B0FEB3A",
-        "https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/927598875_1099064603170416_6594514058410606900_n.jpg?stp=c256.0.1536.1536a_dst-jpg_tt6&cstp=mx1536x1536&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=454cf4&_nc_eui2=AeGK-2spDIwvSXDTtlGsBRIlBd7-5rIOAjEF3v7msg4CMRcSG1xbXpP-pRZX5HCRzZW0t6-QxNrliWzBNx2iPp6b&_nc_ohc=w_y_t-NqDREQ7kNvwEIYDar&_nc_oc=AdqMeeSIej9unStD5DocCYEUmRa1YMgSnvXh-NRm09iQWx1lkAGJKjj-V_rVix7ExCwSLMi-q1BkRllWj-hZQBIF&_nc_zt=23&_nc_ht=scontent-gru1-1.xx&_nc_gid=lRsxwJLq5ALA0_WmlX910w&_nc_ss=7b3a8&oh=00_AQW2tfWYLaFGNTFZsd0LL-i_k3dReb8zewGp6uHAgPMfOA&oe=6B0FF23F",
-        "https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/500323610_1941495186696149_4488978571819054571_n.jpg?stp=c160.0.960.960a_dst-jpg_tt6&cstp=mx960x960&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=946e27&_nc_eui2=AeFN8wuPE94WHSRnQSXW0GqiBqA9G9pmlGEGoD0b2maUYTw5E3TAGXi1WOxrUAwZ3NixAtEFmdyGWufqo19rvEYJ&_nc_ohc=fISspRABmQEQ7kNvwE1mwvL&_nc_oc=AdpydndPEyLf6rTrMDewPtBQx0nk8yAUc1WTJooIg7aDx9S2G9tF4fm5lnQ1lWxiRZmt6ZY_nOYGZSw3ecFfd6R7&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=lRsxwJLq5ALA0_WmlX910w&_nc_ss=7b3a8&oh=00_AQWj3aHM5YEOcQZc81Nl0xVAg46aE0mK_hl8lAASxcUcUA&oe=6B0FD260"
+        "https://scontent-gru3-1.xx.fbcdn.net/v/t39.30808-6/790425289_28364619516502770_9190324961950182698_n.jpg?stp=dst-jpg_tt6&cstp=mx1600x1200&ctp=s960x960&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=454cf4&_nc_eui2=AeG4EEojGe2L7jxS9sSO769iGlh10ibHqNsaWHXSJseo21s6hO3lQuTYySvmBgtXGio6DxvwPO-KBN2Xo5mxw7oq&_nc_ohc=gAehNJc6w3EQ7kNvwGT8GM3&_nc_oc=Adrt_5cu5Fs-a26nVP3eDx3Pnwfxl5tb9rJPag2xAHsmL-z6ntNPN-2IZQMzD0WlXXXITD1qPnkXxgkGAwS9fM-C&_nc_zt=23&_nc_ht=scontent-gru3-1.xx&_nc_gid=QQWQui21whdAJgMWRpoZPA&_nc_ss=7b3a8&oh=00_AQVS1X4oCxHQ7wE3xYlXEc6yE9MqJJ8ZwpFYNzG-utGZCg&oe=6B10ED63",
+        "https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/760997686_28004438359187556_4375590036594113155_n.jpg?stp=dst-jpg_tt6&cstp=mx1599x899&ctp=s960x960&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=946e27&_nc_eui2=AeGuYlX3XX15InYPT0sMmjOcyYWx8Mh4O9XJhbHwyHg71SvvGJwal8_E07MwM-iP53U6QliuaFXm4lQIblG-BDkh&_nc_ohc=fwCVp7aazaEQ7kNvwHuRnao&_nc_oc=AdqOuBqn7n-BWA5BGU4T0JlQjhqQBbYI4_wJLKrS_6FogSgGs3wKqazAupq-XxtflbW8uCF3VQAkz-CmmXCjJSpR&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=QQWQui21whdAJgMWRpoZPA&_nc_ss=7b3a8&oh=00_AQVBE3Zy259WWJivWbI4JNtLYSk4BYiqMnNCLQisdU94Ww&oe=6B10E127",
+        "https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/760895113_28004438432520882_1761165064672142806_n.jpg?stp=dst-jpg_tt6&cstp=mx1600x1200&ctp=s960x960&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=946e27&_nc_eui2=AeFJsHVplpFsHpAeLwSegSkXZM2qPfukn_Vkzao9-6Sf9V7k6TsdOyfAQHEiWVB8MGW6YhJCP6NMu3lKJ-l_X5Pe&_nc_ohc=hqt7KGHSRBIQ7kNvwF51JDa&_nc_oc=AdolwJDjRoCyw1xduVkVMRyKLK5xLT9RTb1asUTaBmiU6ff_WfCnHaN6e_m6zaPM9SgbvL-furOMFUNETcpWiKTB&_nc_zt=23&_nc_ht=scontent-gru1-1.xx&_nc_gid=QQWQui21whdAJgMWRpoZPA&_nc_ss=7b3a8&oh=00_AQUu-_lac9fyOuRhFM9ebhBts26TyetC8bViagi77ophAg&oe=6B10DE41",
+        "https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/761180672_28004438435854215_8700999118161582685_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x1600&ctp=s960x960&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=946e27&_nc_eui2=AeGgU5MlAlXG30lAZBJixhl-Klc9cJwkG1sqVz1wnCQbW4YYjDbyQzpA0MOiOFH9xMeEa2qPfqZghJpN71xQU4V1&_nc_ohc=gDAnBf719qkQ7kNvwGu49Nx&_nc_oc=AdpfGsC48UL6yFHBEsJZfYLk0FdKTJkhehOFJdpj0rpoqwDdTQiJ8MIGmkvd3F0AD2pk87I0cwjggR_-mYmL0JTv&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=QQWQui21whdAJgMWRpoZPA&_nc_ss=7b3a8&oh=00_AQUkAF-5SEP59oeWwrHO1h7WthVrnFpHR_JNRehErchxbw&oe=6B10DE3D",
+        "https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/760915619_28004438442520881_2187327014611055757_n.jpg?stp=dst-jpg_tt6&cstp=mx899x1599&ctp=s960x960&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=946e27&_nc_eui2=AeE9NTQob3xogpGpS921NbLie9yHhoWIjxB73IeGhYiPEDS8cA6eaFihRuVHMMce5GqI1Hxpkg_Tsuou_kCoM6QO&_nc_ohc=tFhZ5fvtL-wQ7kNvwHdep-7&_nc_oc=AdoCno48kh67DNuwScipfyfKN7HB9wdP3n8OHgttvm6KiOiBEjsK6pzt5VTgwyzkXhywIVzDzRjheLPyxiQRiGd_&_nc_zt=23&_nc_ht=scontent-gru1-1.xx&_nc_gid=QQWQui21whdAJgMWRpoZPA&_nc_ss=7b3a8&oh=00_AQUByDm4ac3osDXC7zQ6cs6aDXRpEeNDsrScrYz4s1XeCA&oe=6B10ED45",
+        "https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/761168919_28004438465854212_2925979141543864406_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x1600&ctp=s960x960&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=946e27&_nc_eui2=AeE5GWTyrvM6BC774qLdR6i97jLBL2aKQj3uMsEvZopCPcE25XNqj8NYC_ZqGmnXIsnTzWaFK4_n5_rC20NaHtlm&_nc_ohc=_aVm_cGGl-8Q7kNvwGSTFMk&_nc_oc=AdpHFU6fFcndt_OxUHZt96vdq00izHo1hCUToWptPXb1_pIU9RHEmLB_2doh6pmPx5UVR5APV1r34oONZp1wxgIN&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=QQWQui21whdAJgMWRpoZPA&_nc_ss=7b3a8&oh=00_AQXGbUixauhbn4ArcKaVysp5ojfYXd2AX0EAiQugpZysbA&oe=6B10D097"
       ],
       "link": "https://www.facebook.com/marketplace/item/1530761892142736/",
       "portal": "Facebook Marketplace",
@@ -1184,53 +903,6 @@
       "lng": -51.9415913
     },
     {
-      "id": "sub100-3620008523",
-      "titulo": "Apartamento no Edifício Buriti — Rua Campos Sales, 91 — Zona 07",
-      "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 1700,
-      "condominio": 360,
-      "iptu": null,
-      "bairro": "Zona 07",
-      "endereco": "Rua Campos Sales, 91, 3º andar, Zona 07 (Edifício Buriti)",
-      "quartos": 2,
-      "suites": 2,
-      "banheiros": 3,
-      "vagas": 1,
-      "area_m2": 48,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Campos Sales, 91, 3º andar, Zona 07 (Edifício Buriti). 48 m², 2 suítes. nada importante; a área aparece diferente nos dois sites (48 m² e 87 m²).",
-      "nota_grokbot": "Imobiliária: Silvio Iwata (ref. 00004523). Com elevador. ~550 m da ciclovia da Av. Brasil (linha reta, aproximado). A 1,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.060. A descrição cita fogão na cozinha, mas não diz que o imóvel é mobiliado.",
-      "tags": [
-        "Elevador",
-        "A 1,5 km da ACIM"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523h.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008523/3620008523i.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/3620008523/locacao/duplex-em-maringa-pr/zona-07",
-      "portal": "Sub100 + Chaves na Mão",
-      "encontrado_em": "2026-11-21",
-      "lat": -23.4181573,
-      "lng": -51.9558685,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 550
-        }
-      ]
-    },
-    {
       "id": "sub100-59120000265",
       "titulo": "Apartamento no Edifício Algarve — Rua Prof. Carlos Weiss, 50 — Zona 07",
       "finalidade": "aluguel",
@@ -1327,6 +999,148 @@
       ]
     },
     {
+      "id": "sub100-2020004469",
+      "titulo": "Apartamento no Edifício Residencial Helena Moser — Rua Bragança, 665 — Zona 07",
+      "finalidade": "aluguel",
+      "tipo": "Apartamento",
+      "casa": false,
+      "preco": 1800,
+      "condominio": 420,
+      "iptu": 172,
+      "bairro": "Zona 07",
+      "endereco": "Rua Bragança, 665, ap 306",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "area_m2": 46.38,
+      "nova": true,
+      "destaque": false,
+      "descricao": "Rua Bragança, 665, ap 306. 46,38 m², 1 suíte. 46,38 m² úteis, 3º andar, frente. 2 quartos (1 suíte), sala com sacada, cozinha planejada, banheiro social, área de serviço, 1 vaga coberta. Condomínio com academia, playground, salão de festas, mercado interno, elevadores, bicicletário. Total R$ 2.220 (só no site). Mesmo prédio de sub100-40720005113/olx-1544923109 (48 m², R$ 1.800 + 440), mas é outra unidade (ap 306, 46 m², cond. R$ 420). NÃO é a mesma unidade de cnm-47489842 (Fortaleza): comparando as fotos, o banheiro da Fortaleza tem granito claro com cuba de apoio e a sala tem painel de TV ripado; o ap 306 da Lélo tem granito escuro e sala sem painel. Site da Lélo aberto em 28/11/2026, sem selo Reservado. Também no OLX 1556713386 (código 04464.001, R$ 1.800 + 420, IPTU 172) — o mesmo anúncio da Lélo.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis. Elevador: SIM (elevadores). ~1,4 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.220. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Com móveis, segundo o anúncio. Semimobiliado; cozinha planejada com armários (ficha da Lélo: \"Armários cozinha: SIM - PLANEJADA\").",
+      "tags": [
+        "Elevador",
+        "A 1,6 km da ACIM",
+        "Acima de R$ 2.200",
+        "Móveis planejados"
+      ],
+      "fotos": [
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/705679900/29098279900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/705679900/29098379900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/705679900/29098479900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/705679900/29098579900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/705679900/29098679900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/705679900/29098779900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/705679900/29098879900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/705679900/29098979900.jpg"
+      ],
+      "link": "https://www.leloimoveis.com.br/imovel/apartamento-2-quartos-zona-07-maringa-1-vaga-46m2-locacao-rs-1800/79900/04464.001",
+      "portal": "Lélo Imóveis (site oficial, ref. 04464.001) / Sub100 2020004469",
+      "encontrado_em": "2026-11-28",
+      "moveis": true,
+      "lat": -23.4079125,
+      "lng": -51.9418629,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 1440
+        }
+      ]
+    },
+    {
+      "id": "sub100-40720005197",
+      "titulo": "Apartamento na Avenida Doutor Mário Clapier Urbinati, 332 — Zona 07",
+      "finalidade": "aluguel",
+      "tipo": "Apartamento",
+      "casa": false,
+      "preco": 1280,
+      "condominio": 700,
+      "iptu": null,
+      "bairro": "Zona 07",
+      "endereco": "Avenida Doutor Mário Clapier Urbinati, 332",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "area_m2": 72.23,
+      "nova": true,
+      "destaque": false,
+      "descricao": "Avenida Doutor Mário Clapier Urbinati, 332. 72,23 m², 1 suíte. 72,23 m² de área privativa. 2 dormitórios (1 suíte), banheiro social, sala e cozinha, 1 vaga. Prédio sem elevador. O card do Sub100 diz \"1 suíte + 2 quartos\", mas a descrição diz 2 dormitórios. Mesmo endereço do Ed. Serra Negra (o ap 403 da Lélo, sub100-2020007694, está RESERVADO); este é outra unidade, anunciada pela Ideal com condomínio R$ 700. Anúncio aberto em 28/11/2026 (Sub100).",
+      "nota_grokbot": "Imobiliária: Ideal Maringá Imóveis. Sem elevador (NÃO (anúncio: prédio sem elevador)). ~1,5 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.980.",
+      "tags": [
+        "A 1,6 km da ACIM"
+      ],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005197/40720005197a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005197/40720005197b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005197/40720005197c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005197/40720005197d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005197/40720005197e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005197/40720005197f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005197/40720005197g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005197/40720005197h.jpg"
+      ],
+      "link": "https://sub100.com.br/imoveis/40720005197/locacao/apartamento-em-maringa-pr/zona-07",
+      "portal": "Sub100 (Ideal Maringá Imóveis, ref. 00001429)",
+      "encontrado_em": "2026-11-28",
+      "lat": -23.4075016,
+      "lng": -51.9412883,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 1490
+        }
+      ]
+    },
+    {
+      "id": "sub100-40720005196",
+      "titulo": "Apartamento na Rua Paranaguá, 346 — Zona 07",
+      "finalidade": "aluguel",
+      "tipo": "Apartamento",
+      "casa": false,
+      "preco": 1650,
+      "condominio": 600,
+      "iptu": null,
+      "bairro": "Zona 07",
+      "endereco": "Rua Paranaguá, 346",
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "area_m2": 85,
+      "nova": true,
+      "destaque": false,
+      "descricao": "Rua Paranaguá, 346. 85 m², 1 suíte. 85 m². 1 suíte + 2 dormitórios, sala, cozinha, área de serviço, 1 banheiro social. Salão de festas no condomínio. Total R$ 2.250 (só no site). Anúncio aberto em 28/11/2026 (Sub100).",
+      "nota_grokbot": "Imobiliária: Ideal Maringá Imóveis. Elevador não informado. ~1,5 km da ciclovia da Av. Brasil (linha reta, aproximado). A 1,7 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.250. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350.",
+      "tags": [
+        "A 1,7 km da ACIM",
+        "Acima de R$ 2.200"
+      ],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005196/40720005196a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005196/40720005196b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005196/40720005196c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005196/40720005196d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005196/40720005196e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005196/40720005196f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005196/40720005196g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005196/40720005196h.jpg"
+      ],
+      "link": "https://sub100.com.br/imoveis/40720005196/locacao/apartamento-em-maringa-pr/zona-07",
+      "portal": "Sub100 (Ideal Maringá Imóveis, ref. 00001428)",
+      "encontrado_em": "2026-11-28",
+      "lat": -23.4073833,
+      "lng": -51.9438297,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 1490
+        }
+      ]
+    },
+    {
       "id": "sub100-3620008360",
       "titulo": "Apartamento no Spazio Mirafiori — Rua São Pedro, 2079 — Zona 07",
       "finalidade": "aluguel",
@@ -1369,52 +1183,6 @@
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
           "distancia_m": 1000
-        }
-      ]
-    },
-    {
-      "id": "sandalo-32680545",
-      "titulo": "Casa na Rua Shalon, 112 — Vila Cleópatra",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 1700,
-      "condominio": 0,
-      "iptu": null,
-      "bairro": "Vila Cleópatra",
-      "endereco": "Rua Shalon, 112",
-      "quartos": 3,
-      "suites": 0,
-      "banheiros": 2,
-      "vagas": 5,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Shalon, 112. 3 quartos, 2 banheiros, churrasqueira, 5 vagas descobertas, amplo quintal. IPTU não informado; \"valores já contemplam bonificações, válidos só para pagamento pontual\". Atualizado 11/11/2026.",
-      "nota_grokbot": "Imobiliária: Sândalo Imóveis. Elevador não informado. ~690 m da ciclovia da Av. Cerro Azul (linha reta, aproximado). A 1,8 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.700. A confirmar: se a casa é térrea, IPTU.",
-      "tags": [
-        "A 1,8 km da ACIM"
-      ],
-      "fotos": [
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-1.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-2.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-3.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-4.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-5.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-6.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-7.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/32680545/pr-maringa-vila-cleopatra-rua-shalon-casa-sobrado-para-alugar-3-quartos-6af4e727-8.jpg"
-      ],
-      "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-vila-cleopatra-134m2-RS1700/id-32680545/",
-      "portal": "Chaves na Mão (Sândalo Imóveis, ref. 01170.002)",
-      "encontrado_em": "2026-11-19",
-      "quintal": true,
-      "lat": -23.4384071,
-      "lng": -51.9402878,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Cerro Azul",
-          "categoria": "ciclovia",
-          "distancia_m": 690
         }
       ]
     },
@@ -1743,49 +1511,50 @@
       ]
     },
     {
-      "id": "sub100-3420000924",
-      "titulo": "Apartamento no Edifício Itapura — Rua Itapura, 477 — Zona 03",
+      "id": "sub100-2020000007",
+      "titulo": "sobrado em condomínio (2 pavimentos) no Condomínio Mar di Capri — Rua Pirapó, 192, sobrado 02 — Vila Esperança",
       "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 1600,
-      "condominio": 250,
+      "tipo": "sobrado em condomínio (2 pavimentos)",
+      "casa": true,
+      "preco": 2000,
+      "condominio": 230,
       "iptu": null,
-      "bairro": "Zona 03",
-      "endereco": "Rua Itapura, 477, apto 02",
-      "quartos": 2,
+      "bairro": "Vila Esperança",
+      "endereco": "Rua Pirapó, 192, sobrado 02",
+      "quartos": 3,
       "suites": 1,
       "banheiros": 2,
       "vagas": 2,
-      "area_m2": 76.5,
-      "nova": false,
+      "area_m2": 121.68,
+      "nova": true,
       "destaque": false,
-      "descricao": "Rua Itapura, 477, apto 02. 76,5 m², 1 suíte. 76,5 m², 1 suíte, 2 vagas cobertas. IPTU não informado. Tel. (44) 3293-0481. 23/11: OLX/Viva Real mostram condomínio R$ 258 (Sub100 segue R$ 250).",
-      "nota_grokbot": "Imobiliária: Shimizu Imóveis. Com elevador. ~820 m da ciclovia da Av. Brasil (linha reta, aproximado). A 2,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.850. A confirmar: IPTU.",
+      "descricao": "Rua Pirapó, 192, sobrado 02. 121,68 m², 1 suíte. Sobrado de 121,68 m² no Condomínio Mar di Capri: 3 quartos (1 suíte), sala, cozinha, área de serviço, lavabo, garagem coberta e descoberta; aceita pet. Ficha: 2 banheiros + lavabo (lavabo não conta). Total R$ 2.230 (só no site). Site da Lélo aberto em 28/11/2026, sem selo Reservado.",
+      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~1,8 km da ciclovia da Av. Brasil (linha reta, aproximado). A 2,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.230. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. O anúncio diz que o imóvel não tem móveis nem armários. Ficha da Lélo: Mobiliado: Não (sem armários citados). A confirmar: se o 2º banheiro não é só lavabo.",
       "tags": [
-        "Elevador",
-        "A 2,2 km da ACIM"
+        "A 2,3 km da ACIM",
+        "Acima de R$ 2.200"
       ],
       "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420000924/3420000924h.jpg"
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/84979900/4990879900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/84979900/4990979900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/84979900/4991079900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/84979900/4991179900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/84979900/4991279900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/84979900/4991379900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/84979900/4991479900.jpg",
+        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/79900/fotos/84979900/4991579900.jpg"
       ],
-      "link": "https://sub100.com.br/imoveis/3420000924/locacao/apartamento-em-maringa-pr/zona-03",
-      "portal": "Sub100 (Shimizu Imóveis)",
-      "encontrado_em": "2026-11-19",
-      "lat": -23.4310845,
-      "lng": -51.9225786,
+      "link": "https://www.leloimoveis.com.br/imovel/sobrado-em-condominio-3-quartos-vila-esperanca-maringa-2-vagas-121m2-locacao-rs-2000/79900/00126.001",
+      "portal": "Lélo Imóveis (site oficial, ref. 00126.001) / Sub100 2020000007",
+      "encontrado_em": "2026-11-28",
+      "moveis": false,
+      "lat": -23.4047306,
+      "lng": -51.9301868,
       "proximidades": [
         {
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
-          "distancia_m": 820
+          "distancia_m": 1820
         }
       ]
     },
@@ -1913,49 +1682,6 @@
       "encontrado_em": "2026-11-22",
       "lat": -23.4016731,
       "lng": -51.9434669
-    },
-    {
-      "id": "cnm-48992667",
-      "titulo": "Apartamento na Rua Distrito Federal, 98 — Chácara Paulista",
-      "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 1700,
-      "condominio": 580,
-      "iptu": 0,
-      "bairro": "Chácara Paulista",
-      "endereco": "Rua Distrito Federal, 98",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "vagas": 2,
-      "area_m2": 75,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Distrito Federal, 98. 75 m², 1 suíte. 75 m². Isento de IPTU. O anúncio descreve o imóvel no Jardim Novo Horizonte, ao lado da Av. Cerro Azul; o endereço cadastrado é Rua Distrito Federal, 98, Chácara Paulista. 1 suíte + 2 quartos, 2 vagas paralelas. Isento de IPTU. Elevador. 23/11: Sub100 (Lélo, ap 71) e Viva Real mostram condomínio R$ 610 (total R$ 2.310); CNM segue R$ 580.",
-      "nota_grokbot": "Imobiliária: Casa Nova. Com elevador. A 2,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.280. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Tem armários ou móveis planejados (conta como com móveis). Armário em um dos quartos e gabinete na cozinha.",
-      "tags": [
-        "Elevador",
-        "A 2,3 km da ACIM",
-        "Acima de R$ 2.200",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/382435/48992667/pr-maringa-chacara-paulista-rua-distrito-federal-apartamento-para-alugar-3-quartos-6afd8725-1.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/382435/48992667/pr-maringa-chacara-paulista-rua-distrito-federal-apartamento-para-alugar-3-quartos-6afd8725-2.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/382435/48992667/pr-maringa-chacara-paulista-rua-distrito-federal-apartamento-para-alugar-3-quartos-6afd8725-3.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/382435/48992667/pr-maringa-chacara-paulista-rua-distrito-federal-apartamento-para-alugar-3-quartos-6afd8725-4.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/382435/48992667/pr-maringa-chacara-paulista-rua-distrito-federal-apartamento-para-alugar-3-quartos-6afd8725-5.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/382435/48992667/pr-maringa-chacara-paulista-rua-distrito-federal-apartamento-para-alugar-3-quartos-6afd8725-6.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/382435/48992667/pr-maringa-chacara-paulista-rua-distrito-federal-apartamento-para-alugar-3-quartos-6afd8725-7.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/382435/48992667/pr-maringa-chacara-paulista-rua-distrito-federal-apartamento-para-alugar-3-quartos-6afd8725-8.jpg"
-      ],
-      "link": "https://www.chavesnamao.com.br/imovel/apartamento-para-alugar-3-quartos-com-garagem-pr-maringa-chacara-paulista-128m2-RS1700/id-48992667/",
-      "portal": "Chaves na Mão (IMOBILIÁRIA CASA NOVA)",
-      "encontrado_em": "2026-11-22",
-      "moveis": true,
-      "lat": -23.44105,
-      "lng": -51.93205
     },
     {
       "id": "sub100-2820003462",
@@ -2225,140 +1951,6 @@
           "nome": "Ciclovia da Av. Cerro Azul",
           "categoria": "ciclovia",
           "distancia_m": 750
-        }
-      ]
-    },
-    {
-      "id": "sub100-2020007694",
-      "titulo": "Apartamento no Edifício Serra Negra — Av. Dr. Mário Clapier Urbinati, 332 — Zona 07",
-      "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 1300,
-      "condominio": 410,
-      "iptu": null,
-      "bairro": "Zona 07",
-      "endereco": "Av. Dr. Mário Clapier Urbinati, 332, ap 403",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "vagas": 1,
-      "area_m2": 72,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Av. Dr. Mário Clapier Urbinati, 332, ap 403. 72 m², 1 suíte. 72 m², 1 suíte com banheira. Tel. (44) 3225-5858.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Elevador não informado. ~2,2 km da ciclovia da Av. Brasil (linha reta, aproximado). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.710.",
-      "tags": [
-        "A 2,6 km da ACIM"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007694/2020007694h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2020007694/locacao/apartamento-em-maringa-pr/zona-07",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-19",
-      "lat": -23.4026892,
-      "lng": -51.9550502,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 2160
-        }
-      ]
-    },
-    {
-      "id": "sub100-40720005145",
-      "titulo": "Casa na Rua das Orquídeas, 130 — Jardim Maravilha",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 2200,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Maravilha",
-      "endereco": "Rua das Orquídeas, 130",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua das Orquídeas, 130. 1 suíte. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Ideal Maringá Imóveis. Sem elevador (não se aplica). ~1,4 km da ciclovia da Av. Brasil (linha reta, aproximado). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. A confirmar: se a casa é térrea.",
-      "tags": [
-        "A 2,6 km da ACIM"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005145/40720005145a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005145/40720005145b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005145/40720005145c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005145/40720005145d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005145/40720005145e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005145/40720005145f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005145/40720005145g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720005145/40720005145h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/40720005145/locacao/casa-em-maringa-pr/jardim-maravilha",
-      "portal": "Sub100 (Ideal Maringá Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.412201,
-      "lng": -51.964304,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 1440
-        }
-      ]
-    },
-    {
-      "id": "sub100-2020005393",
-      "titulo": "Casa na Rua Josefa Ruiz Vellasco, 99 — Vila Nevada",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 1800,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Vila Nevada",
-      "endereco": "Rua Josefa Ruiz Vellasco, 99",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Josefa Ruiz Vellasco, 99. 1 suíte. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~2,4 km da ciclovia da Av. Brasil (linha reta, aproximado). A 2,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. A confirmar: se a casa é térrea.",
-      "tags": [
-        "A 2,6 km da ACIM"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005393/2020005393a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005393/2020005393b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005393/2020005393c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005393/2020005393d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005393/2020005393e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005393/2020005393f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005393/2020005393g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005393/2020005393h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2020005393/locacao/casa-em-maringa-pr/vila-nevada",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.399071,
-      "lng": -51.937422,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 2420
         }
       ]
     },
@@ -2764,55 +2356,6 @@
       ]
     },
     {
-      "id": "sub100-2020007876",
-      "titulo": "Apartamento no Edifício Platinum — Travessa Liberdade, 175 — Zona 08",
-      "finalidade": "aluguel",
-      "tipo": "Apartamento",
-      "casa": false,
-      "preco": 1900,
-      "condominio": 280,
-      "iptu": null,
-      "bairro": "Zona 08",
-      "endereco": "Travessa Liberdade, 175, ap 305, Zona 08 (Edifício Platinum)",
-      "quartos": 2,
-      "suites": 1,
-      "banheiros": 2,
-      "vagas": 1,
-      "nova": false,
-      "destaque": true,
-      "descricao": "Travessa Liberdade, 175, ap 305, Zona 08 (Edifício Platinum). 1 suíte. IPTU não informado no anúncio (o Viva Real diz isento). Também no OLX 1547283879 (mesmo preço 1900+280, Travessa Liberdade, elevador e academia); mantido o link oficial da Sub100/Lélo.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Com elevador. Perto da ciclovia da Av. Brasil (~450 m, linha reta). A 2,9 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.180. Tem armários ou móveis planejados (conta como com móveis). Armários planejados na cozinha (bancada de granito). A confirmar: IPTU.",
-      "tags": [
-        "Elevador",
-        "A 2,9 km da ACIM",
-        "Perto da ciclovia",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007876/2020007876h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2020007876/locacao/apartamento-em-maringa-pr/zona-08",
-      "portal": "Sub100",
-      "encontrado_em": "2026-11-21",
-      "moveis": true,
-      "lat": -23.4303092,
-      "lng": -51.9143204,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 450
-        }
-      ]
-    },
-    {
       "id": "sub100-80120001298",
       "titulo": "Casa na Rua Xanadu, 347, 347 — Jardim Imperial II",
       "finalidade": "aluguel",
@@ -2897,6 +2440,53 @@
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
           "distancia_m": 2600
+        }
+      ]
+    },
+    {
+      "id": "sub100-3620008554",
+      "titulo": "Casa na Rua João Luiz Dias, 139 — Parque Residencial Cidade Nova",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 2300,
+      "condominio": 0,
+      "iptu": 0,
+      "bairro": "Parque Residencial Cidade Nova",
+      "endereco": "Rua João Luiz Dias, 139",
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 3,
+      "area_m2": 100,
+      "nova": true,
+      "destaque": false,
+      "descricao": "Rua João Luiz Dias, 139. 100 m², 1 suíte. 100 m²: sala, sala de jantar, cozinha, 3 quartos (1 suíte), lavanderia, garagem coberta e descoberta. Ficha da Silvio Iwata: 2 banheiros. Isento de IPTU. Perto da UEM e da Av. Morangueira (anúncio). Parque Residencial Cidade Nova (não é Cidade Alta). Total R$ 2.300 (só no site). Anúncio aberto em 28/11/2026.",
+      "nota_grokbot": "Imobiliária: Silvio Iwata. Sem elevador (não se aplica). ~2,7 km da ciclovia da Av. Brasil (linha reta, aproximado). A 3,0 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.300. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. A confirmar: se a casa é térrea.",
+      "tags": [
+        "A 3,0 km da ACIM",
+        "Acima de R$ 2.200"
+      ],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008554/3620008554a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008554/3620008554b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008554/3620008554c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008554/3620008554d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008554/3620008554e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008554/3620008554f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008554/3620008554g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008554/3620008554h.jpg"
+      ],
+      "link": "https://www.silvioiwata.com.br/imovel/casa-para-alugar-2-quartos-1-suite-2-banheiros-3-vagas-parque-residencial-cidade-nova-maringa-pr-cod-00002404",
+      "portal": "Silvio Iwata (site oficial, cód. 00002404) / Sub100 3620008554",
+      "encontrado_em": "2026-11-28",
+      "lat": -23.3970738,
+      "lng": -51.9306056,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 2660
         }
       ]
     },
@@ -3094,7 +2684,7 @@
       "banheiros": 2,
       "vagas": 2,
       "area_m2": 100,
-      "nova": true,
+      "nova": false,
       "destaque": false,
       "descricao": "Rua Francisca Dina de Andrade, 879, Jardim São Miguel. 100 m², 1 suíte. Casa térrea (foto da fachada) 100 m²: sala de estar/jantar conjugadas, 3 quartos (1 suíte), banheiro social, cozinha planejada, jardim de inverno, área gourmet com churrasqueira, área de serviço, 2 vagas cobertas, cerca elétrica e portão eletrônico. Sem condomínio (casa de rua). IPTU não informado. Perto do Shopping Catuaí (texto do anúncio).",
       "nota_grokbot": "Imobiliária: Marilene Insaurralde Imóveis, CRECI F-11007. Sem elevador (não se aplica). ~2,1 km da ciclovia da Av. Brasil (linha reta, aproximado). A 3,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. Com móveis, segundo o anúncio. Armários/planejados: cozinha planejada, item \"Cozinha Planejada\" no site e armários visíveis na foto da cozinha. A confirmar: IPTU.",
@@ -3309,45 +2899,6 @@
       ]
     },
     {
-      "id": "cnm-48089709",
-      "titulo": "Casa na Rua Professora Letícia De Paula Molinari, 671 — Jardim Vitória",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 1950,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Vitória",
-      "endereco": "Rua Professora Letícia De Paula Molinari, 671",
-      "quartos": 3,
-      "suites": 0,
-      "banheiros": 2,
-      "vagas": 2,
-      "area_m2": 100,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Professora Letícia De Paula Molinari, 671. 100 m². 100 m². IPTU não informado. É sobrado (térrea não se aplica).",
-      "nota_grokbot": "Imobiliária: Libra Negócios Imobiliários. Elevador não informado. A 3,9 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.950. A confirmar: se a casa é térrea, IPTU.",
-      "tags": [
-        "A 3,9 km da ACIM"
-      ],
-      "fotos": [
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/791930/48089709/pr-maringa-jardim-vitoria-rua-professora-leticia-de-paula-molinari-casa-sobrado-para-alugar-3-quartos-6adcb971-1.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/791930/48089709/pr-maringa-jardim-vitoria-rua-professora-leticia-de-paula-molinari-casa-sobrado-para-alugar-3-quartos-6adcb971-2.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/791930/48089709/pr-maringa-jardim-vitoria-rua-professora-leticia-de-paula-molinari-casa-sobrado-para-alugar-3-quartos-6adcb971-3.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/791930/48089709/pr-maringa-jardim-vitoria-rua-professora-leticia-de-paula-molinari-casa-sobrado-para-alugar-3-quartos-6adcb971-4.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/791930/48089709/pr-maringa-jardim-vitoria-rua-professora-leticia-de-paula-molinari-casa-sobrado-para-alugar-3-quartos-6adcb971-5.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/791930/48089709/pr-maringa-jardim-vitoria-rua-professora-leticia-de-paula-molinari-casa-sobrado-para-alugar-3-quartos-6adcb971-6.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/791930/48089709/pr-maringa-jardim-vitoria-rua-professora-leticia-de-paula-molinari-casa-sobrado-para-alugar-3-quartos-6adcb971-7.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/791930/48089709/pr-maringa-jardim-vitoria-rua-professora-leticia-de-paula-molinari-casa-sobrado-para-alugar-3-quartos-6adcb971-8.jpg"
-      ],
-      "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-jardim-vitoria-150m2-RS1950/id-48089709/",
-      "portal": "Chaves na Mão (LIBRA NEGÓCIOS IMOBILIÁRIOS)",
-      "encontrado_em": "2026-11-22",
-      "lat": -23.38724,
-      "lng": -51.93698
-    },
-    {
       "id": "sub100-92820000199",
       "titulo": "Casa na Rua Ágata, 374, a — Jardim Santa Helena",
       "finalidade": "aluguel",
@@ -3526,48 +3077,6 @@
       ]
     },
     {
-      "id": "olx-1546729014",
-      "titulo": "Casa na Rua Adão Elói Trojan, Jardim Ipanema",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 1800,
-      "condominio": 0,
-      "iptu": 0,
-      "bairro": "Jardim Ipanema",
-      "endereco": "Rua Adão Elói Trojan, Jardim Ipanema (CEP 87053-230 do anúncio; número não informado; próx. Hospital Municipal / Av. Nildo Ribeiro)",
-      "quartos": 2,
-      "suites": 1,
-      "banheiros": 2,
-      "vagas": 1,
-      "area_m2": 70,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Adão Elói Trojan, Jardim Ipanema (CEP 87053-230 do anúncio; número não informado; próx. Hospital Municipal / Av. Nildo Ribeiro). 70 m², 1 suíte. Casa 70 m², suíte, cozinha planejada, quintal gramado. Valores da ficha: aluguel R$ 1.800, condomínio R$ 0, IPTU R$ 0. ATENÇÃO: o texto do anúncio também fala em 'casa residencial para venda' (possível copia-e-cola); conferir se está mesmo para locação. A etiqueta Mobiliado também aparece nas características do OLX (a descrição confirma a cozinha planejada). Coordenada no trecho da Rua Adão Elói Trojan mais próximo do CEP 87053-230.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis, ref. 02262.001. Sem elevador (não se aplica). A 4,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. Tem armários ou móveis planejados (conta como com móveis). Cozinha planejada. A confirmar: se a casa é térrea.",
-      "tags": [
-        "A 4,2 km da ACIM",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003381/2020003381h.jpg"
-      ],
-      "link": "https://pr.olx.com.br/regiao-de-maringa/imoveis/casa-jd-ipanema-prox-hospital-municipal-av-nildo-ribeiro-1546729014",
-      "portal": "OLX (Lélo Imóveis, código 02262.001)",
-      "encontrado_em": "2026-11-22",
-      "quintal": true,
-      "moveis": true,
-      "lat": -23.4564442,
-      "lng": -51.9246053
-    },
-    {
       "id": "cnm-21224522",
       "titulo": "Casa na Rua Das Pombas — Jardim dos Pássaros",
       "finalidade": "aluguel",
@@ -3701,6 +3210,52 @@
       ]
     },
     {
+      "id": "sub100-3420002307",
+      "titulo": "Casa na Rua Dona Aziza Mariana Jorge, 248 — Parque das Grevíleas",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 1800,
+      "condominio": 0,
+      "iptu": null,
+      "bairro": "Parque das Grevíleas",
+      "endereco": "Rua Dona Aziza Mariana Jorge, 248",
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "area_m2": 95.71,
+      "nova": true,
+      "destaque": false,
+      "descricao": "Rua Dona Aziza Mariana Jorge, 248. 95,71 m², 1 suíte. 95,71 m² construídos: 3 quartos (1 suíte), banheiro da suíte + banheiro social, sala de estar, cozinha, área de serviço, despensa, 1 vaga coberta. Outra casa da mesma rua do cnm-48842162 (nº 60 A). Anúncio aberto em 28/11/2026 (Sub100).",
+      "nota_grokbot": "Imobiliária: Shimizu Imóveis. Sem elevador (não se aplica). ~4,2 km da ciclovia da Av. Brasil (linha reta, aproximado). A 4,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. A confirmar: se a casa é térrea.",
+      "tags": [
+        "A 4,5 km da ACIM"
+      ],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002307/3420002307a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002307/3420002307b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002307/3420002307c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002307/3420002307d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002307/3420002307e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002307/3420002307f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002307/3420002307g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/34/3420002307/3420002307h.jpg"
+      ],
+      "link": "https://sub100.com.br/imoveis/3420002307/locacao/casa-em-maringa-pr/parque-das-grevileas",
+      "portal": "Sub100 (Shimizu Imóveis)",
+      "encontrado_em": "2026-11-28",
+      "lat": -23.3827257,
+      "lng": -51.9319635,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 4250
+        }
+      ]
+    },
+    {
       "id": "cnm-48842162",
       "titulo": "Casa na Rua Dona Aziza Mariana Jorge, 60 A — Parque das Grevíleas",
       "finalidade": "aluguel",
@@ -3796,7 +3351,7 @@
       "area_m2": 72,
       "nova": false,
       "destaque": false,
-      "descricao": "Rua Mário José De Faria Ferraz, 136. 72 m², 1 suíte. 72 m². IPTU não informado. 2 quartos (1 suíte). Condomínio R$ 420 confirmado no OLX 1544485021 (Marilene Insaurralde, IMÓVEL 353584); total aluguel+cond. R$ 1.920. Mantido o link oficial do CNM. Mesmo prédio do anúncio 25736364 (apto 403, 1800+420, mobiliado) e do OLX 1476827138 (1400+440, 63 m², Lélo).",
+      "descricao": "Rua Mário José De Faria Ferraz, 136. 72 m², 1 suíte. 72 m². IPTU não informado. 2 quartos (1 suíte). Condomínio R$ 420 confirmado no OLX 1544485021 (Marilene Insaurralde, IMÓVEL 353584); total aluguel+cond. R$ 1.920. Mantido o link oficial do CNM. Mesmo prédio do anúncio 25736364 (apto 403, 1800+420, mobiliado) e do OLX 1476827138 (1400+440, 63 m², Lélo). 28/11: mesmo imóvel anunciado pela Marilene Insaurralde Imóveis (cód. 353584).",
       "nota_grokbot": "Imobiliária: Marilene Insaurralde  Imoveis. Elevador não informado. A 4,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.920. A confirmar: IPTU.",
       "tags": [
         "A 4,5 km da ACIM"
@@ -3816,184 +3371,6 @@
       "encontrado_em": "2026-11-22",
       "lat": -23.44957,
       "lng": -51.90829
-    },
-    {
-      "id": "sub100-2020007937",
-      "titulo": "Casa na Rua Pioneiro Richard Derner, 437 — Jardim Monte Rei",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 1600,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Monte Rei",
-      "endereco": "Rua Pioneiro Richard Derner, 437",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Pioneiro Richard Derner, 437. 1 suíte. Previsão de desocupação: 05/12/2026. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível. Localização aproximada (endereço não geocodificado); distâncias são estimativa.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~4,3 km da ciclovia da Av. Brasil (linha reta, aproximado). A 4,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.600. A confirmar: se a casa é térrea.",
-      "tags": [
-        "A 4,6 km da ACIM"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007937/2020007937a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007937/2020007937b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007937/2020007937c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007937/2020007937d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007937/2020007937e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007937/2020007937f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007937/2020007937g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007937/2020007937h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2020007937/locacao/casa-em-maringa-pr/jardim-monte-rei",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.381976,
-      "lng": -51.951871,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 4350
-        }
-      ]
-    },
-    {
-      "id": "sub100-2020003873",
-      "titulo": "Casa na Rua Edézio de Almeida Lima, 88, b — Jardim Monte Rei",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 1800,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Monte Rei",
-      "endereco": "Rua Edézio de Almeida Lima, 88, b",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Edézio de Almeida Lima, 88, b. 1 suíte. Previsão de desocupação: 30/11/2026. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível. Localização aproximada (endereço não geocodificado); distâncias são estimativa.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~4,3 km da ciclovia da Av. Brasil (linha reta, aproximado). A 4,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.800. A confirmar: se a casa é térrea.",
-      "tags": [
-        "A 4,6 km da ACIM"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003873/2020003873a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003873/2020003873b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003873/2020003873c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003873/2020003873d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003873/2020003873e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003873/2020003873f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003873/2020003873g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003873/2020003873h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2020003873/locacao/casa-em-maringa-pr/jardim-monte-rei",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.381976,
-      "lng": -51.951871,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 4350
-        }
-      ]
-    },
-    {
-      "id": "sub100-2020005552",
-      "titulo": "Casa na Rua Elísia Galhoto Weitz, 173, b — Jardim Dias I",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 2100,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Dias I",
-      "endereco": "Rua Elísia Galhoto Weitz, 173, b",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Elísia Galhoto Weitz, 173, b. 1 suíte. Previsão de desocupação: 30/10/2026. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível. Localização aproximada (endereço não geocodificado); distâncias são estimativa.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~4,3 km da ciclovia da Av. Brasil (linha reta, aproximado). A 4,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.100. Tem armários ou móveis planejados (conta como com móveis). Armários/planejados: cozinha, banheiro, área de serviço, suíte, sala. A confirmar: se a casa é térrea.",
-      "tags": [
-        "A 4,6 km da ACIM",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005552/2020005552a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005552/2020005552b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005552/2020005552c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005552/2020005552d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005552/2020005552e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005552/2020005552f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005552/2020005552g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005552/2020005552h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2020005552/locacao/casa-em-maringa-pr/jardim-dias-i",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "moveis": true,
-      "lat": -23.381976,
-      "lng": -51.951871,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 4350
-        }
-      ]
-    },
-    {
-      "id": "sub100-2020005632",
-      "titulo": "Casa térrea na Rua Onofre Manoel, 249, b — Jardim Oriental",
-      "finalidade": "aluguel",
-      "tipo": "Casa térrea",
-      "casa": true,
-      "preco": 2200,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Oriental",
-      "endereco": "Rua Onofre Manoel, 249, b",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Onofre Manoel, 249, b. 1 suíte. Previsão de desocupação: 10/11/2026. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível. Localização aproximada (endereço não geocodificado); distâncias são estimativa.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~4,3 km da ciclovia da Av. Brasil (linha reta, aproximado). A 4,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200.",
-      "tags": [
-        "A 4,6 km da ACIM"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005632/2020005632a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005632/2020005632b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005632/2020005632c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005632/2020005632d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005632/2020005632e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005632/2020005632f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005632/2020005632g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020005632/2020005632h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2020005632/locacao/casa-em-maringa-pr/jardim-oriental",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.381976,
-      "lng": -51.951871,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 4350
-        }
-      ]
     },
     {
       "id": "sub100-3420002253",
@@ -4223,54 +3600,6 @@
       ]
     },
     {
-      "id": "cnm-49009107",
-      "titulo": "Casa na Rua Pioneiro Antônio de Paula Freitas, 459 — Jardim Império do Sol",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 2100,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Império do Sol",
-      "endereco": "Rua Pioneiro Antônio de Paula Freitas, 459 (endereço pelo Sub100)",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 3,
-      "vagas": 2,
-      "area_m2": 105,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Pioneiro Antônio de Paula Freitas, 459 (endereço pelo Sub100). 105 m², 1 suíte. 105 m². IPTU não informado. O anúncio não diz se a casa é térrea. 23/11: o Sub100 mostra o endereço; descrição: 2 dormitórios + 1 suíte, 1 banheiro social e lavabo (lavabo não conta; ficam 2 banheiros válidos), cozinha com móveis planejados.",
-      "nota_grokbot": "Imobiliária: Casa Dom Imóveis. Elevador não informado. ~4,5 km da ciclovia da Av. Brasil (linha reta, aproximado). A 4,7 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.100. Tem armários ou móveis planejados (conta como com móveis). Móveis planejados na cozinha. A confirmar: se o 2º banheiro não é só lavabo, IPTU.",
-      "tags": [
-        "A 4,7 km da ACIM",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1290298/49009107/pr-maringa-jardim-imperio-do-sol-casa-sobrado-para-alugar-3-quartos-6afdab16-1.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1290298/49009107/pr-maringa-jardim-imperio-do-sol-casa-sobrado-para-alugar-3-quartos-6afdab16-2.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1290298/49009107/pr-maringa-jardim-imperio-do-sol-casa-sobrado-para-alugar-3-quartos-6afdab16-3.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1290298/49009107/pr-maringa-jardim-imperio-do-sol-casa-sobrado-para-alugar-3-quartos-6afdab16-4.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1290298/49009107/pr-maringa-jardim-imperio-do-sol-casa-sobrado-para-alugar-3-quartos-6afdab16-5.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1290298/49009107/pr-maringa-jardim-imperio-do-sol-casa-sobrado-para-alugar-3-quartos-6afdab16-6.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1290298/49009107/pr-maringa-jardim-imperio-do-sol-casa-sobrado-para-alugar-3-quartos-6afdab16-7.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/1290298/49009107/pr-maringa-jardim-imperio-do-sol-casa-sobrado-para-alugar-3-quartos-6afdab16-8.jpg"
-      ],
-      "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-jardim-imperio-do-sol-20m2-RS2100/id-49009107/",
-      "portal": "Chaves na Mão (CASA DOM IMÓVEIS)",
-      "encontrado_em": "2026-11-22",
-      "moveis": true,
-      "lat": -23.380982,
-      "lng": -51.953101,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 4470
-        }
-      ]
-    },
-    {
       "id": "cnm-48699962",
       "titulo": "Casa na Rua Pioneiro Geraldo José Jorge, 274 — Parque Hortência",
       "finalidade": "aluguel",
@@ -4310,46 +3639,48 @@
       "lng": -51.97765
     },
     {
-      "id": "sub100-2020004429",
-      "titulo": "Casa na Rua Katsutoshi Nonaka, 886, casa a — Jardim Campo Belo",
+      "id": "sub100-98020000317",
+      "titulo": "Casa na Rua Nestor Narcizo de Souza, 143, casa A — Jardim Licce",
       "finalidade": "aluguel",
       "tipo": "Casa",
       "casa": true,
-      "preco": 1650,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Campo Belo",
-      "endereco": "Rua Katsutoshi Nonaka, 886, casa a",
-      "quartos": 2,
+      "preco": 1700,
+      "condominio": 0,
+      "iptu": 75,
+      "bairro": "Jardim Licce",
+      "endereco": "Rua Nestor Narcizo de Souza, 143, casa A",
+      "quartos": 3,
       "suites": 1,
       "banheiros": 2,
-      "nova": false,
+      "vagas": 1,
+      "area_m2": 100,
+      "nova": true,
       "destaque": false,
-      "descricao": "Rua Katsutoshi Nonaka, 886, casa a. 1 suíte. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~3,5 km da ciclovia da Av. Brasil (linha reta, aproximado). A 4,9 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.650. A confirmar: se a casa é térrea.",
+      "descricao": "Rua Nestor Narcizo de Souza, 143, casa A. 100 m², 1 suíte. Casa 100 m² de construção perto da Av. Morangueira: 1 suíte simples, 2 quartos, sala de estar, sala de jantar, cozinha, área de serviço, BWC social, garagem coberta. Aluguel + IPTU (R$ 75). A casa será pintada por dentro e por fora (anúncio). Anúncio aberto em 28/11/2026 (Sub100).",
+      "nota_grokbot": "Imobiliária: Delta. Sem elevador (não se aplica). ~4,3 km da ciclovia da Av. Brasil (linha reta, aproximado). A 4,8 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.700. A confirmar: se a casa é térrea.",
       "tags": [
-        "A 4,9 km da ACIM"
+        "A 4,8 km da ACIM"
       ],
       "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004429/2020004429a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004429/2020004429b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004429/2020004429c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004429/2020004429d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004429/2020004429e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004429/2020004429f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004429/2020004429g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020004429/2020004429h.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/980/98020000317/98020000317a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/980/98020000317/98020000317b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/980/98020000317/98020000317c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/980/98020000317/98020000317d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/980/98020000317/98020000317e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/980/98020000317/98020000317f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/980/98020000317/98020000317g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/980/98020000317/98020000317h.jpg"
       ],
-      "link": "https://sub100.com.br/imoveis/2020004429/locacao/casa-em-maringa-pr/jardim-campo-belo",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.39986,
-      "lng": -51.982576,
+      "link": "https://sub100.com.br/imoveis/98020000317/locacao/casa-em-maringa-pr/jardim-licce",
+      "portal": "Sub100 (Imobiliária Delta)",
+      "encontrado_em": "2026-11-28",
+      "lat": -23.3830489,
+      "lng": -51.9215162,
       "proximidades": [
         {
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
-          "distancia_m": 3480
+          "distancia_m": 4310
         }
       ]
     },
@@ -4398,48 +3729,49 @@
       ]
     },
     {
-      "id": "sub100-2020001597",
-      "titulo": "Casa térrea na Rua José Miranda Ferraz, 556 — Jardim Espanha",
+      "id": "sub100-3620008555",
+      "titulo": "Casa na Rua Vereador José Mário Hauari, 97 — Jardim Monte Rei",
       "finalidade": "aluguel",
-      "tipo": "Casa térrea",
+      "tipo": "Casa",
       "casa": true,
-      "preco": 2100,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Espanha",
-      "endereco": "Rua José Miranda Ferraz, 556",
-      "quartos": 2,
+      "preco": 2300,
+      "condominio": 0,
+      "iptu": 0,
+      "bairro": "Jardim Monte Rei",
+      "endereco": "Rua Vereador José Mário Hauari, 97",
+      "quartos": 3,
       "suites": 1,
       "banheiros": 2,
-      "nova": false,
+      "vagas": 1,
+      "area_m2": 150,
+      "nova": true,
       "destaque": false,
-      "descricao": "Rua José Miranda Ferraz, 556. 1 suíte. Previsão de desocupação: 20/11/2026. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~3,6 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,0 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.100. Tem armários ou móveis planejados (conta como com móveis). Anúncio cita armários/planejados.",
+      "descricao": "Rua Vereador José Mário Hauari, 97. 150 m², 1 suíte. 150 m²: sala, cozinha, 1 suíte com ar-condicionado, 2 quartos, banheiro social com box, lavanderia coberta. Isento de IPTU. Perto da Av. Mandacaru. É outra casa da mesma rua do sub100-3420002253 (nº 794, Shimizu). Total R$ 2.300 (só no site). Anúncio aberto em 28/11/2026.",
+      "nota_grokbot": "Imobiliária: Silvio Iwata. Sem elevador (não se aplica). ~4,8 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,1 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.300. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. A confirmar: se a casa é térrea.",
       "tags": [
-        "A 5,0 km da ACIM",
-        "Móveis planejados"
+        "A 5,1 km da ACIM",
+        "Acima de R$ 2.200"
       ],
       "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020001597/2020001597a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020001597/2020001597b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020001597/2020001597c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020001597/2020001597d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020001597/2020001597e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020001597/2020001597f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020001597/2020001597g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020001597/2020001597h.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008555/3620008555a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008555/3620008555b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008555/3620008555c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008555/3620008555d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008555/3620008555e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008555/3620008555f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008555/3620008555g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008555/3620008555h.jpg"
       ],
-      "link": "https://sub100.com.br/imoveis/2020001597/locacao/casa-em-maringa-pr/jardim-espanha",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "moveis": true,
-      "lat": -23.461729,
-      "lng": -51.965533,
+      "link": "https://www.silvioiwata.com.br/imovel/casa-para-alugar-2-quartos-1-suite-2-banheiros-1-vaga-jardim-monte-rei-maringa-pr-cod-00004572",
+      "portal": "Silvio Iwata (site oficial, cód. 00004572) / Sub100 3620008555",
+      "encontrado_em": "2026-11-28",
+      "lat": -23.3782045,
+      "lng": -51.9538016,
       "proximidades": [
         {
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
-          "distancia_m": 3570
+          "distancia_m": 4790
         }
       ]
     },
@@ -4449,7 +3781,7 @@
       "finalidade": "aluguel",
       "tipo": "Casa",
       "casa": true,
-      "preco": 2200,
+      "preco": 1900,
       "condominio": null,
       "iptu": null,
       "bairro": "Jardim Guairacá",
@@ -4459,8 +3791,8 @@
       "banheiros": 2,
       "nova": false,
       "destaque": false,
-      "descricao": "Rua Pioneira Arminda Pezzetini Cioffi, 114. 1 suíte. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Massaru Imóveis. Sem elevador (não se aplica). ~4,5 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,1 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. A confirmar: se a casa é térrea.",
+      "descricao": "Rua Pioneira Arminda Pezzetini Cioffi, 114. 1 suíte. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível. 28/11: aluguel baixou de R$ 2.200 para R$ 1.900 (Sub100).",
+      "nota_grokbot": "Imobiliária: Massaru Imóveis. Sem elevador (não se aplica). ~4,5 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,1 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.900. A confirmar: se a casa é térrea.",
       "tags": [
         "A 5,1 km da ACIM"
       ],
@@ -4486,45 +3818,6 @@
           "distancia_m": 4470
         }
       ]
-    },
-    {
-      "id": "cnm-48296150",
-      "titulo": "Casa na Rua Pioneiro Pergentino Prudente Francisco, 176 — Jardim Rebouças",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 2000,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Rebouças",
-      "endereco": "Rua Pioneiro Pergentino Prudente Francisco, 176",
-      "quartos": 2,
-      "suites": 0,
-      "banheiros": 2,
-      "vagas": 2,
-      "area_m2": 117,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Pioneiro Pergentino Prudente Francisco, 176. 117 m². 117 m². IPTU não informado. É sobrado (térrea não se aplica). Também no OLX 1548745864 (Jardim Rebouças, 117 m², R$ 2.000, código 00004435, tel. (44) 3112-1… da Silvio Iwata); mantido o link oficial do CNM.",
-      "nota_grokbot": "Imobiliária: Silvio Iwata. Elevador não informado. A 5,1 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.000. A confirmar: se a casa é térrea, IPTU.",
-      "tags": [
-        "A 5,1 km da ACIM"
-      ],
-      "fotos": [
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/48296150/pr-maringa-jardim-reboucas-rua-pioneiro-pergentino-prudente-francisco-casa-sobrado-para-alugar-2-quartos-6ae48392-1.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/48296150/pr-maringa-jardim-reboucas-rua-pioneiro-pergentino-prudente-francisco-casa-sobrado-para-alugar-2-quartos-6ae48392-2.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/48296150/pr-maringa-jardim-reboucas-rua-pioneiro-pergentino-prudente-francisco-casa-sobrado-para-alugar-2-quartos-6ae48392-3.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/48296150/pr-maringa-jardim-reboucas-rua-pioneiro-pergentino-prudente-francisco-casa-sobrado-para-alugar-2-quartos-6ae48392-4.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/48296150/pr-maringa-jardim-reboucas-rua-pioneiro-pergentino-prudente-francisco-casa-sobrado-para-alugar-2-quartos-6ae48392-5.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/48296150/pr-maringa-jardim-reboucas-rua-pioneiro-pergentino-prudente-francisco-casa-sobrado-para-alugar-2-quartos-6ae48392-6.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/48296150/pr-maringa-jardim-reboucas-rua-pioneiro-pergentino-prudente-francisco-casa-sobrado-para-alugar-2-quartos-6ae48392-7.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/520901/48296150/pr-maringa-jardim-reboucas-rua-pioneiro-pergentino-prudente-francisco-casa-sobrado-para-alugar-2-quartos-6ae48392-8.jpg"
-      ],
-      "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-2-quartos-com-garagem-pr-maringa-jardim-reboucas-300m2-RS2000/id-48296150/",
-      "portal": "Chaves na Mão (IMOBILIÁRIA SILVIO IWATA)",
-      "encontrado_em": "2026-11-22",
-      "lat": -23.37938,
-      "lng": -51.960053
     },
     {
       "id": "olx-1513083306",
@@ -4614,7 +3907,7 @@
     },
     {
       "id": "cnm-45735730",
-      "titulo": "Casa na Rua Pioneiro Olinto Mariani, Jardim Diamante",
+      "titulo": "Casa na Rua Pioneiro Olinto Mariani, 953 — Jardim Diamante",
       "finalidade": "aluguel",
       "tipo": "Casa",
       "casa": true,
@@ -4622,7 +3915,7 @@
       "condominio": null,
       "iptu": 67,
       "bairro": "Jardim Diamante",
-      "endereco": "Rua Pioneiro Olinto Mariani, Jardim Diamante (número não informado; perto do nº 315)",
+      "endereco": "Rua Pioneiro Olinto Mariani, 953, Jardim Diamante",
       "quartos": 3,
       "suites": 1,
       "banheiros": 2,
@@ -4630,7 +3923,7 @@
       "area_m2": 85,
       "nova": false,
       "destaque": false,
-      "descricao": "Rua Pioneiro Olinto Mariani, Jardim Diamante (número não informado; perto do nº 315). 85 m², terreno de 130 m², 1 suíte. Casa 85 m² (terreno 130 m²): 3 quartos (1 suíte), 2 banheiros, sala, cozinha, copa, área de serviço, churrasqueira, edícula, 2 vagas cobertas. IPTU R$ 67/mês. O nome das fotos no portal diz \"casa-sobrado\": não diz se é térrea. Anúncio atualizado em 23/11/2026 às 18:01. Coordenada no meio da rua (Nominatim).",
+      "descricao": "Rua Pioneiro Olinto Mariani, 953, Jardim Diamante. 85 m², terreno de 130 m², 1 suíte. Casa 85 m² (terreno 130 m²): 3 quartos (1 suíte), 2 banheiros, sala, cozinha, copa, área de serviço, churrasqueira, edícula, 2 vagas cobertas. IPTU R$ 67/mês. O nome das fotos no portal diz \"casa-sobrado\": não diz se é térrea. Anúncio atualizado em 23/11/2026 às 18:01. Coordenada no meio da rua (Nominatim). 28/11: endereço completo pelo Sub100 4920003216 (Granado Imóveis, mesmo texto): Rua Pioneiro Olinto Mariani, 953. Coordenada continua no meio da rua (Nominatim não devolveu o nº 953).",
       "nota_grokbot": "Imobiliária: Diamante, ref. CA0027. Sem elevador (não se aplica). ~5,1 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.700. A confirmar: se a casa é térrea.",
       "tags": [
         "A 5,2 km da ACIM"
@@ -4656,50 +3949,6 @@
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
           "distancia_m": 5080
-        }
-      ]
-    },
-    {
-      "id": "sub100-2020007947",
-      "titulo": "Casa na Rua Pioneiro Francisco Castoldo, 186 — Jardim Ouro Cola",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 1600,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Ouro Cola",
-      "endereco": "Rua Pioneiro Francisco Castoldo, 186",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Pioneiro Francisco Castoldo, 186. 1 suíte. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~2,8 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.600. A confirmar: se a casa é térrea.",
-      "tags": [
-        "A 5,3 km da ACIM"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007947/2020007947a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007947/2020007947b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007947/2020007947c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007947/2020007947d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007947/2020007947e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007947/2020007947f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007947/2020007947g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007947/2020007947h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2020007947/locacao/casa-em-maringa-pr/jardim-ouro-cola",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.412507,
-      "lng": -51.992108,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 2770
         }
       ]
     },
@@ -4744,6 +3993,51 @@
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
           "distancia_m": 3920
+        }
+      ]
+    },
+    {
+      "id": "sub100-31120000900",
+      "titulo": "Casa no Parque Residencial Tuiuti",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 2250,
+      "condominio": 0,
+      "iptu": 0,
+      "bairro": "Parque Residencial Tuiuti",
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "nova": true,
+      "destaque": false,
+      "descricao": "1 suíte. 3 quartos (1 suíte), sala de estar, jardim de inverno, cozinha, banheiro social e suíte com box, área de serviço com pia e churrasqueira, 1 vaga, cerca elétrica. IPTU isento. Endereço não divulgado (coordenada do bairro). Total R$ 2.250 (só no site). Anúncio aberto em 28/11/2026 (Sub100).",
+      "nota_grokbot": "Imobiliária: Casa Nova. Sem elevador (não se aplica). ~3,3 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.250. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. A confirmar: se a casa é térrea.",
+      "tags": [
+        "A 5,3 km da ACIM",
+        "Acima de R$ 2.200"
+      ],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/311/31120000900/31120000900a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/311/31120000900/31120000900b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/311/31120000900/31120000900c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/311/31120000900/31120000900d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/311/31120000900/31120000900e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/311/31120000900/31120000900f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/311/31120000900/31120000900g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/311/31120000900/31120000900h.jpg"
+      ],
+      "link": "https://sub100.com.br/imoveis/31120000900/locacao/casa-em-maringa-pr/parque-residencial-tuiuti",
+      "portal": "Sub100 (Imobiliária Casa Nova)",
+      "encontrado_em": "2026-11-28",
+      "lat": -23.401102,
+      "lng": -51.8949878,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 3310
         }
       ]
     },
@@ -4831,55 +4125,6 @@
       "lng": -51.9514821
     },
     {
-      "id": "cnm-49153317",
-      "titulo": "Casa na Rua Geraldo Garcia Y Garcia, 576 — Jardim Dias I",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 2200,
-      "condominio": 0,
-      "iptu": null,
-      "bairro": "Jardim Dias I",
-      "endereco": "Rua Geraldo Garcia Y Garcia, 576, Jardim Dias I",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "vagas": 2,
-      "area_m2": 100,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Geraldo Garcia Y Garcia, 576, Jardim Dias I. 100 m², terreno de 150 m², 1 suíte. Casa 100 m² (terreno 150 m²): sala, 3 quartos (1 suíte com roupeiro), 2 banheiros (1 da suíte + 1 social), cozinha planejada, área de serviço, churrasqueira, 2 vagas cobertas paralelas. Aluguel R$ 2.200 é o valor com bonificação por pagamento pontual (aluguel bruto R$ 2.420). Sem condomínio (casa de rua). IPTU não informado. Não diz se é térrea (o nome das fotos no CNM diz \"casa-sobrado\", padrão do portal). Publicado em 24/11/2026. Perto do Contorno Norte, Mercado Katayama.",
-      "nota_grokbot": "Imobiliária: Sândalo Imóveis, ref. 01495.001. Sem elevador (não se aplica). ~5,0 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,4 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. Com móveis, segundo o anúncio. Armários/planejados: cozinha planejada e roupeiro na suíte. A confirmar: se a casa é térrea, IPTU.",
-      "tags": [
-        "A 5,4 km da ACIM",
-        "Móveis planejados"
-      ],
-      "fotos": [
-        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025111100.jpg",
-        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025211100.jpg",
-        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025311100.jpg",
-        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025411100.jpg",
-        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025511100.jpg",
-        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025611100.jpg",
-        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025711100.jpg",
-        "https://fotos2.casasoft.net.br/indicadordeimoveis/imobiliarias/11100/fotos/418511100/11025811100.jpg"
-      ],
-      "link": "https://www.sandaloimoveis.com.br/imovel/casa?id=11100&ref=01495.001",
-      "portal": "Sândalo Imóveis (site oficial, ref. 01495.001; também no Chaves na Mão)",
-      "encontrado_em": "2026-11-24",
-      "terreno_m2": 150,
-      "moveis": true,
-      "lat": -23.3759573,
-      "lng": -51.9250612,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 5040
-        }
-      ]
-    },
-    {
       "id": "sub100-2620001201",
       "titulo": "Casa na Rua José Carlos Joaquinzo, 157 — Ebenezer",
       "finalidade": "aluguel",
@@ -4924,43 +4169,51 @@
       ]
     },
     {
-      "id": "cnm-47897443",
-      "titulo": "Casa na Rua Pioneira Rosa Esteves Gusmão, 158 — Jardim Diamante",
+      "id": "sub100-3620008562",
+      "titulo": "Casa na Rua Pioneira Fumi Tanoue, Parque Tarumã",
       "finalidade": "aluguel",
       "tipo": "Casa",
       "casa": true,
-      "preco": 1900,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Diamante",
-      "endereco": "Rua Pioneira Rosa Esteves Gusmão, 158",
+      "preco": 2150,
+      "condominio": 0,
+      "iptu": 0,
+      "bairro": "Parque Tarumã",
+      "endereco": "Rua Pioneira Fumi Tanoue, Parque Tarumã (número não divulgado)",
       "quartos": 3,
-      "suites": 0,
+      "suites": 1,
       "banheiros": 2,
       "vagas": 2,
-      "area_m2": 99,
-      "nova": false,
+      "area_m2": 82,
+      "nova": true,
       "destaque": false,
-      "descricao": "Rua Pioneira Rosa Esteves Gusmão, 158. 99 m². 99 m². IPTU não informado. É sobrado (térrea não se aplica).",
-      "nota_grokbot": "Imobiliária: Sândalo Imóveis. Elevador não informado. A 5,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.900. A confirmar: se a casa é térrea, IPTU.",
+      "descricao": "Rua Pioneira Fumi Tanoue, Parque Tarumã (número não divulgado). 82 m², 1 suíte. Casa recém-construída, 82 m²: 3 quartos (1 suíte ampla), sala com pé-direito alto, cozinha com bancada de granito, banheiro social com box, lavanderia, área gourmet coberta com churrasqueira, quintal, portão metálico. IPTU isento. (O site da Silvio indica \"2 quartos + 1 suíte\".) Anúncio aberto em 28/11/2026.",
+      "nota_grokbot": "Imobiliária: Silvio Iwata. Sem elevador (não se aplica). ~3,8 km da ciclovia da Av. Cerro Azul (linha reta, aproximado). A 5,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.150. A confirmar: se a casa é térrea.",
       "tags": [
         "A 5,5 km da ACIM"
       ],
       "fotos": [
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/47897443/pr-maringa-jardim-diamante-rua-pioneira-rosa-esteves-gusmao-casa-sobrado-para-alugar-3-quartos-6b003a70-1.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/47897443/pr-maringa-jardim-diamante-rua-pioneira-rosa-esteves-gusmao-casa-sobrado-para-alugar-3-quartos-6b003a70-2.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/47897443/pr-maringa-jardim-diamante-rua-pioneira-rosa-esteves-gusmao-casa-sobrado-para-alugar-3-quartos-6b003a70-3.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/47897443/pr-maringa-jardim-diamante-rua-pioneira-rosa-esteves-gusmao-casa-sobrado-para-alugar-3-quartos-6b003a70-4.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/47897443/pr-maringa-jardim-diamante-rua-pioneira-rosa-esteves-gusmao-casa-sobrado-para-alugar-3-quartos-6b003a70-5.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/47897443/pr-maringa-jardim-diamante-rua-pioneira-rosa-esteves-gusmao-casa-sobrado-para-alugar-3-quartos-6b003a70-6.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/47897443/pr-maringa-jardim-diamante-rua-pioneira-rosa-esteves-gusmao-casa-sobrado-para-alugar-3-quartos-6b003a70-7.jpg",
-        "https://www.chavesnamao.com.br/imn/1200x0800/N/70/imoveis/913770/47897443/pr-maringa-jardim-diamante-rua-pioneira-rosa-esteves-gusmao-casa-sobrado-para-alugar-3-quartos-6b003a70-8.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008562/3620008562a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008562/3620008562b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008562/3620008562c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008562/3620008562d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008562/3620008562e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008562/3620008562f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008562/3620008562g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/36/3620008562/3620008562h.jpg"
       ],
-      "link": "https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-com-garagem-pr-maringa-jardim-diamante-162m2-RS1900/id-47897443/",
-      "portal": "Chaves na Mão (SÂNDALO IMÓVEIS)",
-      "encontrado_em": "2026-11-22",
-      "lat": -23.372933,
-      "lng": -51.941251
+      "link": "https://www.silvioiwata.com.br/imovel/casa-para-alugar-2-quartos-1-suite-2-banheiros-2-vagas-parque-taruma-maringa-pr-cod-00004561",
+      "portal": "Silvio Iwata (site oficial, cód. 00004561) / Sub100 3620008562",
+      "encontrado_em": "2026-11-28",
+      "quintal": true,
+      "lat": -23.4700938,
+      "lng": -51.9280782,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Cerro Azul",
+          "categoria": "ciclovia",
+          "distancia_m": 3780
+        }
+      ]
     },
     {
       "id": "sub100-9120000976",
@@ -5007,94 +4260,6 @@
       ]
     },
     {
-      "id": "sub100-2020007840",
-      "titulo": "Casa na Rua Itaipu, 961, a (antigo 963 — Jardim Santa Clara",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 2000,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Santa Clara",
-      "endereco": "Rua Itaipu, 961, a (antigo 963",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Itaipu, 961, a (antigo 963. 1 suíte. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~4,5 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.000. A confirmar: se a casa é térrea.",
-      "tags": [
-        "A 5,6 km da ACIM"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007840/2020007840a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007840/2020007840b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007840/2020007840c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007840/2020007840d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007840/2020007840e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007840/2020007840f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007840/2020007840g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007840/2020007840h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2020007840/locacao/casa-em-maringa-pr/jardim-santa-clara",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.38701,
-      "lng": -51.902196,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 4500
-        }
-      ]
-    },
-    {
-      "id": "sub100-2620000928",
-      "titulo": "Casa na Rua Pioneiro José de Paula, 1078 — Jardim Novo Alvorada",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "casa": true,
-      "preco": 1700,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Novo Alvorada",
-      "endereco": "Rua Pioneiro José de Paula, 1078",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
-      "destaque": false,
-      "descricao": "Rua Pioneiro José de Paula, 1078. 1 suíte. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Paiaguás. Sem elevador (não se aplica). ~4,6 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,6 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.700. A confirmar: se a casa é térrea.",
-      "tags": [
-        "A 5,6 km da ACIM"
-      ],
-      "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000928/2620000928a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000928/2620000928b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000928/2620000928c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000928/2620000928d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000928/2620000928e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000928/2620000928f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000928/2620000928g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000928/2620000928h.jpg"
-      ],
-      "link": "https://sub100.com.br/imoveis/2620000928/locacao/casa-em-maringa-pr/jardim-novo-alvorada",
-      "portal": "Sub100 (Imobiliária Paiaguás)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.385978,
-      "lng": -51.903115,
-      "proximidades": [
-        {
-          "nome": "Ciclovia da Av. Brasil",
-          "categoria": "ciclovia",
-          "distancia_m": 4580
-        }
-      ]
-    },
-    {
       "id": "olx-1530709299",
       "titulo": "Casa na Rua Pioneiro José de Paula, Jardim Novo Alvorada",
       "finalidade": "aluguel",
@@ -5136,46 +4301,186 @@
       "lng": -51.9031146
     },
     {
-      "id": "sub100-40720004794",
-      "titulo": "Casa na Rua Pioneiro Benedito Justino, 83, b — Jardim Paraíso",
+      "id": "sub100-2620001641",
+      "titulo": "Casa na Rua Barcelona II, 77 — Loteamento Madrid",
       "finalidade": "aluguel",
       "tipo": "Casa",
       "casa": true,
-      "preco": 2000,
-      "condominio": null,
+      "preco": 1700,
+      "condominio": 0,
       "iptu": null,
-      "bairro": "Jardim Paraíso",
-      "endereco": "Rua Pioneiro Benedito Justino, 83, b",
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 2,
-      "nova": false,
+      "bairro": "Loteamento Madrid",
+      "endereco": "Rua Barcelona II, 77",
+      "suites": 0,
+      "banheiros": 3,
+      "area_m2": 150,
+      "nova": true,
       "destaque": false,
-      "descricao": "Rua Pioneiro Benedito Justino, 83, b. 1 suíte. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Ideal Maringá Imóveis. Sem elevador (não se aplica). ~3,9 km da ciclovia da Av. Cerro Azul (linha reta, aproximado). A 5,7 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.000. A confirmar: se a casa é térrea.",
+      "descricao": "Rua Barcelona II, 77. 150 m². 150 m² de área privativa, 3 dormitórios, sendo 1 na edícula. A ficha do Sub100 indica 2 quartos e 3 banheiros; a descrição não detalha os banheiros (falta confirmar). Anúncio aberto em 28/11/2026 (Sub100).",
+      "nota_grokbot": "Imobiliária: Paiaguás. Sem elevador (não se aplica). ~3,8 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,7 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.700. A confirmar: se a casa é térrea.",
       "tags": [
         "A 5,7 km da ACIM"
       ],
       "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004794/40720004794a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004794/40720004794b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004794/40720004794c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004794/40720004794d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004794/40720004794e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004794/40720004794f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004794/40720004794g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/407/40720004794/40720004794h.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620001641/2620001641a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620001641/2620001641b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620001641/2620001641c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620001641/2620001641d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620001641/2620001641e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620001641/2620001641f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620001641/2620001641g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620001641/2620001641h.jpg"
       ],
-      "link": "https://sub100.com.br/imoveis/40720004794/locacao/casa-em-maringa-pr/jardim-paraiso",
-      "portal": "Sub100 (Ideal Maringá Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.467493,
-      "lng": -51.915952,
+      "link": "https://sub100.com.br/imoveis/2620001641/locacao/casa-em-maringa-pr/loteamento-madrid",
+      "portal": "Sub100 (Imobiliária Paiaguás)",
+      "encontrado_em": "2026-11-28",
+      "lat": -23.464833,
+      "lng": -51.9103189,
       "proximidades": [
         {
-          "nome": "Ciclovia da Av. Cerro Azul",
+          "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
-          "distancia_m": 3890
+          "distancia_m": 3750
+        }
+      ]
+    },
+    {
+      "id": "sub100-92820000215",
+      "titulo": "Apartamento na Rua Pioneira Maria Aparecida Araújo de Siqueira, 176 — Loteamento Sumaré",
+      "finalidade": "aluguel",
+      "tipo": "Apartamento",
+      "casa": false,
+      "preco": 1500,
+      "condominio": 450,
+      "iptu": null,
+      "bairro": "Loteamento Sumaré",
+      "endereco": "Rua Pioneira Maria Aparecida Araújo de Siqueira, 176, apto 304",
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 1,
+      "area_m2": 62.65,
+      "nova": true,
+      "destaque": false,
+      "descricao": "Rua Pioneira Maria Aparecida Araújo de Siqueira, 176, apto 304. 62,65 m², 1 suíte. 62,65 m². 1 suíte + 2 quartos, banheiro social, sala, cozinha planejada, lavanderia, 1 vaga. Condomínio aprox. R$ 450. Anúncio aberto em 28/11/2026 (Sub100).",
+      "nota_grokbot": "Imobiliária: Kakogawa Imóveis. Elevador não informado. ~4,9 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,8 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.950. Com móveis, segundo o anúncio. Cozinha planejada (descrição).",
+      "tags": [
+        "A 5,8 km da ACIM",
+        "Móveis planejados"
+      ],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/928/92820000215/92820000215a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/928/92820000215/92820000215b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/928/92820000215/92820000215c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/928/92820000215/92820000215d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/928/92820000215/92820000215e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/928/92820000215/92820000215f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/928/92820000215/92820000215g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/928/92820000215/92820000215h.jpg"
+      ],
+      "link": "https://sub100.com.br/imoveis/92820000215/locacao/apartamento-em-maringa-pr/loteamento-sumare",
+      "portal": "Sub100 (Kakogawa Imóveis, ref. 00000216)",
+      "encontrado_em": "2026-11-28",
+      "moveis": true,
+      "lat": -23.3816135,
+      "lng": -51.905628,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 4940
+        }
+      ]
+    },
+    {
+      "id": "sub100-56220000160",
+      "titulo": "Casa no Contorno Major Abelardo José da Cruz, 7311 — Jardim Andrade",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 1550,
+      "condominio": 0,
+      "iptu": null,
+      "bairro": "Jardim Andrade",
+      "endereco": "Contorno Major Abelardo José da Cruz, 7311",
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "nova": true,
+      "destaque": false,
+      "descricao": "Contorno Major Abelardo José da Cruz, 7311. 1 suíte. Anúncio SEM descrição: só a ficha do Sub100 (1 suíte + 1 quarto, 2 banheiros). Endereço no Contorno Major Abelardo José da Cruz (via de contorno) — conferir pelas fotos se é casa residencial de frente para o contorno. Condomínio não se aplica (casa); IPTU não informado. Anúncio aberto em 28/11/2026 (Sub100).",
+      "nota_grokbot": "Imobiliária: Nacional. Sem elevador (não se aplica). ~2,5 km da ciclovia da Av. Brasil (linha reta, aproximado). A 5,9 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.550. A confirmar: se a casa é térrea, IPTU.",
+      "tags": [
+        "A 5,9 km da ACIM"
+      ],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/562/56220000160/56220000160a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/562/56220000160/56220000160b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/562/56220000160/56220000160c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/562/56220000160/56220000160d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/562/56220000160/56220000160e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/562/56220000160/56220000160f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/562/56220000160/56220000160g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/562/56220000160/56220000160h.jpg"
+      ],
+      "link": "https://sub100.com.br/imoveis/56220000160/locacao/casa-em-maringa-pr/jardim-andrade",
+      "portal": "Sub100 (Imobiliária Nacional)",
+      "encontrado_em": "2026-11-28",
+      "lat": -23.4207423,
+      "lng": -51.8832288,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 2550
+        }
+      ]
+    },
+    {
+      "id": "sub100-2820007508",
+      "titulo": "Casa na Rua Maria Augusta Pereira Vomstein, 527A — Loteamento Sumaré",
+      "finalidade": "aluguel",
+      "tipo": "Casa",
+      "casa": true,
+      "preco": 2200,
+      "condominio": 0,
+      "iptu": null,
+      "bairro": "Loteamento Sumaré",
+      "endereco": "Rua Maria Augusta Pereira Vomstein, 527A",
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 2,
+      "area_m2": 99.94,
+      "nova": true,
+      "destaque": false,
+      "descricao": "Rua Maria Augusta Pereira Vomstein, 527A. 99,94 m², 1 suíte. 99,94 m² úteis: sala dois ambientes, cozinha, 3 dormitórios (1 suíte), banheiro social e da suíte com armário, área de serviço, 2 vagas. Perto da Av. Morangueira. Atualizado em 27/11 (texto do anúncio). Era a pista \"Vomstein / Pedro Granado\" de 24/11 sem link confirmável; agora tem ficha no Sub100. Site da Pedro Granado dá 403. Anúncio aberto em 28/11/2026.",
+      "nota_grokbot": "Imobiliária: Pedro Granado Imóveis. Sem elevador (não se aplica). ~5,0 km da ciclovia da Av. Brasil (linha reta, aproximado). A 6,1 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.200. Com móveis, segundo o anúncio. Banheiro social e da suíte com armário (descrição). A confirmar: se a casa é térrea.",
+      "tags": [
+        "A 6,1 km da ACIM",
+        "Móveis planejados"
+      ],
+      "fotos": [
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820007508/2820007508a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820007508/2820007508b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820007508/2820007508c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820007508/2820007508d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820007508/2820007508e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820007508/2820007508f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820007508/2820007508g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/28/2820007508/2820007508h.jpg"
+      ],
+      "link": "https://sub100.com.br/imoveis/2820007508/locacao/casa-em-maringa-pr/loteamento-sumare",
+      "portal": "Sub100 (Pedro Granado Imóveis, ref. 67733)",
+      "encontrado_em": "2026-11-28",
+      "moveis": true,
+      "lat": -23.3824705,
+      "lng": -51.9005918,
+      "proximidades": [
+        {
+          "nome": "Ciclovia da Av. Brasil",
+          "categoria": "ciclovia",
+          "distancia_m": 5030
         }
       ]
     },
@@ -5270,93 +4575,99 @@
       ]
     },
     {
-      "id": "sub100-2020003007",
-      "titulo": "Casa na Rua Francisco Dias de Aro, 552 — Jardim Paulista III",
+      "id": "sub100-3020000473",
+      "titulo": "Casa na Rua Rio Jordão, 516 — Conjunto João de Barro Champagnat",
       "finalidade": "aluguel",
       "tipo": "Casa",
       "casa": true,
-      "preco": 1700,
-      "condominio": null,
+      "preco": 1900,
+      "condominio": 0,
       "iptu": null,
-      "bairro": "Jardim Paulista III",
-      "endereco": "Rua Francisco Dias de Aro, 552",
+      "bairro": "Conjunto João de Barro Champagnat",
+      "endereco": "Rua Rio Jordão, 516",
       "quartos": 3,
       "suites": 1,
       "banheiros": 2,
-      "nova": false,
+      "vagas": 1,
+      "area_m2": 93.05,
+      "nova": true,
       "destaque": false,
-      "descricao": "Rua Francisco Dias de Aro, 552. 1 suíte. Previsão de desocupação: 26/11/2026. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~4,4 km da ciclovia da Av. Brasil (linha reta, aproximado). A 7,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.700. Tem armários ou móveis planejados (conta como com móveis). Armários/planejados: cozinha, banheiro, área de serviço, suíte, sala. A confirmar: se a casa é térrea.",
+      "descricao": "Rua Rio Jordão, 516. 93,05 m², terreno de 397.5 m², 1 suíte. 93,05 m² em terreno de 397,50 m². 3 dormitórios (1 suíte + 2 quartos), 1 vaga. A descrição não cita o banheiro social; a ficha do Sub100 diz 2 banheiros (falta confirmar 2º banheiro). Anúncio aberto em 28/11/2026 (Sub100).",
+      "nota_grokbot": "Imobiliária: Proposta Consultoria de Imóveis. Sem elevador (não se aplica). ~4,0 km da ciclovia da Av. Brasil (linha reta, aproximado). A 6,2 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 1.900. A confirmar: se o 2º banheiro não é só lavabo, se a casa é térrea.",
       "tags": [
-        "A 7,2 km da ACIM",
-        "Móveis planejados"
+        "A 6,2 km da ACIM"
       ],
       "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003007/2020003007a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003007/2020003007b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003007/2020003007c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003007/2020003007d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003007/2020003007e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003007/2020003007f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003007/2020003007g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020003007/2020003007h.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/30/3020000473/3020000473a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/30/3020000473/3020000473b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/30/3020000473/3020000473c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/30/3020000473/3020000473d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/30/3020000473/3020000473e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/30/3020000473/3020000473f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/30/3020000473/3020000473g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/30/3020000473/3020000473h.jpg"
       ],
-      "link": "https://sub100.com.br/imoveis/2020003007/locacao/casa-em-maringa-pr/jardim-paulista-iii",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "moveis": true,
-      "lat": -23.402995,
-      "lng": -51.874371,
+      "link": "https://sub100.com.br/imoveis/3020000473/locacao/casa-em-maringa-pr/conjunto-joao-de-barro-champagnat",
+      "portal": "Sub100 (Proposta Consultoria de Imóveis, ref. 00000517)",
+      "encontrado_em": "2026-11-28",
+      "terreno_m2": 397.5,
+      "lat": -23.3993482,
+      "lng": -51.8854472,
       "proximidades": [
         {
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
-          "distancia_m": 4400
+          "distancia_m": 3950
         }
       ]
     },
     {
-      "id": "sub100-2020007113",
-      "titulo": "Casa na Rua José Granado Parra, 189, antigo 193 — Jardim Paulista",
+      "id": "sub100-2620000626",
+      "titulo": "Casa na Rua Pioneira Amábile Gatini Vinci, 45-B — Jardim Colina Verde",
       "finalidade": "aluguel",
       "tipo": "Casa",
       "casa": true,
       "preco": 2300,
-      "condominio": null,
+      "condominio": 0,
       "iptu": null,
-      "bairro": "Jardim Paulista",
-      "endereco": "Rua José Granado Parra, 189, antigo 193",
+      "bairro": "Jardim Colina Verde",
+      "endereco": "Rua Pioneira Amábile Gatini Vinci, 45-B",
       "quartos": 3,
       "suites": 1,
       "banheiros": 2,
-      "nova": false,
+      "vagas": 1,
+      "area_m2": 100,
+      "nova": true,
       "destaque": false,
-      "descricao": "Rua José Granado Parra, 189, antigo 193. 1 suíte. Previsão de desocupação: 27/11/2026. Anúncio aberto em 23/11/2026 (Sub100), sem aviso de indisponível.",
-      "nota_grokbot": "Imobiliária: Lélo Imóveis. Sem elevador (não se aplica). ~4,4 km da ciclovia da Av. Brasil (linha reta, aproximado). A 7,3 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.300. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. A confirmar: se a casa é térrea.",
+      "descricao": "Rua Pioneira Amábile Gatini Vinci, 45-B. 100 m², terreno de 150 m², 1 suíte. 100 m² de área privativa em terreno de 150 m²: 3 dormitórios (1 suíte), 1 vaga, semi-mobiliada, excelente estado. Perto do Contorno Norte / final da Av. Tuiuti. Total R$ 2.300 (só no site). Anúncio aberto em 28/11/2026 (Sub100).",
+      "nota_grokbot": "Imobiliária: Paiaguás. Sem elevador (não se aplica). ~4,4 km da ciclovia da Av. Brasil (linha reta, aproximado). A 6,5 km da ACIM (Rua Vereador Basílio Sautchuk, 388, Zona 01, linha reta). Total aluguel + condomínio: R$ 2.300. Acima do teto do e-mail (R$ 2.200); entra no site até R$ 2.350. Com móveis, segundo o anúncio. Semi-mobiliada (descrição). A confirmar: se a casa é térrea.",
       "tags": [
-        "A 7,3 km da ACIM",
-        "Acima de R$ 2.200"
+        "A 6,5 km da ACIM",
+        "Acima de R$ 2.200",
+        "Móveis planejados"
       ],
       "fotos": [
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007113/2020007113a.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007113/2020007113b.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007113/2020007113c.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007113/2020007113d.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007113/2020007113e.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007113/2020007113f.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007113/2020007113g.jpg",
-        "https://s3.amazonaws.com/portal-sub100/imoveis/20/2020007113/2020007113h.jpg"
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000626/2620000626a.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000626/2620000626b.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000626/2620000626c.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000626/2620000626d.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000626/2620000626e.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000626/2620000626f.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000626/2620000626g.jpg",
+        "https://s3.amazonaws.com/portal-sub100/imoveis/26/2620000626/2620000626h.jpg"
       ],
-      "link": "https://sub100.com.br/imoveis/2020007113/locacao/casa-em-maringa-pr/jardim-paulista",
-      "portal": "Sub100 (Lélo Imóveis)",
-      "encontrado_em": "2026-11-23",
-      "lat": -23.405675,
-      "lng": -51.87229,
+      "link": "https://sub100.com.br/imoveis/2620000626/locacao/casa-em-maringa-pr/jardim-colina-verde",
+      "portal": "Sub100 (Imobiliária Paiaguás)",
+      "encontrado_em": "2026-11-28",
+      "terreno_m2": 150,
+      "moveis": true,
+      "lat": -23.3949707,
+      "lng": -51.885565,
       "proximidades": [
         {
           "nome": "Ciclovia da Av. Brasil",
           "categoria": "ciclovia",
-          "distancia_m": 4370
+          "distancia_m": 4360
         }
       ]
     },
